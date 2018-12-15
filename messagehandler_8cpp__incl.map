@@ -1,0 +1,17 @@
+<map id="messagehandler.cpp" name="messagehandler.cpp">
+<area shape="rect" id="node2" href="$messagehandler_8h.html" title="messagehandler.h" alt="" coords="402,80,542,107"/>
+<area shape="rect" id="node4" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="291,528,429,555"/>
+<area shape="rect" id="node6" href="$pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="791,603,929,629"/>
+<area shape="rect" id="node8" href="$accumulators_8h.html" title="dbus&#45;cxx/accumulators.h" alt="" coords="31,304,214,331"/>
+<area shape="rect" id="node9" href="$forward__decls_8h.html" title="dbus&#45;cxx/forward_decls.h" alt="" coords="742,155,925,181"/>
+<area shape="rect" id="node25" href="$message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="455,155,609,181"/>
+<area shape="rect" id="node10" href="$types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="907,304,1037,331"/>
+<area shape="rect" id="node14" href="$path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1149,453,1273,480"/>
+<area shape="rect" id="node16" href="$signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="759,379,913,405"/>
+<area shape="rect" id="node24" href="$filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="1297,453,1473,480"/>
+<area shape="rect" id="node20" href="$signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="871,453,1073,480"/>
+<area shape="rect" id="node23" href="$variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="708,453,847,480"/>
+<area shape="rect" id="node21" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="897,528,1023,555"/>
+<area shape="rect" id="node26" href="$messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="492,229,692,256"/>
+<area shape="rect" id="node27" href="$messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="716,229,964,256"/>
+</map>

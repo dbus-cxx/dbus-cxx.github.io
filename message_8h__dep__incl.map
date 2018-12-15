@@ -1,0 +1,33 @@
+<map id="message.h" name="message.h">
+<area shape="rect" id="node2" href="$callmessage_8h.html" title="callmessage.h" alt="" coords="263,80,377,107"/>
+<area shape="rect" id="node5" href="$message_8cpp.html" title="message.cpp" alt="" coords="485,229,593,256"/>
+<area shape="rect" id="node9" href="$error_8cpp.html" title="error.cpp" alt="" coords="553,80,631,107"/>
+<area shape="rect" id="node10" href="$errormessage_8h.html" title="errormessage.h" alt="" coords="655,80,779,107"/>
+<area shape="rect" id="node12" href="$messageappenditerator_8cpp.html" title="messageappenditerator.cpp" alt="" coords="804,80,1007,107"/>
+<area shape="rect" id="node13" href="$messagehandler_8h.html" title="messagehandler.h" alt="" coords="1031,80,1171,107"/>
+<area shape="rect" id="node21" href="$messageiterator_8cpp.html" title="messageiterator.cpp" alt="" coords="1196,80,1351,107"/>
+<area shape="rect" id="node22" href="$pendingcall_8h.html" title="pendingcall.h" alt="" coords="1375,80,1481,107"/>
+<area shape="rect" id="node24" href="$signalmessage_8h.html" title="signalmessage.h" alt="" coords="1700,80,1831,107"/>
+<area shape="rect" id="node3" href="$callmessage_8cpp.html" title="callmessage.cpp" alt="" coords="159,229,289,256"/>
+<area shape="rect" id="node4" href="$returnmessage_8h.html" title="returnmessage.h" alt="" coords="306,155,438,181"/>
+<area shape="rect" id="node7" href="$methodbase_8h.html" title="methodbase.h" alt="" coords="49,155,164,181"/>
+<area shape="rect" id="node6" href="$returnmessage_8cpp.html" title="returnmessage.cpp" alt="" coords="313,229,460,256"/>
+<area shape="rect" id="node8" href="$methodbase_8cpp.html" title="methodbase.cpp" alt="" coords="5,229,136,256"/>
+<area shape="rect" id="node11" href="$errormessage_8cpp.html" title="errormessage.cpp" alt="" coords="563,155,701,181"/>
+<area shape="rect" id="node14" href="$messagefilter_8h.html" title="messagefilter.h" alt="" coords="1077,155,1197,181"/>
+<area shape="rect" id="node16" href="$messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="725,155,880,181"/>
+<area shape="rect" id="node17" href="$objectpathhandler_8h.html" title="objectpathhandler.h" alt="" coords="904,155,1053,181"/>
+<area shape="rect" id="node19" href="$signalreceiver_8h.html" title="signalreceiver.h" alt="" coords="1222,155,1343,181"/>
+<area shape="rect" id="node15" href="$messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="1077,229,1211,256"/>
+<area shape="rect" id="node18" href="$objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="889,229,1053,256"/>
+<area shape="rect" id="node20" href="$signalreceiver_8cpp.html" title="signalreceiver.cpp" alt="" coords="1376,229,1512,256"/>
+<area shape="rect" id="node23" href="$pendingcall_8cpp.html" title="pendingcall.cpp" alt="" coords="1367,155,1489,181"/>
+<area shape="rect" id="node25" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="2058,155,2177,181"/>
+<area shape="rect" id="node26" href="$dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="2201,155,2316,181"/>
+<area shape="rect" id="node27" href="$signal__base_8h.html" title="signal_base.h" alt="" coords="1924,155,2033,181"/>
+<area shape="rect" id="node28" href="$signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="1598,229,1722,256"/>
+<area shape="rect" id="node31" href="$signalmessage_8cpp.html" title="signalmessage.cpp" alt="" coords="1615,155,1761,181"/>
+<area shape="rect" id="node32" href="$glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="1785,155,1900,181"/>
+<area shape="rect" id="node29" href="$signal__proxy__base_8h.html" title="signal_proxy_base.h" alt="" coords="1903,229,2054,256"/>
+<area shape="rect" id="node30" href="$signal__proxy__base_8cpp.html" title="signal_proxy_base.cpp" alt="" coords="1895,304,2062,331"/>
+</map>

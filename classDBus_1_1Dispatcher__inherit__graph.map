@@ -1,0 +1,3 @@
+<map id="DBus::Dispatcher" name="DBus::Dispatcher">
+<area shape="rect" id="node2" href="$classDBus_1_1Glib_1_1Dispatcher.html" title="Reimplements DBus::Dispatcher to conduct all dispatching in the provided Glib MainContext if one is p..." alt="" coords="5,80,171,107"/>
+</map>

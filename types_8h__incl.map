@@ -1,0 +1,10 @@
+<map id="types.h" name="types.h">
+<area shape="rect" id="node6" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="838,229,977,256"/>
+<area shape="rect" id="node8" href="$path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="249,155,373,181"/>
+<area shape="rect" id="node10" href="$signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="635,80,790,107"/>
+<area shape="rect" id="node20" href="$filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="1102,155,1278,181"/>
+<area shape="rect" id="node14" href="$signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="612,155,813,181"/>
+<area shape="rect" id="node19" href="$variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="449,155,587,181"/>
+<area shape="rect" id="node15" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="587,229,713,256"/>
+<area shape="rect" id="node17" href="$pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="634,304,773,331"/>
+</map>

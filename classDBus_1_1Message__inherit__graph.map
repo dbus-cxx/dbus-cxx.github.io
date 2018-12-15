@@ -1,0 +1,6 @@
+<map id="DBus::Message" name="DBus::Message">
+<area shape="rect" id="node2" href="$classDBus_1_1CallMessage.html" title="Represents a DBus call message. " alt="" coords="5,80,149,107"/>
+<area shape="rect" id="node3" href="$classDBus_1_1ErrorMessage.html" title="Represents a DBus Error message. " alt="" coords="173,80,325,107"/>
+<area shape="rect" id="node4" href="$classDBus_1_1ReturnMessage.html" title="Represents a DBus call return message. " alt="" coords="349,80,512,107"/>
+<area shape="rect" id="node5" href="$classDBus_1_1SignalMessage.html" title="Represents a DBus signal message. " alt="" coords="536,80,696,107"/>
+</map>

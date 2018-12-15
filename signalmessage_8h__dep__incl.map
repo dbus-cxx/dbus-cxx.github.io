@@ -1,0 +1,11 @@
+<map id="signalmessage.h" name="signalmessage.h">
+<area shape="rect" id="node2" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="149,80,263,107"/>
+<area shape="rect" id="node4" href="$signal__base_8h.html" title="signal_base.h" alt="" coords="338,80,447,107"/>
+<area shape="rect" id="node5" href="$signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="239,155,363,181"/>
+<area shape="rect" id="node8" href="$signalmessage_8cpp.html" title="signalmessage.cpp" alt="" coords="472,80,617,107"/>
+<area shape="rect" id="node9" href="$signalreceiver_8cpp.html" title="signalreceiver.cpp" alt="" coords="642,80,778,107"/>
+<area shape="rect" id="node10" href="$glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="802,80,917,107"/>
+<area shape="rect" id="node6" href="$signal__proxy__base_8h.html" title="signal_proxy_base.h" alt="" coords="387,155,537,181"/>
+<area shape="rect" id="node7" href="$signal__proxy__base_8cpp.html" title="signal_proxy_base.cpp" alt="" coords="379,229,545,256"/>
+</map>
