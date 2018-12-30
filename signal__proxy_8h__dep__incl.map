@@ -1,0 +1,24 @@
+<map id="signal_proxy.h" name="signal_proxy.h">
+<area shape="rect" id="node2" href="$connection_8h.html" title="connection.h" alt="" coords="1083,229,1187,256"/>
+<area shape="rect" id="node21" href="$interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="1393,80,1516,107"/>
+<area shape="rect" id="node22" href="$objectproxy_8h.html" title="objectproxy.h" alt="" coords="1272,155,1379,181"/>
+<area shape="rect" id="node3" href="$method_8h.html" title="method.h" alt="" coords="1326,304,1410,331"/>
+<area shape="rect" id="node8" href="$objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="1401,453,1522,480"/>
+<area shape="rect" id="node9" href="$method__impl_8h.html" title="method_impl.h" alt="" coords="786,379,905,405"/>
+<area shape="rect" id="node10" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="351,304,470,331"/>
+<area shape="rect" id="node11" href="$dispatcher_8h.html" title="dispatcher.h" alt="" coords="169,304,269,331"/>
+<area shape="rect" id="node15" href="$interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="1536,304,1675,331"/>
+<area shape="rect" id="node16" href="$messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="546,304,681,331"/>
+<area shape="rect" id="node17" href="$messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="705,304,860,331"/>
+<area shape="rect" id="node18" href="$objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="885,304,1049,331"/>
+<area shape="rect" id="node19" href="$signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="1073,304,1197,331"/>
+<area shape="rect" id="node20" href="$utility_8cpp.html" title="utility.cpp" alt="" coords="1221,304,1302,331"/>
+<area shape="rect" id="node4" href="$interface_8h.html" title="interface.h" alt="" coords="1293,379,1384,405"/>
+<area shape="rect" id="node5" href="$object_8h.html" title="object.h" alt="" coords="725,453,798,480"/>
+<area shape="rect" id="node7" href="$interface_8cpp.html" title="interface.cpp" alt="" coords="1271,453,1377,480"/>
+<area shape="rect" id="node6" href="$object_8cpp.html" title="object.cpp" alt="" coords="717,528,805,555"/>
+<area shape="rect" id="node12" href="$dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="161,379,276,405"/>
+<area shape="rect" id="node13" href="$glibmm_2dispatcher_8h.html" title="dispatcher.h" alt="" coords="13,379,113,405"/>
+<area shape="rect" id="node14" href="$glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="5,453,120,480"/>
+<area shape="rect" id="node23" href="$methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="1403,155,1568,181"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Signals" name="Signals">
+<area shape="rect" id="node2" href="$group__local.html" title="This group contains objects which are natively local and provide interfaces such as methods and signa..." alt="" coords="308,343,415,369"/>
+<area shape="rect" id="node3" href="$group__proxy.html" title="This group contains items that are of interest in creating local proxies for dbus objects..." alt="" coords="333,828,390,855"/>
+</map>

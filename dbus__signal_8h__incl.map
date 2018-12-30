@@ -1,0 +1,22 @@
+<map id="dbus_signal.h" name="dbus_signal.h">
+<area shape="rect" id="node3" href="$forward__decls_8h.html" title="dbus&#45;cxx/forward_decls.h" alt="" coords="966,244,1149,271"/>
+<area shape="rect" id="node24" href="$utility_8h.html" title="dbus&#45;cxx/utility.h" alt="" coords="1694,80,1821,107"/>
+<area shape="rect" id="node26" href="$signal__base_8h.html" title="dbus&#45;cxx/signal_base.h" alt="" coords="229,80,400,107"/>
+<area shape="rect" id="node32" href="$headerlog_8h.html" title="dbus&#45;cxx/headerlog.h" alt="" coords="1463,80,1622,107"/>
+<area shape="rect" id="node4" href="$types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="772,393,903,420"/>
+<area shape="rect" id="node9" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="292,617,431,644"/>
+<area shape="rect" id="node11" href="$path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1029,543,1153,569"/>
+<area shape="rect" id="node13" href="$signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="760,468,915,495"/>
+<area shape="rect" id="node23" href="$filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="1177,543,1353,569"/>
+<area shape="rect" id="node17" href="$signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="803,543,1005,569"/>
+<area shape="rect" id="node22" href="$variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="640,543,779,569"/>
+<area shape="rect" id="node18" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="1089,617,1215,644"/>
+<area shape="rect" id="node20" href="$pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="1713,692,1852,719"/>
+<area shape="rect" id="node21" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="1685,767,1880,793"/>
+<area shape="rect" id="node25" href="$simplelogger__defs_8h.html" title="dbus&#45;cxx/simplelogger\l_defs.h" alt="" coords="1580,155,1745,196"/>
+<area shape="rect" id="node27" href="$accumulators_8h.html" title="dbus&#45;cxx/accumulators.h" alt="" coords="43,244,226,271"/>
+<area shape="rect" id="node28" href="$signalmessage_8h.html" title="dbus&#45;cxx/signalmessage.h" alt="" coords="571,162,762,189"/>
+<area shape="rect" id="node29" href="$message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="1391,244,1545,271"/>
+<area shape="rect" id="node30" href="$messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="1071,319,1271,345"/>
+<area shape="rect" id="node31" href="$messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="1295,319,1543,345"/>
+</map>

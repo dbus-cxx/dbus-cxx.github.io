@@ -26,7 +26,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_7f455ae7db3f26327d48f0d088eb3941.html">dbus-cxx</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -61,7 +61,7 @@
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;poll.h&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;dbus/dbus.h&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;dbus-cxx/connection.h&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="connection_8h.html">dbus-cxx/connection.h</a>&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="watch_8h.html">dbus-cxx/watch.h</a>&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="timeout_8h.html">dbus-cxx/timeout.h</a>&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
@@ -88,13 +88,13 @@
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">virtual</span> <a class="code" href="classDBus_1_1Dispatcher.html#a04223b2fab6b795d60039a90a6b012f9">~Dispatcher</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      Connection::pointer <a class="code" href="classDBus_1_1Dispatcher.html#acc0824383d315de9d97043aa52ec087d">create_connection</a>( DBusConnection* cobj = NULL, <span class="keywordtype">bool</span> is_private=<span class="keyword">false</span> );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a> <a class="code" href="classDBus_1_1Dispatcher.html#acc0824383d315de9d97043aa52ec087d">create_connection</a>( DBusConnection* cobj = NULL, <span class="keywordtype">bool</span> is_private=<span class="keyword">false</span> );</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      Connection::pointer <a class="code" href="classDBus_1_1Dispatcher.html#acc0824383d315de9d97043aa52ec087d">create_connection</a>( <a class="code" href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764">BusType</a> <a class="code" href="namespaceDBus.html#a35efa0002d427e90818ffcf19fcac698">type</a>, <span class="keywordtype">bool</span> is_private=<span class="keyword">false</span> );</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a> <a class="code" href="classDBus_1_1Dispatcher.html#acc0824383d315de9d97043aa52ec087d">create_connection</a>( <a class="code" href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764">BusType</a> <a class="code" href="namespaceDBus.html#a35efa0002d427e90818ffcf19fcac698">type</a>, <span class="keywordtype">bool</span> is_private=<span class="keyword">false</span> );</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      Connection::pointer <a class="code" href="classDBus_1_1Dispatcher.html#acc0824383d315de9d97043aa52ec087d">create_connection</a>( <span class="keyword">const</span> Connection&amp; other );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <a class="code" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a> <a class="code" href="classDBus_1_1Dispatcher.html#acc0824383d315de9d97043aa52ec087d">create_connection</a>( <span class="keyword">const</span> <a class="code" href="classDBus_1_1Connection.html">Connection</a>&amp; other );</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classDBus_1_1Dispatcher.html#a669a1c7be0dea6a754e650f6b9959ad5">add_connection</a>( Connection::pointer connection );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classDBus_1_1Dispatcher.html#a669a1c7be0dea6a754e650f6b9959ad5">add_connection</a>( <a class="code" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a> connection );</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classDBus_1_1Dispatcher.html#a154e7e136ffde9fc3b197c9ea48d68bb">start</a>();</div>
@@ -147,9 +147,9 @@
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="keywordtype">bool</span> <a class="code" href="classDBus_1_1Dispatcher.html#a7908d78528ab91dcc9b2c57584e951fe">on_timeout_toggled</a>(<a class="code" href="classDBus_1_1Timeout.html#af18087230fba924d73f34387f438b328">Timeout::pointer</a>);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classDBus_1_1Dispatcher.html#ab9fd07d3c3fce94c4b9b942d9c99a0d7">on_wakeup_main</a>(Connection::pointer);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classDBus_1_1Dispatcher.html#ab9fd07d3c3fce94c4b9b942d9c99a0d7">on_wakeup_main</a>(<a class="code" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a>);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classDBus_1_1Dispatcher.html#a0316461883d06f6291cba6b6401e2bd5">on_dispatch_status_changed</a>(<a class="code" href="namespaceDBus.html#a01110e9e572d0284108aa344530f1f92">DispatchStatus</a>, Connection::pointer);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classDBus_1_1Dispatcher.html#a0316461883d06f6291cba6b6401e2bd5">on_dispatch_status_changed</a>(<a class="code" href="namespaceDBus.html#a01110e9e572d0284108aa344530f1f92">DispatchStatus</a>, <a class="code" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a>);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classDBus_1_1Dispatcher.html#ac4bc563abfa22777955d3f76554eb66b">wakeup_thread</a>();</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
@@ -170,11 +170,14 @@
 <div class="ttc" id="classDBus_1_1Dispatcher_html_ab9fd07d3c3fce94c4b9b942d9c99a0d7"><div class="ttname"><a href="classDBus_1_1Dispatcher.html#ab9fd07d3c3fce94c4b9b942d9c99a0d7">DBus::Dispatcher::on_wakeup_main</a></div><div class="ttdeci">void on_wakeup_main(Connection::pointer)</div><div class="ttdef"><b>Definition:</b> dispatcher.cpp:376</div></div>
 <div class="ttc" id="classDBus_1_1Dispatcher_html_a7adc389576f3012d7c5e2e771101951f"><div class="ttname"><a href="classDBus_1_1Dispatcher.html#a7adc389576f3012d7c5e2e771101951f">DBus::Dispatcher::pointer</a></div><div class="ttdeci">DBusCxxPointer&lt; Dispatcher &gt; pointer</div><div class="ttdef"><b>Definition:</b> dispatcher.h:59</div></div>
 <div class="ttc" id="namespaceDBus_html_a65a7f3cf99252b69858cd12817d2b764"><div class="ttname"><a href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764">DBus::BusType</a></div><div class="ttdeci">BusType</div><div class="ttdef"><b>Definition:</b> enums.h:26</div></div>
-<div class="ttc" id="classDBus_1_1Timeout_html_af18087230fba924d73f34387f438b328"><div class="ttname"><a href="classDBus_1_1Timeout.html#af18087230fba924d73f34387f438b328">DBus::Timeout::pointer</a></div><div class="ttdeci">DBusCxxPointer&lt; Timeout &gt; pointer</div><div class="ttdef"><b>Definition:</b> timeout.h:47</div></div>
+<div class="ttc" id="classDBus_1_1Timeout_html_af18087230fba924d73f34387f438b328"><div class="ttname"><a href="classDBus_1_1Timeout.html#af18087230fba924d73f34387f438b328">DBus::Timeout::pointer</a></div><div class="ttdeci">DBusCxxPointer&lt; Timeout &gt; pointer</div><div class="ttdef"><b>Definition:</b> timeout.h:48</div></div>
+<div class="ttc" id="connection_8h_html"><div class="ttname"><a href="connection_8h.html">connection.h</a></div></div>
 <div class="ttc" id="classDBus_1_1Dispatcher_html_a7908d78528ab91dcc9b2c57584e951fe"><div class="ttname"><a href="classDBus_1_1Dispatcher.html#a7908d78528ab91dcc9b2c57584e951fe">DBus::Dispatcher::on_timeout_toggled</a></div><div class="ttdeci">bool on_timeout_toggled(Timeout::pointer)</div><div class="ttdef"><b>Definition:</b> dispatcher.cpp:368</div></div>
-<div class="ttc" id="namespaceDBus_html"><div class="ttname"><a href="namespaceDBus.html">DBus</a></div><div class="ttdef"><b>Definition:</b> accumulators.h:24</div></div>
+<div class="ttc" id="namespaceDBus_html"><div class="ttname"><a href="namespaceDBus.html">DBus</a></div><div class="ttdef"><b>Definition:</b> connection.h:45</div></div>
 <div class="ttc" id="watch_8h_html"><div class="ttname"><a href="watch_8h.html">watch.h</a></div></div>
 <div class="ttc" id="classDBus_1_1Dispatcher_html_acc0824383d315de9d97043aa52ec087d"><div class="ttname"><a href="classDBus_1_1Dispatcher.html#acc0824383d315de9d97043aa52ec087d">DBus::Dispatcher::create_connection</a></div><div class="ttdeci">Connection::pointer create_connection(DBusConnection *cobj=NULL, bool is_private=false)</div><div class="ttdef"><b>Definition:</b> dispatcher.cpp:66</div></div>
+<div class="ttc" id="classDBus_1_1Connection_html"><div class="ttname"><a href="classDBus_1_1Connection.html">DBus::Connection</a></div><div class="ttdoc">Connection point to the DBus. </div><div class="ttdef"><b>Definition:</b> connection.h:61</div></div>
+<div class="ttc" id="classDBus_1_1Connection_html_a36f658da5f2908b9c2f467cea59fc9fa"><div class="ttname"><a href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">DBus::Connection::pointer</a></div><div class="ttdeci">DBusCxxPointer&lt; Connection &gt; pointer</div><div class="ttdef"><b>Definition:</b> connection.h:81</div></div>
 <div class="ttc" id="classDBus_1_1Dispatcher_html_a155fe61b34595882ba240a60a26eb925"><div class="ttname"><a href="classDBus_1_1Dispatcher.html#a155fe61b34595882ba240a60a26eb925">DBus::Dispatcher::m_watches_map</a></div><div class="ttdeci">std::map&lt; int, WatchPair &gt; m_watches_map</div><div class="ttdef"><b>Definition:</b> dispatcher.h:106</div></div>
 <div class="ttc" id="timeout_8h_html"><div class="ttname"><a href="timeout_8h.html">timeout.h</a></div></div>
 <div class="ttc" id="classDBus_1_1Dispatcher_html_a82350fcac5949789f13f4fad2ee3f18e"><div class="ttname"><a href="classDBus_1_1Dispatcher.html#a82350fcac5949789f13f4fad2ee3f18e">DBus::Dispatcher::is_running</a></div><div class="ttdeci">bool is_running()</div><div class="ttdef"><b>Definition:</b> dispatcher.cpp:150</div></div>
@@ -213,6 +216,6 @@
 <div class="ttc" id="classDBus_1_1Dispatcher_html_a993baa6e7ab5d46f2ab42019c1e36f3c"><div class="ttname"><a href="classDBus_1_1Dispatcher.html#a993baa6e7ab5d46f2ab42019c1e36f3c">DBus::Dispatcher::m_connections</a></div><div class="ttdeci">Connections m_connections</div><div class="ttdef"><b>Definition:</b> dispatcher.h:89</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Sat Dec 15 2018 17:19:20 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Dec 30 2018 17:26:36 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>

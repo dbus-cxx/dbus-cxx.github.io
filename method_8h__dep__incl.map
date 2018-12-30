@@ -1,0 +1,20 @@
+<map id="method.h" name="method.h">
+<area shape="rect" id="node2" href="$connection_8h.html" title="connection.h" alt="" coords="765,229,869,256"/>
+<area shape="rect" id="node3" href="$method__impl_8h.html" title="method_impl.h" alt="" coords="5,304,124,331"/>
+<area shape="rect" id="node16" href="$interface_8h.html" title="interface.h" alt="" coords="930,80,1021,107"/>
+<area shape="rect" id="node4" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="1092,304,1211,331"/>
+<area shape="rect" id="node5" href="$dispatcher_8h.html" title="dispatcher.h" alt="" coords="1235,304,1335,331"/>
+<area shape="rect" id="node9" href="$interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="149,304,287,331"/>
+<area shape="rect" id="node10" href="$messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="312,304,447,331"/>
+<area shape="rect" id="node11" href="$messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="471,304,626,331"/>
+<area shape="rect" id="node12" href="$objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="651,304,815,331"/>
+<area shape="rect" id="node13" href="$objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="1359,304,1480,331"/>
+<area shape="rect" id="node14" href="$signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="839,304,963,331"/>
+<area shape="rect" id="node15" href="$utility_8cpp.html" title="utility.cpp" alt="" coords="987,304,1068,331"/>
+<area shape="rect" id="node6" href="$dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="1161,379,1275,405"/>
+<area shape="rect" id="node7" href="$glibmm_2dispatcher_8h.html" title="dispatcher.h" alt="" coords="1300,379,1400,405"/>
+<area shape="rect" id="node8" href="$glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="1293,453,1407,480"/>
+<area shape="rect" id="node17" href="$object_8h.html" title="object.h" alt="" coords="996,155,1069,181"/>
+<area shape="rect" id="node19" href="$interface_8cpp.html" title="interface.cpp" alt="" coords="867,155,972,181"/>
+<area shape="rect" id="node18" href="$object_8cpp.html" title="object.cpp" alt="" coords="989,229,1077,256"/>
+</map>

@@ -40,7 +40,7 @@
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classDBus_1_1SignalReceiver-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DBus::SignalReceiver Class Reference<div class="ingroups"><a class="el" href="group__signals.html">Signals</a></div></div>  </div>
+<div class="title">DBus::SignalReceiver Class Reference<div class="ingroups"><a class="el" href="group__signals.html">Signals</a> &#124; <a class="el" href="group__proxy.html">Proxy</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -73,7 +73,7 @@ Public Types</h2></td></tr>
 <tr class="separator:a1218707a210a481e4c6c74dbec0cddd4 inherit pub_types_classDBus_1_1MessageHandler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6886952c21dc3256946e8fecd2920be0 inherit pub_types_classDBus_1_1MessageHandler"><td class="memItemLeft" align="right" valign="top">typedef sigc::signal<br class="typebreak" />
 &lt; <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>, <br class="typebreak" />
-DBusCxxPointer&lt; Connection &gt;<br class="typebreak" />
+DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;<br class="typebreak" />
 , <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a> &gt;<br class="typebreak" />
 ::accumulated<br class="typebreak" />
 &lt; <a class="el" href="structDBus_1_1MessageHandlerAccumulator.html">MessageHandlerAccumulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageHandler.html#a6886952c21dc3256946e8fecd2920be0">MessageSignal</a></td></tr>
@@ -83,7 +83,7 @@ DBusCxxPointer&lt; Connection &gt;<br class="typebreak" />
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a59c9a0a20b498373c6ec43263bf45c13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalReceiver.html#a59c9a0a20b498373c6ec43263bf45c13">~SignalReceiver</a> ()</td></tr>
 <tr class="separator:a59c9a0a20b498373c6ec43263bf45c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae2186e274232a5d2deac2a22dd70ee"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalReceiver.html#a0ae2186e274232a5d2deac2a22dd70ee">handle_message</a> (DBusCxxPointer&lt; Connection &gt;, <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>)</td></tr>
+<tr class="memitem:a0ae2186e274232a5d2deac2a22dd70ee"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalReceiver.html#a0ae2186e274232a5d2deac2a22dd70ee">handle_message</a> (DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;, <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>)</td></tr>
 <tr class="separator:a0ae2186e274232a5d2deac2a22dd70ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5474989876065e51325d891095b3f5"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalReceiver.html#aeb5474989876065e51325d891095b3f5">sender</a> ()</td></tr>
 <tr class="separator:aeb5474989876065e51325d891095b3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a> DBus::SignalReceiver::handle_message </td>
           <td>(</td>
-          <td class="paramtype">DBusCxxPointer&lt; Connection &gt;&#160;</td>
+          <td class="paramtype">DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;&#160;</td>
           <td class="paramname"><em>conn</em>, </td>
         </tr>
         <tr>
@@ -926,6 +926,6 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 </div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Sat Dec 15 2018 17:19:21 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Dec 30 2018 17:26:37 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>

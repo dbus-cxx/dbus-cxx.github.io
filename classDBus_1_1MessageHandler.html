@@ -40,7 +40,7 @@
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classDBus_1_1MessageHandler-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DBus::MessageHandler Class Reference</div>  </div>
+<div class="title">DBus::MessageHandler Class Reference<div class="ingroups"><a class="el" href="group__objects.html">Objects</a> &#124; <a class="el" href="group__local.html">Local Objects</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -66,7 +66,7 @@ Public Types</h2></td></tr>
 <tr class="separator:a1218707a210a481e4c6c74dbec0cddd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6886952c21dc3256946e8fecd2920be0"><td class="memItemLeft" align="right" valign="top">typedef sigc::signal<br class="typebreak" />
 &lt; <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>, <br class="typebreak" />
-DBusCxxPointer&lt; Connection &gt;<br class="typebreak" />
+DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;<br class="typebreak" />
 , <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a> &gt;<br class="typebreak" />
 ::accumulated<br class="typebreak" />
 &lt; <a class="el" href="structDBus_1_1MessageHandlerAccumulator.html">MessageHandlerAccumulator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageHandler.html#a6886952c21dc3256946e8fecd2920be0">MessageSignal</a></td></tr>
@@ -76,7 +76,7 @@ DBusCxxPointer&lt; Connection &gt;<br class="typebreak" />
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a68087a62241e437c9235502a1270f6aa"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageHandler.html#a68087a62241e437c9235502a1270f6aa">~MessageHandler</a> ()</td></tr>
 <tr class="separator:a68087a62241e437c9235502a1270f6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcc82cf431e790efa9be7719aaf8ea00"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageHandler.html#adcc82cf431e790efa9be7719aaf8ea00">handle_message</a> (DBusCxxPointer&lt; Connection &gt;, <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>)</td></tr>
+<tr class="memitem:adcc82cf431e790efa9be7719aaf8ea00"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageHandler.html#adcc82cf431e790efa9be7719aaf8ea00">handle_message</a> (DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;, <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>)</td></tr>
 <tr class="memdesc:adcc82cf431e790efa9be7719aaf8ea00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default implementation simply emits the message signal and returns the result.  <a href="#adcc82cf431e790efa9be7719aaf8ea00">More...</a><br /></td></tr>
 <tr class="separator:adcc82cf431e790efa9be7719aaf8ea00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5abe066a08abec1f0336e4fbf3e6087e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageHandler.html#a6886952c21dc3256946e8fecd2920be0">MessageSignal</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageHandler.html#a5abe066a08abec1f0336e4fbf3e6087e">signal_message</a> ()</td></tr>
@@ -107,7 +107,7 @@ Protected Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef sigc::signal&lt;<a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>,DBusCxxPointer&lt;Connection&gt;, <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>&gt;::accumulated&lt;<a class="el" href="structDBus_1_1MessageHandlerAccumulator.html">MessageHandlerAccumulator</a>&gt; <a class="el" href="classDBus_1_1MessageHandler.html#a6886952c21dc3256946e8fecd2920be0">DBus::MessageHandler::MessageSignal</a></td>
+          <td class="memname">typedef sigc::signal&lt;<a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>,DBusCxxPointer&lt;<a class="el" href="classDBus_1_1Connection.html">Connection</a>&gt;, <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>&gt;::accumulated&lt;<a class="el" href="structDBus_1_1MessageHandlerAccumulator.html">MessageHandlerAccumulator</a>&gt; <a class="el" href="classDBus_1_1MessageHandler.html#a6886952c21dc3256946e8fecd2920be0">DBus::MessageHandler::MessageSignal</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -196,7 +196,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a> DBus::MessageHandler::handle_message </td>
           <td>(</td>
-          <td class="paramtype">DBusCxxPointer&lt; Connection &gt;&#160;</td>
+          <td class="paramtype">DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;&#160;</td>
           <td class="paramname"><em>conn</em>, </td>
         </tr>
         <tr>
@@ -220,7 +220,7 @@ Protected Attributes</h2></td></tr>
 
 <p>The default implementation simply emits the message signal and returns the result. </p>
 
-<p>Reimplemented in <a class="el" href="classDBus_1_1SignalReceiver.html#a0ae2186e274232a5d2deac2a22dd70ee">DBus::SignalReceiver</a>.</p>
+<p>Reimplemented in <a class="el" href="classDBus_1_1Object.html#adfdab48091345e200f529521bcb98667">DBus::Object</a>, and <a class="el" href="classDBus_1_1SignalReceiver.html#a0ae2186e274232a5d2deac2a22dd70ee">DBus::SignalReceiver</a>.</p>
 
 <p>References <a class="el" href="classDBus_1_1MessageHandler.html#a33109115b474e3cb72a296c3469eda5b">m_signal_message</a>.</p>
 
@@ -274,7 +274,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>References <a class="el" href="classDBus_1_1Message.html#ac5ae03e456838e9d3131a6ed983e5320">DBus::Message::create()</a>, and <a class="el" href="classDBus_1_1MessageHandler.html#adcc82cf431e790efa9be7719aaf8ea00">handle_message()</a>.</p>
+<p>References <a class="el" href="classDBus_1_1Message.html#ac5ae03e456838e9d3131a6ed983e5320">DBus::Message::create()</a>, <a class="el" href="classDBus_1_1MessageHandler.html#adcc82cf431e790efa9be7719aaf8ea00">handle_message()</a>, and <a class="el" href="classDBus_1_1Connection.html#ae89d56ee5ee88a9e6cc0210a03c89b21">DBus::Connection::self()</a>.</p>
 
 </div>
 </div>
@@ -324,6 +324,6 @@ Protected Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Sat Dec 15 2018 17:19:21 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Dec 30 2018 17:26:36 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>

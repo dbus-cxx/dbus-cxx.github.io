@@ -108,8 +108,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2305527461ff81d416fbf14a84168895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a296b713723b4546327b6539d34195adc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Timeout.html#a296b713723b4546327b6539d34195adc">m_is_armed</a></td></tr>
 <tr class="separator:a296b713723b4546327b6539d34195adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce73378bc8483906050811d3cc2a3ee"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Timeout.html#adce73378bc8483906050811d3cc2a3ee">m_arming_mutex</a></td></tr>
-<tr class="separator:adce73378bc8483906050811d3cc2a3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729fe905ff6cd71e20199e59f6600be2"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Timeout.html#a729fe905ff6cd71e20199e59f6600be2">m_arming_mutex</a></td></tr>
+<tr class="separator:a729fe905ff6cd71e20199e59f6600be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides timeouts that can be armed/disarmed as necessary. </p>
@@ -163,7 +163,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classDBus_1_1Timeout.html#adce73378bc8483906050811d3cc2a3ee">m_arming_mutex</a>, and <a class="el" href="classDBus_1_1Timeout.html#a4f2780067e966fcb66d5b7e39ed08a27">m_cobj</a>.</p>
+<p>References <a class="el" href="classDBus_1_1Timeout.html#a4f2780067e966fcb66d5b7e39ed08a27">m_cobj</a>.</p>
 
 <p>Referenced by <a class="el" href="classDBus_1_1Timeout.html#a83195670e0dbad4f8b379039b7d2f2a8">create()</a>.</p>
 
@@ -182,7 +182,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classDBus_1_1Timeout.html#adce73378bc8483906050811d3cc2a3ee">m_arming_mutex</a>, <a class="el" href="classDBus_1_1Timeout.html#a296b713723b4546327b6539d34195adc">m_is_armed</a>, and <a class="el" href="classDBus_1_1Timeout.html#a2305527461ff81d416fbf14a84168895">m_timer_id</a>.</p>
+<p>References <a class="el" href="classDBus_1_1Timeout.html#a729fe905ff6cd71e20199e59f6600be2">m_arming_mutex</a>, <a class="el" href="classDBus_1_1Timeout.html#a296b713723b4546327b6539d34195adc">m_is_armed</a>, and <a class="el" href="classDBus_1_1Timeout.html#a2305527461ff81d416fbf14a84168895">m_timer_id</a>.</p>
 
 </div>
 </div>
@@ -201,7 +201,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>References <a class="el" href="classDBus_1_1Timeout.html#a5afe5c6f7159256e678f09e2f5a8c041">interval()</a>, <a class="el" href="classDBus_1_1Timeout.html#adce73378bc8483906050811d3cc2a3ee">m_arming_mutex</a>, <a class="el" href="classDBus_1_1Timeout.html#a296b713723b4546327b6539d34195adc">m_is_armed</a>, <a class="el" href="classDBus_1_1Timeout.html#a2305527461ff81d416fbf14a84168895">m_timer_id</a>, and <a class="el" href="classDBus_1_1Timeout.html#a74ff5223b10a512065f00c73c43a00ec">timer_callback_proxy()</a>.</p>
+<p>References <a class="el" href="classDBus_1_1Timeout.html#a5afe5c6f7159256e678f09e2f5a8c041">interval()</a>, <a class="el" href="classDBus_1_1Timeout.html#a729fe905ff6cd71e20199e59f6600be2">m_arming_mutex</a>, <a class="el" href="classDBus_1_1Timeout.html#a296b713723b4546327b6539d34195adc">m_is_armed</a>, <a class="el" href="classDBus_1_1Timeout.html#a2305527461ff81d416fbf14a84168895">m_timer_id</a>, and <a class="el" href="classDBus_1_1Timeout.html#a74ff5223b10a512065f00c73c43a00ec">timer_callback_proxy()</a>.</p>
 
 </div>
 </div>
@@ -245,6 +245,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>References <a class="el" href="classDBus_1_1Timeout.html#ab0f0cd54503f8659b095115a13cab3c4">Timeout()</a>.</p>
+
+<p>Referenced by <a class="el" href="classDBus_1_1Connection.html#ac3c34d970965621f70426f1e07543527">DBus::Connection::on_add_timeout_callback()</a>, <a class="el" href="classDBus_1_1Connection.html#a8f0f4d49216ded1eb9d0dd4e365b9fde">DBus::Connection::on_remove_timeout_callback()</a>, and <a class="el" href="classDBus_1_1Connection.html#a161b3717698d59d007131044d5731adf">DBus::Connection::on_timeout_toggled_callback()</a>.</p>
 
 </div>
 </div>
@@ -434,7 +436,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="adce73378bc8483906050811d3cc2a3ee"></a>
+<a class="anchor" id="a729fe905ff6cd71e20199e59f6600be2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -442,7 +444,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">pthread_mutex_t DBus::Timeout::m_arming_mutex</td>
+          <td class="memname">std::mutex DBus::Timeout::m_arming_mutex</td>
         </tr>
       </table>
   </td>
@@ -452,7 +454,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="classDBus_1_1Timeout.html#a90c919fee80a3dec742551d28f1b7bba">arm()</a>, <a class="el" href="classDBus_1_1Timeout.html#ab0f0cd54503f8659b095115a13cab3c4">Timeout()</a>, and <a class="el" href="classDBus_1_1Timeout.html#a46fa3484e5959633124eeffab1890f92">~Timeout()</a>.</p>
+<p>Referenced by <a class="el" href="classDBus_1_1Timeout.html#a90c919fee80a3dec742551d28f1b7bba">arm()</a>, and <a class="el" href="classDBus_1_1Timeout.html#a46fa3484e5959633124eeffab1890f92">~Timeout()</a>.</p>
 
 </div>
 </div>
@@ -528,6 +530,6 @@ Protected Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Sat Dec 15 2018 17:19:21 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Dec 30 2018 17:26:37 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>

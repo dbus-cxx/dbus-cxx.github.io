@@ -72,6 +72,12 @@
 : <a class="el" href="classDBus_1_1signal__proxy__base.html#a6bfaf733829fb40818903b5c01b95a3f">DBus::signal_proxy_base</a>
 , <a class="el" href="classDBus_1_1SignalReceiver.html#a8e6af6063772d94cf0414cd412f7d07b">DBus::SignalReceiver</a>
 </li>
+<li>max_message_size()
+: <a class="el" href="classDBus_1_1Connection.html#af5911f48e36091f77b3a972f0ec7a3c3">DBus::Connection</a>
+</li>
+<li>max_received_size()
+: <a class="el" href="classDBus_1_1Connection.html#add1556f68423ff253a42e2691c5b8d48">DBus::Connection</a>
+</li>
 <li>member()
 : <a class="el" href="classDBus_1_1CallMessage.html#a5f6f6bd14f2bd58e94705879778a9cf5">DBus::CallMessage</a>
 , <a class="el" href="classDBus_1_1SignalMessage.html#a06518ee9785316622995845d15b9052b">DBus::SignalMessage</a>
@@ -81,7 +87,7 @@
 : <a class="el" href="classDBus_1_1Error.html#a8a4613531b242abd5e12b2937ef04a46">DBus::Error</a>
 </li>
 <li>Message()
-: <a class="el" href="classDBus_1_1Message.html#a3d858b2294bc0456629ada56818fe379">DBus::Message</a>
+: <a class="el" href="classDBus_1_1Message.html#a0bdb4a2df61c1736221e194c259af460">DBus::Message</a>
 </li>
 <li>message()
 : <a class="el" href="classDBus_1_1MessageAppendIterator.html#a8437e25939698baff4db029f9e691d83">DBus::MessageAppendIterator</a>
@@ -102,12 +108,58 @@
 <li>MessageIterator()
 : <a class="el" href="classDBus_1_1MessageIterator.html#a017b625274bd747e4bcafbba7c699bb9">DBus::MessageIterator</a>
 </li>
+<li>method()
+: <a class="el" href="classDBus_1_1Interface.html#a3929d2160944b02aa01b8a56e3ee2e72">DBus::Interface</a>
+, <a class="el" href="classDBus_1_1InterfaceProxy.html#a6d85b3ffbebe12fa817397da134fb27d">DBus::InterfaceProxy</a>
+</li>
+<li>Method()
+: <a class="el" href="classDBus_1_1Method.html#a5737449b67408a0be5803a1af3395cfe">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a84ad40cafe86b176af81aa99e94aa5e3">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a68e9a3031735df9ae8124a0376b09cc7">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a4d41da4892ef1eee58649b915fa8a7e5">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a73ede0b4c64786124a870ef22a7469cd">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a1d57a6bd64b38651f4e98096f64b3ca9">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a5a9b080fc9032d71f3ab304d5b334c28">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ade8ba499f39409abeb7a237e41254318">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a3daf60f6ad11d3ed758f78fd67986995">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#aeb5965767ab3d96a0e66b9704d78aa31">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#abd88207501cc16edb4f56a69166ea888">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a012db59e1dd5164e953870e94618fe04">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a376ba4229e3aef63c773ffdbf492cce0">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a9c8fee678ab91c9dfe82216b671263b6">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a198ecccccbfbcb6dd73bd7c6828c089f">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;</a>
+, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#a1220fae105d82eede9b6f57715e4b791">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;</a>
+</li>
 <li>MethodBase()
 : <a class="el" href="classDBus_1_1MethodBase.html#a8c839607a2549edd93a74f2b4c7619a9">DBus::MethodBase</a>
+</li>
+<li>MethodProxy()
+: <a class="el" href="classDBus_1_1MethodProxy.html#a1d1e152149797ca0bcf84eea0c979cf0">DBus::MethodProxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a526fa7be79388b1a36c9075cfdabc0f8">DBus::MethodProxy&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#aca8ae2bf086e8103a0f669db649d99f8">DBus::MethodProxy&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a9fd7e5f9091862ea415ee6fa88917e04">DBus::MethodProxy&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#acbe77e7f4151b971a9fbb23efdbf08cf">DBus::MethodProxy&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a43f98b0f1c3488f25419881a11e9d27e">DBus::MethodProxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#aed4b6676027e932aacd92982187bea6d">DBus::MethodProxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01b3fd1dd5c0ecb4fb3916a1a85dc69902.html#acdef23ac12b350ff09f06c5070b2df68">DBus::MethodProxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a17baa891397095aeace2d9b608d96fa7">DBus::MethodProxy&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#afff225da2fe5d790ea0eddd3661aae1e">DBus::MethodProxy&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a516573bb947d2b67089e0822f06f1008">DBus::MethodProxy&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a9b2cf218e3e89c1b1cb44ea119ea247a">DBus::MethodProxy&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a48040f886eac908b8769a9657a4af3f2">DBus::MethodProxy&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a2f3ce96ba872a01f70fe7e8f6922f266">DBus::MethodProxy&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;</a>
+, <a class="el" href="classDBus_1_1MethodProxy_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a8f64b3648141358d421fc5205c0f6217">DBus::MethodProxy&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;</a>
+</li>
+<li>MethodProxyBase()
+: <a class="el" href="classDBus_1_1MethodProxyBase.html#a5a2db8fd801e4b2d1f8094e03252db8f">DBus::MethodProxyBase</a>
+</li>
+<li>methods()
+: <a class="el" href="classDBus_1_1Interface.html#af4f2e33f330538708a13d0d6584e5f4e">DBus::Interface</a>
+, <a class="el" href="classDBus_1_1InterfaceProxy.html#a07314cb48d695c686ac86242d4e73e56">DBus::InterfaceProxy</a>
 </li>
 </ul>
 </div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Sat Dec 15 2018 17:19:21 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Dec 30 2018 17:26:37 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>
