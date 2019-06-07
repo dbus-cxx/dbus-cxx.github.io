@@ -126,7 +126,7 @@ Method Proxies <ul>
 <div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( msg-&gt;is_call( <span class="stringliteral">&quot;Calculator.Basic&quot;</span>, <span class="stringliteral">&quot;mul&quot;</span> ) ) answer = param1 * param2;</div>
 <div class="line">  <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( msg-&gt;is_call( <span class="stringliteral">&quot;Calculator.Basic&quot;</span>, <span class="stringliteral">&quot;div&quot;</span> ) ) answer = param1 / param2;</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordflow">if</span> ( not isnan(answer) )</div>
+<div class="line">  <span class="keywordflow">if</span> ( not std::isnan(answer) )</div>
 <div class="line">  {</div>
 <div class="line">    <span class="comment">// create a reply from the message</span></div>
 <div class="line">    reply = msg-&gt;create_reply( );</div>
@@ -145,6 +145,6 @@ Method Proxies <ul>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Thu Jan 3 2019 00:42:38 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Feb 3 2019 21:48:20 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>

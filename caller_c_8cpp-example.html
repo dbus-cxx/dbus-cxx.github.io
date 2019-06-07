@@ -80,7 +80,7 @@ Method Proxies <ul>
 <div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;popt.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"></div>
@@ -106,9 +106,9 @@ Method Proxies <ul>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">if</span> ( op == NULL ) op = strdup(<span class="stringliteral">&quot;add&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordflow">if</span> ( isnan(param1) ) param1 = 3.3;</div>
+<div class="line">  <span class="keywordflow">if</span> ( std::isnan(param1) ) param1 = 3.3;</div>
 <div class="line"></div>
-<div class="line">  <span class="keywordflow">if</span> ( isnan(param2) ) param2 = 4.4;</div>
+<div class="line">  <span class="keywordflow">if</span> ( std::isnan(param2) ) param2 = 4.4;</div>
 <div class="line"></div>
 <div class="line">  <span class="keywordflow">if</span> ( not (strcmp(op,<span class="stringliteral">&quot;add&quot;</span>)==0 or strcmp(op,<span class="stringliteral">&quot;sub&quot;</span>)==0 or strcmp(op,<span class="stringliteral">&quot;mul&quot;</span>)==0 or strcmp(op,<span class="stringliteral">&quot;div&quot;</span>)==0) ) {</div>
 <div class="line">    fprintf( stderr, <span class="stringliteral">&quot;ERROR: Operation &#39;%s&#39; is invalid.\n\nOperation is case sensitive and must be one of:\n\tadd\n\tsub\n\tmul\n\tdiv\n&quot;</span>, op );</div>
@@ -212,6 +212,6 @@ Method Proxies <ul>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Thu Jan 3 2019 00:42:38 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Feb 3 2019 21:48:20 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>

@@ -43,12 +43,12 @@ Concepts #6, #7 and #8: Smart Pointers, pointer and create()</h1>
 <dl class="section user"><dt></dt><dd>Each class also has static <code>create()</code> methods with parameters that are identical to the class' constructors. Class constructors are <code>protected</code>, so in general you cannot access them.</dd></dl>
 <dl class="section user"><dt></dt><dd>Instead, you will need to use the class' <code>create()</code> method to dynamically creates an instance of the class. This method will returns a smart pointer of the appropriate type for that class similar to the way the <code>new</code> operator dynamically creates an object and returns a raw pointer to the newly created object.</dd></dl>
 <dl class="section user"><dt></dt><dd>Since the <code>create()</code> method is static, you do not need an instance of the class to call it; <code>Classname::create()</code> is sufficient. Thus, to create a new dbus-cxx call message you would use <code><a class="el" href="classDBus_1_1CallMessage.html#a260417008d455a9dd8f71da794c1f810">DBus::CallMessage::create()</a></code> and to create a new dbus-cxx connection you would use <code><a class="el" href="classDBus_1_1Connection.html#ab08fabd19db195594895ea251e7e3247">DBus::Connection::create()</a></code>.</dd></dl>
-<dl class="section user"><dt></dt><dd>Naturally, the smart pointer returned from <code>create()</code> can be assigned to the class' <code>pointer</code> type, which allows you to use a syntax such as: <div class="fragment"><div class="line"><a class="code" href="classDBus_1_1CallMessage.html#a31bf4dd4822b5f671dcd051586d1789b">DBus::CallMessage::pointer</a> my_callmessage = <a class="code" href="classDBus_1_1CallMessage.html#a260417008d455a9dd8f71da794c1f810">DBus::CallMessage::create</a>(); </div>
+<dl class="section user"><dt></dt><dd>Naturally, the smart pointer returned from <code>create()</code> can be assigned to the class' <code>pointer</code> type, which allows you to use a syntax such as: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;DBus::CallMessage::pointer my_callmessage = DBus::CallMessage::create(); </div>
 </div><!-- fragment --></dd></dl>
 <p><b>Continue On:</b> <a class="el" href="quick_start_example_0.html">Quick start example 0: A simple server and client</a></p>
 <p><b>Go Back:</b> <a class="el" href="quick_start_pkgconfig.html">Using pkgconfig</a> </p>
 </div></div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Thu Jan 3 2019 00:42:38 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
+Generated on Sun Feb 3 2019 21:48:20 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.8</small></address>
 </body>
 </html>
