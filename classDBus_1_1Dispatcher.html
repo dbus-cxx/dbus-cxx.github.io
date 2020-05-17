@@ -75,6 +75,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acc0824383d315de9d97043aa52ec087d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a36227c27d607501a31ae9eaa0b089"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Dispatcher.html#a33a36227c27d607501a31ae9eaa0b089">create_connection</a> (<a class="el" href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764">BusType</a> <a class="el" href="namespaceDBus.html#a35efa0002d427e90818ffcf19fcac698">type</a>, bool is_private=false)</td></tr>
 <tr class="separator:a33a36227c27d607501a31ae9eaa0b089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897db98a369328d926c711d2114abbb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Dispatcher.html#a897db98a369328d926c711d2114abbb0">create_connection</a> (std::string address, bool is_private=false)</td></tr>
+<tr class="separator:a897db98a369328d926c711d2114abbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d40341d406ab38ad7af7617817a4997"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Dispatcher.html#a6d40341d406ab38ad7af7617817a4997">create_connection</a> (const <a class="el" href="classDBus_1_1Connection.html">Connection</a> &amp;other)</td></tr>
 <tr class="separator:a6d40341d406ab38ad7af7617817a4997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669a1c7be0dea6a754e650f6b9959ad5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Dispatcher.html#a669a1c7be0dea6a754e650f6b9959ad5">add_connection</a> (<a class="el" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a> connection)</td></tr>
@@ -347,7 +349,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="acc0824383d315de9d97043aa52ec087d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc0824383d315de9d97043aa52ec087d">&#9670;&nbsp;</a></span>create_connection() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc0824383d315de9d97043aa52ec087d">&#9670;&nbsp;</a></span>create_connection() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,7 +379,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a33a36227c27d607501a31ae9eaa0b089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33a36227c27d607501a31ae9eaa0b089">&#9670;&nbsp;</a></span>create_connection() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a36227c27d607501a31ae9eaa0b089">&#9670;&nbsp;</a></span>create_connection() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,8 +408,38 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a897db98a369328d926c711d2114abbb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a897db98a369328d926c711d2114abbb0">&#9670;&nbsp;</a></span>create_connection() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">Connection::pointer</a> DBus::Dispatcher::create_connection </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_private</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Dispatcher.html#a669a1c7be0dea6a754e650f6b9959ad5">add_connection()</a>, and <a class="el" href="classDBus_1_1Connection.html#ab08fabd19db195594895ea251e7e3247">DBus::Connection::create()</a>.</p>
+
+</div>
+</div>
 <a id="a6d40341d406ab38ad7af7617817a4997"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d40341d406ab38ad7af7617817a4997">&#9670;&nbsp;</a></span>create_connection() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d40341d406ab38ad7af7617817a4997">&#9670;&nbsp;</a></span>create_connection() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1078,6 +1110,6 @@ Protected Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 <hr size="1"><address style="align: right;"><small>
-Generated on Fri Jun 7 2019 01:00:59 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.13</small></address>
+Generated on Wed Feb 12 2020 22:28:11 for dbus-cxx by&nbsp;<a href="http://www.doxygen.org/index.html"><img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.8.13</small></address>
 </body>
 </html>
