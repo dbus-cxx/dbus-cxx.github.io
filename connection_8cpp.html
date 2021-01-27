@@ -36,78 +36,284 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">connection.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="utility_8h_source.html">utility.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="dbus-cxx-private_8h_source.html">dbus-cxx-private.h</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;sys/time.h&gt;</code><br />
-<code>#include &lt;cassert&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="connection_8h_source.html">connection.h</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="interfaceproxy_8h_source.html">dbus-cxx/interfaceproxy.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="signalmessage_8h_source.html">dbus-cxx/signalmessage.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="errormessage_8h_source.html">dbus-cxx/errormessage.h</a>&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="callmessage_8h_source.html">callmessage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="dbus-cxx-private_8h_source.html">dbus-cxx-private.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="error_8h_source.html">error.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="message_8h_source.html">message.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="objectproxy_8h_source.html">objectproxy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="path_8h_source.html">path.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pendingcall_8h_source.html">pendingcall.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="returnmessage_8h_source.html">returnmessage.h</a>&quot;</code><br />
+<code>#include &lt;sigc++/sigc++.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="signalproxy_8h_source.html">signalproxy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="transport_8h_source.html">transport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="simpletransport_8h_source.html">simpletransport.h</a>&quot;</code><br />
+<code>#include &lt;poll.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="utility_8h_source.html">utility.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="DBusDaemonProxy_8h_source.html">daemon-proxy/DBusDaemonProxy.h</a>&quot;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;sys/ioctl.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for connection.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="connection_8cpp__incl.png" border="0" usemap="#connection_8cpp" alt=""/></div>
 <map name="connection_8cpp" id="connection_8cpp">
-<area shape="rect" id="node2" href="utility_8h.html" title="utility.h" alt="" coords="2344,468,2411,495"/>
-<area shape="rect" id="node7" href="connection_8h.html" title="connection.h" alt="" coords="2017,80,2121,107"/>
-<area shape="rect" id="node34" href="signalmessage_8h.html" title="dbus&#45;cxx/signalmessage.h" alt="" coords="449,550,639,577"/>
-<area shape="rect" id="node48" href="dbus-cxx-private_8h.html" title="dbus&#45;cxx&#45;private.h" alt="" coords="2510,386,2650,413"/>
-<area shape="rect" id="node4" href="pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="2448,707,2587,733"/>
-<area shape="rect" id="node6" href="simplelogger__defs_8h.html" title="dbus&#45;cxx/simplelogger\l_defs.h" alt="" coords="2435,543,2600,584"/>
-<area shape="rect" id="node5" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="2420,781,2615,808"/>
-<area shape="rect" id="node10" href="message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="945,632,1100,659"/>
-<area shape="rect" id="node16" href="returnmessage_8h.html" title="dbus&#45;cxx/returnmessage.h" alt="" coords="246,304,439,331"/>
-<area shape="rect" id="node18" href="pendingcall_8h.html" title="dbus&#45;cxx/pendingcall.h" alt="" coords="1950,468,2117,495"/>
-<area shape="rect" id="node20" href="watch_8h.html" title="dbus&#45;cxx/watch.h" alt="" coords="2827,632,2959,659"/>
-<area shape="rect" id="node21" href="timeout_8h.html" title="dbus&#45;cxx/timeout.h" alt="" coords="2345,155,2490,181"/>
-<area shape="rect" id="node25" href="accumulators_8h.html" title="dbus&#45;cxx/accumulators.h" alt="" coords="2075,550,2258,577"/>
-<area shape="rect" id="node27" href="object_8h.html" title="dbus&#45;cxx/object.h" alt="" coords="1042,229,1177,256"/>
-<area shape="rect" id="node31" href="dbus__signal_8h.html" title="dbus&#45;cxx/dbus_signal.h" alt="" coords="1197,386,1368,413"/>
-<area shape="rect" id="node38" href="method_8h.html" title="dbus&#45;cxx/method.h" alt="" coords="1529,386,1674,413"/>
-<area shape="rect" id="node42" href="objectproxy_8h.html" title="dbus&#45;cxx/objectproxy.h" alt="" coords="457,155,623,181"/>
-<area shape="rect" id="node43" href="signal__proxy_8h.html" title="dbus&#45;cxx/signal_proxy.h" alt="" coords="515,304,687,331"/>
-<area shape="rect" id="node46" href="messagefilter_8h.html" title="dbus&#45;cxx/messagefilter.h" alt="" coords="2065,304,2247,331"/>
-<area shape="rect" id="node14" href="messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="1393,707,1593,733"/>
-<area shape="rect" id="node15" href="messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="816,707,1064,733"/>
-<area shape="rect" id="node17" href="callmessage_8h.html" title="dbus&#45;cxx/callmessage.h" alt="" coords="846,550,1021,577"/>
-<area shape="rect" id="node26" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="1973,632,2112,659"/>
-<area shape="rect" id="node28" href="forward__decls_8h.html" title="dbus&#45;cxx/forward_decls.h" alt="" coords="1147,468,1330,495"/>
-<area shape="rect" id="node29" href="objectpathhandler_8h.html" title="dbus&#45;cxx/objectpathhandler.h" alt="" coords="1329,304,1540,331"/>
-<area shape="rect" id="node36" href="interface_8h.html" title="dbus&#45;cxx/interface.h" alt="" coords="867,304,1018,331"/>
-<area shape="rect" id="node30" href="messagehandler_8h.html" title="dbus&#45;cxx/messagehandler.h" alt="" coords="2061,386,2262,413"/>
-<area shape="rect" id="node33" href="signal__base_8h.html" title="dbus&#45;cxx/signal_base.h" alt="" coords="499,468,669,495"/>
-<area shape="rect" id="node35" href="headerlog_8h.html" title="dbus&#45;cxx/headerlog.h" alt="" coords="1354,468,1513,495"/>
-<area shape="rect" id="node37" href="methodbase_8h.html" title="dbus&#45;cxx/methodbase.h" alt="" coords="845,468,1021,495"/>
-<area shape="rect" id="node39" href="errormessage_8h.html" title="dbus&#45;cxx/errormessage.h" alt="" coords="1502,550,1687,577"/>
-<area shape="rect" id="node45" href="interfaceproxy_8h.html" title="dbus&#45;cxx/interfaceproxy.h" alt="" coords="383,229,567,256"/>
-<area shape="rect" id="node44" href="signal__proxy__base_8h.html" title="dbus&#45;cxx/signal_proxy\l_base.h" alt="" coords="424,379,587,420"/>
-<area shape="rect" id="node49" href="simplelogger_8h.html" title="simplelogger.h" alt="" coords="2485,468,2600,495"/>
+<area shape="rect" id="node2" href="connection_8h.html" title="connection.h" alt="" coords="1642,155,1747,181"/>
+<area shape="rect" id="node5" href="utility_8h.html" title="dbus&#45;cxx/utility.h" alt="" coords="2048,304,2181,331"/>
+<area shape="rect" id="node6" href="callmessage_8h.html" title="dbus&#45;cxx/callmessage.h" alt="" coords="1425,386,1604,413"/>
+<area shape="rect" id="node7" href="message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="1461,468,1617,495"/>
+<area shape="rect" id="node8" href="error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="98,543,225,569"/>
+<area shape="rect" id="node14" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1055,468,1182,495"/>
+<area shape="rect" id="node16" href="returnmessage_8h.html" title="dbus&#45;cxx/returnmessage.h" alt="" coords="2003,386,2197,413"/>
+<area shape="rect" id="node19" href="signalmessage_8h.html" title="dbus&#45;cxx/signalmessage.h" alt="" coords="1207,386,1401,413"/>
+<area shape="rect" id="node20" href="signalproxy_8h.html" title="dbus&#45;cxx/signalproxy.h" alt="" coords="1873,229,2044,256"/>
+<area shape="rect" id="node22" href="errormessage_8h.html" title="dbus&#45;cxx/errormessage.h" alt="" coords="1308,304,1495,331"/>
+<area shape="rect" id="node28" href="interfaceproxy_8h.html" title="dbus&#45;cxx/interfaceproxy.h" alt="" coords="2807,155,2998,181"/>
+<area shape="rect" id="node37" href="dbus-cxx-private_8h.html" title="dbus&#45;cxx&#45;private.h" alt="" coords="3964,229,4108,256"/>
+<area shape="rect" id="node39" href="object_8h.html" title="object.h" alt="" coords="3560,155,3635,181"/>
+<area shape="rect" id="node40" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="3063,80,3172,107"/>
+<area shape="rect" id="node41" href="pendingcall_8h.html" title="pendingcall.h" alt="" coords="2307,304,2416,331"/>
+<area shape="rect" id="node42" href="transport_8h.html" title="transport.h" alt="" coords="684,468,777,495"/>
+<area shape="rect" id="node43" href="simpletransport_8h.html" title="simpletransport.h" alt="" coords="791,304,929,331"/>
+<area shape="rect" id="node45" href="DBusDaemonProxy_8h.html" title="daemon&#45;proxy/DBusDaemonProxy.h" alt="" coords="301,468,558,495"/>
+<area shape="rect" id="node4" href="signal_8h.html" title="dbus&#45;cxx/signal.h" alt="" coords="2068,229,2204,256"/>
+<area shape="rect" id="node13" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="2888,543,3029,569"/>
+<area shape="rect" id="node21" href="threaddispatcher_8h.html" title="dbus&#45;cxx/threaddispatcher.h" alt="" coords="1895,468,2102,495"/>
+<area shape="rect" id="node23" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="2968,386,3168,413"/>
+<area shape="rect" id="node17" href="simplelogger__defs_8h.html" title="dbus&#45;cxx/simplelogger\l_defs.h" alt="" coords="3964,379,4135,420"/>
+<area shape="rect" id="node11" href="dbus-error_8h.html" title="dbus&#45;cxx/dbus&#45;error.h" alt="" coords="5,617,168,644"/>
+<area shape="rect" id="node29" href="methodproxybase_8h.html" title="dbus&#45;cxx/methodproxybase.h" alt="" coords="2431,229,2646,256"/>
+<area shape="rect" id="node33" href="propertyproxy_8h.html" title="dbus&#45;cxx/propertyproxy.h" alt="" coords="2931,304,3117,331"/>
+<area shape="rect" id="node38" href="simplelogger_8h.html" title="simplelogger.h" alt="" coords="4045,304,4163,331"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespacesigc"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesigc.html">sigc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceDBus"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html">DBus</a></td></tr>
 <tr class="memdesc:namespaceDBus"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> namespace, where everything happens. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aaf1afb34971adfe748c6b673ccd24cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aaf1afb34971adfe748c6b673ccd24cac">DBus::conn_wp_deleter</a> (void *v)</td></tr>
-<tr class="separator:aaf1afb34971adfe748c6b673ccd24cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a635427cc31e5e21682507da11b9ea8d3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a635427cc31e5e21682507da11b9ea8d3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a635427cc31e5e21682507da11b9ea8d3">DBus::deleter</a> (void *p)</td></tr>
-<tr class="separator:a635427cc31e5e21682507da11b9ea8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afecff69ddc52c05e9481b9feacaf54dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#afecff69ddc52c05e9481b9feacaf54dc">DBUSCXX_REQUEST_NAME_REPLY_PRIMARY_OWNER</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:afecff69ddc52c05e9481b9feacaf54dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a040926caa099e6de7e11d6e4c630b344"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#a040926caa099e6de7e11d6e4c630b344">DBUSCXX_REQUEST_NAME_REPLY_IN_QUEUE</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:a040926caa099e6de7e11d6e4c630b344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30eab707a38d06af8e54ee421339eda6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#a30eab707a38d06af8e54ee421339eda6">DBUSCXX_REQUEST_NAME_REPLY_EXISTS</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:a30eab707a38d06af8e54ee421339eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c87dbc65bf6d2269cc67d84e2e7f9e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#a2c87dbc65bf6d2269cc67d84e2e7f9e5">DBUSCXX_REQUEST_NAME_REPLY_ALREADY_OWNER</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:a2c87dbc65bf6d2269cc67d84e2e7f9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b59fda39f76fbeeda5a7969929ce74"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#af4b59fda39f76fbeeda5a7969929ce74">DBUSCXX_RELEASE_NAME_REPLY_RELEASED</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:af4b59fda39f76fbeeda5a7969929ce74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada84f28c0ab6563f2b10bd715b59a5d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#ada84f28c0ab6563f2b10bd715b59a5d0">DBUSCXX_RELEASE_NAME_REPLY_NON_EXISTENT</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ada84f28c0ab6563f2b10bd715b59a5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ec1150fa2a3da8b2d6d61359b029c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#aa1ec1150fa2a3da8b2d6d61359b029c5">DBUSCXX_RELEASE_NAME_REPLY_NOT_OWNER</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:aa1ec1150fa2a3da8b2d6d61359b029c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bacf70046ee763d0322192cddd1609b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#a4bacf70046ee763d0322192cddd1609b">DBUSCXX_START_REPLY_SUCCESS</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:a4bacf70046ee763d0322192cddd1609b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed7244eeae4a68946f439f4039f9493f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#aed7244eeae4a68946f439f4039f9493f">DBUSCXX_START_REPLY_ALREADY_RUNNING</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:aed7244eeae4a68946f439f4039f9493f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa804a796c19a504cc8f60912b8e84a5b"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connection_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a> = &quot;DBus.Connection&quot;</td></tr>
+<tr class="separator:aa804a796c19a504cc8f60912b8e84a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ada84f28c0ab6563f2b10bd715b59a5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada84f28c0ab6563f2b10bd715b59a5d0">&#9670;&nbsp;</a></span>DBUSCXX_RELEASE_NAME_REPLY_NON_EXISTENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_RELEASE_NAME_REPLY_NON_EXISTENT&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#add5778485ef47e695cda8ab104975e24">DBus::Connection::release_name()</a>.</p>
+
+</div>
+</div>
+<a id="aa1ec1150fa2a3da8b2d6d61359b029c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ec1150fa2a3da8b2d6d61359b029c5">&#9670;&nbsp;</a></span>DBUSCXX_RELEASE_NAME_REPLY_NOT_OWNER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_RELEASE_NAME_REPLY_NOT_OWNER&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#add5778485ef47e695cda8ab104975e24">DBus::Connection::release_name()</a>.</p>
+
+</div>
+</div>
+<a id="af4b59fda39f76fbeeda5a7969929ce74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b59fda39f76fbeeda5a7969929ce74">&#9670;&nbsp;</a></span>DBUSCXX_RELEASE_NAME_REPLY_RELEASED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_RELEASE_NAME_REPLY_RELEASED&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#add5778485ef47e695cda8ab104975e24">DBus::Connection::release_name()</a>.</p>
+
+</div>
+</div>
+<a id="a2c87dbc65bf6d2269cc67d84e2e7f9e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c87dbc65bf6d2269cc67d84e2e7f9e5">&#9670;&nbsp;</a></span>DBUSCXX_REQUEST_NAME_REPLY_ALREADY_OWNER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_REQUEST_NAME_REPLY_ALREADY_OWNER&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#a07f9916256bcc152e87c93355e2789b8">DBus::Connection::request_name()</a>.</p>
+
+</div>
+</div>
+<a id="a30eab707a38d06af8e54ee421339eda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30eab707a38d06af8e54ee421339eda6">&#9670;&nbsp;</a></span>DBUSCXX_REQUEST_NAME_REPLY_EXISTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_REQUEST_NAME_REPLY_EXISTS&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#a07f9916256bcc152e87c93355e2789b8">DBus::Connection::request_name()</a>.</p>
+
+</div>
+</div>
+<a id="a040926caa099e6de7e11d6e4c630b344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a040926caa099e6de7e11d6e4c630b344">&#9670;&nbsp;</a></span>DBUSCXX_REQUEST_NAME_REPLY_IN_QUEUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_REQUEST_NAME_REPLY_IN_QUEUE&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#a07f9916256bcc152e87c93355e2789b8">DBus::Connection::request_name()</a>.</p>
+
+</div>
+</div>
+<a id="afecff69ddc52c05e9481b9feacaf54dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecff69ddc52c05e9481b9feacaf54dc">&#9670;&nbsp;</a></span>DBUSCXX_REQUEST_NAME_REPLY_PRIMARY_OWNER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_REQUEST_NAME_REPLY_PRIMARY_OWNER&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#a07f9916256bcc152e87c93355e2789b8">DBus::Connection::request_name()</a>.</p>
+
+</div>
+</div>
+<a id="aed7244eeae4a68946f439f4039f9493f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7244eeae4a68946f439f4039f9493f">&#9670;&nbsp;</a></span>DBUSCXX_START_REPLY_ALREADY_RUNNING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_START_REPLY_ALREADY_RUNNING&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#ad78921e8a43266486f90b73e50985c1f">DBus::Connection::start_service()</a>.</p>
+
+</div>
+</div>
+<a id="a4bacf70046ee763d0322192cddd1609b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bacf70046ee763d0322192cddd1609b">&#9670;&nbsp;</a></span>DBUSCXX_START_REPLY_SUCCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_START_REPLY_SUCCESS&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#ad78921e8a43266486f90b73e50985c1f">DBus::Connection::start_service()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa804a796c19a504cc8f60912b8e84a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa804a796c19a504cc8f60912b8e84a5b">&#9670;&nbsp;</a></span>LOGGER_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* LOGGER_NAME = &quot;DBus.Connection&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#a95a68679f993a1c8ee620d1b8f3c9f20">DBus::Connection::add_free_signal_proxy()</a>, <a class="el" href="classDBus_1_1Connection.html#a37d263f3027aba63a777400e68f8c218">DBus::Connection::add_match()</a>, <a class="el" href="classDBus_1_1Connection.html#a7dd607a83a55416d2cfe7c6aae56c47b">DBus::Connection::Connection()</a>, <a class="el" href="classDBus_1_1Connection.html#af5811e7ad183ebc162f4416e0e1115a7">DBus::Connection::dispatch()</a>, <a class="el" href="classDBus_1_1Connection.html#a6c3305bce6cc2c062da47cf42c6d3316">DBus::Connection::process_single_message()</a>, <a class="el" href="classDBus_1_1Connection.html#a8a17cb77b25bd5c4ecf93b7e755db4d7">DBus::Connection::register_object()</a>, <a class="el" href="classDBus_1_1Connection.html#aa486c936f3a1f28630a49ec9d5a3ec84">DBus::Connection::remove_free_signal_proxy()</a>, and <a class="el" href="classDBus_1_1Connection.html#a449c084aecbc7ddaf73f838f1dbaea94">DBus::Connection::send_with_reply_blocking()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

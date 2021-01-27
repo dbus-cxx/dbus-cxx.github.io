@@ -38,12 +38,16 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classDBus_1_1Signature-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DBus::Signature Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signature.  
+ <a href="classDBus_1_1Signature.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="signature_8h_source.html">signature.h</a>&gt;</code></p>
 <table class="memberdecls">
@@ -68,9 +72,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aacac209d240f607c182375e900c6cb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7acd967a9017a5c6f0bccd27bb1a0d50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a7acd967a9017a5c6f0bccd27bb1a0d50">Signature</a> (<a class="el" href="classDBus_1_1Signature.html#a985cf3a0dbcc647b27c3aadeb34cf4c9">size_type</a> n, char c)</td></tr>
 <tr class="separator:a7acd967a9017a5c6f0bccd27bb1a0d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd4214b0fc4fc62060208d38675aba2"><td class="memTemplParams" colspan="2">template&lt;class InputIterator &gt; </td></tr>
-<tr class="memitem:adfd4214b0fc4fc62060208d38675aba2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#adfd4214b0fc4fc62060208d38675aba2">Signature</a> (InputIterator first, InputIterator last)</td></tr>
-<tr class="separator:adfd4214b0fc4fc62060208d38675aba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54d12a93b25ab283fb198c4c9799349d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a54d12a93b25ab283fb198c4c9799349d">~Signature</a> ()</td></tr>
 <tr class="separator:a54d12a93b25ab283fb198c4c9799349d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae265cd20ca4390d8b61c0533bb456b24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#ae265cd20ca4390d8b61c0533bb456b24">operator const std::string &amp;</a> () const</td></tr>
@@ -97,19 +98,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a48fd47d7ce4413ff238a81081a711f19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a48fd47d7ce4413ff238a81081a711f19">is_singleton</a> () const</td></tr>
 <tr class="memdesc:a48fd47d7ce4413ff238a81081a711f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the signature is a valid <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signature and contains exactly one complete type.  <a href="#a48fd47d7ce4413ff238a81081a711f19">More...</a><br /></td></tr>
 <tr class="separator:a48fd47d7ce4413ff238a81081a711f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d66697c31e31a1f581daec8aa70866f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a0d66697c31e31a1f581daec8aa70866f">print_tree</a> (std::ostream *stream) const</td></tr>
+<tr class="memdesc:a0d66697c31e31a1f581daec8aa70866f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the signature tree to the given ostream.  <a href="#a0d66697c31e31a1f581daec8aa70866f">More...</a><br /></td></tr>
+<tr class="separator:a0d66697c31e31a1f581daec8aa70866f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad57504b8f6925d7929f767cb076843e1"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classDBus_1_1Signature.html#a985cf3a0dbcc647b27c3aadeb34cf4c9">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#ad57504b8f6925d7929f767cb076843e1">npos</a> = std::string::npos</td></tr>
 <tr class="separator:ad57504b8f6925d7929f767cb076843e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a13dd0ed0aaa8e67771b06d73cffc8964"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a></td></tr>
-<tr class="separator:a13dd0ed0aaa8e67771b06d73cffc8964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5fed224dd6d4e14735e0d4547c596136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">initialize</a> ()</td></tr>
+<tr class="separator:a5fed224dd6d4e14735e0d4547c596136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6975d67d704cf32bcbc23a7c1487141c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classDBus_1_1priv_1_1SignatureNode.html">priv::SignatureNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a6975d67d704cf32bcbc23a7c1487141c">create_signature_tree</a> (std::string::const_iterator *it, std::stack&lt; <a class="el" href="namespaceDBus.html#a02db06ae5b6e9b60925a1e4a08dd147e">ContainerType</a> &gt; *container_stack, bool *ok)</td></tr>
+<tr class="separator:a6975d67d704cf32bcbc23a7c1487141c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b29b9583ae02bc11f1a0ca88a7b202e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a4b29b9583ae02bc11f1a0ca88a7b202e">print_node</a> (std::ostream *stream, <a class="el" href="classDBus_1_1priv_1_1SignatureNode.html">priv::SignatureNode</a> *node, int spaces) const</td></tr>
+<tr class="separator:a4b29b9583ae02bc11f1a0ca88a7b202e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a458ef5d83bfdd6991a47b8017370b944"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; priv_data &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a></td></tr>
+<tr class="separator:a458ef5d83bfdd6991a47b8017370b944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Rick L Vinyard Jr <a href="#" onclick="location.href='mai'+'lto:'+'rvi'+'ny'+'ard'+'@c'+'s.n'+'ms'+'u.e'+'du'; return false;">rviny<span style="display: none;">.nosp@m.</span>ard@<span style="display: none;">.nosp@m.</span>cs.nm<span style="display: none;">.nosp@m.</span>su.e<span style="display: none;">.nosp@m.</span>du</a> </dd></dl>
+<div class="textblock"><p>Represents a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signature. </p>
+<p><a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signatures indicate what type of data the message contains/the method parameters.</p>
+<dl class="section author"><dt>Author</dt><dd>Rick L Vinyard Jr <a href="#" onclick="location.href='mai'+'lto:'+'rvi'+'ny'+'ard'+'@c'+'s.n'+'ms'+'u.e'+'du'; return false;">rviny<span style="display: none;">.nosp@m.</span>ard@<span style="display: none;">.nosp@m.</span>cs.nm<span style="display: none;">.nosp@m.</span>su.e<span style="display: none;">.nosp@m.</span>du</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a642a456d48d60e8205344b0f57fa7f35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a642a456d48d60e8205344b0f57fa7f35">&#9670;&nbsp;</a></span>const_iterator</h2>
@@ -155,7 +170,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8c2509d28783c682335b28ae5d67e718"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c2509d28783c682335b28ae5d67e718">&#9670;&nbsp;</a></span>Signature() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2509d28783c682335b28ae5d67e718">&#9670;&nbsp;</a></span>Signature() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +187,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="af3d1e86fc977a17c4940b245848b9342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3d1e86fc977a17c4940b245848b9342">&#9670;&nbsp;</a></span>Signature() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af3d1e86fc977a17c4940b245848b9342">&#9670;&nbsp;</a></span>Signature() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,10 +218,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">initialize()</a>, and <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
+
 </div>
 </div>
 <a id="a03347c4b191526766229160a67af0b30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03347c4b191526766229160a67af0b30">&#9670;&nbsp;</a></span>Signature() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a03347c4b191526766229160a67af0b30">&#9670;&nbsp;</a></span>Signature() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,10 +238,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">initialize()</a>, and <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
+
 </div>
 </div>
 <a id="aacac209d240f607c182375e900c6cb0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacac209d240f607c182375e900c6cb0c">&#9670;&nbsp;</a></span>Signature() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aacac209d240f607c182375e900c6cb0c">&#9670;&nbsp;</a></span>Signature() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,10 +268,12 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">initialize()</a>, and <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
+
 </div>
 </div>
 <a id="a7acd967a9017a5c6f0bccd27bb1a0d50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7acd967a9017a5c6f0bccd27bb1a0d50">&#9670;&nbsp;</a></span>Signature() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7acd967a9017a5c6f0bccd27bb1a0d50">&#9670;&nbsp;</a></span>Signature() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,45 +298,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="adfd4214b0fc4fc62060208d38675aba2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfd4214b0fc4fc62060208d38675aba2">&#9670;&nbsp;</a></span>Signature() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class InputIterator &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DBus::Signature::Signature </td>
-          <td>(</td>
-          <td class="paramtype">InputIterator&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InputIterator&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a785a631918467e7af92232a502a16f8d">operator=()</a>, <a class="el" href="classDBus_1_1Signature.html#a151cda8ff2ff150ff3590fafc6c7b8f6">str()</a>, and <a class="el" href="classDBus_1_1Signature.html#a54d12a93b25ab283fb198c4c9799349d">~Signature()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">initialize()</a>, and <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
 </div>
 </div>
@@ -333,8 +316,6 @@ template&lt;class InputIterator &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#adfd4214b0fc4fc62060208d38675aba2">Signature()</a>.</p>
 
 </div>
 </div>
@@ -354,9 +335,9 @@ template&lt;class InputIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#a889cc558624a09abaeb38d40f4e4ec1b">operator==()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Demarshaling.html#a6ebf4ee9e26b0d57ce93dc1b637002bb">DBus::Demarshaling::demarshal_variant()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a178b2c08bb20b627669aae3b89186f51">DBus::ErrorMessage::message()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ae7d67e498e38405dc1e2f991734ff2a2">DBus::MessageIterator::MessageIterator()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1194f2f420f72e3243bbbdb051e0ebac">DBus::priv::VariantAppendIterator::open_container()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#af326a67630bb1aab30c69554578dd5cb">DBus::MessageAppendIterator::open_container()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aadccb20150d4bea74b5a2ba4d33e789c">DBus::priv::VariantIterator::VariantIterator()</a>.</p>
 
 </div>
 </div>
@@ -375,7 +356,53 @@ template&lt;class InputIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
+
+</div>
+</div>
+<a id="a6975d67d704cf32bcbc23a7c1487141c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6975d67d704cf32bcbc23a7c1487141c">&#9670;&nbsp;</a></span>create_signature_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classDBus_1_1priv_1_1SignatureNode.html">priv::SignatureNode</a> &gt; DBus::Signature::create_signature_tree </td>
+          <td>(</td>
+          <td class="paramtype">std::string::const_iterator *&#160;</td>
+          <td class="paramname"><em>it</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::stack&lt; <a class="el" href="namespaceDBus.html#a02db06ae5b6e9b60925a1e4a08dd147e">ContainerType</a> &gt; *&#160;</td>
+          <td class="paramname"><em>container_stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ae7f87c543afd7ff67a87c7a108749552">DBus::char_to_container_type()</a>, <a class="el" href="namespaceDBus.html#abdca886328b802b9ad5ad91aa7445d11">DBus::char_to_dbus_type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, <a class="el" href="classDBus_1_1TypeInfo.html#aabab59895f312feba93a71e65e3c6913">DBus::TypeInfo::is_basic()</a>, <a class="el" href="classDBus_1_1TypeInfo.html#a3ac99c421e4bd45b9fb37a2f512d6033">DBus::TypeInfo::is_container()</a>, <a class="el" href="namespaceDBus.html#a61beb0cb150a77d2d67b099b1db1cf2a">DBus::is_ending_container()</a>, <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ab8223be2455e0ea5a0e63e8f018d6fc3">DBus::STRUCT</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acda7182af4cc0451672a1cd50d36f3a2">DBus::VARIANT</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">initialize()</a>.</p>
 
 </div>
 </div>
@@ -393,8 +420,6 @@ template&lt;class InputIterator &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#a889cc558624a09abaeb38d40f4e4ec1b">operator==()</a>.</p>
 
 </div>
 </div>
@@ -415,6 +440,35 @@ template&lt;class InputIterator &gt; </div>
 
 </div>
 </div>
+<a id="a5fed224dd6d4e14735e0d4547c596136"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fed224dd6d4e14735e0d4547c596136">&#9670;&nbsp;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBus::Signature::initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a6975d67d704cf32bcbc23a7c1487141c">create_signature_tree()</a>, <a class="el" href="signature_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a>, and <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#af3d1e86fc977a17c4940b245848b9342">Signature()</a>.</p>
+
+</div>
+</div>
 <a id="a48fd47d7ce4413ff238a81081a711f19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a48fd47d7ce4413ff238a81081a711f19">&#9670;&nbsp;</a></span>is_singleton()</h2>
 
@@ -432,9 +486,7 @@ template&lt;class InputIterator &gt; </div>
 
 <p>True if the signature is a valid <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signature and contains exactly one complete type. </p>
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#a889cc558624a09abaeb38d40f4e4ec1b">operator==()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, and <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
 </div>
 </div>
@@ -455,9 +507,7 @@ template&lt;class InputIterator &gt; </div>
 
 <p>True if the signature is a valid <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signature. </p>
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#a889cc558624a09abaeb38d40f4e4ec1b">operator==()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
 </div>
 </div>
@@ -476,7 +526,7 @@ template&lt;class InputIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
 </div>
 </div>
@@ -496,9 +546,7 @@ template&lt;class InputIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#adfd4214b0fc4fc62060208d38675aba2">Signature()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
 </div>
 </div>
@@ -518,7 +566,7 @@ template&lt;class InputIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
 </div>
 </div>
@@ -546,7 +594,77 @@ template&lt;class InputIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#aa53aa8f32d1f92f9ec919723fa042a3a">begin()</a>, <a class="el" href="classDBus_1_1Signature.html#a18ce3d15e4fa6428d655404c46cc1072">end()</a>, <a class="el" href="classDBus_1_1Signature.html#a48fd47d7ce4413ff238a81081a711f19">is_singleton()</a>, <a class="el" href="classDBus_1_1Signature.html#a77aa5d4cb793043cb509ec3defe7e3ab">is_valid()</a>, and <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
+</div>
+</div>
+<a id="a4b29b9583ae02bc11f1a0ca88a7b202e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b29b9583ae02bc11f1a0ca88a7b202e">&#9670;&nbsp;</a></span>print_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBus::Signature::print_node </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1priv_1_1SignatureNode.html">priv::SignatureNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>spaces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1priv_1_1SignatureNode.html#a269ca8d076f2090a2be273950e30cea5">DBus::priv::SignatureNode::m_dataType</a>.</p>
+
+</div>
+</div>
+<a id="a0d66697c31e31a1f581daec8aa70866f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d66697c31e31a1f581daec8aa70866f">&#9670;&nbsp;</a></span>print_tree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBus::Signature::print_tree </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream *&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Print the signature tree to the given ostream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
 </div>
 </div>
@@ -565,15 +683,15 @@ template&lt;class InputIterator &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a13dd0ed0aaa8e67771b06d73cffc8964">m_signature</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">m_priv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="signature_8h.html#abc62b568fa3a1497ce150b96e08c3b61">operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1Signature.html#adfd4214b0fc4fc62060208d38675aba2">Signature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#adc9debfbe7c5e49ba39a489c3b7ab41f">DBus::Message::append_signature()</a>, <a class="el" href="classDBus_1_1Marshaling.html#add3bab1580b423b1b8d3826f05135a35">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a264e3c2354ebd097c9b368876ca0e661">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, and <a class="el" href="namespaceDBus.html#af13a908a8b167b26bac8c17408706691">DBus::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a13dd0ed0aaa8e67771b06d73cffc8964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13dd0ed0aaa8e67771b06d73cffc8964">&#9670;&nbsp;</a></span>m_signature</h2>
+<a id="a458ef5d83bfdd6991a47b8017370b944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a458ef5d83bfdd6991a47b8017370b944">&#9670;&nbsp;</a></span>m_priv</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,17 +700,17 @@ template&lt;class InputIterator &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string DBus::Signature::m_signature</td>
+          <td class="memname">std::shared_ptr&lt;priv_data&gt; DBus::Signature::m_priv</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#aa53aa8f32d1f92f9ec919723fa042a3a">begin()</a>, <a class="el" href="classDBus_1_1Signature.html#a48fd47d7ce4413ff238a81081a711f19">is_singleton()</a>, <a class="el" href="classDBus_1_1Signature.html#a77aa5d4cb793043cb509ec3defe7e3ab">is_valid()</a>, <a class="el" href="classDBus_1_1Signature.html#ae265cd20ca4390d8b61c0533bb456b24">operator const std::string &amp;()</a>, <a class="el" href="classDBus_1_1Signature.html#a785a631918467e7af92232a502a16f8d">operator=()</a>, <a class="el" href="classDBus_1_1Signature.html#a889cc558624a09abaeb38d40f4e4ec1b">operator==()</a>, and <a class="el" href="classDBus_1_1Signature.html#a151cda8ff2ff150ff3590fafc6c7b8f6">str()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Signature.html#aa53aa8f32d1f92f9ec919723fa042a3a">begin()</a>, <a class="el" href="classDBus_1_1Signature.html#a6975d67d704cf32bcbc23a7c1487141c">create_signature_tree()</a>, <a class="el" href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">initialize()</a>, <a class="el" href="classDBus_1_1Signature.html#a48fd47d7ce4413ff238a81081a711f19">is_singleton()</a>, <a class="el" href="classDBus_1_1Signature.html#a77aa5d4cb793043cb509ec3defe7e3ab">is_valid()</a>, <a class="el" href="classDBus_1_1Signature.html#ae265cd20ca4390d8b61c0533bb456b24">operator const std::string &amp;()</a>, <a class="el" href="classDBus_1_1Signature.html#a785a631918467e7af92232a502a16f8d">operator=()</a>, <a class="el" href="classDBus_1_1Signature.html#a0d66697c31e31a1f581daec8aa70866f">print_tree()</a>, <a class="el" href="classDBus_1_1Signature.html#af3d1e86fc977a17c4940b245848b9342">Signature()</a>, and <a class="el" href="classDBus_1_1Signature.html#a151cda8ff2ff150ff3590fafc6c7b8f6">str()</a>.</p>
 
 </div>
 </div>
@@ -625,7 +743,7 @@ template&lt;class InputIterator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

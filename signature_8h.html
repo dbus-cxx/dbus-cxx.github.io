@@ -37,32 +37,33 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">signature.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="path_8h_source.html">dbus-cxx/path.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="signatureiterator_8h_source.html">dbus-cxx/signatureiterator.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="dbus-cxx-config_8h_source.html">dbus-cxx/dbus-cxx-config.h</a>&gt;</code><br />
+<code>#include &lt;any&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;<a class="el" href="signatureiterator_8h_source.html">dbus-cxx/signatureiterator.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="path_8h_source.html">dbus-cxx/path.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="variant_8h_source.html">dbus-cxx/variant.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="filedescriptor_8h_source.html">dbus-cxx/filedescriptor.h</a>&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;stack&gt;</code><br />
+<code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for signature.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="signature_8h__incl.png" border="0" usemap="#signature_8h" alt=""/></div>
 <map name="signature_8h" id="signature_8h">
-<area shape="rect" id="node6" href="signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="395,80,596,107"/>
-<area shape="rect" id="node14" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="247,80,371,107"/>
-<area shape="rect" id="node15" href="variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="695,80,834,107"/>
-<area shape="rect" id="node16" href="filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="858,80,1034,107"/>
-<area shape="rect" id="node9" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="686,155,825,181"/>
-<area shape="rect" id="node10" href="error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="435,155,561,181"/>
-<area shape="rect" id="node12" href="pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="482,229,621,256"/>
-<area shape="rect" id="node13" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="454,304,649,331"/>
+<area shape="rect" id="node3" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="152,80,279,107"/>
+<area shape="rect" id="node6" href="signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="405,80,610,107"/>
+<area shape="rect" id="node7" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="270,155,411,181"/>
+<area shape="rect" id="node9" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="435,155,635,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -70,55 +71,55 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="signature_8h__dep__incl.png" border="0" usemap="#signature_8hdep" alt=""/></div>
 <map name="signature_8hdep" id="signature_8hdep">
-<area shape="rect" id="node2" href="signature_8cpp.html" title="signature.cpp" alt="" coords="888,80,997,107"/>
-<area shape="rect" id="node3" href="types_8h.html" title="types.h" alt="" coords="1021,80,1090,107"/>
-<area shape="rect" id="node4" href="forward__decls_8h.html" title="forward_decls.h" alt="" coords="282,379,403,405"/>
-<area shape="rect" id="node33" href="messageappenditerator_8h.html" title="messageappenditerator.h" alt="" coords="869,155,1056,181"/>
-<area shape="rect" id="node49" href="messageiterator_8h.html" title="messageiterator.h" alt="" coords="1080,155,1218,181"/>
-<area shape="rect" id="node50" href="signatureiterator_8cpp.html" title="signatureiterator.cpp" alt="" coords="1242,155,1397,181"/>
-<area shape="rect" id="node5" href="dbus__signal_8h.html" title="dbus_signal.h" alt="" coords="1441,677,1550,704"/>
-<area shape="rect" id="node7" href="method_8h.html" title="method.h" alt="" coords="343,827,427,853"/>
-<area shape="rect" id="node8" href="interface_8h.html" title="interface.h" alt="" coords="340,901,430,928"/>
-<area shape="rect" id="node9" href="object_8h.html" title="object.h" alt="" coords="975,976,1048,1003"/>
-<area shape="rect" id="node23" href="methodproxy_8h.html" title="methodproxy.h" alt="" coords="361,528,478,555"/>
-<area shape="rect" id="node27" href="methodproxybase_8h.html" title="methodproxybase.h" alt="" coords="580,453,731,480"/>
-<area shape="rect" id="node28" href="messagehandler_8h.html" title="messagehandler.h" alt="" coords="968,603,1108,629"/>
-<area shape="rect" id="node6" href="connection_8h.html" title="connection.h" alt="" coords="869,752,973,779"/>
-<area shape="rect" id="node12" href="objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="256,976,378,1003"/>
-<area shape="rect" id="node13" href="method__impl_8h.html" title="method_impl.h" alt="" coords="848,901,967,928"/>
-<area shape="rect" id="node14" href="connection_8cpp.html" title="connection.cpp" alt="" coords="1362,827,1480,853"/>
-<area shape="rect" id="node15" href="dispatcher_8h.html" title="dispatcher.h" alt="" coords="1050,827,1150,853"/>
-<area shape="rect" id="node17" href="interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="129,827,268,853"/>
-<area shape="rect" id="node18" href="messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="631,827,766,853"/>
-<area shape="rect" id="node19" href="messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="452,827,606,853"/>
-<area shape="rect" id="node20" href="objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="1174,827,1338,853"/>
-<area shape="rect" id="node21" href="signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="1658,827,1782,853"/>
-<area shape="rect" id="node22" href="utility_8cpp.html" title="utility.cpp" alt="" coords="842,827,923,853"/>
-<area shape="rect" id="node11" href="interface_8cpp.html" title="interface.cpp" alt="" coords="402,976,507,1003"/>
-<area shape="rect" id="node10" href="object_8cpp.html" title="object.cpp" alt="" coords="968,1051,1056,1077"/>
-<area shape="rect" id="node16" href="dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="1233,901,1348,928"/>
-<area shape="rect" id="node24" href="interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="164,603,286,629"/>
-<area shape="rect" id="node25" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="129,677,236,704"/>
-<area shape="rect" id="node26" href="methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="361,677,526,704"/>
-<area shape="rect" id="node29" href="messagefilter_8h.html" title="messagefilter.h" alt="" coords="861,677,981,704"/>
-<area shape="rect" id="node30" href="objectpathhandler_8h.html" title="objectpathhandler.h" alt="" coords="1329,752,1478,779"/>
-<area shape="rect" id="node31" href="signalreceiver_8h.html" title="signalreceiver.h" alt="" coords="1626,677,1747,704"/>
-<area shape="rect" id="node32" href="signalreceiver_8cpp.html" title="signalreceiver.cpp" alt="" coords="1661,752,1797,779"/>
-<area shape="rect" id="node34" href="message_8h.html" title="message.h" alt="" coords="1102,229,1196,256"/>
-<area shape="rect" id="node43" href="messageappenditerator_8cpp.html" title="messageappenditerator.cpp" alt="" coords="580,304,782,331"/>
-<area shape="rect" id="node35" href="callmessage_8h.html" title="callmessage.h" alt="" coords="806,304,921,331"/>
-<area shape="rect" id="node38" href="message_8cpp.html" title="message.cpp" alt="" coords="960,453,1068,480"/>
-<area shape="rect" id="node40" href="error_8cpp.html" title="error.cpp" alt="" coords="1235,304,1314,331"/>
-<area shape="rect" id="node41" href="errormessage_8h.html" title="errormessage.h" alt="" coords="1087,304,1211,331"/>
-<area shape="rect" id="node44" href="messageiterator_8cpp.html" title="messageiterator.cpp" alt="" coords="1492,304,1646,331"/>
-<area shape="rect" id="node45" href="pendingcall_8h.html" title="pendingcall.h" alt="" coords="996,379,1102,405"/>
-<area shape="rect" id="node47" href="signalmessage_8h.html" title="signalmessage.h" alt="" coords="1745,528,1876,555"/>
-<area shape="rect" id="node36" href="callmessage_8cpp.html" title="callmessage.cpp" alt="" coords="807,453,936,480"/>
-<area shape="rect" id="node37" href="returnmessage_8h.html" title="returnmessage.h" alt="" coords="703,379,835,405"/>
-<area shape="rect" id="node39" href="methodbase_8h.html" title="methodbase.h" alt="" coords="270,752,385,779"/>
-<area shape="rect" id="node42" href="errormessage_8cpp.html" title="errormessage.cpp" alt="" coords="1177,379,1316,405"/>
-<area shape="rect" id="node46" href="pendingcall_8cpp.html" title="pendingcall.cpp" alt="" coords="1092,453,1214,480"/>
-<area shape="rect" id="node48" href="signal__base_8h.html" title="signal_base.h" alt="" coords="1533,603,1642,629"/>
+<area shape="rect" id="node2" href="variant_8h.html" title="variant.h" alt="" coords="976,229,1056,256"/>
+<area shape="rect" id="node15" href="utility_8h.html" title="utility.h" alt="" coords="1798,603,1869,629"/>
+<area shape="rect" id="node21" href="property_8h.html" title="property.h" alt="" coords="671,677,758,704"/>
+<area shape="rect" id="node31" href="messageappenditerator_8cpp.html" title="messageappenditerator.cpp" alt="" coords="2553,528,2756,555"/>
+<area shape="rect" id="node35" href="variant_8cpp.html" title="variant.cpp" alt="" coords="489,453,583,480"/>
+<area shape="rect" id="node36" href="demarshaling_8h.html" title="demarshaling.h" alt="" coords="2300,304,2423,331"/>
+<area shape="rect" id="node39" href="messageappenditerator_8h.html" title="messageappenditerator.h" alt="" coords="881,379,1069,405"/>
+<area shape="rect" id="node40" href="marshaling_8cpp.html" title="marshaling.cpp" alt="" coords="360,304,483,331"/>
+<area shape="rect" id="node44" href="types_8h.html" title="types.h" alt="" coords="2307,80,2378,107"/>
+<area shape="rect" id="node45" href="signature_8cpp.html" title="signature.cpp" alt="" coords="2743,155,2854,181"/>
+<area shape="rect" id="node49" href="marshaling_8h.html" title="marshaling.h" alt="" coords="507,155,613,181"/>
+<area shape="rect" id="node50" href="variantappenditerator_8h.html" title="variantappenditerator.h" alt="" coords="94,155,269,181"/>
+<area shape="rect" id="node3" href="message_8h.html" title="message.h" alt="" coords="1764,453,1857,480"/>
+<area shape="rect" id="node5" href="callmessage_8cpp.html" title="callmessage.cpp" alt="" coords="2339,677,2469,704"/>
+<area shape="rect" id="node13" href="property_8cpp.html" title="property.cpp" alt="" coords="886,827,989,853"/>
+<area shape="rect" id="node14" href="message_8cpp.html" title="message.cpp" alt="" coords="782,677,890,704"/>
+<area shape="rect" id="node18" href="propertyproxy_8cpp.html" title="propertyproxy.cpp" alt="" coords="517,901,656,928"/>
+<area shape="rect" id="node32" href="messageiterator_8cpp.html" title="messageiterator.cpp" alt="" coords="2324,528,2479,555"/>
+<area shape="rect" id="node34" href="messageiterator_8h.html" title="messageiterator.h" alt="" coords="1633,379,1773,405"/>
+<area shape="rect" id="node41" href="propertyproxy_8h.html" title="propertyproxy.h" alt="" coords="523,677,647,704"/>
+<area shape="rect" id="node42" href="propertiesinterfaceproxy_8cpp.html" title="propertiesinterfaceproxy.cpp" alt="" coords="912,304,1120,331"/>
+<area shape="rect" id="node43" href="variantappenditerator_8cpp.html" title="variantappenditerator.cpp" alt="" coords="94,304,285,331"/>
+<area shape="rect" id="node4" href="callmessage_8h.html" title="callmessage.h" alt="" coords="1570,528,1686,555"/>
+<area shape="rect" id="node6" href="errormessage_8h.html" title="errormessage.h" alt="" coords="2046,603,2170,629"/>
+<area shape="rect" id="node7" href="connection_8cpp.html" title="connection.cpp" alt="" coords="1855,901,1975,928"/>
+<area shape="rect" id="node8" href="errormessage_8cpp.html" title="errormessage.cpp" alt="" coords="2720,677,2859,704"/>
+<area shape="rect" id="node12" href="object_8cpp.html" title="object.cpp" alt="" coords="1618,901,1707,928"/>
+<area shape="rect" id="node22" href="sendmsgtransport_8cpp.html" title="sendmsgtransport.cpp" alt="" coords="2097,677,2263,704"/>
+<area shape="rect" id="node24" href="simpletransport_8cpp.html" title="simpletransport.cpp" alt="" coords="2544,677,2696,704"/>
+<area shape="rect" id="node25" href="utility_8cpp.html" title="utility.cpp" alt="" coords="1885,677,1971,704"/>
+<area shape="rect" id="node26" href="returnmessage_8cpp.html" title="returnmessage.cpp" alt="" coords="1475,603,1621,629"/>
+<area shape="rect" id="node27" href="returnmessage_8h.html" title="returnmessage.h" alt="" coords="1762,528,1894,555"/>
+<area shape="rect" id="node28" href="error_8cpp.html" title="error.cpp" alt="" coords="1217,528,1295,555"/>
+<area shape="rect" id="node29" href="signalmessage_8h.html" title="signalmessage.h" alt="" coords="1267,603,1399,629"/>
+<area shape="rect" id="node30" href="signalmessage_8cpp.html" title="signalmessage.cpp" alt="" coords="915,677,1061,704"/>
+<area shape="rect" id="node33" href="pendingcall_8cpp.html" title="pendingcall.cpp" alt="" coords="1319,528,1443,555"/>
+<area shape="rect" id="node9" href="methodbase_8h.html" title="methodbase.h" alt="" coords="1645,677,1760,704"/>
+<area shape="rect" id="node20" href="methodproxybase_8h.html" title="methodproxybase.h" alt="" coords="1136,677,1288,704"/>
+<area shape="rect" id="node10" href="interface_8h.html" title="interface.h" alt="" coords="1547,752,1639,779"/>
+<area shape="rect" id="node11" href="object_8h.html" title="object.h" alt="" coords="1625,827,1700,853"/>
+<area shape="rect" id="node16" href="signalproxy_8h.html" title="signalproxy.h" alt="" coords="1313,677,1421,704"/>
+<area shape="rect" id="node23" href="signal_8h.html" title="signal.h" alt="" coords="1497,677,1570,704"/>
+<area shape="rect" id="node17" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="1196,827,1305,853"/>
+<area shape="rect" id="node19" href="interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="1187,752,1314,779"/>
+<area shape="rect" id="node37" href="demarshaling_8cpp.html" title="demarshaling.cpp" alt="" coords="2185,379,2324,405"/>
+<area shape="rect" id="node38" href="variantiterator_8cpp.html" title="variantiterator.cpp" alt="" coords="2399,379,2542,405"/>
+<area shape="rect" id="node46" href="signatureiterator_8cpp.html" title="signatureiterator.cpp" alt="" coords="2460,155,2617,181"/>
+<area shape="rect" id="node47" href="types_8cpp.html" title="types.cpp" alt="" coords="2300,155,2385,181"/>
+<area shape="rect" id="node48" href="variantiterator_8h.html" title="variantiterator.h" alt="" coords="2098,155,2225,181"/>
 </map>
 </div>
 </div>
@@ -126,7 +127,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1SignatureNode.html">DBus::priv::SignatureNode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a single entry in our graph of the signature.  <a href="classDBus_1_1priv_1_1SignatureNode.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signature.html">DBus::Signature</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signature.  <a href="classDBus_1_1Signature.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1dbus__signature.html">DBus::priv::dbus_signature&lt; argn &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1dbus__signature_3_4.html">DBus::priv::dbus_signature&lt;&gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1dbus__signature_3_01arg1_00_01argn_8_8_8_01_4.html">DBus::priv::dbus_signature&lt; arg1, argn... &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -134,9 +145,58 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceDBus"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html">DBus</a></td></tr>
 <tr class="memdesc:namespaceDBus"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> namespace, where everything happens. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceDBus_1_1priv"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus_1_1priv.html">DBus::priv</a></td></tr>
+<tr class="memdesc:namespaceDBus_1_1priv"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private namespace for internal dbux-cxx implementation. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a16a546e3db5287e44056f3ec9ca03710"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a16a546e3db5287e44056f3ec9ca03710">DBUSCXX_TYPE_INVALID_AS_STRING</a>&#160;&#160;&#160;&quot;\0&quot;</td></tr>
+<tr class="separator:a16a546e3db5287e44056f3ec9ca03710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360ef773a8bf83622833f2d6b31d62b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a360ef773a8bf83622833f2d6b31d62b8">DBUSCXX_TYPE_BYTE_AS_STRING</a>&#160;&#160;&#160;&quot;y&quot;</td></tr>
+<tr class="separator:a360ef773a8bf83622833f2d6b31d62b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3c28e8b2ef714f2a7ebd42bb64bc57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a8d3c28e8b2ef714f2a7ebd42bb64bc57">DBUSCXX_TYPE_BOOLEAN_AS_STRING</a>&#160;&#160;&#160;&quot;b&quot;</td></tr>
+<tr class="separator:a8d3c28e8b2ef714f2a7ebd42bb64bc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d63b69c5e37255105d9a82f4e007b1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a2d63b69c5e37255105d9a82f4e007b1f">DBUSCXX_TYPE_INT16_AS_STRING</a>&#160;&#160;&#160;&quot;n&quot;</td></tr>
+<tr class="separator:a2d63b69c5e37255105d9a82f4e007b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa889328ce88d40b6cbc83e4e0f450be4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#aa889328ce88d40b6cbc83e4e0f450be4">DBUSCXX_TYPE_UINT16_AS_STRING</a>&#160;&#160;&#160;&quot;q&quot;</td></tr>
+<tr class="separator:aa889328ce88d40b6cbc83e4e0f450be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45dbfc40e5dce37f4c597e98721b1ded"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a45dbfc40e5dce37f4c597e98721b1ded">DBUSCXX_TYPE_INT32_AS_STRING</a>&#160;&#160;&#160;&quot;i&quot;</td></tr>
+<tr class="separator:a45dbfc40e5dce37f4c597e98721b1ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2454c49bfcec6253960e0191c4fe715"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#ae2454c49bfcec6253960e0191c4fe715">DBUSCXX_TYPE_UINT32_AS_STRING</a>&#160;&#160;&#160;&quot;u&quot;</td></tr>
+<tr class="separator:ae2454c49bfcec6253960e0191c4fe715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb747e8c2226592ca0dfc26ebe5a3bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#acbb747e8c2226592ca0dfc26ebe5a3bc">DBUSCXX_TYPE_INT64_AS_STRING</a>&#160;&#160;&#160;&quot;x&quot;</td></tr>
+<tr class="separator:acbb747e8c2226592ca0dfc26ebe5a3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9045d2481bc44f58cd5d80cb425b3e14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a9045d2481bc44f58cd5d80cb425b3e14">DBUSCXX_TYPE_UINT64_AS_STRING</a>&#160;&#160;&#160;&quot;t&quot;</td></tr>
+<tr class="separator:a9045d2481bc44f58cd5d80cb425b3e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f6ba915acbd60b7a8729f1f9d2329b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a00f6ba915acbd60b7a8729f1f9d2329b">DBUSCXX_TYPE_DOUBLE_AS_STRING</a>&#160;&#160;&#160;&quot;d&quot;</td></tr>
+<tr class="separator:a00f6ba915acbd60b7a8729f1f9d2329b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0ff8ad464ac93bb070dbb41c9b31a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a8e0ff8ad464ac93bb070dbb41c9b31a9">DBUSCXX_TYPE_STRING_AS_STRING</a>&#160;&#160;&#160;&quot;s&quot;</td></tr>
+<tr class="separator:a8e0ff8ad464ac93bb070dbb41c9b31a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70f6e16bc31bb06b16686eac0d48cde4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a70f6e16bc31bb06b16686eac0d48cde4">DBUSCXX_TYPE_SIGNATURE_AS_STRING</a>&#160;&#160;&#160;&quot;g&quot;</td></tr>
+<tr class="separator:a70f6e16bc31bb06b16686eac0d48cde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8e26db0bec537f0feea88be3fdefe5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#aab8e26db0bec537f0feea88be3fdefe5">DBUSCXX_TYPE_OBJECT_PATH_AS_STRING</a>&#160;&#160;&#160;&quot;o&quot;</td></tr>
+<tr class="separator:aab8e26db0bec537f0feea88be3fdefe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821938f994e7cd71a522d64655c7bdd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a821938f994e7cd71a522d64655c7bdd4">DBUSCXX_TYPE_VARIANT_AS_STRING</a>&#160;&#160;&#160;&quot;v&quot;</td></tr>
+<tr class="separator:a821938f994e7cd71a522d64655c7bdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5cbd799d99c0d98543f650648af28b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#aca5cbd799d99c0d98543f650648af28b">DBUSCXX_TYPE_UNIX_FD_AS_STRING</a>&#160;&#160;&#160;&quot;h&quot;</td></tr>
+<tr class="separator:aca5cbd799d99c0d98543f650648af28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac19a29df3fef3eb5e1a7b3c4867eba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a5ac19a29df3fef3eb5e1a7b3c4867eba">DBUSCXX_TYPE_ARRAY_AS_STRING</a>&#160;&#160;&#160;&quot;a&quot;</td></tr>
+<tr class="separator:a5ac19a29df3fef3eb5e1a7b3c4867eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf6d9f3b727d869077201f52ae35f4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#aacf6d9f3b727d869077201f52ae35f4e">DBUSCXX_DICT_ENTRY_BEGIN_CHAR_AS_STRING</a>&#160;&#160;&#160;&quot;{&quot;</td></tr>
+<tr class="separator:aacf6d9f3b727d869077201f52ae35f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900704d8aba2bd2e859ab6496b7fe273"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a900704d8aba2bd2e859ab6496b7fe273">DBUSCXX_DICT_ENTRY_END_CHAR_AS_STRING</a>&#160;&#160;&#160;&quot;}&quot;</td></tr>
+<tr class="separator:a900704d8aba2bd2e859ab6496b7fe273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106b0443ed3e24c7efb96934eab233af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a106b0443ed3e24c7efb96934eab233af">DBUSCXX_STRUCT_BEGIN_CHAR_AS_STRING</a>&#160;&#160;&#160;&quot;(&quot;</td></tr>
+<tr class="separator:a106b0443ed3e24c7efb96934eab233af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1006e0d2f9f62138d2d8a6b197430cde"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#a1006e0d2f9f62138d2d8a6b197430cde">DBUSCXX_STRUCT_END_CHAR_AS_STRING</a>&#160;&#160;&#160;&quot;)&quot;</td></tr>
+<tr class="separator:a1006e0d2f9f62138d2d8a6b197430cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad93f4116ec5f76d196080e8ca8b6c814"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:ad93f4116ec5f76d196080e8ca8b6c814"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ad93f4116ec5f76d196080e8ca8b6c814">DBus::signature</a> (const std::tuple&lt; T... &gt; &amp;)</td></tr>
+<tr class="separator:ad93f4116ec5f76d196080e8ca8b6c814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17ac14f20bfb624e33288d02fd51f35b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a17ac14f20bfb624e33288d02fd51f35b">DBus::signature</a> (uint8_t)</td></tr>
 <tr class="separator:a17ac14f20bfb624e33288d02fd51f35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb0748ec7775683022c89ede54f04230"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#afb0748ec7775683022c89ede54f04230">DBus::signature</a> (bool)</td></tr>
@@ -161,72 +221,348 @@ Functions</h2></td></tr>
 <tr class="separator:a3ce948c67c1e38c0ddf72c9dbaef94e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefe960cf2bc02ce8b01636b71c2f6f71"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aefe960cf2bc02ce8b01636b71c2f6f71">DBus::signature</a> (Path)</td></tr>
 <tr class="separator:aefe960cf2bc02ce8b01636b71c2f6f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99aa95e4e4e9bceb3a01e7173edffae7"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a99aa95e4e4e9bceb3a01e7173edffae7"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a99aa95e4e4e9bceb3a01e7173edffae7">DBus::signature</a> (const Variant&lt; T &gt;)</td></tr>
-<tr class="separator:a99aa95e4e4e9bceb3a01e7173edffae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedfae1da7cb0158af5062f5e96911d12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aedfae1da7cb0158af5062f5e96911d12">DBus::signature</a> (const FileDescriptor::pointer)</td></tr>
-<tr class="separator:aedfae1da7cb0158af5062f5e96911d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a135ac8c91f8a403696419ce54aa208e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a135ac8c91f8a403696419ce54aa208e1">DBus::signature</a> (char)</td></tr>
-<tr class="separator:a135ac8c91f8a403696419ce54aa208e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494a635b4719116d82b1ebbb0c453d8c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a494a635b4719116d82b1ebbb0c453d8c">DBus::signature</a> (int8_t)</td></tr>
-<tr class="separator:a494a635b4719116d82b1ebbb0c453d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7c37150e26dbea1a339d90a65f0a1f0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ae7c37150e26dbea1a339d90a65f0a1f0">DBus::signature</a> (float)</td></tr>
-<tr class="separator:ae7c37150e26dbea1a339d90a65f0a1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619c147ae8a3386dccaa816d4d0eb75b"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a619c147ae8a3386dccaa816d4d0eb75b"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a619c147ae8a3386dccaa816d4d0eb75b">DBus::signature</a> (const std::vector&lt; T &gt;)</td></tr>
-<tr class="separator:a619c147ae8a3386dccaa816d4d0eb75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2ad07015e3014436364e2aa2aff7c2a"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Data &gt; </td></tr>
-<tr class="memitem:ab2ad07015e3014436364e2aa2aff7c2a"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ab2ad07015e3014436364e2aa2aff7c2a">DBus::signature</a> (const std::map&lt; Key, Data &gt;)</td></tr>
-<tr class="separator:ab2ad07015e3014436364e2aa2aff7c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0324bc2bd89994df7ad5a6bbd12ca2e7"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Data &gt; </td></tr>
-<tr class="memitem:a0324bc2bd89994df7ad5a6bbd12ca2e7"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a0324bc2bd89994df7ad5a6bbd12ca2e7">DBus::signature_dict_data</a> (const std::map&lt; Key, Data &gt;)</td></tr>
-<tr class="separator:a0324bc2bd89994df7ad5a6bbd12ca2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc62b568fa3a1497ce150b96e08c3b61"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signature_8h.html#abc62b568fa3a1497ce150b96e08c3b61">operator&lt;&lt;</a> (std::ostream &amp;sout, const <a class="el" href="classDBus_1_1Signature.html">DBus::Signature</a> &amp;sig)</td></tr>
-<tr class="separator:abc62b568fa3a1497ce150b96e08c3b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9537a9cd85cba94eaa095b353fa223db"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a9537a9cd85cba94eaa095b353fa223db">DBus::signature</a> (const <a class="el" href="classDBus_1_1Variant.html">DBus::Variant</a> &amp;)</td></tr>
+<tr class="separator:a9537a9cd85cba94eaa095b353fa223db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ada61aa089a6ce1f14c2c007440064"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ad4ada61aa089a6ce1f14c2c007440064">DBus::signature</a> (const std::shared_ptr&lt; FileDescriptor &gt;)</td></tr>
+<tr class="separator:ad4ada61aa089a6ce1f14c2c007440064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb711bca73bf52ac927791b3719f25b0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:abb711bca73bf52ac927791b3719f25b0"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abb711bca73bf52ac927791b3719f25b0">DBus::signature</a> (const std::vector&lt; T &gt; &amp;)</td></tr>
+<tr class="separator:abb711bca73bf52ac927791b3719f25b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bcf0d75e61d6af325ac71505bd3a7a5"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Data &gt; </td></tr>
+<tr class="memitem:a4bcf0d75e61d6af325ac71505bd3a7a5"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a4bcf0d75e61d6af325ac71505bd3a7a5">DBus::signature</a> (const std::map&lt; Key, Data &gt; &amp;)</td></tr>
+<tr class="separator:a4bcf0d75e61d6af325ac71505bd3a7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bd2b3638df81cab2751c67b25fab780"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Data &gt; </td></tr>
+<tr class="memitem:a3bd2b3638df81cab2751c67b25fab780"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a3bd2b3638df81cab2751c67b25fab780">DBus::signature_dict_data</a> (const std::map&lt; Key, Data &gt; &amp;)</td></tr>
+<tr class="separator:a3bd2b3638df81cab2751c67b25fab780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ee7a75099f45e236adefb33025c4e8"><td class="memTemplParams" colspan="2">template&lt;typename... T_arg&gt; </td></tr>
+<tr class="memitem:a70ee7a75099f45e236adefb33025c4e8"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a70ee7a75099f45e236adefb33025c4e8">DBus::signature</a> (const std::tuple&lt; T_arg... &gt; &amp;)</td></tr>
+<tr class="separator:a70ee7a75099f45e236adefb33025c4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13a908a8b167b26bac8c17408706691"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#af13a908a8b167b26bac8c17408706691">DBus::operator&lt;&lt;</a> (std::ostream &amp;sout, const <a class="el" href="classDBus_1_1Signature.html">DBus::Signature</a> &amp;sig)</td></tr>
+<tr class="separator:af13a908a8b167b26bac8c17408706691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="abc62b568fa3a1497ce150b96e08c3b61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc62b568fa3a1497ce150b96e08c3b61">&#9670;&nbsp;</a></span>operator<<()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aacf6d9f3b727d869077201f52ae35f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf6d9f3b727d869077201f52ae35f4e">&#9670;&nbsp;</a></span>DBUSCXX_DICT_ENTRY_BEGIN_CHAR_AS_STRING</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>sout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classDBus_1_1Signature.html">DBus::Signature</a> &amp;&#160;</td>
-          <td class="paramname"><em>sig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#define DBUSCXX_DICT_ENTRY_BEGIN_CHAR_AS_STRING&#160;&#160;&#160;&quot;{&quot;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Signature.html#a151cda8ff2ff150ff3590fafc6c7b8f6">DBus::Signature::str()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a4bcf0d75e61d6af325ac71505bd3a7a5">DBus::signature()</a>, and <a class="el" href="namespaceDBus.html#a3bd2b3638df81cab2751c67b25fab780">DBus::signature_dict_data()</a>.</p>
+
+</div>
+</div>
+<a id="a900704d8aba2bd2e859ab6496b7fe273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900704d8aba2bd2e859ab6496b7fe273">&#9670;&nbsp;</a></span>DBUSCXX_DICT_ENTRY_END_CHAR_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_DICT_ENTRY_END_CHAR_AS_STRING&#160;&#160;&#160;&quot;}&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a4bcf0d75e61d6af325ac71505bd3a7a5">DBus::signature()</a>, and <a class="el" href="namespaceDBus.html#a3bd2b3638df81cab2751c67b25fab780">DBus::signature_dict_data()</a>.</p>
+
+</div>
+</div>
+<a id="a106b0443ed3e24c7efb96934eab233af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106b0443ed3e24c7efb96934eab233af">&#9670;&nbsp;</a></span>DBUSCXX_STRUCT_BEGIN_CHAR_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_STRUCT_BEGIN_CHAR_AS_STRING&#160;&#160;&#160;&quot;(&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a70ee7a75099f45e236adefb33025c4e8">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a1006e0d2f9f62138d2d8a6b197430cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1006e0d2f9f62138d2d8a6b197430cde">&#9670;&nbsp;</a></span>DBUSCXX_STRUCT_END_CHAR_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_STRUCT_END_CHAR_AS_STRING&#160;&#160;&#160;&quot;)&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a70ee7a75099f45e236adefb33025c4e8">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a5ac19a29df3fef3eb5e1a7b3c4867eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ac19a29df3fef3eb5e1a7b3c4867eba">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_ARRAY_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_ARRAY_AS_STRING&#160;&#160;&#160;&quot;a&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#abb711bca73bf52ac927791b3719f25b0">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a8d3c28e8b2ef714f2a7ebd42bb64bc57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3c28e8b2ef714f2a7ebd42bb64bc57">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_BOOLEAN_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_BOOLEAN_AS_STRING&#160;&#160;&#160;&quot;b&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#afb0748ec7775683022c89ede54f04230">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a360ef773a8bf83622833f2d6b31d62b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360ef773a8bf83622833f2d6b31d62b8">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_BYTE_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_BYTE_AS_STRING&#160;&#160;&#160;&quot;y&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a17ac14f20bfb624e33288d02fd51f35b">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a00f6ba915acbd60b7a8729f1f9d2329b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f6ba915acbd60b7a8729f1f9d2329b">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_DOUBLE_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_DOUBLE_AS_STRING&#160;&#160;&#160;&quot;d&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#ab3bdf3ec906006250d1fea790fb66757">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a2d63b69c5e37255105d9a82f4e007b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d63b69c5e37255105d9a82f4e007b1f">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_INT16_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_INT16_AS_STRING&#160;&#160;&#160;&quot;n&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a4200d411505bcb16601c347789e09dc5">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a45dbfc40e5dce37f4c597e98721b1ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45dbfc40e5dce37f4c597e98721b1ded">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_INT32_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_INT32_AS_STRING&#160;&#160;&#160;&quot;i&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a6e732a0e008a8cfcb21ee630bc6eff54">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="acbb747e8c2226592ca0dfc26ebe5a3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb747e8c2226592ca0dfc26ebe5a3bc">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_INT64_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_INT64_AS_STRING&#160;&#160;&#160;&quot;x&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a5f4da556e09a3799e9490e58f4d6682a">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a16a546e3db5287e44056f3ec9ca03710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16a546e3db5287e44056f3ec9ca03710">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_INVALID_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_INVALID_AS_STRING&#160;&#160;&#160;&quot;\0&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab8e26db0bec537f0feea88be3fdefe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8e26db0bec537f0feea88be3fdefe5">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_OBJECT_PATH_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_OBJECT_PATH_AS_STRING&#160;&#160;&#160;&quot;o&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#aefe960cf2bc02ce8b01636b71c2f6f71">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a70f6e16bc31bb06b16686eac0d48cde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70f6e16bc31bb06b16686eac0d48cde4">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_SIGNATURE_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_SIGNATURE_AS_STRING&#160;&#160;&#160;&quot;g&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a3ce948c67c1e38c0ddf72c9dbaef94e3">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a8e0ff8ad464ac93bb070dbb41c9b31a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0ff8ad464ac93bb070dbb41c9b31a9">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_STRING_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_STRING_AS_STRING&#160;&#160;&#160;&quot;s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#ac4b956fe6abc42315a58679e904e426e">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="aa889328ce88d40b6cbc83e4e0f450be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa889328ce88d40b6cbc83e4e0f450be4">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_UINT16_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_UINT16_AS_STRING&#160;&#160;&#160;&quot;q&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a124d7dd7a7da2d85e81d0c345352316f">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="ae2454c49bfcec6253960e0191c4fe715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2454c49bfcec6253960e0191c4fe715">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_UINT32_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_UINT32_AS_STRING&#160;&#160;&#160;&quot;u&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a9761516b60927a5b3ea624e5c4a06c98">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a9045d2481bc44f58cd5d80cb425b3e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9045d2481bc44f58cd5d80cb425b3e14">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_UINT64_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_UINT64_AS_STRING&#160;&#160;&#160;&quot;t&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#aec2aa000924a258adc31b1e56cea6604">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="aca5cbd799d99c0d98543f650648af28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5cbd799d99c0d98543f650648af28b">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_UNIX_FD_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_UNIX_FD_AS_STRING&#160;&#160;&#160;&quot;h&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#ad4ada61aa089a6ce1f14c2c007440064">DBus::signature()</a>.</p>
+
+</div>
+</div>
+<a id="a821938f994e7cd71a522d64655c7bdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a821938f994e7cd71a522d64655c7bdd4">&#9670;&nbsp;</a></span>DBUSCXX_TYPE_VARIANT_AS_STRING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUSCXX_TYPE_VARIANT_AS_STRING&#160;&#160;&#160;&quot;v&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a9537a9cd85cba94eaa095b353fa223db">DBus::signature()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

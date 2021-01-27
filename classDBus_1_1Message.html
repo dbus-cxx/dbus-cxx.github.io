@@ -35,15 +35,14 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classDBus_1_1Message-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DBus::Message Class Reference<div class="ingroups"><a class="el" href="group__message.html">DBus Messages</a></div></div>  </div>
+<div class="title">DBus::Message Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__message.html">DBus Messages</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -56,34 +55,17 @@ Inheritance diagram for DBus::Message:</div>
 <div class="dyncontent">
 <div class="center"><img src="classDBus_1_1Message__inherit__graph.png" border="0" usemap="#DBus_1_1Message_inherit__map" alt="Inheritance graph"/></div>
 <map name="DBus_1_1Message_inherit__map" id="DBus_1_1Message_inherit__map">
-<area shape="rect" id="node2" href="classDBus_1_1CallMessage.html" title="Represents a DBus call message. " alt="" coords="5,80,149,107"/>
-<area shape="rect" id="node3" href="classDBus_1_1ErrorMessage.html" title="Represents a DBus Error message. " alt="" coords="173,80,325,107"/>
-<area shape="rect" id="node4" href="classDBus_1_1ReturnMessage.html" title="Represents a DBus call return message. " alt="" coords="349,80,512,107"/>
-<area shape="rect" id="node5" href="classDBus_1_1SignalMessage.html" title="Represents a DBus signal message. " alt="" coords="536,80,696,107"/>
+<area shape="rect" id="node2" href="classDBus_1_1CallMessage.html" title="Represents a DBus call message. " alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node3" href="classDBus_1_1ErrorMessage.html" title="Represents a DBus Error message. " alt="" coords="176,80,328,107"/>
+<area shape="rect" id="node4" href="classDBus_1_1ReturnMessage.html" title="Represents a DBus call return message. " alt="" coords="352,80,515,107"/>
+<area shape="rect" id="node5" href="classDBus_1_1SignalMessage.html" title="Represents a DBus signal message. " alt="" coords="539,80,701,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aa450032dd53a0e0f9fd26093206be0a7"><td class="memItemLeft" align="right" valign="top">typedef DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Message.html">Message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">pointer</a></td></tr>
-<tr class="separator:aa450032dd53a0e0f9fd26093206be0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30b9cd71b63f5c0b5b97c4cff35b1a69"><td class="memItemLeft" align="right" valign="top">typedef DBusCxxPointer&lt; const <a class="el" href="classDBus_1_1Message.html">Message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">const_pointer</a></td></tr>
-<tr class="separator:a30b9cd71b63f5c0b5b97c4cff35b1a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dbf6bd0c1a47a30cf6660788c24b9eb"><td class="memItemLeft" align="right" valign="top">typedef DBusCxxWeakPointer&lt; <a class="el" href="classDBus_1_1Message.html">Message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a8dbf6bd0c1a47a30cf6660788c24b9eb">weak_pointer</a></td></tr>
-<tr class="separator:a8dbf6bd0c1a47a30cf6660788c24b9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae573692804e4c5cc3e968a6877555695"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">iterator</a></td></tr>
-<tr class="separator:ae573692804e4c5cc3e968a6877555695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba62b8b862af7221543bbcd2bce58553"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#aba62b8b862af7221543bbcd2bce58553">append_iterator</a></td></tr>
-<tr class="separator:aba62b8b862af7221543bbcd2bce58553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a71ab2a7f0e1f2d6952a2da07d59551f8"><td class="memItemLeft" align="right" valign="top">DBusCxxPointer&lt; <a class="el" href="classDBus_1_1ReturnMessage.html">ReturnMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a71ab2a7f0e1f2d6952a2da07d59551f8">create_reply</a> () const</td></tr>
-<tr class="separator:a71ab2a7f0e1f2d6952a2da07d59551f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a146dcac7b24ef4ce1fc2bbed710550df"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a146dcac7b24ef4ce1fc2bbed710550df">~Message</a> ()</td></tr>
 <tr class="separator:a146dcac7b24ef4ce1fc2bbed710550df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a884e4f67e9101f92ab5db2ed9e9a1f47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Message.html">Message</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a884e4f67e9101f92ab5db2ed9e9a1f47">operator=</a> (const <a class="el" href="classDBus_1_1Message.html">Message</a> &amp;m)</td></tr>
-<tr class="separator:a884e4f67e9101f92ab5db2ed9e9a1f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d59f2b20b27f808ea747e08d439c55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a14d59f2b20b27f808ea747e08d439c55">operator==</a> (const <a class="el" href="classDBus_1_1Message.html">Message</a> &amp;other)</td></tr>
 <tr class="separator:a14d59f2b20b27f808ea747e08d439c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f1936bbe62ecc66cb7a1005690af97c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a9f1936bbe62ecc66cb7a1005690af97c">is_valid</a> () const</td></tr>
@@ -94,157 +76,99 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a01835147aea6136720903675cca45447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ba619d7c9ad3d82838442d2d2fe310b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a3ba619d7c9ad3d82838442d2d2fe310b">serial</a> () const</td></tr>
 <tr class="separator:a3ba619d7c9ad3d82838442d2d2fe310b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34027b081ce9d5d197a50d37c21e7732"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a34027b081ce9d5d197a50d37c21e7732">type</a> () const</td></tr>
-<tr class="separator:a34027b081ce9d5d197a50d37c21e7732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8956ff73a8959bae39891da2895a92"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBus.html#a6b5b447b57489b4106d096545e528510">MessageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a1c8956ff73a8959bae39891da2895a92">type</a> () const =0</td></tr>
+<tr class="separator:a1c8956ff73a8959bae39891da2895a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb096f19a85f7c5bdce83489621fca9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#aeb096f19a85f7c5bdce83489621fca9d">set_auto_start</a> (bool <a class="el" href="classDBus_1_1Message.html#a712fba83283f4e8da530e1453dbc7617">auto_start</a>)</td></tr>
 <tr class="separator:aeb096f19a85f7c5bdce83489621fca9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712fba83283f4e8da530e1453dbc7617"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a712fba83283f4e8da530e1453dbc7617">auto_start</a> ()</td></tr>
+<tr class="memdesc:a712fba83283f4e8da530e1453dbc7617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the bus is allowed to start an owner for this message's destination if it is not running.  <a href="#a712fba83283f4e8da530e1453dbc7617">More...</a><br /></td></tr>
 <tr class="separator:a712fba83283f4e8da530e1453dbc7617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128b79afa866ca86a4ba6432e8a59921"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a128b79afa866ca86a4ba6432e8a59921">set_destination</a> (const std::string &amp;s)</td></tr>
+<tr class="memdesc:a128b79afa866ca86a4ba6432e8a59921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the destination of this message.  <a href="#a128b79afa866ca86a4ba6432e8a59921">More...</a><br /></td></tr>
 <tr class="separator:a128b79afa866ca86a4ba6432e8a59921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73dadd9c69222b2901825bf33919dcc3"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a73dadd9c69222b2901825bf33919dcc3">destination</a> () const</td></tr>
-<tr class="separator:a73dadd9c69222b2901825bf33919dcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73d3c4909f5c30ad465d08bc6191ec12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a73d3c4909f5c30ad465d08bc6191ec12">set_sender</a> (const std::string &amp;s)</td></tr>
-<tr class="separator:a73d3c4909f5c30ad465d08bc6191ec12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11e4607d4ce153ea63968160469d9817"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a11e4607d4ce153ea63968160469d9817">sender</a> () const</td></tr>
-<tr class="separator:a11e4607d4ce153ea63968160469d9817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2947afa546b5f45cdf8ee3cb152c47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a3d2947afa546b5f45cdf8ee3cb152c47">is_call</a> (const std::string &amp;interface, const std::string &amp;method) const</td></tr>
-<tr class="separator:a3d2947afa546b5f45cdf8ee3cb152c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a438e8001467d0167cc505db7e82c042a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a438e8001467d0167cc505db7e82c042a">is_signal</a> (const std::string &amp;interface, const std::string &amp;signal_name) const</td></tr>
-<tr class="separator:a438e8001467d0167cc505db7e82c042a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b3dfa2b8299084c4a32ed290a93bdc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a6b3dfa2b8299084c4a32ed290a93bdc2">is_error</a> (const std::string &amp;error_name) const</td></tr>
-<tr class="separator:a6b3dfa2b8299084c4a32ed290a93bdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f101217e2aa8d269cfc22c3954afd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a03f101217e2aa8d269cfc22c3954afd0">has_destination</a> (const std::string &amp;name) const</td></tr>
-<tr class="separator:a03f101217e2aa8d269cfc22c3954afd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9479f2b4657bff1e4d2ada79c50d648"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ad9479f2b4657bff1e4d2ada79c50d648">has_sender</a> (const std::string &amp;name) const</td></tr>
-<tr class="separator:ad9479f2b4657bff1e4d2ada79c50d648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace6262167772ffec13d19e4fb1be6612"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ace6262167772ffec13d19e4fb1be6612"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ace6262167772ffec13d19e4fb1be6612">operator&gt;&gt;</a> (T &amp;value) const</td></tr>
-<tr class="separator:ace6262167772ffec13d19e4fb1be6612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a426256fb6827ddc543d740d15e3f2d95"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a426256fb6827ddc543d740d15e3f2d95"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Message.html#aba62b8b862af7221543bbcd2bce58553">append_iterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a426256fb6827ddc543d740d15e3f2d95">operator&lt;&lt;</a> (const T &amp;value)</td></tr>
-<tr class="separator:a426256fb6827ddc543d740d15e3f2d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6edbed9ee5c3ee003d3aa5b33dd34075"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a6edbed9ee5c3ee003d3aa5b33dd34075">begin</a> () const</td></tr>
-<tr class="separator:a6edbed9ee5c3ee003d3aa5b33dd34075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee72ca56e64ad6ae6f43c7ccd3393377"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#aee72ca56e64ad6ae6f43c7ccd3393377">end</a> () const</td></tr>
-<tr class="separator:aee72ca56e64ad6ae6f43c7ccd3393377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1904ef366b84c9078b5971067cf2b991"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Message.html#aba62b8b862af7221543bbcd2bce58553">append_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a1904ef366b84c9078b5971067cf2b991">append</a> ()</td></tr>
-<tr class="separator:a1904ef366b84c9078b5971067cf2b991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a311ec58ddd3d587994b6192e13d71d4e"><td class="memItemLeft" align="right" valign="top">DBusMessage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a311ec58ddd3d587994b6192e13d71d4e">cobj</a> () const</td></tr>
-<tr class="separator:a311ec58ddd3d587994b6192e13d71d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9a10f3f6ad0fc6b98ab341ff85a109"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a2f9a10f3f6ad0fc6b98ab341ff85a109">destination</a> () const</td></tr>
+<tr class="separator:a2f9a10f3f6ad0fc6b98ab341ff85a109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d236f58270bd4f4eb308f21c57d4cd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a20d236f58270bd4f4eb308f21c57d4cd">sender</a> () const</td></tr>
+<tr class="separator:a20d236f58270bd4f4eb308f21c57d4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d335829d5e1ce11334fe6717f9efd3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Signature.html">Signature</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a0d335829d5e1ce11334fe6717f9efd3c">signature</a> () const</td></tr>
+<tr class="separator:a0d335829d5e1ce11334fe6717f9efd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a943a9fc582fa5a2175e77d224052a1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1a943a9fc582fa5a2175e77d224052a1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a1a943a9fc582fa5a2175e77d224052a1">operator&gt;&gt;</a> (T &amp;value) const</td></tr>
+<tr class="separator:a1a943a9fc582fa5a2175e77d224052a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad8bc28d359de1ad144a92d94af3315"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7ad8bc28d359de1ad144a92d94af3315"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;</a> (const T &amp;value)</td></tr>
+<tr class="separator:a7ad8bc28d359de1ad144a92d94af3315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9e98121a4c9b32a2e8890c56821248a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ae9e98121a4c9b32a2e8890c56821248a">begin</a> () const</td></tr>
+<tr class="separator:ae9e98121a4c9b32a2e8890c56821248a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab417f6db99c319362e332e6b5019c241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ab417f6db99c319362e332e6b5019c241">end</a> () const</td></tr>
+<tr class="separator:ab417f6db99c319362e332e6b5019c241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5542c93028baab7e8d8ab0896e8df0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#adf5542c93028baab7e8d8ab0896e8df0">append</a> ()</td></tr>
+<tr class="separator:adf5542c93028baab7e8d8ab0896e8df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef5abab506e0b812039dc19f4cb0c95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">serialize_to_vector</a> (std::vector&lt; uint8_t &gt; *vec, uint32_t <a class="el" href="classDBus_1_1Message.html#a3ba619d7c9ad3d82838442d2d2fe310b">serial</a>) const</td></tr>
+<tr class="memdesc:a5ef5abab506e0b812039dc19f4cb0c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this message to the given vector.  <a href="#a5ef5abab506e0b812039dc19f4cb0c95">More...</a><br /></td></tr>
+<tr class="separator:a5ef5abab506e0b812039dc19f4cb0c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a64aa04679e88aae695047c29d3e395"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field</a> (<a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636">MessageHeaderFields</a> field) const</td></tr>
+<tr class="memdesc:a0a64aa04679e88aae695047c29d3e395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the given header field(if it exists), otherwise returns a default constructed variant.  <a href="#a0a64aa04679e88aae695047c29d3e395">More...</a><br /></td></tr>
+<tr class="separator:a0a64aa04679e88aae695047c29d3e395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f097d0a45be79dd3c767fa2d570bf4a"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a2f097d0a45be79dd3c767fa2d570bf4a">flags</a> () const</td></tr>
+<tr class="memdesc:a2f097d0a45be79dd3c767fa2d570bf4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message flags, as the marshaled byte.  <a href="#a2f097d0a45be79dd3c767fa2d570bf4a">More...</a><br /></td></tr>
+<tr class="separator:a2f097d0a45be79dd3c767fa2d570bf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc04d17adae66be659bba02cfbe67f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#afc04d17adae66be659bba02cfbe67f6a">set_header_field</a> (<a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636">MessageHeaderFields</a> field, <a class="el" href="classDBus_1_1Variant.html">Variant</a> value)</td></tr>
+<tr class="memdesc:afc04d17adae66be659bba02cfbe67f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the given header field.  <a href="#afc04d17adae66be659bba02cfbe67f6a">More...</a><br /></td></tr>
+<tr class="separator:afc04d17adae66be659bba02cfbe67f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e729b433251fb6bff28081e760f6bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76c">Endianess</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ab2e729b433251fb6bff28081e760f6bb">endianess</a> () const</td></tr>
+<tr class="separator:ab2e729b433251fb6bff28081e760f6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1fd7d267cf9b64c12ad9679283d1abb"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ac1fd7d267cf9b64c12ad9679283d1abb">filedescriptors</a> () const</td></tr>
+<tr class="separator:ac1fd7d267cf9b64c12ad9679283d1abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac5ae03e456838e9d3131a6ed983e5320"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ac5ae03e456838e9d3131a6ed983e5320">create</a> (<a class="el" href="namespaceDBus.html#a52cac400f493766192d5e80e1fdcdb99">MessageType</a> <a class="el" href="classDBus_1_1Message.html#a34027b081ce9d5d197a50d37c21e7732">type</a>)</td></tr>
-<tr class="separator:ac5ae03e456838e9d3131a6ed983e5320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ccebcf1a7a3643f16aec610d0a9a02d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a7ccebcf1a7a3643f16aec610d0a9a02d">create</a> (DBusMessage *<a class="el" href="classDBus_1_1Message.html#a311ec58ddd3d587994b6192e13d71d4e">cobj</a>=NULL, <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a> m=<a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a>)</td></tr>
-<tr class="separator:a7ccebcf1a7a3643f16aec610d0a9a02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a937ad8daed5851578058c1e8f923cb03"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a937ad8daed5851578058c1e8f923cb03">create</a> (<a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a> other, <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a> m=<a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a>)</td></tr>
-<tr class="separator:a937ad8daed5851578058c1e8f923cb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b9ebc1c168c5f59432245bf7e7c896"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a26b9ebc1c168c5f59432245bf7e7c896">create</a> (<a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a> other, <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a> m=<a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a>)</td></tr>
-<tr class="separator:a26b9ebc1c168c5f59432245bf7e7c896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3628ba303c46aca04c4dab2ec3c69048"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classDBus_1_1Message.html">Message</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a3628ba303c46aca04c4dab2ec3c69048">create_from_data</a> (uint8_t *data, uint32_t data_len, std::vector&lt; int &gt; fds=std::vector&lt; int &gt;())</td></tr>
+<tr class="separator:a3628ba303c46aca04c4dab2ec3c69048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a3d858b2294bc0456629ada56818fe379"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a3d858b2294bc0456629ada56818fe379">Message</a> (<a class="el" href="namespaceDBus.html#a52cac400f493766192d5e80e1fdcdb99">MessageType</a> <a class="el" href="classDBus_1_1Message.html#a34027b081ce9d5d197a50d37c21e7732">type</a>)</td></tr>
-<tr class="separator:a3d858b2294bc0456629ada56818fe379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa386509aafbc3206952bd5954e20c681"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#aa386509aafbc3206952bd5954e20c681">Message</a> (DBusMessage *<a class="el" href="classDBus_1_1Message.html#a311ec58ddd3d587994b6192e13d71d4e">cobj</a>=NULL, <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a> m=<a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a>)</td></tr>
-<tr class="separator:aa386509aafbc3206952bd5954e20c681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65bb8d898b179ee7ba3fc6549ddbf15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ad65bb8d898b179ee7ba3fc6549ddbf15">Message</a> (<a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a> other, <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a> m=<a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a>)</td></tr>
-<tr class="separator:ad65bb8d898b179ee7ba3fc6549ddbf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bdb4a2df61c1736221e194c259af460"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a0bdb4a2df61c1736221e194c259af460">Message</a> (<a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a> other, <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a> m=<a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a>)</td></tr>
-<tr class="separator:a0bdb4a2df61c1736221e194c259af460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaacad1fe790234fee2ff0535033d628"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#acaacad1fe790234fee2ff0535033d628">Message</a> ()</td></tr>
+<tr class="separator:acaacad1fe790234fee2ff0535033d628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9debfbe7c5e49ba39a489c3b7ab41f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#adc9debfbe7c5e49ba39a489c3b7ab41f">append_signature</a> (std::string toappend)</td></tr>
+<tr class="separator:adc9debfbe7c5e49ba39a489c3b7ab41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aef8237feb3404246a0a96284f40046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a3aef8237feb3404246a0a96284f40046">clear_sig_and_data</a> ()</td></tr>
+<tr class="memdesc:a3aef8237feb3404246a0a96284f40046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the signature and the data, so you can re-append data.  <a href="#a3aef8237feb3404246a0a96284f40046">More...</a><br /></td></tr>
+<tr class="separator:a3aef8237feb3404246a0a96284f40046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589d3edf910f6435f54e51a453e7dd43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a589d3edf910f6435f54e51a453e7dd43">set_flags</a> (uint8_t <a class="el" href="classDBus_1_1Message.html#a2f097d0a45be79dd3c767fa2d570bf4a">flags</a>)</td></tr>
+<tr class="separator:a589d3edf910f6435f54e51a453e7dd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ab82eefa326beef0db9a89d24591cd26d"><td class="memItemLeft" align="right" valign="top">DBusMessage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a></td></tr>
-<tr class="separator:ab82eefa326beef0db9a89d24591cd26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6b551c617e046b74d39cf68f94b73f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a9a6b551c617e046b74d39cf68f94b73f">m_valid</a></td></tr>
-<tr class="separator:a9a6b551c617e046b74d39cf68f94b73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a2983c414040815b04cc7e8da536ebc38"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a2983c414040815b04cc7e8da536ebc38">body</a> ()</td></tr>
+<tr class="separator:a2983c414040815b04cc7e8da536ebc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad642692bb80f8e7f63d43908e0991edd"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; uint8_t &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#ad642692bb80f8e7f63d43908e0991edd">body</a> () const</td></tr>
+<tr class="separator:ad642692bb80f8e7f63d43908e0991edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e911bcb1cd9c8b7734871b0ebf6833"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#aa5e911bcb1cd9c8b7734871b0ebf6833">add_filedescriptor</a> (int fd)</td></tr>
+<tr class="separator:aa5e911bcb1cd9c8b7734871b0ebf6833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0a91d7fe0065fba7ad6b86a4b7cbba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#abc0a91d7fe0065fba7ad6b86a4b7cbba">filedescriptors_size</a> () const</td></tr>
+<tr class="separator:abc0a91d7fe0065fba7ad6b86a4b7cbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28d087773055f04d18f7000d5bf0fd68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a28d087773055f04d18f7000d5bf0fd68">filedescriptor_at_location</a> (int location) const</td></tr>
+<tr class="separator:a28d087773055f04d18f7000d5bf0fd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5907b1c5112b0a8f4a9dc8d56d7a3ee5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a5907b1c5112b0a8f4a9dc8d56d7a3ee5">DBUS_CXX_PROPAGATE_CONST</a> (std::unique_ptr&lt; priv_data &gt;) m_priv</td></tr>
+<tr class="separator:a5907b1c5112b0a8f4a9dc8d56d7a3ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a3b056119f2d49f964abb3404b07949c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a3b056119f2d49f964abb3404b07949c9">init</a> (bool)</td></tr>
-<tr class="memdesc:a3b056119f2d49f964abb3404b07949c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the dbus-cxx library.  <a href="#a3b056119f2d49f964abb3404b07949c9">More...</a><br /></td></tr>
-<tr class="separator:a3b056119f2d49f964abb3404b07949c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec2710c82fdc3f3479c49574340e0f0"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a4ec2710c82fdc3f3479c49574340e0f0">MessageAppendIterator</a></td></tr>
+<tr class="separator:a4ec2710c82fdc3f3479c49574340e0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96830ac40345d12cb9cec5efe497134b"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a96830ac40345d12cb9cec5efe497134b">MessageIterator</a></td></tr>
+<tr class="separator:a96830ac40345d12cb9cec5efe497134b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7e74e61b8593d0e58910faa3ee543d"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Message.html#a3a7e74e61b8593d0e58910faa3ee543d">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classDBus_1_1Message.html">DBus::Message</a> *msg)</td></tr>
+<tr class="separator:a3a7e74e61b8593d0e58910faa3ee543d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class represents a basic <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> message and also serves as a base class for the specialized message types (call, return, signal, error). </p>
+<p>This class cannot be initialized on its own; create a new <a class="el" href="classDBus_1_1Message.html" title="This class represents a basic DBus message and also serves as a base class for the specialized messag...">Message</a> from one of the subclasses</p>
 <dl class="section author"><dt>Author</dt><dd>Rick L Vinyard Jr <a href="#" onclick="location.href='mai'+'lto:'+'rvi'+'ny'+'ard'+'@c'+'s.n'+'ms'+'u.e'+'du'; return false;">rviny<span style="display: none;">.nosp@m.</span>ard@<span style="display: none;">.nosp@m.</span>cs.nm<span style="display: none;">.nosp@m.</span>su.e<span style="display: none;">.nosp@m.</span>du</a> </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aba62b8b862af7221543bbcd2bce58553"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba62b8b862af7221543bbcd2bce58553">&#9670;&nbsp;</a></span>append_iterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a> <a class="el" href="classDBus_1_1Message.html#aba62b8b862af7221543bbcd2bce58553">DBus::Message::append_iterator</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a30b9cd71b63f5c0b5b97c4cff35b1a69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30b9cd71b63f5c0b5b97c4cff35b1a69">&#9670;&nbsp;</a></span>const_pointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DBusCxxPointer&lt;const <a class="el" href="classDBus_1_1Message.html">Message</a>&gt; <a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">DBus::Message::const_pointer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae573692804e4c5cc3e968a6877555695"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae573692804e4c5cc3e968a6877555695">&#9670;&nbsp;</a></span>iterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> <a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">DBus::Message::iterator</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa450032dd53a0e0f9fd26093206be0a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa450032dd53a0e0f9fd26093206be0a7">&#9670;&nbsp;</a></span>pointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DBusCxxPointer&lt;<a class="el" href="classDBus_1_1Message.html">Message</a>&gt; <a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">DBus::Message::pointer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8dbf6bd0c1a47a30cf6660788c24b9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dbf6bd0c1a47a30cf6660788c24b9eb">&#9670;&nbsp;</a></span>weak_pointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DBusCxxWeakPointer&lt;<a class="el" href="classDBus_1_1Message.html">Message</a>&gt; <a class="el" href="classDBus_1_1Message.html#a8dbf6bd0c1a47a30cf6660788c24b9eb">DBus::Message::weak_pointer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3d858b2294bc0456629ada56818fe379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d858b2294bc0456629ada56818fe379">&#9670;&nbsp;</a></span>Message() <span class="overload">[1/4]</span></h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acaacad1fe790234fee2ff0535033d628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaacad1fe790234fee2ff0535033d628">&#9670;&nbsp;</a></span>Message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,8 +179,7 @@ Friends</h2></td></tr>
         <tr>
           <td class="memname">DBus::Message::Message </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a52cac400f493766192d5e80e1fdcdb99">MessageType</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -266,124 +189,6 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#ac5ae03e456838e9d3131a6ed983e5320">create()</a>.</p>
-
-</div>
-</div>
-<a id="aa386509aafbc3206952bd5954e20c681"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa386509aafbc3206952bd5954e20c681">&#9670;&nbsp;</a></span>Message() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DBus::Message::Message </td>
-          <td>(</td>
-          <td class="paramtype">DBusMessage *&#160;</td>
-          <td class="paramname"><em>cobj</em> = <code>NULL</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a>&#160;</td>
-          <td class="paramname"><em>m</em> = <code><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a311ec58ddd3d587994b6192e13d71d4e">cobj()</a>, <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">DBus::CREATE_ALIAS</a>, <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>, and <a class="el" href="classDBus_1_1Message.html#a9a6b551c617e046b74d39cf68f94b73f">m_valid</a>.</p>
-
-</div>
-</div>
-<a id="ad65bb8d898b179ee7ba3fc6549ddbf15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad65bb8d898b179ee7ba3fc6549ddbf15">&#9670;&nbsp;</a></span>Message() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DBus::Message::Message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a>&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a>&#160;</td>
-          <td class="paramname"><em>m</em> = <code><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">DBus::CREATE_ALIAS</a>, and <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-</div>
-</div>
-<a id="a0bdb4a2df61c1736221e194c259af460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bdb4a2df61c1736221e194c259af460">&#9670;&nbsp;</a></span>Message() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">DBus::Message::Message </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a>&#160;</td>
-          <td class="paramname"><em>m</em> = <code><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">DBus::CREATE_ALIAS</a>, and <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
 
 </div>
 </div>
@@ -410,19 +215,47 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1904ef366b84c9078b5971067cf2b991"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1904ef366b84c9078b5971067cf2b991">&#9670;&nbsp;</a></span>append()</h2>
+<a id="aa5e911bcb1cd9c8b7734871b0ebf6833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e911bcb1cd9c8b7734871b0ebf6833">&#9670;&nbsp;</a></span>add_filedescriptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBus::Message::add_filedescriptor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#afc04d17adae66be659bba02cfbe67f6a">set_header_field()</a>, and <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636ae43a4035fcc43af3439a6e2eb719a183">DBus::Unix_FDs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a id="adf5542c93028baab7e8d8ab0896e8df0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5542c93028baab7e8d8ab0896e8df0">&#9670;&nbsp;</a></span>append()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#aba62b8b862af7221543bbcd2bce58553">Message::append_iterator</a> DBus::Message::append </td>
+          <td class="memname"><a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a> DBus::Message::append </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -430,7 +263,39 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a426256fb6827ddc543d740d15e3f2d95">operator&lt;&lt;()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a4ec2710c82fdc3f3479c49574340e0f0">MessageAppendIterator</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1ErrorMessage.html#aabbd080546fa4b6d5ab284ede5b5f3e6">DBus::ErrorMessage::ErrorMessage()</a>, <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1ErrorMessage.html#a300cb16f9406f3f568bf4f3004088209">DBus::ErrorMessage::set_message()</a>.</p>
+
+</div>
+</div>
+<a id="adc9debfbe7c5e49ba39a489c3b7ab41f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9debfbe7c5e49ba39a489c3b7ab41f">&#9670;&nbsp;</a></span>append_signature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBus::Message::append_signature </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>toappend</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a8c09001c99ecb6fdd8d6023fcf039054">DBus::Signature</a>, <a class="el" href="classDBus_1_1Signature.html#a151cda8ff2ff150ff3590fafc6c7b8f6">DBus::Signature::str()</a>, <a class="el" href="classDBus_1_1Variant.html#a247411b757aaab808a2f3fe4869bd2da">DBus::Variant::to_signature()</a>, and <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">DBus::Variant::type()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -449,18 +314,21 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p>Returns true if the bus is allowed to start an owner for this message's destination if it is not running. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="reference">References <a class="el" href="message_8h.html#a68d192bce4b2389318614a0998ff9cd9">DBUSCXX_MESSAGE_NO_AUTO_START_FLAG</a>.</p>
 
 </div>
 </div>
-<a id="a6edbed9ee5c3ee003d3aa5b33dd34075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6edbed9ee5c3ee003d3aa5b33dd34075">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="ae9e98121a4c9b32a2e8890c56821248a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e98121a4c9b32a2e8890c56821248a">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">Message::iterator</a> DBus::Message::begin </td>
+          <td class="memname"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> DBus::Message::begin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -468,33 +336,14 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a426256fb6827ddc543d740d15e3f2d95">operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1Message.html#ace6262167772ffec13d19e4fb1be6612">operator&gt;&gt;()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a96830ac40345d12cb9cec5efe497134b">MessageIterator</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1ErrorMessage.html#a178b2c08bb20b627669aae3b89186f51">DBus::ErrorMessage::message()</a>, <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1Message.html#a1a943a9fc582fa5a2175e77d224052a1">operator&gt;&gt;()</a>.</p>
 
 </div>
 </div>
-<a id="a311ec58ddd3d587994b6192e13d71d4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a311ec58ddd3d587994b6192e13d71d4e">&#9670;&nbsp;</a></span>cobj()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DBusMessage * DBus::Message::cobj </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1CallMessage.html#aa17abedb640c885cf3cf23f299084540">DBus::CallMessage::CallMessage()</a>, <a class="el" href="classDBus_1_1Message.html#a71ab2a7f0e1f2d6952a2da07d59551f8">create_reply()</a>, <a class="el" href="classDBus_1_1Error.html#a8d8d9492c4828cc5e3e1de86e04f6f7b">DBus::Error::Error()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#af01c937355690e0088c5775865f4b00e">DBus::MessageIterator::init()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a84a44c58b5d0f0871edd629466963876">DBus::MessageAppendIterator::init()</a>, <a class="el" href="classDBus_1_1Message.html#aa386509aafbc3206952bd5954e20c681">Message()</a>, <a class="el" href="classDBus_1_1Message.html#a426256fb6827ddc543d740d15e3f2d95">operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1ReturnMessage.html#a3d5a953b3a430d2d817ba1d9b710767b">DBus::ReturnMessage::operator=()</a>.</p>
-
-</div>
-</div>
-<a id="ac5ae03e456838e9d3131a6ed983e5320"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ae03e456838e9d3131a6ed983e5320">&#9670;&nbsp;</a></span>create() <span class="overload">[1/4]</span></h2>
+<a id="a2983c414040815b04cc7e8da536ebc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2983c414040815b04cc7e8da536ebc38">&#9670;&nbsp;</a></span>body() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,28 +352,25 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a> DBus::Message::create </td>
+          <td class="memname">std::vector&lt; uint8_t &gt; * DBus::Message::body </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a52cac400f493766192d5e80e1fdcdb99">MessageType</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a3d858b2294bc0456629ada56818fe379">Message()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Connection.html#afd227fa4fc2d51594689a44492077acc">DBus::Connection::borrow_message()</a>, <a class="el" href="classDBus_1_1MessageHandler.html#a93f777755f24570b417d25ddfc8b8aaf">DBus::MessageHandler::message_handler_callback()</a>, <a class="el" href="classDBus_1_1Connection.html#a0f71924257022e94b5b3f5b268f713eb">DBus::Connection::on_filter_callback()</a>, <a class="el" href="classDBus_1_1Connection.html#a151434d4139924af0da63226dacb577e">DBus::Connection::pop_message()</a>, and <a class="el" href="classDBus_1_1PendingCall.html#afc0354b790eaedaec0c35270694c6976">DBus::PendingCall::steal_reply()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageAppendIterator.html#a8e28799bf4e3ed783240e92eded8c9b8">DBus::MessageAppendIterator::MessageAppendIterator()</a>, and <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
-<a id="a7ccebcf1a7a3643f16aec610d0a9a02d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ccebcf1a7a3643f16aec610d0a9a02d">&#9670;&nbsp;</a></span>create() <span class="overload">[2/4]</span></h2>
+<a id="ad642692bb80f8e7f63d43908e0991edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad642692bb80f8e7f63d43908e0991edd">&#9670;&nbsp;</a></span>body() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,16 +379,78 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a> DBus::Message::create </td>
+          <td class="memname">const std::vector&lt; uint8_t &gt; * DBus::Message::body </td>
           <td>(</td>
-          <td class="paramtype">DBusMessage *&#160;</td>
-          <td class="paramname"><em>cobj</em> = <code>NULL</code>, </td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3aef8237feb3404246a0a96284f40046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aef8237feb3404246a0a96284f40046">&#9670;&nbsp;</a></span>clear_sig_and_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBus::Message::clear_sig_and_data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the signature and the data, so you can re-append data. </p>
+
+<p class="reference">References <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a8c09001c99ecb6fdd8d6023fcf039054">DBus::Signature</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1ErrorMessage.html#a300cb16f9406f3f568bf4f3004088209">DBus::ErrorMessage::set_message()</a>.</p>
+
+</div>
+</div>
+<a id="a3628ba303c46aca04c4dab2ec3c69048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3628ba303c46aca04c4dab2ec3c69048">&#9670;&nbsp;</a></span>create_from_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classDBus_1_1Message.html">Message</a> &gt; DBus::Message::create_from_data </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a>&#160;</td>
-          <td class="paramname"><em>m</em> = <code><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a></code>&#160;</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>data_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>fds</em> = <code>std::vector&lt;int&gt;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -557,12 +465,14 @@ Friends</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a3d858b2294bc0456629ada56818fe379">Message()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Demarshaling.html#ae5b146042bb46d974a78f896c8fa7851">DBus::Demarshaling::align()</a>, <a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76cad491538da818a2ba11a3195ba035cfd3">DBus::Big</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a41f22fbaec689d9af642a1e827a6b87d">DBus::ErrorMessage::create()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#a8ab2feeebf7bdaaabe278f98b299e649">DBus::ReturnMessage::create()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a15c7d56c33ee284326c56dbe29258d27">DBus::SignalMessage::create()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a395f0384b8ce1bfc25d424e8f3ae4f5c">DBus::CallMessage::create()</a>, <a class="el" href="classDBus_1_1Demarshaling.html#a985008295e8977fc9f1ce63ce9ab6d0a">DBus::Demarshaling::current_offset()</a>, <a class="el" href="classDBus_1_1Demarshaling.html#a51935c1ebe48cf72b947217cea40d3fb">DBus::Demarshaling::demarshal_uint32_t()</a>, <a class="el" href="classDBus_1_1Demarshaling.html#a254fd3c366001482e87765425dd0e55f">DBus::Demarshaling::demarshal_uint8_t()</a>, <a class="el" href="classDBus_1_1Demarshaling.html#a6ebf4ee9e26b0d57ce93dc1b637002bb">DBus::Demarshaling::demarshal_variant()</a>, <a class="el" href="classDBus_1_1Message.html#a2f097d0a45be79dd3c767fa2d570bf4a">flags()</a>, <a class="el" href="namespaceDBus.html#ac8672baa86d785ff7c3aa51df8855cc7">DBus::int_to_header_field()</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a4bbb8f967da6d1a610596d7257179c2b">DBus::Invalid</a>, <a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76ca0f9197b3e286a7522984831949087332">DBus::Little</a>, <a class="el" href="message_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a>, <a class="el" href="classDBus_1_1Message.html#a3ba619d7c9ad3d82838442d2d2fe310b">serial()</a>, <a class="el" href="classDBus_1_1Demarshaling.html#acdcaa69da698bbefd320093a1d5c24aa">DBus::Demarshaling::set_endianess()</a>, <a class="el" href="classDBus_1_1Variant.html#a9f788920cb6441f04b81b40bf1091316">DBus::Variant::to_uint32()</a>, and <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636ae43a4035fcc43af3439a6e2eb719a183">DBus::Unix_FDs</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1priv_1_1SimpleTransport.html#ae117e221a7c6cb6a95f8dd4b92d2ea5b">DBus::priv::SimpleTransport::readMessage()</a>, and <a class="el" href="classDBus_1_1priv_1_1SendmsgTransport.html#aef1e14b7084b41afcb206e6daa40716a">DBus::priv::SendmsgTransport::readMessage()</a>.</p>
 
 </div>
 </div>
-<a id="a937ad8daed5851578058c1e8f923cb03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a937ad8daed5851578058c1e8f923cb03">&#9670;&nbsp;</a></span>create() <span class="overload">[3/4]</span></h2>
+<a id="a5907b1c5112b0a8f4a9dc8d56d7a3ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5907b1c5112b0a8f4a9dc8d56d7a3ee5">&#9670;&nbsp;</a></span>DBUS_CXX_PROPAGATE_CONST()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -571,36 +481,85 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a> DBus::Message::create </td>
+          <td class="memname">DBus::Message::DBUS_CXX_PROPAGATE_CONST </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a>&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">std::unique_ptr&lt; priv_data &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a>&#160;</td>
-          <td class="paramname"><em>m</em> = <code><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a3d858b2294bc0456629ada56818fe379">Message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
-<a id="a26b9ebc1c168c5f59432245bf7e7c896"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26b9ebc1c168c5f59432245bf7e7c896">&#9670;&nbsp;</a></span>create() <span class="overload">[4/4]</span></h2>
+<a id="a2f9a10f3f6ad0fc6b98ab341ff85a109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9a10f3f6ad0fc6b98ab341ff85a109">&#9670;&nbsp;</a></span>destination()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DBus::Message::destination </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a12007e1d59f4d09c87dbe2c438256244">DBus::Destination</a>, <a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="classDBus_1_1Variant.html#a9f6a10350820ac143e476b4e09f7b4d4">DBus::Variant::to_string()</a>, and <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">DBus::Variant::type()</a>.</p>
+
+</div>
+</div>
+<a id="ab417f6db99c319362e332e6b5019c241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab417f6db99c319362e332e6b5019c241">&#9670;&nbsp;</a></span>end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> DBus::Message::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a96830ac40345d12cb9cec5efe497134b">MessageIterator</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a id="ab2e729b433251fb6bff28081e760f6bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e729b433251fb6bff28081e760f6bb">&#9670;&nbsp;</a></span>endianess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76c">DBus::Endianess</a> DBus::Message::endianess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a id="a28d087773055f04d18f7000d5bf0fd68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28d087773055f04d18f7000d5bf0fd68">&#9670;&nbsp;</a></span>filedescriptor_at_location()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,42 +568,32 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">Message::pointer</a> DBus::Message::create </td>
+          <td class="memname">int DBus::Message::filedescriptor_at_location </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classDBus_1_1Message.html#a30b9cd71b63f5c0b5b97c4cff35b1a69">Message::const_pointer</a>&#160;</td>
-          <td class="paramname"><em>other</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90">CreateMethod</a>&#160;</td>
-          <td class="paramname"><em>m</em> = <code><a class="el" href="namespaceDBus.html#a8a737c88c1d3cb4d2630828ec7f6fc90ae350b21e720736940f1b0328d1c124bf">CREATE_ALIAS</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>location</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a3d858b2294bc0456629ada56818fe379">Message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
-<a id="a71ab2a7f0e1f2d6952a2da07d59551f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71ab2a7f0e1f2d6952a2da07d59551f8">&#9670;&nbsp;</a></span>create_reply()</h2>
+<a id="ac1fd7d267cf9b64c12ad9679283d1abb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1fd7d267cf9b64c12ad9679283d1abb">&#9670;&nbsp;</a></span>filedescriptors()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1ReturnMessage.html#a3d59f380a24d5d3a04969fa625fd5178">ReturnMessage::pointer</a> DBus::Message::create_reply </td>
+          <td class="memname">const std::vector&lt; int &gt; &amp; DBus::Message::filedescriptors </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -652,18 +601,45 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="namespaceDBus.html#a52cac400f493766192d5e80e1fdcdb99a6b967d9ebba276f5a45f2788543ee928">DBus::CALL_MESSAGE</a>, <a class="el" href="classDBus_1_1Message.html#a311ec58ddd3d587994b6192e13d71d4e">cobj()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#a5b35cf5ea16918f425f37842a4127a53">DBus::ReturnMessage::create()</a>, <a class="el" href="classDBus_1_1Message.html#a9f1936bbe62ecc66cb7a1005690af97c">is_valid()</a>, and <a class="el" href="classDBus_1_1Message.html#a34027b081ce9d5d197a50d37c21e7732">type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
-<a id="a73dadd9c69222b2901825bf33919dcc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73dadd9c69222b2901825bf33919dcc3">&#9670;&nbsp;</a></span>destination()</h2>
+<a id="abc0a91d7fe0065fba7ad6b86a4b7cbba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc0a91d7fe0065fba7ad6b86a4b7cbba">&#9670;&nbsp;</a></span>filedescriptors_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t DBus::Message::filedescriptors_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a id="a2f097d0a45be79dd3c767fa2d570bf4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f097d0a45be79dd3c767fa2d570bf4a">&#9670;&nbsp;</a></span>flags()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * DBus::Message::destination </td>
+          <td class="memname">uint8_t DBus::Message::flags </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -671,66 +647,39 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p>The message flags, as the marshaled byte. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1CallMessage.html#a229db37bc6a87b349a82b98295203f2d">DBus::CallMessage::create_error_reply()</a>, <a class="el" href="classDBus_1_1Message.html#a3628ba303c46aca04c4dab2ec3c69048">create_from_data()</a>, <a class="el" href="classDBus_1_1CallMessage.html#ab5dfd3bc42baa9305aef226320275b59">DBus::CallMessage::create_reply()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a9ea84d6d274a60e2f5b4c3cb812d4e76">DBus::CallMessage::expects_reply()</a>, <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1Message.html#a589d3edf910f6435f54e51a453e7dd43">set_flags()</a>, and <a class="el" href="classDBus_1_1CallMessage.html#acf18151b27f38c94a467058f2c786fe7">DBus::CallMessage::set_no_reply()</a>.</p>
 
 </div>
 </div>
-<a id="aee72ca56e64ad6ae6f43c7ccd3393377"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee72ca56e64ad6ae6f43c7ccd3393377">&#9670;&nbsp;</a></span>end()</h2>
+<a id="a0a64aa04679e88aae695047c29d3e395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a64aa04679e88aae695047c29d3e395">&#9670;&nbsp;</a></span>header_field()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">Message::iterator</a> DBus::Message::end </td>
+          <td class="memname"><a class="el" href="classDBus_1_1Variant.html">Variant</a> DBus::Message::header_field </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636">MessageHeaderFields</a>&#160;</td>
+          <td class="paramname"><em>field</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a426256fb6827ddc543d740d15e3f2d95">operator&lt;&lt;()</a>.</p>
+<p>Returns the given header field(if it exists), otherwise returns a default constructed variant. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>The field number to get </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The data, otherwise a default-constructed variant. </dd></dl>
 
-</div>
-</div>
-<a id="a03f101217e2aa8d269cfc22c3954afd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f101217e2aa8d269cfc22c3954afd0">&#9670;&nbsp;</a></span>has_destination()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DBus::Message::has_destination </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-</div>
-</div>
-<a id="ad9479f2b4657bff1e4d2ada79c50d648"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9479f2b4657bff1e4d2ada79c50d648">&#9670;&nbsp;</a></span>has_sender()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DBus::Message::has_sender </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a2f9a10f3f6ad0fc6b98ab341ff85a109">destination()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a1fedb4e84525627b7b51960849aaadff">DBus::SignalMessage::interface_name()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a632e92f628023171e08252ac1d0e5ef3">DBus::CallMessage::interface_name()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ad3822943d9044c070e022bddaa110814">DBus::SignalMessage::member()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a272cc9bb168935397e186c6a3e9cdfa0">DBus::CallMessage::member()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a178b2c08bb20b627669aae3b89186f51">DBus::ErrorMessage::message()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a15fbf42afea42b4068b403f5457ea721">DBus::ErrorMessage::name()</a>, <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1Message.html#a14d59f2b20b27f808ea747e08d439c55">operator==()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ab47af541a147e832b81c817a57983527">DBus::SignalMessage::path()</a>, <a class="el" href="classDBus_1_1CallMessage.html#aa4c55b73dd43f71cca10da29394160df">DBus::CallMessage::path()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#abeb4674aa7b7b8ffa814183c486da555">DBus::ReturnMessage::reply_serial()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#abcfd2698445f3d51731d2fdcb3d57cd7">DBus::ErrorMessage::reply_serial()</a>, <a class="el" href="classDBus_1_1Message.html#a20d236f58270bd4f4eb308f21c57d4cd">sender()</a>, <a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">serialize_to_vector()</a>, <a class="el" href="classDBus_1_1Message.html#afc04d17adae66be659bba02cfbe67f6a">set_header_field()</a>, and <a class="el" href="classDBus_1_1Message.html#a0d335829d5e1ce11334fe6717f9efd3c">signature()</a>.</p>
 
 </div>
 </div>
@@ -749,90 +698,6 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a9a6b551c617e046b74d39cf68f94b73f">m_valid</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageAppendIterator.html#a171535a7d8f52e6ed78538307655e6be">DBus::MessageAppendIterator::protected_append()</a>.</p>
-
-</div>
-</div>
-<a id="a3d2947afa546b5f45cdf8ee3cb152c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d2947afa546b5f45cdf8ee3cb152c47">&#9670;&nbsp;</a></span>is_call()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DBus::Message::is_call </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>interface</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>method</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-</div>
-</div>
-<a id="a6b3dfa2b8299084c4a32ed290a93bdc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b3dfa2b8299084c4a32ed290a93bdc2">&#9670;&nbsp;</a></span>is_error()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DBus::Message::is_error </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>error_name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-</div>
-</div>
-<a id="a438e8001467d0167cc505db7e82c042a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a438e8001467d0167cc505db7e82c042a">&#9670;&nbsp;</a></span>is_signal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DBus::Message::is_signal </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>interface</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>signal_name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
 </div>
 </div>
 <a id="a9f1936bbe62ecc66cb7a1005690af97c"></a>
@@ -850,9 +715,7 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a71ab2a7f0e1f2d6952a2da07d59551f8">create_reply()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">DBus::MessageIterator::is_valid()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#ac26adf3e625e2632b063c67e623897d6">DBus::MessageAppendIterator::is_valid()</a>, and <a class="el" href="classDBus_1_1Message.html#a01835147aea6136720903675cca45447">operator bool()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1CallMessage.html#a229db37bc6a87b349a82b98295203f2d">DBus::CallMessage::create_error_reply()</a>, <a class="el" href="classDBus_1_1CallMessage.html#ab5dfd3bc42baa9305aef226320275b59">DBus::CallMessage::create_reply()</a>, and <a class="el" href="classDBus_1_1Message.html#a01835147aea6136720903675cca45447">operator bool()</a>.</p>
 
 </div>
 </div>
@@ -875,8 +738,8 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="a426256fb6827ddc543d740d15e3f2d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a426256fb6827ddc543d740d15e3f2d95">&#9670;&nbsp;</a></span>operator<<()</h2>
+<a id="a7ad8bc28d359de1ad144a92d94af3315"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad8bc28d359de1ad144a92d94af3315">&#9670;&nbsp;</a></span>operator<<()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -887,7 +750,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#aba62b8b862af7221543bbcd2bce58553">append_iterator</a> DBus::Message::operator&lt;&lt; </td>
+          <td class="memname"><a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a> DBus::Message::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -901,27 +764,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a1904ef366b84c9078b5971067cf2b991">append()</a>, <a class="el" href="classDBus_1_1Message.html#a6edbed9ee5c3ee003d3aa5b33dd34075">begin()</a>, <a class="el" href="classDBus_1_1Message.html#a311ec58ddd3d587994b6192e13d71d4e">cobj()</a>, <a class="el" href="classDBus_1_1Message.html#aee72ca56e64ad6ae6f43c7ccd3393377">end()</a>, and <a class="el" href="classDBus_1_1Message.html#a3b056119f2d49f964abb3404b07949c9">init</a>.</p>
-
-</div>
-</div>
-<a id="a884e4f67e9101f92ab5db2ed9e9a1f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a884e4f67e9101f92ab5db2ed9e9a1f47">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html">Message</a> &amp; DBus::Message::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classDBus_1_1Message.html">Message</a> &amp;&#160;</td>
-          <td class="paramname"><em>m</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#aa5e911bcb1cd9c8b7734871b0ebf6833">add_filedescriptor()</a>, <a class="el" href="classDBus_1_1Message.html#adf5542c93028baab7e8d8ab0896e8df0">append()</a>, <a class="el" href="classDBus_1_1Message.html#adc9debfbe7c5e49ba39a489c3b7ab41f">append_signature()</a>, <a class="el" href="classDBus_1_1Message.html#ae9e98121a4c9b32a2e8890c56821248a">begin()</a>, <a class="el" href="classDBus_1_1Message.html#a2983c414040815b04cc7e8da536ebc38">body()</a>, <a class="el" href="classDBus_1_1Message.html#a3aef8237feb3404246a0a96284f40046">clear_sig_and_data()</a>, <a class="el" href="classDBus_1_1Message.html#a3628ba303c46aca04c4dab2ec3c69048">create_from_data()</a>, <a class="el" href="classDBus_1_1Message.html#a5907b1c5112b0a8f4a9dc8d56d7a3ee5">DBUS_CXX_PROPAGATE_CONST()</a>, <a class="el" href="classDBus_1_1Message.html#ab417f6db99c319362e332e6b5019c241">end()</a>, <a class="el" href="classDBus_1_1Message.html#ab2e729b433251fb6bff28081e760f6bb">endianess()</a>, <a class="el" href="classDBus_1_1Message.html#a28d087773055f04d18f7000d5bf0fd68">filedescriptor_at_location()</a>, <a class="el" href="classDBus_1_1Message.html#ac1fd7d267cf9b64c12ad9679283d1abb">filedescriptors()</a>, <a class="el" href="classDBus_1_1Message.html#abc0a91d7fe0065fba7ad6b86a4b7cbba">filedescriptors_size()</a>, <a class="el" href="classDBus_1_1Message.html#a2f097d0a45be79dd3c767fa2d570bf4a">flags()</a>, <a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field()</a>, <a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">serialize_to_vector()</a>, <a class="el" href="classDBus_1_1Message.html#a589d3edf910f6435f54e51a453e7dd43">set_flags()</a>, and <a class="el" href="classDBus_1_1Message.html#afc04d17adae66be659bba02cfbe67f6a">set_header_field()</a>.</p>
 
 </div>
 </div>
@@ -941,12 +784,12 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p class="reference">References <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a12007e1d59f4d09c87dbe2c438256244">DBus::Destination</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a5fa2caf388a816df2eca7d50d9ad4ce0">DBus::Error_Name</a>, <a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field()</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a3c1aac82863ed9e5a9aca8ce687f711d">DBus::Interface</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a858ba4765e53c712ef672a9570474b1d">DBus::Member</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636aac70412e939d72a9234cdebb1af5867b">DBus::Path</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a0c2715fa0d56871bd38c15dd7de22960">DBus::Reply_Serial</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a8aace3ec18d83874d22850b7eee93c7d">DBus::Sender</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a8c09001c99ecb6fdd8d6023fcf039054">DBus::Signature</a>, <a class="el" href="classDBus_1_1Message.html#a1c8956ff73a8959bae39891da2895a92">type()</a>, and <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636ae43a4035fcc43af3439a6e2eb719a183">DBus::Unix_FDs</a>.</p>
 
 </div>
 </div>
-<a id="ace6262167772ffec13d19e4fb1be6612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace6262167772ffec13d19e4fb1be6612">&#9670;&nbsp;</a></span>operator>>()</h2>
+<a id="a1a943a9fc582fa5a2175e77d224052a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a943a9fc582fa5a2175e77d224052a1">&#9670;&nbsp;</a></span>operator>>()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -957,7 +800,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Message.html#ae573692804e4c5cc3e968a6877555695">iterator</a> DBus::Message::operator&gt;&gt; </td>
+          <td class="memname"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> DBus::Message::operator&gt;&gt; </td>
           <td>(</td>
           <td class="paramtype">T &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -971,18 +814,18 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a6edbed9ee5c3ee003d3aa5b33dd34075">begin()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ae9e98121a4c9b32a2e8890c56821248a">begin()</a>.</p>
 
 </div>
 </div>
-<a id="a11e4607d4ce153ea63968160469d9817"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11e4607d4ce153ea63968160469d9817">&#9670;&nbsp;</a></span>sender()</h2>
+<a id="a20d236f58270bd4f4eb308f21c57d4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d236f58270bd4f4eb308f21c57d4cd">&#9670;&nbsp;</a></span>sender()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char * DBus::Message::sender </td>
+          <td class="memname">std::string DBus::Message::sender </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -990,7 +833,9 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field()</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a8aace3ec18d83874d22850b7eee93c7d">DBus::Sender</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="classDBus_1_1Variant.html#a9f6a10350820ac143e476b4e09f7b4d4">DBus::Variant::to_string()</a>, and <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">DBus::Variant::type()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1CallMessage.html#a229db37bc6a87b349a82b98295203f2d">DBus::CallMessage::create_error_reply()</a>, and <a class="el" href="classDBus_1_1CallMessage.html#ab5dfd3bc42baa9305aef226320275b59">DBus::CallMessage::create_reply()</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +854,53 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1CallMessage.html#a229db37bc6a87b349a82b98295203f2d">DBus::CallMessage::create_error_reply()</a>, <a class="el" href="classDBus_1_1Message.html#a3628ba303c46aca04c4dab2ec3c69048">create_from_data()</a>, and <a class="el" href="classDBus_1_1CallMessage.html#ab5dfd3bc42baa9305aef226320275b59">DBus::CallMessage::create_reply()</a>.</p>
+
+</div>
+</div>
+<a id="a5ef5abab506e0b812039dc19f4cb0c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef5abab506e0b812039dc19f4cb0c95">&#9670;&nbsp;</a></span>serialize_to_vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBus::Message::serialize_to_vector </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; uint8_t &gt; *&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>serial</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialize this message to the given vector. </p>
+<p>The vector will be resized but not cleared. Can fail with an error under the following circumstances:</p><ul>
+<li>Invalid message type passed in</li>
+<li><a class="el" href="classDBus_1_1Method.html">Method</a> return or method call does not have serial set</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>The location to serialize the message to. </td></tr>
+    <tr><td class="paramname">serial</td><td>The serial of the message. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the message was able to be serialized, false otherwise. </dd></dl>
+
+<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76cad491538da818a2ba11a3195ba035cfd3">DBus::Big</a>, <a class="el" href="namespaceDBus.html#a6b5b447b57489b4106d096545e528510aca3547acb9162b49fb4a6594ed9b3030">DBus::CALL</a>, <a class="el" href="namespaceDBus.html#a6b5b447b57489b4106d096545e528510abb1ca97ec761fc37101737ba0aa2e7c5">DBus::ERROR</a>, <a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field()</a>, <a class="el" href="namespaceDBus.html#a2fdab583fe81780383b1c614c4e722e4">DBus::header_field_to_int()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, <a class="el" href="message_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1Marshaling.html#a69b33d357ca7a4a22a7bac9a68d58dd1">DBus::Marshaling::marshal_at_offset()</a>, <a class="el" href="classDBus_1_1Validator.html#a229166a42f173e228ce2779814f860bc">DBus::Validator::message_is_small_enough()</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a0c2715fa0d56871bd38c15dd7de22960">DBus::Reply_Serial</a>, <a class="el" href="namespaceDBus.html#a6b5b447b57489b4106d096545e528510aa2bec276a54439fe011eb523b845dac5">DBus::RETURN</a>, <a class="el" href="namespaceDBus.html#a6b5b447b57489b4106d096545e528510ac023ee28e6cb71d64feec71f0cbac067">DBus::SIGNAL</a>, <a class="el" href="classDBus_1_1Variant.html#a9f788920cb6441f04b81b40bf1091316">DBus::Variant::to_uint32()</a>, <a class="el" href="classDBus_1_1Message.html#a1c8956ff73a8959bae39891da2895a92">type()</a>, <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">DBus::Variant::type()</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +920,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p class="reference">References <a class="el" href="message_8h.html#a68d192bce4b2389318614a0998ff9cd9">DBUSCXX_MESSAGE_NO_AUTO_START_FLAG</a>.</p>
 
 </div>
 </div>
@@ -1049,54 +940,23 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
+<p>Set the destination of this message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the destination was able to be set, false if the destination was unable to be validated </dd></dl>
+
+<p class="reference">References <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a12007e1d59f4d09c87dbe2c438256244">DBus::Destination</a>, and <a class="el" href="classDBus_1_1Validator.html#a76c31e37bf7b6688b254686fb3c95785">DBus::Validator::validate_bus_name()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1CallMessage.html#afc22fcb0314ceef5d28230a963aff413">DBus::CallMessage::CallMessage()</a>.</p>
 
 </div>
 </div>
-<a id="a73d3c4909f5c30ad465d08bc6191ec12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73d3c4909f5c30ad465d08bc6191ec12">&#9670;&nbsp;</a></span>set_sender()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool DBus::Message::set_sender </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>.</p>
-
-</div>
-</div>
-<a id="a34027b081ce9d5d197a50d37c21e7732"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34027b081ce9d5d197a50d37c21e7732">&#9670;&nbsp;</a></span>type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int DBus::Message::type </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Message.html#ab82eefa326beef0db9a89d24591cd26d">m_cobj</a>, and <a class="el" href="namespaceDBus.html#a1d96cec98f0be9760a04b2c490713bf9aa84e7b7e47c5145462e69b7b967ae736">DBus::TYPE_INVALID</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a71ab2a7f0e1f2d6952a2da07d59551f8">create_reply()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a3b056119f2d49f964abb3404b07949c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b056119f2d49f964abb3404b07949c9">&#9670;&nbsp;</a></span>init</h2>
+<a id="a589d3edf910f6435f54e51a453e7dd43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589d3edf910f6435f54e51a453e7dd43">&#9670;&nbsp;</a></span>set_flags()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1105,11 +965,131 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void init </td>
+          <td class="memname">void DBus::Message::set_flags </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>flags</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a2f097d0a45be79dd3c767fa2d570bf4a">flags()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1CallMessage.html#acf18151b27f38c94a467058f2c786fe7">DBus::CallMessage::set_no_reply()</a>.</p>
+
+</div>
+</div>
+<a id="afc04d17adae66be659bba02cfbe67f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc04d17adae66be659bba02cfbe67f6a">&#9670;&nbsp;</a></span>set_header_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBus_1_1Variant.html">Variant</a> DBus::Message::set_header_field </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636">MessageHeaderFields</a>&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1Variant.html">Variant</a>&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the given header field. </p>
+<p>Returns the previously set value, if it exists.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>The field to set </td></tr>
+    <tr><td class="paramname">value</td><td>The value to set the header field to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The old value, if it exists. </dd></dl>
+
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#aa5e911bcb1cd9c8b7734871b0ebf6833">add_filedescriptor()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#aabbd080546fa4b6d5ab284ede5b5f3e6">DBus::ErrorMessage::ErrorMessage()</a>, <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ae0abd1a9c5e7d27bd5db335abc214b48">DBus::SignalMessage::set_interface()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a3a81dafc180f1b68d44a44c1effc513d">DBus::CallMessage::set_interface()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#aff9cf08f08693433efd6cd1a97a3fe23">DBus::SignalMessage::set_member()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a6fc1ea98ef87d45473bb6b4f1d466ef1">DBus::CallMessage::set_member()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#af4c967f6439ae3cfabbdc4342d305d5f">DBus::ErrorMessage::set_name()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#afe7ccabe6942db066fec45bc9b8bff65">DBus::SignalMessage::set_path()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a77dde3bfdf1f55de2cdff511cc50b1c0">DBus::CallMessage::set_path()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#a4f8c1eceffd4408b92473cc4d3d3477f">DBus::ReturnMessage::set_reply_serial()</a>, and <a class="el" href="classDBus_1_1ErrorMessage.html#ab633b0a132b80f5dc9a8d7c9d3cbcb75">DBus::ErrorMessage::set_reply_serial()</a>.</p>
+
+</div>
+</div>
+<a id="a0d335829d5e1ce11334fe6717f9efd3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d335829d5e1ce11334fe6717f9efd3c">&#9670;&nbsp;</a></span>signature()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBus_1_1Signature.html">Signature</a> DBus::Message::signature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Message.html#a0a64aa04679e88aae695047c29d3e395">header_field()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334aef21bf22481e7930df1e2bda54025095">DBus::SIGNATURE</a>, <a class="el" href="namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636a8c09001c99ecb6fdd8d6023fcf039054">DBus::Signature</a>, <a class="el" href="classDBus_1_1Variant.html#a247411b757aaab808a2f3fe4869bd2da">DBus::Variant::to_signature()</a>, and <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">DBus::Variant::type()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1ErrorMessage.html#a178b2c08bb20b627669aae3b89186f51">DBus::ErrorMessage::message()</a>.</p>
+
+</div>
+</div>
+<a id="a1c8956ff73a8959bae39891da2895a92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c8956ff73a8959bae39891da2895a92">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespaceDBus.html#a6b5b447b57489b4106d096545e528510">MessageType</a> DBus::Message::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classDBus_1_1CallMessage.html#acc332916fc44d9982a973c04cf230e8d">DBus::CallMessage</a>, <a class="el" href="classDBus_1_1SignalMessage.html#afad82b4bf01c93a4c3b4fab1b5900471">DBus::SignalMessage</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a6ed9899310cc58ed9e57bed18e820a99">DBus::ErrorMessage</a>, and <a class="el" href="classDBus_1_1ReturnMessage.html#a872cc53b5bfb77a78ad2ffa5ada620b1">DBus::ReturnMessage</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="namespaceDBus.html#a3c2529c91e4378589117c1ebc1dc903b">DBus::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1Message.html#a14d59f2b20b27f808ea747e08d439c55">operator==()</a>, and <a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">serialize_to_vector()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a4ec2710c82fdc3f3479c49574340e0f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec2710c82fdc3f3479c49574340e0f0">&#9670;&nbsp;</a></span>MessageAppendIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a></td>
         </tr>
       </table>
   </td>
@@ -1119,21 +1099,12 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Initializes the dbus-cxx library. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">threadsafe</td><td>If <code>true</code> the library's threadsafe structures, along with the underlying dbus library will be initialized to support threadsafe operations. This makes the library threadsafe at the cost of efficiency. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a426256fb6827ddc543d740d15e3f2d95">operator&lt;&lt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#adf5542c93028baab7e8d8ab0896e8df0">append()</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab82eefa326beef0db9a89d24591cd26d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82eefa326beef0db9a89d24591cd26d">&#9670;&nbsp;</a></span>m_cobj</h2>
+<a id="a96830ac40345d12cb9cec5efe497134b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96830ac40345d12cb9cec5efe497134b">&#9670;&nbsp;</a></span>MessageIterator</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1142,22 +1113,22 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">DBusMessage* DBus::Message::m_cobj</td>
+          <td class="memname">friend class <a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#a712fba83283f4e8da530e1453dbc7617">auto_start()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a5828f818fa3eeafe134325e3569dd177">DBus::CallMessage::CallMessage()</a>, <a class="el" href="classDBus_1_1Message.html#a311ec58ddd3d587994b6192e13d71d4e">cobj()</a>, <a class="el" href="classDBus_1_1Message.html#a73dadd9c69222b2901825bf33919dcc3">destination()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a9e5714f66cfcc431cef6346594e1db94">DBus::ErrorMessage::ErrorMessage()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a9ea84d6d274a60e2f5b4c3cb812d4e76">DBus::CallMessage::expects_reply()</a>, <a class="el" href="classDBus_1_1Message.html#a03f101217e2aa8d269cfc22c3954afd0">has_destination()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a2218ebfebb9bbfa05bfcd407476c4e78">DBus::SignalMessage::has_interface()</a>, <a class="el" href="classDBus_1_1CallMessage.html#ad136001b559fe06f7ddc44f21a3776e3">DBus::CallMessage::has_interface()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a480ca75b359fce567ac33bb3981f2f55">DBus::SignalMessage::has_member()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a7755934531d3e08b107e7efdc9bcc72f">DBus::CallMessage::has_member()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ac449edac583e6b1e8859758977132b85">DBus::SignalMessage::has_path()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a1a478fc3ce8d4cf566afbc26880fd642">DBus::CallMessage::has_path()</a>, <a class="el" href="classDBus_1_1Message.html#ad9479f2b4657bff1e4d2ada79c50d648">has_sender()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#a39e1c887dcf746a2385c74478d0aa57b">DBus::ReturnMessage::has_signature()</a>, <a class="el" href="classDBus_1_1CallMessage.html#aac44287d56dca01aa5db130f5621dff2">DBus::CallMessage::has_signature()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a9397a8d732f2f72e7595f98fb162498a">DBus::SignalMessage::interface()</a>, <a class="el" href="classDBus_1_1CallMessage.html#abd5f181691192d2242b231c71f1fa545">DBus::CallMessage::interface()</a>, <a class="el" href="classDBus_1_1Message.html#a3d2947afa546b5f45cdf8ee3cb152c47">is_call()</a>, <a class="el" href="classDBus_1_1Message.html#a6b3dfa2b8299084c4a32ed290a93bdc2">is_error()</a>, <a class="el" href="classDBus_1_1Message.html#a438e8001467d0167cc505db7e82c042a">is_signal()</a>, <a class="el" href="classDBus_1_1Message.html#a9f1936bbe62ecc66cb7a1005690af97c">is_valid()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a0d5c6aef84a20ccf6ffb293ff347ba50">DBus::SignalMessage::member()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a89f7f2a03e97edbf98f6501c390c8bfd">DBus::CallMessage::member()</a>, <a class="el" href="classDBus_1_1Message.html#a3d858b2294bc0456629ada56818fe379">Message()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#ad8ca5afc0e4b1f6059a8972e68db0dce">DBus::ErrorMessage::name()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#a3d5a953b3a430d2d817ba1d9b710767b">DBus::ReturnMessage::operator=()</a>, <a class="el" href="classDBus_1_1Message.html#a884e4f67e9101f92ab5db2ed9e9a1f47">operator=()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#abfe13bd0ce9ce2b3073832e7d523f381">DBus::ErrorMessage::operator==()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#af41c1c1674dbc35dbea75343fd0327fa">DBus::SignalMessage::operator==()</a>, <a class="el" href="classDBus_1_1Message.html#a14d59f2b20b27f808ea747e08d439c55">operator==()</a>, <a class="el" href="classDBus_1_1CallMessage.html#ab9425a1e595c530f6bc75c2d8f02fc98">DBus::CallMessage::operator==()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ab47af541a147e832b81c817a57983527">DBus::SignalMessage::path()</a>, <a class="el" href="classDBus_1_1CallMessage.html#aa4c55b73dd43f71cca10da29394160df">DBus::CallMessage::path()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a3e3f26494cc0e68c89666fec910d20dd">DBus::SignalMessage::path_decomposed()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a0116afaf904496e36be3f135b160b4b0">DBus::CallMessage::path_decomposed()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#abeb4674aa7b7b8ffa814183c486da555">DBus::ReturnMessage::reply_serial()</a>, <a class="el" href="classDBus_1_1Message.html#a11e4607d4ce153ea63968160469d9817">sender()</a>, <a class="el" href="classDBus_1_1Message.html#a3ba619d7c9ad3d82838442d2d2fe310b">serial()</a>, <a class="el" href="classDBus_1_1Message.html#aeb096f19a85f7c5bdce83489621fca9d">set_auto_start()</a>, <a class="el" href="classDBus_1_1Message.html#a128b79afa866ca86a4ba6432e8a59921">set_destination()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ae0abd1a9c5e7d27bd5db335abc214b48">DBus::SignalMessage::set_interface()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a0d608dbf3d6da1748719a0779ac0c406">DBus::CallMessage::set_interface()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#aff9cf08f08693433efd6cd1a97a3fe23">DBus::SignalMessage::set_member()</a>, <a class="el" href="classDBus_1_1CallMessage.html#ab73d340fb710fb490d4409f179f52e00">DBus::CallMessage::set_member()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a55492df9ac65fc7a8d935802ec281f7f">DBus::ErrorMessage::set_name()</a>, <a class="el" href="classDBus_1_1CallMessage.html#acf18151b27f38c94a467058f2c786fe7">DBus::CallMessage::set_no_reply()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#afe7ccabe6942db066fec45bc9b8bff65">DBus::SignalMessage::set_path()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a71d948e74287c39c4b41af797ea71e1e">DBus::CallMessage::set_path()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#a4f8c1eceffd4408b92473cc4d3d3477f">DBus::ReturnMessage::set_reply_serial()</a>, <a class="el" href="classDBus_1_1Message.html#a73d3c4909f5c30ad465d08bc6191ec12">set_sender()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ac597f76710c6e061a52791fd6b0d4f41">DBus::SignalMessage::SignalMessage()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#ab517e99569bd0fc29cfbb712c2626c07">DBus::ReturnMessage::signature()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a68fdb7f119a87d875ab91b8fb53cd5d8">DBus::CallMessage::signature()</a>, <a class="el" href="classDBus_1_1Message.html#a34027b081ce9d5d197a50d37c21e7732">type()</a>, and <a class="el" href="classDBus_1_1Message.html#a146dcac7b24ef4ce1fc2bbed710550df">~Message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#ae9e98121a4c9b32a2e8890c56821248a">begin()</a>, and <a class="el" href="classDBus_1_1Message.html#ab417f6db99c319362e332e6b5019c241">end()</a>.</p>
 
 </div>
 </div>
-<a id="a9a6b551c617e046b74d39cf68f94b73f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a6b551c617e046b74d39cf68f94b73f">&#9670;&nbsp;</a></span>m_valid</h2>
+<a id="a3a7e74e61b8593d0e58910faa3ee543d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7e74e61b8593d0e58910faa3ee543d">&#9670;&nbsp;</a></span>operator<<</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1166,17 +1137,29 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool DBus::Message::m_valid</td>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDBus_1_1Message.html">DBus::Message</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1CallMessage.html#afc22fcb0314ceef5d28230a963aff413">DBus::CallMessage::CallMessage()</a>, <a class="el" href="classDBus_1_1Message.html#af44d0cebc0948be97c810e567d6d4586">invalidate()</a>, and <a class="el" href="classDBus_1_1Message.html#aa386509aafbc3206952bd5954e20c681">Message()</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1170,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

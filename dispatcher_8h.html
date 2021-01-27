@@ -41,53 +41,17 @@ $(function() {
 <div class="title">dispatcher.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;map&gt;</code><br />
-<code>#include &lt;list&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;mutex&gt;</code><br />
-<code>#include &lt;poll.h&gt;</code><br />
-<code>#include &lt;dbus/dbus.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="connection_8h_source.html">dbus-cxx/connection.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="watch_8h_source.html">dbus-cxx/watch.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="timeout_8h_source.html">dbus-cxx/timeout.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="dbus-cxx-config_8h_source.html">dbus-cxx/dbus-cxx-config.h</a>&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for dispatcher.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="dispatcher_8h__incl.png" border="0" usemap="#dispatcher_8h" alt=""/></div>
 <map name="dispatcher_8h" id="dispatcher_8h">
-<area shape="rect" id="node9" href="connection_8h.html" title="dbus&#45;cxx/connection.h" alt="" coords="1414,80,1580,107"/>
-<area shape="rect" id="node25" href="watch_8h.html" title="dbus&#45;cxx/watch.h" alt="" coords="62,543,194,569"/>
-<area shape="rect" id="node26" href="timeout_8h.html" title="dbus&#45;cxx/timeout.h" alt="" coords="2724,155,2870,181"/>
-<area shape="rect" id="node11" href="pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="1701,617,1840,644"/>
-<area shape="rect" id="node13" href="message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="634,543,789,569"/>
-<area shape="rect" id="node22" href="returnmessage_8h.html" title="dbus&#45;cxx/returnmessage.h" alt="" coords="320,304,514,331"/>
-<area shape="rect" id="node24" href="pendingcall_8h.html" title="dbus&#45;cxx/pendingcall.h" alt="" coords="2574,461,2740,487"/>
-<area shape="rect" id="node29" href="accumulators_8h.html" title="dbus&#45;cxx/accumulators.h" alt="" coords="268,617,451,644"/>
-<area shape="rect" id="node30" href="object_8h.html" title="dbus&#45;cxx/object.h" alt="" coords="1495,155,1630,181"/>
-<area shape="rect" id="node34" href="dbus__signal_8h.html" title="dbus&#45;cxx/dbus_signal.h" alt="" coords="1534,304,1705,331"/>
-<area shape="rect" id="node41" href="method_8h.html" title="dbus&#45;cxx/method.h" alt="" coords="1143,304,1288,331"/>
-<area shape="rect" id="node45" href="objectproxy_8h.html" title="dbus&#45;cxx/objectproxy.h" alt="" coords="2103,229,2270,256"/>
-<area shape="rect" id="node46" href="signal__proxy_8h.html" title="dbus&#45;cxx/signal_proxy.h" alt="" coords="2034,379,2206,405"/>
-<area shape="rect" id="node49" href="messagefilter_8h.html" title="dbus&#45;cxx/messagefilter.h" alt="" coords="525,229,706,256"/>
-<area shape="rect" id="node12" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="1673,692,1868,719"/>
-<area shape="rect" id="node16" href="messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="577,617,777,644"/>
-<area shape="rect" id="node21" href="messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="902,617,1150,644"/>
-<area shape="rect" id="node17" href="types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="830,692,961,719"/>
-<area shape="rect" id="node19" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="420,767,558,793"/>
-<area shape="rect" id="node20" href="filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="877,767,1053,793"/>
-<area shape="rect" id="node23" href="callmessage_8h.html" title="dbus&#45;cxx/callmessage.h" alt="" coords="614,461,788,487"/>
-<area shape="rect" id="node31" href="forward__decls_8h.html" title="dbus&#45;cxx/forward_decls.h" alt="" coords="574,379,756,405"/>
-<area shape="rect" id="node32" href="objectpathhandler_8h.html" title="dbus&#45;cxx/objectpathhandler.h" alt="" coords="805,229,1016,256"/>
-<area shape="rect" id="node39" href="interface_8h.html" title="dbus&#45;cxx/interface.h" alt="" coords="1431,229,1582,256"/>
-<area shape="rect" id="node33" href="messagehandler_8h.html" title="dbus&#45;cxx/messagehandler.h" alt="" coords="538,304,739,331"/>
-<area shape="rect" id="node36" href="utility_8h.html" title="dbus&#45;cxx/utility.h" alt="" coords="1442,543,1568,569"/>
-<area shape="rect" id="node37" href="signal__base_8h.html" title="dbus&#45;cxx/signal_base.h" alt="" coords="1724,543,1894,569"/>
-<area shape="rect" id="node38" href="headerlog_8h.html" title="dbus&#45;cxx/headerlog.h" alt="" coords="1444,379,1603,405"/>
-<area shape="rect" id="node40" href="methodbase_8h.html" title="dbus&#45;cxx/methodbase.h" alt="" coords="781,379,957,405"/>
-<area shape="rect" id="node42" href="errormessage_8h.html" title="dbus&#45;cxx/errormessage.h" alt="" coords="915,461,1100,487"/>
-<area shape="rect" id="node48" href="interfaceproxy_8h.html" title="dbus&#45;cxx/interfaceproxy.h" alt="" coords="2241,304,2425,331"/>
-<area shape="rect" id="node47" href="signal__proxy__base_8h.html" title="dbus&#45;cxx/signal_proxy\l_base.h" alt="" coords="1881,453,2044,495"/>
+<area shape="rect" id="node2" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="5,80,205,107"/>
+<area shape="rect" id="node5" href="enums_8h.html" title="enums.h" alt="" coords="414,80,493,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -95,9 +59,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="dispatcher_8h__dep__incl.png" border="0" usemap="#dispatcher_8hdep" alt=""/></div>
 <map name="dispatcher_8hdep" id="dispatcher_8hdep">
-<area shape="rect" id="node2" href="dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="5,80,120,107"/>
-<area shape="rect" id="node3" href="glibmm_2dispatcher_8h.html" title="dispatcher.h" alt="" coords="145,80,245,107"/>
-<area shape="rect" id="node4" href="glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="137,155,252,181"/>
+<area shape="rect" id="node2" href="dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node3" href="standalonedispatcher_8h.html" title="standalonedispatcher.h" alt="" coords="146,80,319,107"/>
+<area shape="rect" id="node4" href="standalonedispatcher_8cpp.html" title="standalonedispatcher.cpp" alt="" coords="139,155,327,181"/>
 </map>
 </div>
 </div>
@@ -106,9 +70,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Dispatcher.html">DBus::Dispatcher</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles multi-threaded dispatching of one or more connections.  <a href="classDBus_1_1Dispatcher.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Dispatcher_1_1WatchPair.html">DBus::Dispatcher::WatchPair</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="classDBus_1_1Dispatcher.html" title="A Dispatcher handles all of the reading/writing that a Connection needs in order to work correctly...">Dispatcher</a> handles all of the reading/writing that a <a class="el" href="classDBus_1_1Connection.html" title="Connection point to the DBus. ">Connection</a> needs in order to work correctly.  <a href="classDBus_1_1Dispatcher.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -120,7 +82,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -35,18 +35,29 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Although this is a bit more in-depth than I planned for a quick start tutorial I thought I'd include this little blurb on using pkgconfig to help with setting your application to use dbus-cxx.</p>
-<p>dbus-cxx is distributed with two (at the current time) pkgconfig .pc files named dbus-cxx-1.0.pc and dbus-cxx-glibmm-1.0.pc. If you installed the Fedora dbus-cxx-devel or dbus-cxx-glibmm-devel packages you'll find these files installed in a directory named /pkgconfig under in your architecture's library directory (probably /usr/lib/pkgconfig or /usr/lib64/pkgconfig ).</p>
-<h1><a class="anchor" id="quick_start_pkgconfig_autotools"></a>
-Using pkg-config with autotools</h1>
-<p>If you are using autotools, modify configure.ac (or configure.in ) with the following lines: </p><div class="fragment"><div class="line">PKG_CHECK_MODULES(PROJECT_DBUSCXX,[dbus-cxx-1.0 &gt;= 0.7.0])</div><div class="line">AC_SUBST(PROJECT_DBUSCXX_LIBS)</div><div class="line">AC_SUBST(PROJECT_DBUSCXX_CFLAGS)</div></div><!-- fragment --><p>You can then use the symbols PROJECT_DBUSCXX_LIBS and PROJECT_DBUSCXX_CFLAGS in your Makefile.am files. For example, if you have a application named fooapp your Makefile.am might look like this: </p><div class="fragment"><div class="line">INCLUDES = $(PROJECT_DBUSCXX_CFLAGS)</div><div class="line">bin_PROGRAMS = fooapp</div><div class="line">fooapp_SOURCES = fooapp.cpp</div><div class="line">fooapp_LDADD = $(PROJECT_DBUSCXX_LIBS)</div></div><!-- fragment --><h1><a class="anchor" id="quick_start_pkgconfig_qt"></a>
-Using pkg-config with QT</h1>
-<p>Because of QTs signal/slot mechanism, dbus-cxx will not work directly with QT. There are a few things that need to be modified in the .pro file of your project. Add/change the following lines: </p><div class="fragment"><div class="line">CONFIG += no_keywords</div><div class="line">unix:CONFIG += link_pkgconfig</div><div class="line">unix:PKGCONFIG += dbus-cxx-1.0</div></div><!-- fragment --><p> At any point in your QT program, you need to use QT signals or slots, use the macros Q_SIGNALS or Q_SLOTS to define your signals/slots</p>
-<p><b>Continue On:</b> <a class="el" href="quick_start_initial_concepts.html">Initial Concepts</a></p>
+<p>dbus-cxx is distributed with several pkgconfig .pc files depending on your needs.</p>
+<table class="doxtable">
+<tr>
+<th>.pc file</th><th>Used for  </th></tr>
+<tr>
+<td>dbus-cxx-2.0.pc</td><td>Using the library directly. If you're not using a framework/library, this is what you want to use </td></tr>
+<tr>
+<td>dbus-cxx-qt-2.0.pc</td><td>Integrating dbus-cxx with Qt. Depends on dbus-cxx-2.0.pc </td></tr>
+<tr>
+<td>dbus-cxx-glib-2.0.pc</td><td>Integrating dbus-cxx with GLib. Depends on dbus-cxx-2.0.pc </td></tr>
+</table>
+<h2>Using pkg-config with autotools</h2>
+<p>If you are using autotools, modify configure.ac (or configure.in ) with the following lines: </p><div class="fragment"><div class="line">PKG_CHECK_MODULES(PROJECT_DBUSCXX,[dbus-cxx-2.0 &gt;= 2.0.0])</div><div class="line">AC_SUBST(PROJECT_DBUSCXX_LIBS)</div><div class="line">AC_SUBST(PROJECT_DBUSCXX_CFLAGS)</div></div><!-- fragment --><p>You can then use the symbols <code>PROJECT_DBUSCXX_LIBS</code> and <code>PROJECT_DBUSCXX_CFLAGS</code> in your Makefile.am files. For example, if you have a application named fooapp your Makefile.am might look like this: </p><div class="fragment"><div class="line">INCLUDES = $(PROJECT_DBUSCXX_CFLAGS)</div><div class="line">bin_PROGRAMS = fooapp</div><div class="line">fooapp_SOURCES = fooapp.cpp</div><div class="line">fooapp_LDADD = $(PROJECT_DBUSCXX_LIBS)</div></div><!-- fragment --><h2>Using pkg-config with Qt</h2>
+<p>Because of Qt's signal/slot mechanism, dbus-cxx will not work directly with Qt. Assuming that you are using QMake, you will need to add the following lines to your .pro file: </p><div class="fragment"><div class="line">CONFIG += no_keywords</div><div class="line">unix:CONFIG += link_pkgconfig</div><div class="line">unix:PKGCONFIG += dbus-cxx-qt-2.0</div></div><!-- fragment --><p> Note that this will also allow you to use the Qt integration with dbus-cxx.</p>
+<p>At any point in your Qt program, you need to use Qt signals or slots, use the macros Q_SIGNALS or Q_SLOTS to define your signals/slots.</p>
+<h2>Using pkg-config with CMake</h2>
+<p>If your project uses CMake, something along the lines of the following should work:</p>
+<div class="fragment"><div class="line">pkg_check_modules( dbus-cxx-2.0 REQUIRED dbus-cxx )</div><div class="line"></div><div class="line">target_include_directories( exe ${dbus-cxx_INCLUDE_DIRS} )</div><div class="line">target_link_libraries( exe ${dbus-cxx_LDFLAGS} )</div></div><!-- fragment --><p><b>Continue On:</b> <a class="el" href="quick_start_initial_concepts.html">Initial Concepts</a></p>
 <p><b>Go Back:</b> <a class="el" href="quick_start.html">Quick Start Guide to dbus-cxx</a> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

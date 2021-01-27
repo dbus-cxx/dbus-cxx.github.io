@@ -35,7 +35,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classDBus_1_1Path-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -43,15 +42,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Represents a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> <a class="el" href="classDBus_1_1Path.html" title="Represents a DBus Path. ">Path</a>.  
+ <a href="classDBus_1_1Path.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="path_8h_source.html">path.h</a>&gt;</code></p>
 
 <p>Inherits std::string.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a2db9040de507c9df8f834c673f3a3248"><td class="memItemLeft" align="right" valign="top">typedef std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Path.html#a2db9040de507c9df8f834c673f3a3248">Decomposed</a></td></tr>
-<tr class="separator:a2db9040de507c9df8f834c673f3a3248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa25adc640ca684014521c6719fffd119"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Path.html#aa25adc640ca684014521c6719fffd119">Path</a> ()</td></tr>
@@ -73,31 +70,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a641917db6a968fc7c50b5b4630c63257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cf8eb761c22f73eac0be547703a032a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Path.html#a9cf8eb761c22f73eac0be547703a032a">is_valid</a> () const</td></tr>
 <tr class="separator:a9cf8eb761c22f73eac0be547703a032a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a7f9391cb1ad05dddaf9d09bc70d6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1Path.html#a2db9040de507c9df8f834c673f3a3248">Decomposed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Path.html#ac3a7f9391cb1ad05dddaf9d09bc70d6e">decomposed</a> () const</td></tr>
-<tr class="memdesc:ac3a7f9391cb1ad05dddaf9d09bc70d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decomposes the string into its component elements.  <a href="#ac3a7f9391cb1ad05dddaf9d09bc70d6e">More...</a><br /></td></tr>
-<tr class="separator:ac3a7f9391cb1ad05dddaf9d09bc70d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb30c4b80051acbaec5c38962ab286e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Path.html#a1cb30c4b80051acbaec5c38962ab286e">decomposed</a> () const</td></tr>
+<tr class="memdesc:a1cb30c4b80051acbaec5c38962ab286e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decomposes the string into its component elements.  <a href="#a1cb30c4b80051acbaec5c38962ab286e">More...</a><br /></td></tr>
+<tr class="separator:a1cb30c4b80051acbaec5c38962ab286e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6df15e7768ed63b84334ce6ba5259b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Path.html#aae6df15e7768ed63b84334ce6ba5259b">append_element</a> (const std::string &amp;element)</td></tr>
 <tr class="memdesc:aae6df15e7768ed63b84334ce6ba5259b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the element string to the path ensuring delimeters are properly taken care of.  <a href="#aae6df15e7768ed63b84334ce6ba5259b">More...</a><br /></td></tr>
 <tr class="separator:aae6df15e7768ed63b84334ce6ba5259b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Rick L Vinyard Jr <a href="#" onclick="location.href='mai'+'lto:'+'rvi'+'ny'+'ard'+'@c'+'s.n'+'ms'+'u.e'+'du'; return false;">rviny<span style="display: none;">.nosp@m.</span>ard@<span style="display: none;">.nosp@m.</span>cs.nm<span style="display: none;">.nosp@m.</span>su.e<span style="display: none;">.nosp@m.</span>du</a> </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a2db9040de507c9df8f834c673f3a3248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2db9040de507c9df8f834c673f3a3248">&#9670;&nbsp;</a></span>Decomposed</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef std::vector&lt;std::string&gt; <a class="el" href="classDBus_1_1Path.html#a2db9040de507c9df8f834c673f3a3248">DBus::Path::Decomposed</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="textblock"><p>Represents a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> <a class="el" href="classDBus_1_1Path.html" title="Represents a DBus Path. ">Path</a>. </p>
+<p>Paths have slashes in them(e.g. /com/example/MusicPlayer1)</p>
+<dl class="section author"><dt>Author</dt><dd>Rick L Vinyard Jr <a href="#" onclick="location.href='mai'+'lto:'+'rvi'+'ny'+'ard'+'@c'+'s.n'+'ms'+'u.e'+'du'; return false;">rviny<span style="display: none;">.nosp@m.</span>ard@<span style="display: none;">.nosp@m.</span>cs.nm<span style="display: none;">.nosp@m.</span>su.e<span style="display: none;">.nosp@m.</span>du</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa25adc640ca684014521c6719fffd119"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa25adc640ca684014521c6719fffd119">&#9670;&nbsp;</a></span>Path() <span class="overload">[1/6]</span></h2>
 
@@ -259,7 +243,7 @@ template&lt;class InputIterator &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Path.html#aae6df15e7768ed63b84334ce6ba5259b">append_element()</a>, <a class="el" href="classDBus_1_1Path.html#ac3a7f9391cb1ad05dddaf9d09bc70d6e">decomposed()</a>, <a class="el" href="classDBus_1_1Path.html#a9cf8eb761c22f73eac0be547703a032a">is_valid()</a>, and <a class="el" href="classDBus_1_1Path.html#a6aac4eebff596ec11017e80ff0a85474">~Path()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1Path.html#aae6df15e7768ed63b84334ce6ba5259b">append_element()</a>, <a class="el" href="classDBus_1_1Path.html#a1cb30c4b80051acbaec5c38962ab286e">decomposed()</a>, <a class="el" href="classDBus_1_1Path.html#a9cf8eb761c22f73eac0be547703a032a">is_valid()</a>, and <a class="el" href="classDBus_1_1Path.html#a6aac4eebff596ec11017e80ff0a85474">~Path()</a>.</p>
 
 </div>
 </div>
@@ -309,14 +293,14 @@ template&lt;class InputIterator &gt; </div>
 
 </div>
 </div>
-<a id="ac3a7f9391cb1ad05dddaf9d09bc70d6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3a7f9391cb1ad05dddaf9d09bc70d6e">&#9670;&nbsp;</a></span>decomposed()</h2>
+<a id="a1cb30c4b80051acbaec5c38962ab286e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb30c4b80051acbaec5c38962ab286e">&#9670;&nbsp;</a></span>decomposed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Path.html#a2db9040de507c9df8f834c673f3a3248">Path::Decomposed</a> DBus::Path::decomposed </td>
+          <td class="memname">std::vector&lt; std::string &gt; DBus::Path::decomposed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -351,7 +335,7 @@ template&lt;class InputIterator &gt; </div>
 
 <p class="reference">References <a class="el" href="path_8cpp.html#ac5970c6ee478235f8def3d74ad974875">DBUSCXX_VALID_PATH_CHARACTERS</a>, and <a class="el" href="namespaceDBus.html#ab2a8e176bd4aec7db3f70c70fae23e0b">DBus::npos</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Path.html#ac3a7f9391cb1ad05dddaf9d09bc70d6e">decomposed()</a>, <a class="el" href="classDBus_1_1Path.html#a641917db6a968fc7c50b5b4630c63257">operator bool()</a>, and <a class="el" href="classDBus_1_1Path.html#abadf5656f0a8aaa41ebd1dc03857847f">Path()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Path.html#a1cb30c4b80051acbaec5c38962ab286e">decomposed()</a>, <a class="el" href="classDBus_1_1Path.html#a641917db6a968fc7c50b5b4630c63257">operator bool()</a>, and <a class="el" href="classDBus_1_1Path.html#abadf5656f0a8aaa41ebd1dc03857847f">Path()</a>.</p>
 
 </div>
 </div>
@@ -381,7 +365,7 @@ template&lt;class InputIterator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dbus-cxx: DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt; Class Template Reference</title>
+<title>dbus-cxx: DBus::Method&lt; T_type &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -35,127 +35,83 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classDBus_1_1Method-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__local.html">Local Objects</a> &#124; <a class="el" href="group__objects.html">Objects</a></div></div>  </div>
+<div class="title">DBus::Method&lt; T_type &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="method_8h_source.html">method.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="methodbase_8h_source.html">methodbase.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;:</div>
+Inheritance diagram for DBus::Method&lt; T_type &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classDBus_1_1Method__inherit__graph.png" border="0" usemap="#DBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="DBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4_inherit__map" id="DBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4_inherit__map">
-<area shape="rect" id="node2" href="classDBus_1_1MethodBase.html" title="DBus::MethodBase" alt="" coords="25,5,169,32"/>
+<div class="center"><img src="classDBus_1_1Method__inherit__graph.png" border="0" usemap="#DBus_1_1Method_3_01T__type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="DBus_1_1Method_3_01T__type_01_4_inherit__map" id="DBus_1_1Method_3_01T__type_01_4_inherit__map">
+<area shape="rect" id="node2" href="classDBus_1_1MethodBase.html" title="Base class for all methods(proxy and local). " alt="" coords="27,5,171,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aa8006fd7bb76b2cd1b7253b48e238e28"><td class="memItemLeft" align="right" valign="top">typedef DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Method.html">Method</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#aa8006fd7bb76b2cd1b7253b48e238e28">pointer</a></td></tr>
-<tr class="separator:aa8006fd7bb76b2cd1b7253b48e238e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classDBus_1_1MethodBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classDBus_1_1MethodBase')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classDBus_1_1MethodBase.html">DBus::MethodBase</a></td></tr>
-<tr class="memitem:ac050165e7aa35a1d093e7e9762164b10 inherit pub_types_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">typedef DBusCxxPointer&lt; <a class="el" href="classDBus_1_1MethodBase.html">MethodBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#ac050165e7aa35a1d093e7e9762164b10">pointer</a></td></tr>
-<tr class="separator:ac050165e7aa35a1d093e7e9762164b10 inherit pub_types_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5737449b67408a0be5803a1af3395cfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a5737449b67408a0be5803a1af3395cfe">Method</a> (const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
-<tr class="separator:a5737449b67408a0be5803a1af3395cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d9d7b574bef37b9984c628a453f6480"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a4d9d7b574bef37b9984c628a453f6480">~Method</a> ()</td></tr>
-<tr class="separator:a4d9d7b574bef37b9984c628a453f6480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae83c3936472059f4fe7e83068b45e7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#adae83c3936472059f4fe7e83068b45e7">handle_call_message</a> (DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt; connection, <a class="el" href="classDBus_1_1CallMessage.html#af272a4e12e19e05ab34fb7a50e09ac5c">CallMessage::const_pointer</a> message)</td></tr>
-<tr class="separator:adae83c3936472059f4fe7e83068b45e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b3720fdfd05364c3e999b5c98d2e20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#ad6b3720fdfd05364c3e999b5c98d2e20">set_method</a> (sigc::slot7&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt; slot)</td></tr>
-<tr class="separator:ad6b3720fdfd05364c3e999b5c98d2e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca05777e1e0e2f213d29a982b902924e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classDBus_1_1MethodBase.html#ac050165e7aa35a1d093e7e9762164b10">MethodBase::pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#aca05777e1e0e2f213d29a982b902924e">clone</a> ()</td></tr>
-<tr class="separator:aca05777e1e0e2f213d29a982b902924e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fd5f44c76f56ed8fc681922c124c5a8"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a2fd5f44c76f56ed8fc681922c124c5a8">introspect</a> (int space_depth=0) const</td></tr>
-<tr class="memdesc:a2fd5f44c76f56ed8fc681922c124c5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> XML description of this interface.  <a href="#a2fd5f44c76f56ed8fc681922c124c5a8">More...</a><br /></td></tr>
-<tr class="separator:a2fd5f44c76f56ed8fc681922c124c5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93cb9ccac19d5420ba515a5d3962dbc0"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a93cb9ccac19d5420ba515a5d3962dbc0">arg_name</a> (size_t i)</td></tr>
-<tr class="separator:a93cb9ccac19d5420ba515a5d3962dbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3cb23f50bcdf7ae03a028e6fa447908"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#aa3cb23f50bcdf7ae03a028e6fa447908">set_arg_name</a> (size_t i, const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
-<tr class="separator:aa3cb23f50bcdf7ae03a028e6fa447908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eed1d2e51c757957eefbecfe46d272c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a7eed1d2e51c757957eefbecfe46d272c">set_method</a> (sigc::slot&lt; T_type &gt; slot)</td></tr>
+<tr class="separator:a7eed1d2e51c757957eefbecfe46d272c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ba5dda69cfd04281bf646fb25078d9"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a46ba5dda69cfd04281bf646fb25078d9">introspect</a> (int space_depth=0) const</td></tr>
+<tr class="separator:a46ba5dda69cfd04281bf646fb25078d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68687a15aae44565ef1a9f519b50ebd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#ab68687a15aae44565ef1a9f519b50ebd">handle_call_message</a> (std::shared_ptr&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt; connection, std::shared_ptr&lt; const <a class="el" href="classDBus_1_1CallMessage.html">CallMessage</a> &gt; message)</td></tr>
+<tr class="separator:ab68687a15aae44565ef1a9f519b50ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classDBus_1_1MethodBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDBus_1_1MethodBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classDBus_1_1MethodBase.html">DBus::MethodBase</a></td></tr>
 <tr class="memitem:aeba04ac8812a66e538e9ee179ca30c5a inherit pub_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#aeba04ac8812a66e538e9ee179ca30c5a">~MethodBase</a> ()</td></tr>
 <tr class="separator:aeba04ac8812a66e538e9ee179ca30c5a inherit pub_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada18f9fdfe3e9667a777f296ca92d72a inherit pub_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a> () const</td></tr>
 <tr class="separator:ada18f9fdfe3e9667a777f296ca92d72a inherit pub_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef73ba4992525c7b47a2b73ccd19b83 inherit pub_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#afef73ba4992525c7b47a2b73ccd19b83">set_name</a> (const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
-<tr class="separator:afef73ba4992525c7b47a2b73ccd19b83 inherit pub_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5cc14163be7df59e20daabd0259e7a6 inherit pub_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">sigc::signal&lt; void, const std::string &amp;, const std::string &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#ab5cc14163be7df59e20daabd0259e7a6">signal_name_changed</a> ()</td></tr>
-<tr class="separator:ab5cc14163be7df59e20daabd0259e7a6 inherit pub_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129d6e8f0fd6c001059a4e2edffd044e inherit pub_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#a129d6e8f0fd6c001059a4e2edffd044e">arg_name</a> (size_t i) const</td></tr>
+<tr class="separator:a129d6e8f0fd6c001059a4e2edffd044e inherit pub_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18fcab8a8e802db79e52786461ddee2 inherit pub_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#ae18fcab8a8e802db79e52786461ddee2">set_arg_name</a> (size_t i, const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
+<tr class="separator:ae18fcab8a8e802db79e52786461ddee2 inherit pub_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362be8576437e8fe47ccc8522b43fe2b inherit pub_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#a362be8576437e8fe47ccc8522b43fe2b">arg_names</a> () const</td></tr>
+<tr class="separator:a362be8576437e8fe47ccc8522b43fe2b inherit pub_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6074ef005e895af3ebc61392674103b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1Method.html#aa8006fd7bb76b2cd1b7253b48e238e28">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a6074ef005e895af3ebc61392674103b9">create</a> (const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
-<tr class="separator:a6074ef005e895af3ebc61392674103b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6a80dce7cb6a9b38ff91d017fdd29e"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classDBus_1_1Method.html">Method</a>&lt; T_type &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a0e6a80dce7cb6a9b38ff91d017fdd29e">create</a> (const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
+<tr class="separator:a0e6a80dce7cb6a9b38ff91d017fdd29e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:af0948a6636c3ba4d77b5ed98784073fc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#af0948a6636c3ba4d77b5ed98784073fc">m_arg_names</a> [7+1]</td></tr>
-<tr class="separator:af0948a6636c3ba4d77b5ed98784073fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef37eea7f2f3054571f464998acb59b3"><td class="memItemLeft" align="right" valign="top">sigc::slot7&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#aef37eea7f2f3054571f464998acb59b3">m_slot</a></td></tr>
-<tr class="separator:aef37eea7f2f3054571f464998acb59b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classDBus_1_1MethodBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDBus_1_1MethodBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classDBus_1_1MethodBase.html">DBus::MethodBase</a></td></tr>
-<tr class="memitem:abb2d5a65d8f44d6adbb30abd610de30d inherit pro_attribs_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#abb2d5a65d8f44d6adbb30abd610de30d">m_name</a></td></tr>
-<tr class="separator:abb2d5a65d8f44d6adbb30abd610de30d inherit pro_attribs_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9b478eeacf980e22586ce3c56b0865c inherit pro_attribs_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#aa9b478eeacf980e22586ce3c56b0865c">m_name_mutex</a></td></tr>
-<tr class="memdesc:aa9b478eeacf980e22586ce3c56b0865c inherit pro_attribs_classDBus_1_1MethodBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that the name doesn't change while the name changed signal is emitting.  <a href="classDBus_1_1MethodBase.html#aa9b478eeacf980e22586ce3c56b0865c">More...</a><br /></td></tr>
-<tr class="separator:aa9b478eeacf980e22586ce3c56b0865c inherit pro_attribs_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65dc8921f5b5b5383b733daaf89e808 inherit pro_attribs_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">sigc::signal&lt; void, const std::string &amp;, const std::string &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#aa65dc8921f5b5b5383b733daaf89e808">m_signal_name_changed</a></td></tr>
-<tr class="separator:aa65dc8921f5b5b5383b733daaf89e808 inherit pro_attribs_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a62a5e2837885fa644807271d17c5cbc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#a62a5e2837885fa644807271d17c5cbc2">Method</a> (const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
+<tr class="separator:a62a5e2837885fa644807271d17c5cbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af79e24afcb847c9a191d674a8bd8715c"><td class="memItemLeft" align="right" valign="top">sigc::slot&lt; T_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Method.html#af79e24afcb847c9a191d674a8bd8715c">m_slot</a></td></tr>
+<tr class="separator:af79e24afcb847c9a191d674a8bd8715c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classDBus_1_1MethodBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classDBus_1_1MethodBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classDBus_1_1MethodBase.html">DBus::MethodBase</a></td></tr>
 <tr class="memitem:a8c839607a2549edd93a74f2b4c7619a9 inherit pro_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#a8c839607a2549edd93a74f2b4c7619a9">MethodBase</a> (const std::string &amp;<a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">name</a>)</td></tr>
 <tr class="separator:a8c839607a2549edd93a74f2b4c7619a9 inherit pro_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac83c4bb9bf0c67e76dff3f398a31e642 inherit pro_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#ac83c4bb9bf0c67e76dff3f398a31e642">MethodBase</a> (const <a class="el" href="classDBus_1_1MethodBase.html">MethodBase</a> &amp;other)</td></tr>
-<tr class="separator:ac83c4bb9bf0c67e76dff3f398a31e642 inherit pro_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9feeff5d21811d4d6df1139e9b70cf1 inherit pro_methods_classDBus_1_1MethodBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodBase.html#aa9feeff5d21811d4d6df1139e9b70cf1">sendMessage</a> (std::shared_ptr&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt; connection, const std::shared_ptr&lt; const <a class="el" href="classDBus_1_1Message.html">Message</a> &gt;)</td></tr>
+<tr class="separator:aa9feeff5d21811d4d6df1139e9b70cf1 inherit pro_methods_classDBus_1_1MethodBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class T_return, class T_arg1, class T_arg2, class T_arg3, class T_arg4, class T_arg5, class T_arg6, class T_arg7&gt;<br />
-class DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;</h3>
-
-<dl class="section author"><dt>Author</dt><dd>Rick L Vinyard Jr <a href="#" onclick="location.href='mai'+'lto:'+'rvi'+'ny'+'ard'+'@c'+'s.n'+'ms'+'u.e'+'du'; return false;">rviny<span style="display: none;">.nosp@m.</span>ard@<span style="display: none;">.nosp@m.</span>cs.nm<span style="display: none;">.nosp@m.</span>su.e<span style="display: none;">.nosp@m.</span>du</a> </dd></dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa8006fd7bb76b2cd1b7253b48e238e28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8006fd7bb76b2cd1b7253b48e238e28">&#9670;&nbsp;</a></span>pointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DBusCxxPointer&lt;<a class="el" href="classDBus_1_1Method.html">Method</a>&gt; <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::<a class="el" href="classDBus_1_1Method.html#aa8006fd7bb76b2cd1b7253b48e238e28">pointer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5737449b67408a0be5803a1af3395cfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5737449b67408a0be5803a1af3395cfe">&#9670;&nbsp;</a></span>Method()</h2>
+<a id="a62a5e2837885fa644807271d17c5cbc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a5e2837885fa644807271d17c5cbc2">&#9670;&nbsp;</a></span>Method()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
+template&lt;typename T_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::<a class="el" href="classDBus_1_1Method.html">Method</a> </td>
+          <td class="memname"><a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_type &gt;::<a class="el" href="classDBus_1_1Method.html">Method</a> </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -164,121 +120,27 @@ template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Method.html#aca05777e1e0e2f213d29a982b902924e">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ac6350b95d16bfa70e6560351470a4c8e">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a33a91d0e6076ea881f2102e2ffe8b40a">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a0e55f2898a1dddc92fb08dba244534e0">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a4cd135d9d3aa601ec1f248822becdb49">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#abce8ffcab4b0386d18fbb06f1a6255c9">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#aceb721c22a7c5551fd45e4c1d2ed26b3">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ac587856b92c9658d6dc94f08e8331be9">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a0f1e64a2fce81fb6313d8605e15809e5">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ac97f08521db1c5ad6c7c86348ceeebe6">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ae476fc36f9b6223ab580dda1e15fe0c7">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ad6b43646d03ec6364e153b45df61d3d3">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a46f3ef2f2fb4499ae080897f34e7588d">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#ae537476dc376abce3a325609d1204d34">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ad644906bddb08ea78470be39f43c93db">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#aaea36db61d9e3d4f19435a94e9965fbf">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::clone()</a>, <a class="el" href="classDBus_1_1Method.html#a6074ef005e895af3ebc61392674103b9">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a97ab935e0eb34cee79912a3579329eb2">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a8112ebf6da6941fa30e9beb3d5b60f7c">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a4fb02ce250aa5b33ad5c37386bbcae46">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a97cd69e65cbee98c530417b2b0b551cc">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a0cac6621ecf385f69d35cc8e0a30b964">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a93fc9c9bad253b6e72a063299dc7e20c">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a4d01f1c6144b2d99960aa55ca4523dc0">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab62e21542ff2aee9b55a8567b7069e08">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a32228a4a3c39458dc5221d661e312938">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a057ca6188f1556d9ce278794c60b6e51">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a73f9b55cba80f8889497d23704e34f74">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a3508265687747909bc9e17e3b8fd6275">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a88877adaa8bd340f45228259f4e30e6c">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::create()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ab910e9f3ac49e3907d44ef60aa56f7bf">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::create()</a>, and <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#a4340517470d47b50d91b6db3078b1089">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::create()</a>.</p>
-
-</div>
-</div>
-<a id="a4d9d7b574bef37b9984c628a453f6480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d9d7b574bef37b9984c628a453f6480">&#9670;&nbsp;</a></span>~Method()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::~<a class="el" href="classDBus_1_1Method.html">Method</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1Method.html#adae83c3936472059f4fe7e83068b45e7">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::handle_call_message()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a93cb9ccac19d5420ba515a5d3962dbc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93cb9ccac19d5420ba515a5d3962dbc0">&#9670;&nbsp;</a></span>arg_name()</h2>
+<a id="a0e6a80dce7cb6a9b38ff91d017fdd29e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6a80dce7cb6a9b38ff91d017fdd29e">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
+template&lt;typename T_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::arg_name </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classDBus_1_1MethodBase.html#a4a99f562cb5696c91fd0f9155e97517b">DBus::MethodBase</a>.</p>
-
-<p class="reference">References <a class="el" href="classDBus_1_1Method.html#af0948a6636c3ba4d77b5ed98784073fc">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::m_arg_names</a>.</p>
-
-</div>
-</div>
-<a id="aca05777e1e0e2f213d29a982b902924e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca05777e1e0e2f213d29a982b902924e">&#9670;&nbsp;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="classDBus_1_1MethodBase.html#ac050165e7aa35a1d093e7e9762164b10">MethodBase::pointer</a> <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::clone </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classDBus_1_1MethodBase.html#ab8df06197f3b9995382b2423e1ab321b">DBus::MethodBase</a>.</p>
-
-<p class="reference">References <a class="el" href="classDBus_1_1Method.html#a5737449b67408a0be5803a1af3395cfe">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::Method()</a>, and <a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">DBus::MethodBase::name()</a>.</p>
-
-</div>
-</div>
-<a id="a6074ef005e895af3ebc61392674103b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6074ef005e895af3ebc61392674103b9">&#9670;&nbsp;</a></span>create()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="classDBus_1_1Method.html#aa8006fd7bb76b2cd1b7253b48e238e28">pointer</a> <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::create </td>
+          <td class="memname">static std::shared_ptr&lt;<a class="el" href="classDBus_1_1Method.html">Method</a>&lt;T_type&gt; &gt; <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_type &gt;::create </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -292,33 +154,33 @@ template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class 
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Method.html#a5737449b67408a0be5803a1af3395cfe">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::Method()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">DBus::MethodBase::name()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Interface.html#aaca7fe0ee57a7c9ebf9e03233f52d915">DBus::Interface::create_method()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Interface.html#aa0f357ea42eacbde17344d3fc68be642">DBus::Interface::create_method()</a>.</p>
 
 </div>
 </div>
-<a id="adae83c3936472059f4fe7e83068b45e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adae83c3936472059f4fe7e83068b45e7">&#9670;&nbsp;</a></span>handle_call_message()</h2>
+<a id="ab68687a15aae44565ef1a9f519b50ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68687a15aae44565ef1a9f519b50ebd">&#9670;&nbsp;</a></span>handle_call_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
+template&lt;typename T_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a> <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::handle_call_message </td>
+          <td class="memname">virtual <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0">HandlerResult</a> <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_type &gt;::handle_call_message </td>
           <td>(</td>
-          <td class="paramtype">DBusCxxPointer&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classDBus_1_1Connection.html">Connection</a> &gt;&#160;</td>
           <td class="paramname"><em>connection</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classDBus_1_1CallMessage.html#af272a4e12e19e05ab34fb7a50e09ac5c">CallMessage::const_pointer</a>&#160;</td>
+          <td class="paramtype">std::shared_ptr&lt; const <a class="el" href="classDBus_1_1CallMessage.html">CallMessage</a> &gt;&#160;</td>
           <td class="paramname"><em>message</em>&#160;</td>
         </tr>
         <tr>
@@ -329,32 +191,30 @@ template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class 
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classDBus_1_1MethodBase.html#a649855a86b1e30cb9a1aa4e0c9f059e4">DBus::MethodBase</a>.</p>
+<p>Implements <a class="el" href="classDBus_1_1MethodBase.html#a62d7633c94d0369445e986aefbfa8f22">DBus::MethodBase</a>.</p>
 
-<p class="reference">References <a class="el" href="classDBus_1_1ErrorMessage.html#af7c2df360623434b290b6b567f2b35f3">DBus::ErrorMessage::create()</a>, <a class="el" href="dbus-cxx-config_8h.html#a5490a57f517256df8cf2c5a77537e7da">DBUS_CXX_PACKAGE_MAJOR_VERSION</a>, <a class="el" href="dbus-cxx-config_8h.html#acd3a383dcc48ddf9dc7760a3b4ff3d8c">DBUS_CXX_PACKAGE_MICRO_VERSION</a>, <a class="el" href="dbus-cxx-config_8h.html#a7c70d8ba86f1f8972fb33b0499120cf6">DBUS_CXX_PACKAGE_MINOR_VERSION</a>, <a class="el" href="headerlog_8h.html#a5e7626c9a7589fd229167082a1d619b9">DBUSCXX_DEBUG_STDSTR</a>, <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0af6d81c3b78788257e17f2c5852d6beab">DBus::HANDLED</a>, <a class="el" href="classDBus_1_1MethodBase.html#abb2d5a65d8f44d6adbb30abd610de30d">DBus::MethodBase::m_name</a>, <a class="el" href="classDBus_1_1Method.html#aef37eea7f2f3054571f464998acb59b3">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::m_slot</a>, and <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0a6b7b1c5651a648f0767234dd7d5dc805">DBus::NOT_HANDLED</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Method.html#a4d9d7b574bef37b9984c628a453f6480">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::~Method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab4f1a3e12f05692098f2448d0f18c5c7">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::~Method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ad7890beaa2d05c8e8ba5165ecb016b16">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::~Method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a879ae23c9b682e68f4a5fae5781b1b7f">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::~Method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ad097c34f9957d943a197ec78ccbc2b03">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::~Method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a75994b0d7296c1982bd47d71ca860e40">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::~Method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#adf6f9af273064dc79adfe1d8aafb1166">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::~Method()</a>, and <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a28a0ffcd386ef09d35327ecd5a02b2a2">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::~Method()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1ErrorMessage.html#a41f22fbaec689d9af642a1e827a6b87d">DBus::ErrorMessage::create()</a>, <a class="el" href="dbus-cxx-config_8h.html#a5490a57f517256df8cf2c5a77537e7da">DBUS_CXX_PACKAGE_MAJOR_VERSION</a>, <a class="el" href="dbus-cxx-config_8h.html#acd3a383dcc48ddf9dc7760a3b4ff3d8c">DBUS_CXX_PACKAGE_MICRO_VERSION</a>, <a class="el" href="dbus-cxx-config_8h.html#a7c70d8ba86f1f8972fb33b0499120cf6">DBUS_CXX_PACKAGE_MINOR_VERSION</a>, <a class="el" href="headerlog_8h.html#a5e7626c9a7589fd229167082a1d619b9">DBUSCXX_DEBUG_STDSTR</a>, <a class="el" href="dbus-error_8h.html#a0397bb253f375ec8c0bb053d108b6b62">DBUSCXX_ERROR_FAILED</a>, <a class="el" href="dbus-error_8h.html#ad9473a6d5751b579eff0fab6ae6bef6c">DBUSCXX_ERROR_INVALID_SIGNATURE</a>, <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0a827211270de454ea3e0df8f57995efed">DBus::Handled</a>, <a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">DBus::MethodBase::name()</a>, <a class="el" href="namespaceDBus.html#a7c6b6b3408e5c53b20f8384b0c931eb0a135689c2c8751cd2b8316f37ff1958e5">DBus::Not_Handled</a>, and <a class="el" href="classDBus_1_1MethodBase.html#aa9feeff5d21811d4d6df1139e9b70cf1">DBus::MethodBase::sendMessage()</a>.</p>
 
 </div>
 </div>
-<a id="a2fd5f44c76f56ed8fc681922c124c5a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fd5f44c76f56ed8fc681922c124c5a8">&#9670;&nbsp;</a></span>introspect()</h2>
+<a id="a46ba5dda69cfd04281bf646fb25078d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ba5dda69cfd04281bf646fb25078d9">&#9670;&nbsp;</a></span>introspect()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
+template&lt;typename T_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::introspect </td>
+          <td class="memname">virtual std::string <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_type &gt;::introspect </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>space_depth</em> = <code>0</code></td><td>)</td>
@@ -368,71 +228,27 @@ template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class 
 </table>
 </div><div class="memdoc">
 
-<p>Returns a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> XML description of this interface. </p>
+<p>Reimplemented from <a class="el" href="classDBus_1_1MethodBase.html#a83b1247fbe3911ed049d7f921719ca49">DBus::MethodBase</a>.</p>
 
-<p>Reimplemented from <a class="el" href="classDBus_1_1MethodBase.html#ac9781d23c219124c355e705e1b766426">DBus::MethodBase</a>.</p>
-
-<p class="reference">References <a class="el" href="classDBus_1_1Method.html#af0948a6636c3ba4d77b5ed98784073fc">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::m_arg_names</a>, <a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">DBus::MethodBase::name()</a>, <a class="el" href="namespaceDBus.html#a17ac14f20bfb624e33288d02fd51f35b">DBus::signature()</a>, and <a class="el" href="namespaceDBus.html#a35efa0002d427e90818ffcf19fcac698">DBus::type()</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1MethodBase.html#a362be8576437e8fe47ccc8522b43fe2b">DBus::MethodBase::arg_names()</a>, and <a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">DBus::MethodBase::name()</a>.</p>
 
 </div>
 </div>
-<a id="aa3cb23f50bcdf7ae03a028e6fa447908"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3cb23f50bcdf7ae03a028e6fa447908">&#9670;&nbsp;</a></span>set_arg_name()</h2>
+<a id="a7eed1d2e51c757957eefbecfe46d272c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eed1d2e51c757957eefbecfe46d272c">&#9670;&nbsp;</a></span>set_method()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
+template&lt;typename T_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::set_arg_name </td>
+          <td class="memname">void <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_type &gt;::set_method </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="classDBus_1_1MethodBase.html#ae18fcab8a8e802db79e52786461ddee2">DBus::MethodBase</a>.</p>
-
-<p class="reference">References <a class="el" href="classDBus_1_1Method.html#af0948a6636c3ba4d77b5ed98784073fc">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::m_arg_names</a>, and <a class="el" href="classDBus_1_1MethodBase.html#ada18f9fdfe3e9667a777f296ca92d72a">DBus::MethodBase::name()</a>.</p>
-
-</div>
-</div>
-<a id="ad6b3720fdfd05364c3e999b5c98d2e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6b3720fdfd05364c3e999b5c98d2e20">&#9670;&nbsp;</a></span>set_method()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::set_method </td>
-          <td>(</td>
-          <td class="paramtype">sigc::slot7&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;&#160;</td>
+          <td class="paramtype">sigc::slot&lt; T_type &gt;&#160;</td>
           <td class="paramname"><em>slot</em></td><td>)</td>
           <td></td>
         </tr>
@@ -444,70 +260,40 @@ template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class 
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Method.html#aef37eea7f2f3054571f464998acb59b3">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::m_slot</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="af0948a6636c3ba4d77b5ed98784073fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0948a6636c3ba4d77b5ed98784073fc">&#9670;&nbsp;</a></span>m_arg_names</h2>
+<a id="af79e24afcb847c9a191d674a8bd8715c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af79e24afcb847c9a191d674a8bd8715c">&#9670;&nbsp;</a></span>m_slot</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
+template&lt;typename T_type &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::m_arg_names[7+1]</td>
+          <td class="memname">sigc::slot&lt;T_type&gt; <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_type &gt;::m_slot</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Method.html#a93cb9ccac19d5420ba515a5d3962dbc0">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#aaed7df9c782697f163bee846cd221732">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a8fa2c17f7a59e519a0f2df7c696a9e72">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ae093e92503f8139df06e087841aea05f">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ad08fe32a6b89ea5822dba2ad4ee4bef0">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#afdc8fbf69bed98ea884955f93420c0b2">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#abd264519496585adbc46680664f410c1">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a06999a2a6b66674be1e553a4dda8b600">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a57bbc773e5e1518950669b1733f483f5">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#aed983a9718cb8bb2873b82c1cacc4479">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#af3f1b7efe868a68a66d4c451066e3d16">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#abfb6a8e5d926ac4245e1605bd133949e">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#ac012684ef182c7a6b611bd0a511f634d">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a7d5b2cbbaaf4a6362253eaf56ce8ec7b">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a292492f4e472fe298a6aab2be7e7f2f6">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#a3349be5b9dc553e2d2ad0830bed90d57">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::arg_name()</a>, <a class="el" href="classDBus_1_1Method.html#a2fd5f44c76f56ed8fc681922c124c5a8">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#acb7b7fd7ce589e38aad81859d05d814e">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a70b9dc4eec67d350aa115e73a3230b2f">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ad11c7f38c760e65de2687a3158bfa9c4">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#abe23be8b839871eb1decda8427edb083">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a64b292fffa1e2173fc03d7d66ed5e179">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a5ce8bcebab4bb33348642a1917ba0aeb">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ad87622729e3f93b7e9ed1c54c0b3ae28">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ae36fbf679d0d732374c259e3ffff6c02">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ae13b7fa5c3866fca1b196fe54be1f157">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#af31a2fa229fe515a9773b4dda2a2035e">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a7652a8edee2925059e6a18e515c4017c">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a701070f988cc05fad5bce45182d1be15">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#aaf9174de9c7ffd686e8ee1a5db569067">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#aac9311eacef2dcc9f21702ef9d0f8925">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Method.html#aa3cb23f50bcdf7ae03a028e6fa447908">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a74fccb57c474b6f111576d0b0e09414c">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#abb0869146552cce498a007276785f5e5">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a060ad6e100b96684b29e0e04ec47504f">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#acf032faaab34bcb5a3ad6fb28de62589">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a68b599e4eec98bfa8cc38bb05d8528d0">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#aefe71fe5667f12938eebbf7d833deffc">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ab980d4a48a1eee15e3b3cf40e2319191">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a578c16c1d7acc7f5949731c16e3eb094">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a3cd2ce3ba0c763c5d16d731ff2b8a25e">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#afb0d1a14aecc8e020d3025c97143dced">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a04ce6926180b66424ce96afd01f03c13">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a1c086b1669ded89d1210bb20dffd89b4">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#ade9eb94a3ef24349309d37c79342f15e">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#af535e61523ae86fbd4eb32d0ec97de0d">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::set_arg_name()</a>, and <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#a7ab8dbf04450be78cf55954474eea12d">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::set_arg_name()</a>.</p>
-
-</div>
-</div>
-<a id="aef37eea7f2f3054571f464998acb59b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef37eea7f2f3054571f464998acb59b3">&#9670;&nbsp;</a></span>m_slot</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T_return , class T_arg1 , class T_arg2 , class T_arg3 , class T_arg4 , class T_arg5 , class T_arg6 , class T_arg7 &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">sigc::slot7&lt;T_return, T_arg1,T_arg2,T_arg3,T_arg4,T_arg5,T_arg6,T_arg7&gt; <a class="el" href="classDBus_1_1Method.html">DBus::Method</a>&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::m_slot</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Method.html#adae83c3936472059f4fe7e83068b45e7">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a62fd6331ad8b80d8131dce7486c44969">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a8e5eca40dbe116044bff98a22a0be9c4">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a324b2da6714ed2db3a401b0639584453">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#aff3e4da7999b5bda0c9ebfa818bda87a">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#ae3fe7de15b529a73a28a6ccea8753d88">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#add933bf044667fa406a1c913e0a92360">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a30126ab0e32983d707e6ef5182a8e778">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab89826efd5d1f130d01f3be4cfdd0f02">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a7651c887b7600d471704a2c3ecf38a80">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a8fb464418a25711098785556e965f0ff">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a6e4217a52e4660cef08ba0fce7313ea9">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a3025bd8abb3deea7d5cde6b791f8c872">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a62e6d89dde7809286d72ff4795cfaadc">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#aa4e3136304ebfce3700a7f574ac3037e">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#ae0dbc3716c539461ca9f1f2ad4944b3f">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::handle_call_message()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a578c16c1d7acc7f5949731c16e3eb094">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a3cd2ce3ba0c763c5d16d731ff2b8a25e">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#afb0d1a14aecc8e020d3025c97143dced">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a04ce6926180b66424ce96afd01f03c13">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a1c086b1669ded89d1210bb20dffd89b4">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#ade9eb94a3ef24349309d37c79342f15e">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#af535e61523ae86fbd4eb32d0ec97de0d">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::set_arg_name()</a>, <a class="el" href="classDBus_1_1Method.html#ad6b3720fdfd05364c3e999b5c98d2e20">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a2941d494ab21c89a9884afb7b2717bd1">DBus::Method&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#afbbd0b778278437aa677a3fdbc8ab4a2">DBus::Method&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a9ae53ef56a75a49c0627c8f1a99cdda1">DBus::Method&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a9365c2c1a5d7290dba40614ed5d98b30">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#ae18735580ba489427a09b7871d0fe3de">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a1ecc4069af6f67c09c0fa054e242e022">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#a3fa218cc8f3f1eaf613580496efdb542">DBus::Method&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab2569d8edae930763aa5d6185ef37f46">DBus::Method&lt; void, nil, nil, nil, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a48f93f5053e70f7d7df74fc2530d63c3">DBus::Method&lt; void, T_arg1, nil, nil, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a13c6942ddbe58a8419b40bef7a61af9c">DBus::Method&lt; void, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#a04b148c2ee37581d3d5a0340b90529d6">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#a6c1099caf491da802c9960e478cde754">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#a218585439efea6954a6af3f9d06ca296">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;::set_method()</a>, <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ab91167d4ae67cd0b41d5fe0848fbac73">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;::set_method()</a>, and <a class="el" href="classDBus_1_1Method_3_01void_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01T__arg7_01_4.html#a47311c75e18d3d4e1fab034d3b9bacb1">DBus::Method&lt; void, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;::set_method()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="method_8h_source.html">method.h</a></li>
+<li><a class="el" href="methodbase_8h_source.html">methodbase.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -1,27 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" title="Provides an object that handles messages for a given object path on a connection. ..." alt="" coords="172,56,355,83"/>
-<area shape="rect" id="node3" href="$classDBus_1_1Object.html" title="trackable" alt="" coords="466,81,547,108"/>
-<area shape="rect" id="node23" href="$classDBus_1_1signal__proxy__simple.html" title="DBus::signal_proxy\l_simple" alt="" coords="681,361,823,402"/>
-<area shape="rect" id="node24" href="$classDBus_1_1MessageHandler.html" title="This class provides a common base class for all message handlers. " alt="" coords="667,31,837,57"/>
-<area shape="rect" id="node27" href="$classDBus_1_1PendingCall.html" title="Monitors an asynchronous call, emitting a signal when a response is received. " alt="" coords="683,81,821,108"/>
-<area shape="rect" id="node5" href="$classDBus_1_1signal.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="419,453,594,523"/>
-<area shape="rect" id="node6" href="$classDBus_1_1signal_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="420,548,593,604"/>
-<area shape="rect" id="node7" href="$classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="420,628,593,684"/>
-<area shape="rect" id="node8" href="$classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="420,708,593,764"/>
-<area shape="rect" id="node9" href="$classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="419,132,594,188"/>
-<area shape="rect" id="node10" href="$classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="419,212,594,268"/>
-<area shape="rect" id="node11" href="$classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="417,292,596,348"/>
-<area shape="rect" id="node12" href="$classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="403,372,611,428"/>
-<area shape="rect" id="node13" href="$classDBus_1_1signal__proxy.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="659,1299,845,1370"/>
-<area shape="rect" id="node14" href="$classDBus_1_1signal__proxy_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="681,745,823,801"/>
-<area shape="rect" id="node15" href="$classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="679,1110,825,1181"/>
-<area shape="rect" id="node16" href="$classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="679,921,825,991"/>
-<area shape="rect" id="node17" href="$classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="679,650,825,721"/>
-<area shape="rect" id="node18" href="$classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="665,1015,839,1086"/>
-<area shape="rect" id="node19" href="$classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_3f10e532e0b1a98a76bb314a0c51cf9c.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="665,1205,839,1275"/>
-<area shape="rect" id="node20" href="$classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_a2cba045fc3a184ee61b28f9fbef6230.html" title="Subclass of the numbered sigc::signal templates. " alt="" coords="665,826,839,897"/>
-<area shape="rect" id="node21" href="$classDBus_1_1signal__base.html" title="DBus::signal_base" alt="" coords="194,475,333,501"/>
-<area shape="rect" id="node22" href="$classDBus_1_1signal__proxy__base.html" title="DBus::signal_proxy_base" alt="" coords="416,940,597,967"/>
-<area shape="rect" id="node25" href="$classDBus_1_1MessageFilter.html" title="This class provides a common base class for all message filters. " alt="" coords="896,5,1047,32"/>
-<area shape="rect" id="node26" href="$classDBus_1_1SignalReceiver.html" title="This class serves as a receiver of incoming signal messages. " alt="" coords="893,56,1049,83"/>
+<area shape="rect" id="node1" href="$classDBus_1_1MessageAppendIterator.html" title="Insertion iterator allow values to be appended to a message. " alt="" coords="5,5,224,32"/>
 </map>

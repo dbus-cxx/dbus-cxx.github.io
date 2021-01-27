@@ -35,35 +35,32 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">types.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &lt;typeinfo&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;sigc++/sigc++.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="enums_8h_source.html">dbus-cxx/enums.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="enums_8h_source.html">dbus-cxx/enums.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="path_8h_source.html">dbus-cxx/path.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="signature_8h_source.html">dbus-cxx/signature.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="filedescriptor_8h_source.html">dbus-cxx/filedescriptor.h</a>&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for types.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="types_8h__incl.png" border="0" usemap="#types_8h" alt=""/></div>
 <map name="types_8h" id="types_8h">
-<area shape="rect" id="node6" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="838,229,977,256"/>
-<area shape="rect" id="node8" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="249,155,373,181"/>
-<area shape="rect" id="node10" href="signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="635,80,790,107"/>
-<area shape="rect" id="node20" href="filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="1102,155,1278,181"/>
-<area shape="rect" id="node14" href="signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="612,155,813,181"/>
-<area shape="rect" id="node19" href="variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="449,155,587,181"/>
-<area shape="rect" id="node15" href="error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="587,229,713,256"/>
-<area shape="rect" id="node17" href="pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="634,304,773,331"/>
-<area shape="rect" id="node18" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="606,379,801,405"/>
+<area shape="rect" id="node2" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="437,229,578,256"/>
+<area shape="rect" id="node4" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="23,155,149,181"/>
+<area shape="rect" id="node7" href="signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="476,80,635,107"/>
+<area shape="rect" id="node15" href="filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="659,80,841,107"/>
+<area shape="rect" id="node9" href="signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="523,155,729,181"/>
+<area shape="rect" id="node10" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="623,229,823,256"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -71,162 +68,138 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="types_8h__dep__incl.png" border="0" usemap="#types_8hdep" alt=""/></div>
 <map name="types_8hdep" id="types_8hdep">
-<area shape="rect" id="node2" href="forward__decls_8h.html" title="forward_decls.h" alt="" coords="1479,304,1600,331"/>
-<area shape="rect" id="node31" href="messageappenditerator_8h.html" title="messageappenditerator.h" alt="" coords="1053,80,1239,107"/>
-<area shape="rect" id="node49" href="messageiterator_8h.html" title="messageiterator.h" alt="" coords="1419,80,1558,107"/>
-<area shape="rect" id="node50" href="signatureiterator_8cpp.html" title="signatureiterator.cpp" alt="" coords="1641,80,1795,107"/>
-<area shape="rect" id="node3" href="dbus__signal_8h.html" title="dbus_signal.h" alt="" coords="689,603,798,629"/>
-<area shape="rect" id="node5" href="method_8h.html" title="method.h" alt="" coords="859,752,943,779"/>
-<area shape="rect" id="node6" href="interface_8h.html" title="interface.h" alt="" coords="582,827,673,853"/>
-<area shape="rect" id="node7" href="object_8h.html" title="object.h" alt="" coords="1340,901,1413,928"/>
-<area shape="rect" id="node21" href="methodproxy_8h.html" title="methodproxy.h" alt="" coords="1270,453,1387,480"/>
-<area shape="rect" id="node25" href="methodproxybase_8h.html" title="methodproxybase.h" alt="" coords="939,379,1089,405"/>
-<area shape="rect" id="node26" href="messagehandler_8h.html" title="messagehandler.h" alt="" coords="1756,528,1896,555"/>
-<area shape="rect" id="node4" href="connection_8h.html" title="connection.h" alt="" coords="1183,677,1287,704"/>
-<area shape="rect" id="node10" href="objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="1195,901,1316,928"/>
-<area shape="rect" id="node11" href="method__impl_8h.html" title="method_impl.h" alt="" coords="973,827,1092,853"/>
-<area shape="rect" id="node12" href="connection_8cpp.html" title="connection.cpp" alt="" coords="716,752,835,779"/>
-<area shape="rect" id="node13" href="dispatcher_8h.html" title="dispatcher.h" alt="" coords="967,752,1067,779"/>
-<area shape="rect" id="node15" href="interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="1399,752,1538,779"/>
-<area shape="rect" id="node16" href="messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="1563,752,1697,779"/>
-<area shape="rect" id="node17" href="messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="1722,752,1877,779"/>
-<area shape="rect" id="node18" href="objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="1901,752,2065,779"/>
-<area shape="rect" id="node19" href="signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="45,752,169,779"/>
-<area shape="rect" id="node20" href="utility_8cpp.html" title="utility.cpp" alt="" coords="1091,752,1172,779"/>
-<area shape="rect" id="node9" href="interface_8cpp.html" title="interface.cpp" alt="" coords="575,901,680,928"/>
-<area shape="rect" id="node8" href="object_8cpp.html" title="object.cpp" alt="" coords="1333,976,1421,1003"/>
-<area shape="rect" id="node14" href="dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="197,827,311,853"/>
-<area shape="rect" id="node22" href="interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="1457,528,1579,555"/>
-<area shape="rect" id="node23" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="1537,603,1643,629"/>
-<area shape="rect" id="node24" href="methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="1150,603,1315,629"/>
-<area shape="rect" id="node27" href="messagefilter_8h.html" title="messagefilter.h" alt="" coords="1718,603,1838,629"/>
-<area shape="rect" id="node28" href="objectpathhandler_8h.html" title="objectpathhandler.h" alt="" coords="1913,677,2062,704"/>
-<area shape="rect" id="node29" href="signalreceiver_8h.html" title="signalreceiver.h" alt="" coords="1391,603,1512,629"/>
-<area shape="rect" id="node30" href="signalreceiver_8cpp.html" title="signalreceiver.cpp" alt="" coords="722,677,858,704"/>
-<area shape="rect" id="node32" href="message_8h.html" title="message.h" alt="" coords="1099,155,1193,181"/>
-<area shape="rect" id="node41" href="messageappenditerator_8cpp.html" title="messageappenditerator.cpp" alt="" coords="222,229,425,256"/>
-<area shape="rect" id="node33" href="callmessage_8h.html" title="callmessage.h" alt="" coords="702,229,817,256"/>
-<area shape="rect" id="node36" href="message_8cpp.html" title="message.cpp" alt="" coords="551,379,659,405"/>
-<area shape="rect" id="node38" href="error_8cpp.html" title="error.cpp" alt="" coords="1184,229,1263,256"/>
-<area shape="rect" id="node39" href="errormessage_8h.html" title="errormessage.h" alt="" coords="961,229,1085,256"/>
-<area shape="rect" id="node42" href="messageiterator_8cpp.html" title="messageiterator.cpp" alt="" coords="1411,229,1566,256"/>
-<area shape="rect" id="node43" href="pendingcall_8h.html" title="pendingcall.h" alt="" coords="1119,304,1226,331"/>
-<area shape="rect" id="node45" href="signalmessage_8h.html" title="signalmessage.h" alt="" coords="230,453,361,480"/>
-<area shape="rect" id="node34" href="callmessage_8cpp.html" title="callmessage.cpp" alt="" coords="683,379,812,405"/>
-<area shape="rect" id="node35" href="returnmessage_8h.html" title="returnmessage.h" alt="" coords="693,304,825,331"/>
-<area shape="rect" id="node37" href="methodbase_8h.html" title="methodbase.h" alt="" coords="475,677,590,704"/>
-<area shape="rect" id="node40" href="errormessage_8cpp.html" title="errormessage.cpp" alt="" coords="954,304,1093,331"/>
-<area shape="rect" id="node44" href="pendingcall_8cpp.html" title="pendingcall.cpp" alt="" coords="1113,379,1235,405"/>
-<area shape="rect" id="node46" href="signal__base_8h.html" title="signal_base.h" alt="" coords="454,528,563,555"/>
-<area shape="rect" id="node47" href="signalmessage_8cpp.html" title="signalmessage.cpp" alt="" coords="145,528,291,555"/>
-<area shape="rect" id="node48" href="glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="315,528,430,555"/>
+<area shape="rect" id="node2" href="variant_8h.html" title="variant.h" alt="" coords="1805,155,1885,181"/>
+<area shape="rect" id="node12" href="errormessage_8cpp.html" title="errormessage.cpp" alt="" coords="2216,603,2355,629"/>
+<area shape="rect" id="node34" href="messageappenditerator_8cpp.html" title="messageappenditerator.cpp" alt="" coords="348,453,551,480"/>
+<area shape="rect" id="node35" href="messageiterator_8cpp.html" title="messageiterator.cpp" alt="" coords="2161,453,2316,480"/>
+<area shape="rect" id="node37" href="messageiterator_8h.html" title="messageiterator.h" alt="" coords="1963,304,2103,331"/>
+<area shape="rect" id="node46" href="variantappenditerator_8cpp.html" title="variantappenditerator.cpp" alt="" coords="2382,229,2573,256"/>
+<area shape="rect" id="node47" href="signature_8cpp.html" title="signature.cpp" alt="" coords="2750,80,2861,107"/>
+<area shape="rect" id="node48" href="signatureiterator_8cpp.html" title="signatureiterator.cpp" alt="" coords="2885,80,3043,107"/>
+<area shape="rect" id="node49" href="types_8cpp.html" title="types.cpp" alt="" coords="3067,80,3152,107"/>
+<area shape="rect" id="node50" href="variantiterator_8h.html" title="variantiterator.h" alt="" coords="1782,80,1909,107"/>
+<area shape="rect" id="node3" href="message_8h.html" title="message.h" alt="" coords="1396,379,1489,405"/>
+<area shape="rect" id="node5" href="callmessage_8cpp.html" title="callmessage.cpp" alt="" coords="1365,603,1496,629"/>
+<area shape="rect" id="node16" href="property_8cpp.html" title="property.cpp" alt="" coords="347,752,450,779"/>
+<area shape="rect" id="node17" href="message_8cpp.html" title="message.cpp" alt="" coords="1907,603,2015,629"/>
+<area shape="rect" id="node21" href="propertyproxy_8cpp.html" title="propertyproxy.cpp" alt="" coords="2003,827,2141,853"/>
+<area shape="rect" id="node25" href="property_8h.html" title="property.h" alt="" coords="395,603,482,629"/>
+<area shape="rect" id="node38" href="variant_8cpp.html" title="variant.cpp" alt="" coords="2119,379,2214,405"/>
+<area shape="rect" id="node39" href="demarshaling_8h.html" title="demarshaling.h" alt="" coords="1599,229,1721,256"/>
+<area shape="rect" id="node42" href="messageappenditerator_8h.html" title="messageappenditerator.h" alt="" coords="1751,304,1939,331"/>
+<area shape="rect" id="node43" href="marshaling_8cpp.html" title="marshaling.cpp" alt="" coords="492,229,615,256"/>
+<area shape="rect" id="node44" href="propertyproxy_8h.html" title="propertyproxy.h" alt="" coords="2430,603,2554,629"/>
+<area shape="rect" id="node45" href="propertiesinterfaceproxy_8cpp.html" title="propertiesinterfaceproxy.cpp" alt="" coords="639,229,847,256"/>
+<area shape="rect" id="node4" href="callmessage_8h.html" title="callmessage.h" alt="" coords="1107,453,1223,480"/>
+<area shape="rect" id="node6" href="errormessage_8h.html" title="errormessage.h" alt="" coords="1335,528,1459,555"/>
+<area shape="rect" id="node8" href="connection_8cpp.html" title="connection.cpp" alt="" coords="1377,827,1497,853"/>
+<area shape="rect" id="node10" href="object_8cpp.html" title="object.cpp" alt="" coords="354,827,443,853"/>
+<area shape="rect" id="node11" href="utility_8cpp.html" title="utility.cpp" alt="" coords="1315,752,1400,779"/>
+<area shape="rect" id="node26" href="sendmsgtransport_8cpp.html" title="sendmsgtransport.cpp" alt="" coords="1174,603,1341,629"/>
+<area shape="rect" id="node28" href="simpletransport_8cpp.html" title="simpletransport.cpp" alt="" coords="507,603,659,629"/>
+<area shape="rect" id="node29" href="returnmessage_8cpp.html" title="returnmessage.cpp" alt="" coords="1585,528,1732,555"/>
+<area shape="rect" id="node30" href="returnmessage_8h.html" title="returnmessage.h" alt="" coords="1247,453,1379,480"/>
+<area shape="rect" id="node31" href="error_8cpp.html" title="error.cpp" alt="" coords="1403,453,1482,480"/>
+<area shape="rect" id="node32" href="signalmessage_8h.html" title="signalmessage.h" alt="" coords="727,528,859,555"/>
+<area shape="rect" id="node33" href="signalmessage_8cpp.html" title="signalmessage.cpp" alt="" coords="72,603,219,629"/>
+<area shape="rect" id="node36" href="pendingcall_8cpp.html" title="pendingcall.cpp" alt="" coords="1506,453,1630,480"/>
+<area shape="rect" id="node13" href="methodbase_8h.html" title="methodbase.h" alt="" coords="933,603,1048,629"/>
+<area shape="rect" id="node18" href="utility_8h.html" title="utility.h" alt="" coords="935,528,1006,555"/>
+<area shape="rect" id="node24" href="methodproxybase_8h.html" title="methodproxybase.h" alt="" coords="2040,603,2192,629"/>
+<area shape="rect" id="node7" href="connection_8h.html" title="connection.h" alt="" coords="1345,677,1450,704"/>
+<area shape="rect" id="node9" href="interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="2185,827,2327,853"/>
+<area shape="rect" id="node14" href="interface_8h.html" title="interface.h" alt="" coords="446,677,538,704"/>
+<area shape="rect" id="node15" href="object_8h.html" title="object.h" alt="" coords="533,752,608,779"/>
+<area shape="rect" id="node19" href="signalproxy_8h.html" title="signalproxy.h" alt="" coords="1723,603,1831,629"/>
+<area shape="rect" id="node27" href="signal_8h.html" title="signal.h" alt="" coords="734,603,807,629"/>
+<area shape="rect" id="node20" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="2109,752,2219,779"/>
+<area shape="rect" id="node22" href="interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="2053,677,2179,704"/>
+<area shape="rect" id="node23" href="signalproxy_8cpp.html" title="signalproxy.cpp" alt="" coords="1475,677,1597,704"/>
+<area shape="rect" id="node40" href="demarshaling_8cpp.html" title="demarshaling.cpp" alt="" coords="1537,304,1676,331"/>
+<area shape="rect" id="node41" href="variantiterator_8cpp.html" title="variantiterator.cpp" alt="" coords="503,304,646,331"/>
 </map>
 </div>
 </div>
 <p><a href="types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1TypeInfo.html">DBus::TypeInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains useful data about the type in order for code generation to happen in an easy manner.  <a href="classDBus_1_1TypeInfo.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceDBus"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html">DBus</a></td></tr>
 <tr class="memdesc:namespaceDBus"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> namespace, where everything happens. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a96809150512f474f94da9fb42b91fb75"><td class="memItemLeft" align="right" valign="top">typedef sigc::nil&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a96809150512f474f94da9fb42b91fb75">DBus::nil</a></td></tr>
-<tr class="separator:a96809150512f474f94da9fb42b91fb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a35efa0002d427e90818ffcf19fcac698"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a35efa0002d427e90818ffcf19fcac698">DBus::type</a> (const uint8_t &amp;)</td></tr>
-<tr class="separator:a35efa0002d427e90818ffcf19fcac698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a246f73acdcdc151010d8dfcd553c133f"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a246f73acdcdc151010d8dfcd553c133f">DBus::type</a> (const bool &amp;)</td></tr>
-<tr class="separator:a246f73acdcdc151010d8dfcd553c133f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a608ce6b29fda66cd6e92a0121dcb6803"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a608ce6b29fda66cd6e92a0121dcb6803">DBus::type</a> (const int16_t &amp;)</td></tr>
-<tr class="separator:a608ce6b29fda66cd6e92a0121dcb6803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a1b9cb73a9f895f724e8f366a4ca40"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a09a1b9cb73a9f895f724e8f366a4ca40">DBus::type</a> (const uint16_t &amp;)</td></tr>
-<tr class="separator:a09a1b9cb73a9f895f724e8f366a4ca40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1d7509a1fa9740078c253581a4fed5d"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ac1d7509a1fa9740078c253581a4fed5d">DBus::type</a> (const int32_t &amp;)</td></tr>
-<tr class="separator:ac1d7509a1fa9740078c253581a4fed5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec7b788e170b0163f8f6d79ca14449e"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a9ec7b788e170b0163f8f6d79ca14449e">DBus::type</a> (const uint32_t &amp;)</td></tr>
-<tr class="separator:a9ec7b788e170b0163f8f6d79ca14449e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81147523d236a2c313230848b6f94db3"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a81147523d236a2c313230848b6f94db3">DBus::type</a> (const int64_t &amp;)</td></tr>
-<tr class="separator:a81147523d236a2c313230848b6f94db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980b5c1a0ed14daf7957d0aa0cc470c2"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a980b5c1a0ed14daf7957d0aa0cc470c2">DBus::type</a> (const uint64_t &amp;)</td></tr>
-<tr class="separator:a980b5c1a0ed14daf7957d0aa0cc470c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6504a05b873fe70e994bf29c0e6b72"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#afd6504a05b873fe70e994bf29c0e6b72">DBus::type</a> (const double &amp;)</td></tr>
-<tr class="separator:afd6504a05b873fe70e994bf29c0e6b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa64667466ca113981d956754deccdb4"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aaa64667466ca113981d956754deccdb4">DBus::type</a> (const std::string &amp;)</td></tr>
-<tr class="separator:aaa64667466ca113981d956754deccdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81bf67f09913e08736e02444c29747fd"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a81bf67f09913e08736e02444c29747fd">DBus::type</a> (const char *)</td></tr>
-<tr class="separator:a81bf67f09913e08736e02444c29747fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5042a3119385f327ca5f2eaa4c345369"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a5042a3119385f327ca5f2eaa4c345369">DBus::type</a> (const Path &amp;)</td></tr>
-<tr class="separator:a5042a3119385f327ca5f2eaa4c345369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d89fed7863a5a90147ce95d04a2e75a"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a7d89fed7863a5a90147ce95d04a2e75a">DBus::type</a> (const Signature &amp;)</td></tr>
-<tr class="separator:a7d89fed7863a5a90147ce95d04a2e75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a037d89415ea56ec2dcd096ba099dace4"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a037d89415ea56ec2dcd096ba099dace4"><td class="memTemplItemLeft" align="right" valign="top">Type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a037d89415ea56ec2dcd096ba099dace4">DBus::type</a> (const Variant&lt; T &gt; &amp;)</td></tr>
-<tr class="separator:a037d89415ea56ec2dcd096ba099dace4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016ca33e9f9f7fb6e96a6391580dff78"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a016ca33e9f9f7fb6e96a6391580dff78">DBus::type</a> (const FileDescriptor &amp;)</td></tr>
-<tr class="separator:a016ca33e9f9f7fb6e96a6391580dff78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3674c613a1ed56d0751ad6509488eb52"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a3674c613a1ed56d0751ad6509488eb52">DBus::type</a> (const char &amp;)</td></tr>
-<tr class="separator:a3674c613a1ed56d0751ad6509488eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7c3794dec937fc6b84b8194f19be7e"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a7e7c3794dec937fc6b84b8194f19be7e">DBus::type</a> (const int8_t &amp;)</td></tr>
-<tr class="separator:a7e7c3794dec937fc6b84b8194f19be7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af36a51e86fe83509172bb3f6f7bc8e5d"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#af36a51e86fe83509172bb3f6f7bc8e5d">DBus::type</a> (const float &amp;)</td></tr>
-<tr class="separator:af36a51e86fe83509172bb3f6f7bc8e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f7d3618c6ed100d1dba2baa5293eaa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa8f7d3618c6ed100d1dba2baa5293eaa"><td class="memTemplItemLeft" align="right" valign="top">Type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aa8f7d3618c6ed100d1dba2baa5293eaa">DBus::type</a> (const std::vector&lt; T &gt; &amp;)</td></tr>
-<tr class="separator:aa8f7d3618c6ed100d1dba2baa5293eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7680502c782da514af189023ecfd96f4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a7680502c782da514af189023ecfd96f4">DBus::type_string</a> (const uint8_t &amp;)</td></tr>
-<tr class="separator:a7680502c782da514af189023ecfd96f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2347ff465ae71e8f6ec9e37d968592c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a2347ff465ae71e8f6ec9e37d968592c7">DBus::type_string</a> (const int8_t &amp;)</td></tr>
-<tr class="separator:a2347ff465ae71e8f6ec9e37d968592c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9feb966d1916d8d9b79c7b23e202c823"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a9feb966d1916d8d9b79c7b23e202c823">DBus::type_string</a> (const bool &amp;)</td></tr>
-<tr class="separator:a9feb966d1916d8d9b79c7b23e202c823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd20b68de2ea08907e36d00a04860a3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a3cd20b68de2ea08907e36d00a04860a3">DBus::type_string</a> (const int16_t &amp;)</td></tr>
-<tr class="separator:a3cd20b68de2ea08907e36d00a04860a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a870e591be62489a364e5ed7b3e533e28"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a870e591be62489a364e5ed7b3e533e28">DBus::type_string</a> (const uint16_t &amp;)</td></tr>
-<tr class="separator:a870e591be62489a364e5ed7b3e533e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedbd87945dd76146080fe18d96943d64"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aedbd87945dd76146080fe18d96943d64">DBus::type_string</a> (const int32_t &amp;)</td></tr>
-<tr class="separator:aedbd87945dd76146080fe18d96943d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab29194838fc0de6c05bf21ae581b8828"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ab29194838fc0de6c05bf21ae581b8828">DBus::type_string</a> (const uint32_t &amp;)</td></tr>
-<tr class="separator:ab29194838fc0de6c05bf21ae581b8828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63dbdce9d03b402195c7456a5a1437eb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a63dbdce9d03b402195c7456a5a1437eb">DBus::type_string</a> (const int64_t &amp;)</td></tr>
-<tr class="separator:a63dbdce9d03b402195c7456a5a1437eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6aac32eeacf2abd0b819bcd01ba2497"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ac6aac32eeacf2abd0b819bcd01ba2497">DBus::type_string</a> (const uint64_t &amp;)</td></tr>
-<tr class="separator:ac6aac32eeacf2abd0b819bcd01ba2497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a7493f09c6f763c24b937db7243510a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a9a7493f09c6f763c24b937db7243510a">DBus::type_string</a> (const double &amp;)</td></tr>
-<tr class="separator:a9a7493f09c6f763c24b937db7243510a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af01e0a65cd556a873fb7f43c7462babf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#af01e0a65cd556a873fb7f43c7462babf">DBus::type_string</a> (const float &amp;)</td></tr>
-<tr class="separator:af01e0a65cd556a873fb7f43c7462babf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5089c3896a173a3a4e10c5365835d454"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a5089c3896a173a3a4e10c5365835d454">DBus::type_string</a> (const std::string &amp;)</td></tr>
-<tr class="separator:a5089c3896a173a3a4e10c5365835d454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa30944bee058d99edb2ef55878aac421"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aa30944bee058d99edb2ef55878aac421">DBus::type_string</a> (const Path &amp;)</td></tr>
-<tr class="separator:aa30944bee058d99edb2ef55878aac421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae617001a49728012d6303e435a8f9c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a1ae617001a49728012d6303e435a8f9c">DBus::type_string</a> (const Signature &amp;)</td></tr>
-<tr class="separator:a1ae617001a49728012d6303e435a8f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15b73612123ce43fdfb702b6f0bbf5a3"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a15b73612123ce43fdfb702b6f0bbf5a3"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a15b73612123ce43fdfb702b6f0bbf5a3">DBus::type_string</a> (const Variant&lt; T &gt; &amp;)</td></tr>
-<tr class="separator:a15b73612123ce43fdfb702b6f0bbf5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a186a86d9dabfa9944a35e72444d26"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ab3a186a86d9dabfa9944a35e72444d26"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ab3a186a86d9dabfa9944a35e72444d26">DBus::type_string</a> (const std::vector&lt; T &gt; &amp;)</td></tr>
-<tr class="separator:ab3a186a86d9dabfa9944a35e72444d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6af553f28b770c7cd24bac64a202e1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#afc6af553f28b770c7cd24bac64a202e1">DBus::type_string</a> (const FileDescriptor &amp;)</td></tr>
-<tr class="separator:afc6af553f28b770c7cd24bac64a202e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9e4e522f8ca5b8b39579cb15f5a371"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a6f9e4e522f8ca5b8b39579cb15f5a371">DBus::type_string_from_code</a> (<a class="el" href="namespaceDBus.html#a1d96cec98f0be9760a04b2c490713bf9">DBus::Type</a> t)</td></tr>
-<tr class="separator:a6f9e4e522f8ca5b8b39579cb15f5a371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52a9b7dd0a83db1ee450c4151b8c802e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a52a9b7dd0a83db1ee450c4151b8c802e">DBus::include_file_for_type</a> (<a class="el" href="namespaceDBus.html#a1d96cec98f0be9760a04b2c490713bf9">DBus::Type</a> t)</td></tr>
-<tr class="separator:a52a9b7dd0a83db1ee450c4151b8c802e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44a61dac9140e8429b9ebc07ddb031db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a44a61dac9140e8429b9ebc07ddb031db">DBus::type_is_templated</a> (<a class="el" href="namespaceDBus.html#a1d96cec98f0be9760a04b2c490713bf9">DBus::Type</a> t)</td></tr>
-<tr class="separator:a44a61dac9140e8429b9ebc07ddb031db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc8d6d5a2c8a2946ffcab606069e9f66"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abc8d6d5a2c8a2946ffcab606069e9f66">DBus::checked_type_cast</a> (int n)</td></tr>
-<tr class="separator:abc8d6d5a2c8a2946ffcab606069e9f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad83d4acafbb4b744db9bb33cd1190a71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ad83d4acafbb4b744db9bb33cd1190a71">DBus::typeToDBusType</a> (DataType t)</td></tr>
+<tr class="separator:ad83d4acafbb4b744db9bb33cd1190a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0276d7bcb92b72c0f0a7b8cd83bcb6fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a0276d7bcb92b72c0f0a7b8cd83bcb6fc">DBus::typeToDBusContainerType</a> (ContainerType t)</td></tr>
+<tr class="separator:a0276d7bcb92b72c0f0a7b8cd83bcb6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdca886328b802b9ad5ad91aa7445d11"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abdca886328b802b9ad5ad91aa7445d11">DBus::char_to_dbus_type</a> (char c)</td></tr>
+<tr class="separator:abdca886328b802b9ad5ad91aa7445d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f87c543afd7ff67a87c7a108749552"><td class="memItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ae7f87c543afd7ff67a87c7a108749552">DBus::char_to_container_type</a> (char c)</td></tr>
+<tr class="separator:ae7f87c543afd7ff67a87c7a108749552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61beb0cb150a77d2d67b099b1db1cf2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a61beb0cb150a77d2d67b099b1db1cf2a">DBus::is_ending_container</a> (char c)</td></tr>
+<tr class="separator:a61beb0cb150a77d2d67b099b1db1cf2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3aa3d51829695a607c4e66ceb2eca34"><td class="memItemLeft" align="right" valign="top">ContainerType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ab3aa3d51829695a607c4e66ceb2eca34">DBus::char_to_ending_container</a> (char c)</td></tr>
+<tr class="separator:ab3aa3d51829695a607c4e66ceb2eca34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6895c97ac1da386c30fe85ce82457bfb"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a6895c97ac1da386c30fe85ce82457bfb">DBus::type</a> (const uint8_t &amp;)</td></tr>
+<tr class="separator:a6895c97ac1da386c30fe85ce82457bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f49aeb3eb83962fd76109971c5d3f4"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a46f49aeb3eb83962fd76109971c5d3f4">DBus::type</a> (const bool &amp;)</td></tr>
+<tr class="separator:a46f49aeb3eb83962fd76109971c5d3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34ec7587ed4ea6757a57f3f978ec35a"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ae34ec7587ed4ea6757a57f3f978ec35a">DBus::type</a> (const int16_t &amp;)</td></tr>
+<tr class="separator:ae34ec7587ed4ea6757a57f3f978ec35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abff1606d861a09525f69d5ec9f380b7d"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abff1606d861a09525f69d5ec9f380b7d">DBus::type</a> (const uint16_t &amp;)</td></tr>
+<tr class="separator:abff1606d861a09525f69d5ec9f380b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0941458c275cc2f0f6c6a4b10561a3f"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ac0941458c275cc2f0f6c6a4b10561a3f">DBus::type</a> (const int32_t &amp;)</td></tr>
+<tr class="separator:ac0941458c275cc2f0f6c6a4b10561a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac212a4c02e3a3e17b685689d45628dea"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ac212a4c02e3a3e17b685689d45628dea">DBus::type</a> (const uint32_t &amp;)</td></tr>
+<tr class="separator:ac212a4c02e3a3e17b685689d45628dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778bbb041dd5f188d451b9566a1f2c7f"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a778bbb041dd5f188d451b9566a1f2c7f">DBus::type</a> (const int64_t &amp;)</td></tr>
+<tr class="separator:a778bbb041dd5f188d451b9566a1f2c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8526b4e5839794626e4e8774aa8cd245"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a8526b4e5839794626e4e8774aa8cd245">DBus::type</a> (const uint64_t &amp;)</td></tr>
+<tr class="separator:a8526b4e5839794626e4e8774aa8cd245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6606bae254c0b96def3bb3dd3ed1ae5"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ad6606bae254c0b96def3bb3dd3ed1ae5">DBus::type</a> (const double &amp;)</td></tr>
+<tr class="separator:ad6606bae254c0b96def3bb3dd3ed1ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d652ff73b7d5218795869b1626d6c5"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aa4d652ff73b7d5218795869b1626d6c5">DBus::type</a> (const std::string &amp;)</td></tr>
+<tr class="separator:aa4d652ff73b7d5218795869b1626d6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56560140431ddfc0517543f25195cab7"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a56560140431ddfc0517543f25195cab7">DBus::type</a> (const char *)</td></tr>
+<tr class="separator:a56560140431ddfc0517543f25195cab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628a1609a77851a008034e22f41180a2"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a628a1609a77851a008034e22f41180a2">DBus::type</a> (const Path &amp;)</td></tr>
+<tr class="separator:a628a1609a77851a008034e22f41180a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad2edd7e7dae26ea3eccef154820ee8"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a6ad2edd7e7dae26ea3eccef154820ee8">DBus::type</a> (const Signature &amp;)</td></tr>
+<tr class="separator:a6ad2edd7e7dae26ea3eccef154820ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1d45478c9f74987864fe331ec8ef6e"><td class="memTemplParams" colspan="2">template&lt;typename... args&gt; </td></tr>
+<tr class="memitem:a1d1d45478c9f74987864fe331ec8ef6e"><td class="memTemplItemLeft" align="right" valign="top">DataType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a1d1d45478c9f74987864fe331ec8ef6e">DBus::type</a> (const <a class="el" href="classDBus_1_1Variant.html">DBus::Variant</a> &amp;)</td></tr>
+<tr class="separator:a1d1d45478c9f74987864fe331ec8ef6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25724b72b791ba23353132e4d53ee2f5"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a25724b72b791ba23353132e4d53ee2f5">DBus::type</a> (const FileDescriptor &amp;)</td></tr>
+<tr class="separator:a25724b72b791ba23353132e4d53ee2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767f13c3ec3da2c475989a244143b02b"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a767f13c3ec3da2c475989a244143b02b">DBus::type</a> (const char &amp;)</td></tr>
+<tr class="separator:a767f13c3ec3da2c475989a244143b02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ebf6498998e5a3aa0d8642cbcf7048"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a38ebf6498998e5a3aa0d8642cbcf7048">DBus::type</a> (const int8_t &amp;)</td></tr>
+<tr class="separator:a38ebf6498998e5a3aa0d8642cbcf7048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b83f49518fade575bf8ac44e2c9e75"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a37b83f49518fade575bf8ac44e2c9e75">DBus::type</a> (const float &amp;)</td></tr>
+<tr class="separator:a37b83f49518fade575bf8ac44e2c9e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e53212dbea1919d05175f4a298f3053"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7e53212dbea1919d05175f4a298f3053"><td class="memTemplItemLeft" align="right" valign="top">DataType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a7e53212dbea1919d05175f4a298f3053">DBus::type</a> (const std::vector&lt; T &gt; &amp;)</td></tr>
+<tr class="separator:a7e53212dbea1919d05175f4a298f3053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7b23dae1fe7797783d0f6ddc12af1d"><td class="memTemplParams" colspan="2">template&lt;typename ... T&gt; </td></tr>
+<tr class="memitem:afc7b23dae1fe7797783d0f6ddc12af1d"><td class="memTemplItemLeft" align="right" valign="top">DataType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#afc7b23dae1fe7797783d0f6ddc12af1d">DBus::type</a> (const std::tuple&lt; T... &gt; &amp;)</td></tr>
+<tr class="separator:afc7b23dae1fe7797783d0f6ddc12af1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2060f774d491c7f5e9b1504ffad99d4e"><td class="memItemLeft" align="right" valign="top">DataType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a2060f774d491c7f5e9b1504ffad99d4e">DBus::checked_type_cast</a> (int n)</td></tr>
+<tr class="separator:a2060f774d491c7f5e9b1504ffad99d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9e942f4dc36dd7d7150239e4b578bb"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a1f9e942f4dc36dd7d7150239e4b578bb">DBus::operator&lt;&lt;</a> (std::ostream &amp;os, DataType d)</td></tr>
+<tr class="separator:a1f9e942f4dc36dd7d7150239e4b578bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

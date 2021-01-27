@@ -36,80 +36,41 @@ $(function() {
 <div class="title">Signals</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Classes for interacting with signals(sending and receiving)  
+<a href="#details">More...</a></p>
 <div class="dynheader">
 Collaboration diagram for Signals:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__signals.png" border="0" alt="" usemap="#group____signals"/>
 <map name="group____signals" id="group____signals">
-<area shape="rect" id="node2" href="group__local.html" title="This group contains objects which are natively local and provide interfaces such as methods and signa..." alt="" coords="308,343,415,369"/>
-<area shape="rect" id="node3" href="group__proxy.html" title="This group contains items that are of interest in creating local proxies for dbus objects..." alt="" coords="333,828,390,855"/>
+<area shape="rect" id="node2" href="group__local.html" title="Local Objects" alt="" coords="275,25,384,52"/>
+<area shape="rect" id="node3" href="group__proxy.html" title="Proxy" alt="" coords="300,100,359,127"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal.html">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Signal_3_01void_07T__type_8_8_8_08_4.html">DBus::Signal&lt; void(T_type...)&gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of sigc::signal.  <a href="classDBus_1_1Signal_3_01void_07T__type_8_8_8_08_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalBase.html">DBus::SignalBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class of all signals(proxy and adapter).  <a href="classDBus_1_1SignalBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalProxyBase.html">DBus::SignalProxyBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for a signal proxy that allows you to listen for signals.  <a href="classDBus_1_1SignalProxyBase.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy.html">DBus::signal_proxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal_proxy&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal_proxy&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal_proxy&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal_proxy&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html">DBus::signal_proxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_3f10e532e0b1a98a76bb314a0c51cf9c.html">DBus::signal_proxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_3f10e532e0b1a98a76bb314a0c51cf9c.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_a2cba045fc3a184ee61b28f9fbef6230.html">DBus::signal_proxy&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the numbered sigc::signal templates.  <a href="classDBus_1_1signal__proxy_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_a2cba045fc3a184ee61b28f9fbef6230.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__base.html">DBus::signal_base</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1signal__proxy__base.html">DBus::signal_proxy_base</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalReceiver.html">DBus::SignalReceiver</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class serves as a receiver of <em>incoming</em> signal messages.  <a href="classDBus_1_1SignalReceiver.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1SignalProxy_3_01void_07T__arg_8_8_8_08_4.html">DBus::SignalProxy&lt; void(T_arg...)&gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclass of the sigc::signal templates.  <a href="classDBus_1_1SignalProxy_3_01void_07T__arg_8_8_8_08_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Classes for interacting with signals(sending and receiving) </p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

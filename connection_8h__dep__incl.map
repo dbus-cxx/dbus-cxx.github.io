@@ -1,20 +1,11 @@
 <map id="connection.h" name="connection.h">
-<area shape="rect" id="node2" href="$method_8h.html" title="method.h" alt="" coords="186,80,270,107"/>
-<area shape="rect" id="node7" href="$objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="269,229,390,256"/>
-<area shape="rect" id="node8" href="$method__impl_8h.html" title="method_impl.h" alt="" coords="202,155,321,181"/>
-<area shape="rect" id="node9" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="397,80,515,107"/>
-<area shape="rect" id="node10" href="$dispatcher_8h.html" title="dispatcher.h" alt="" coords="539,80,639,107"/>
-<area shape="rect" id="node14" href="$interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="664,80,803,107"/>
-<area shape="rect" id="node15" href="$messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="827,80,962,107"/>
-<area shape="rect" id="node16" href="$messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="987,80,1141,107"/>
-<area shape="rect" id="node17" href="$objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="1166,80,1330,107"/>
-<area shape="rect" id="node18" href="$signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="1354,80,1478,107"/>
-<area shape="rect" id="node19" href="$utility_8cpp.html" title="utility.cpp" alt="" coords="1502,80,1583,107"/>
-<area shape="rect" id="node3" href="$interface_8h.html" title="interface.h" alt="" coords="87,155,177,181"/>
-<area shape="rect" id="node4" href="$object_8h.html" title="object.h" alt="" coords="13,229,86,256"/>
-<area shape="rect" id="node6" href="$interface_8cpp.html" title="interface.cpp" alt="" coords="110,229,215,256"/>
-<area shape="rect" id="node5" href="$object_8cpp.html" title="object.cpp" alt="" coords="5,304,93,331"/>
-<area shape="rect" id="node11" href="$dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="465,155,580,181"/>
-<area shape="rect" id="node12" href="$glibmm_2dispatcher_8h.html" title="dispatcher.h" alt="" coords="605,155,705,181"/>
-<area shape="rect" id="node13" href="$glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="597,229,712,256"/>
+<area shape="rect" id="node2" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="5,80,125,107"/>
+<area shape="rect" id="node3" href="$interface_8cpp.html" title="interface.cpp" alt="" coords="149,80,256,107"/>
+<area shape="rect" id="node4" href="$interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="281,80,423,107"/>
+<area shape="rect" id="node5" href="$methodbase_8cpp.html" title="methodbase.cpp" alt="" coords="448,80,579,107"/>
+<area shape="rect" id="node6" href="$object_8cpp.html" title="object.cpp" alt="" coords="603,80,693,107"/>
+<area shape="rect" id="node7" href="$objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="717,80,841,107"/>
+<area shape="rect" id="node8" href="$signalbase_8cpp.html" title="signalbase.cpp" alt="" coords="865,80,983,107"/>
+<area shape="rect" id="node9" href="$standalonedispatcher_8cpp.html" title="standalonedispatcher.cpp" alt="" coords="1007,80,1195,107"/>
+<area shape="rect" id="node10" href="$utility_8cpp.html" title="utility.cpp" alt="" coords="1220,80,1305,107"/>
 </map>

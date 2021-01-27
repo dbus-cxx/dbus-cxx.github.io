@@ -1,14 +1,19 @@
 <map id="message.h" name="message.h">
-<area shape="rect" id="node6" href="$pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="591,453,729,480"/>
-<area shape="rect" id="node8" href="$messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="512,80,712,107"/>
-<area shape="rect" id="node23" href="$messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="240,80,488,107"/>
-<area shape="rect" id="node7" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="563,528,757,555"/>
-<area shape="rect" id="node9" href="$types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="728,155,859,181"/>
-<area shape="rect" id="node13" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="445,379,584,405"/>
-<area shape="rect" id="node14" href="$path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1253,304,1377,331"/>
-<area shape="rect" id="node15" href="$signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="773,229,928,256"/>
-<area shape="rect" id="node22" href="$filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="421,304,597,331"/>
-<area shape="rect" id="node18" href="$signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="622,304,823,331"/>
-<area shape="rect" id="node21" href="$variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="848,304,987,331"/>
-<area shape="rect" id="node19" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="709,379,835,405"/>
+<area shape="rect" id="node3" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="1710,379,1837,405"/>
+<area shape="rect" id="node7" href="$messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="669,155,920,181"/>
+<area shape="rect" id="node8" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="301,603,443,629"/>
+<area shape="rect" id="node22" href="$variant_8h.html" title="variant.h" alt="" coords="1520,229,1600,256"/>
+<area shape="rect" id="node27" href="$messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="1640,80,1843,107"/>
+<area shape="rect" id="node6" href="$dbus-error_8h.html" title="dbus&#45;cxx/dbus&#45;error.h" alt="" coords="1541,453,1704,480"/>
+<area shape="rect" id="node10" href="$signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="1942,453,2101,480"/>
+<area shape="rect" id="node11" href="$path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1390,528,1517,555"/>
+<area shape="rect" id="node14" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="1049,603,1249,629"/>
+<area shape="rect" id="node19" href="$marshaling_8h.html" title="dbus&#45;cxx/marshaling.h" alt="" coords="680,379,851,405"/>
+<area shape="rect" id="node13" href="$signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="2108,528,2313,555"/>
+<area shape="rect" id="node23" href="$variantappenditerator_8h.html" title="dbus&#45;cxx/variantappenditerator.h" alt="" coords="1861,379,2099,405"/>
+<area shape="rect" id="node25" href="$variantiterator_8h.html" title="dbus&#45;cxx/variantiterator.h" alt="" coords="2115,304,2306,331"/>
+<area shape="rect" id="node26" href="$types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="1339,379,1472,405"/>
+<area shape="rect" id="node24" href="$filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="2277,453,2459,480"/>
+<area shape="rect" id="node28" href="$demangle_8h.html" title="dbus&#45;cxx/demangle.h" alt="" coords="2651,528,2813,555"/>
+<area shape="rect" id="node29" href="$demarshaling_8h.html" title="dbus&#45;cxx/demarshaling.h" alt="" coords="1648,155,1835,181"/>
 </map>

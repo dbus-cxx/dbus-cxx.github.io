@@ -30,7 +30,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_b98bd4726fa46e8a851db727bd4edf25.html">dbus-cxx</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -41,44 +41,50 @@ $(function() {
 <div class="title">interfaceproxy.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sigc++/sigc++.h&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="methodproxybase_8h_source.html">dbus-cxx/methodproxybase.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="signalproxy_8h_source.html">dbus-cxx/signalproxy.h</a>&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
-<code>#include &lt;<a class="el" href="methodproxy_8h_source.html">dbus-cxx/methodproxy.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="signal__proxy_8h_source.html">dbus-cxx/signal_proxy.h</a>&gt;</code><br />
+<code>#include &lt;shared_mutex&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="path_8h_source.html">path.h</a>&quot;</code><br />
+<code>#include &lt;sigc++/sigc++.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="propertyproxy_8h_source.html">dbus-cxx/propertyproxy.h</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for interfaceproxy.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="interfaceproxy_8h__incl.png" border="0" usemap="#interfaceproxy_8h" alt=""/></div>
 <map name="interfaceproxy_8h" id="interfaceproxy_8h">
-<area shape="rect" id="node6" href="methodproxy_8h.html" title="dbus&#45;cxx/methodproxy.h" alt="" coords="901,80,1080,107"/>
-<area shape="rect" id="node37" href="signal__proxy_8h.html" title="dbus&#45;cxx/signal_proxy.h" alt="" coords="1237,80,1409,107"/>
-<area shape="rect" id="node7" href="forward__decls_8h.html" title="dbus&#45;cxx/forward_decls.h" alt="" coords="1357,251,1539,278"/>
-<area shape="rect" id="node25" href="methodproxybase_8h.html" title="dbus&#45;cxx/methodproxybase.h" alt="" coords="885,162,1096,189"/>
-<area shape="rect" id="node33" href="utility_8h.html" title="dbus&#45;cxx/utility.h" alt="" coords="293,162,419,189"/>
-<area shape="rect" id="node35" href="headerlog_8h.html" title="dbus&#45;cxx/headerlog.h" alt="" coords="107,162,266,189"/>
-<area shape="rect" id="node8" href="types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="1337,557,1468,584"/>
-<area shape="rect" id="node11" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="704,781,843,808"/>
-<area shape="rect" id="node13" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1751,707,1875,733"/>
-<area shape="rect" id="node15" href="signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="1513,632,1668,659"/>
-<area shape="rect" id="node24" href="filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="1900,707,2076,733"/>
-<area shape="rect" id="node18" href="signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="1474,707,1675,733"/>
-<area shape="rect" id="node23" href="variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="1221,707,1360,733"/>
-<area shape="rect" id="node19" href="error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="1336,781,1461,808"/>
-<area shape="rect" id="node21" href="pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="496,856,635,883"/>
-<area shape="rect" id="node22" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="468,931,663,957"/>
-<area shape="rect" id="node26" href="accumulators_8h.html" title="dbus&#45;cxx/accumulators.h" alt="" coords="446,333,629,360"/>
-<area shape="rect" id="node27" href="callmessage_8h.html" title="dbus&#45;cxx/callmessage.h" alt="" coords="1365,333,1539,360"/>
-<area shape="rect" id="node31" href="returnmessage_8h.html" title="dbus&#45;cxx/returnmessage.h" alt="" coords="1031,251,1225,278"/>
-<area shape="rect" id="node32" href="pendingcall_8h.html" title="dbus&#45;cxx/pendingcall.h" alt="" coords="907,333,1074,360"/>
-<area shape="rect" id="node28" href="message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="1357,408,1512,435"/>
-<area shape="rect" id="node29" href="messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="1303,483,1503,509"/>
-<area shape="rect" id="node30" href="messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="1837,483,2085,509"/>
-<area shape="rect" id="node34" href="simplelogger__defs_8h.html" title="dbus&#45;cxx/simplelogger\l_defs.h" alt="" coords="104,244,269,285"/>
-<area shape="rect" id="node38" href="signal__proxy__base_8h.html" title="dbus&#45;cxx/signal_proxy\l_base.h" alt="" coords="649,155,812,196"/>
-<area shape="rect" id="node39" href="signal__base_8h.html" title="dbus&#45;cxx/signal_base.h" alt="" coords="596,251,767,278"/>
-<area shape="rect" id="node40" href="signalmessage_8h.html" title="dbus&#45;cxx/signalmessage.h" alt="" coords="1150,333,1341,360"/>
+<area shape="rect" id="node2" href="methodproxybase_8h.html" title="dbus&#45;cxx/methodproxybase.h" alt="" coords="4302,80,4517,107"/>
+<area shape="rect" id="node14" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1086,841,1213,868"/>
+<area shape="rect" id="node44" href="signalproxy_8h.html" title="dbus&#45;cxx/signalproxy.h" alt="" coords="2820,80,2991,107"/>
+<area shape="rect" id="node50" href="propertyproxy_8h.html" title="dbus&#45;cxx/propertyproxy.h" alt="" coords="784,155,971,181"/>
+<area shape="rect" id="node3" href="callmessage_8h.html" title="dbus&#45;cxx/callmessage.h" alt="" coords="3341,237,3520,263"/>
+<area shape="rect" id="node10" href="messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="2708,468,2959,495"/>
+<area shape="rect" id="node33" href="headerlog_8h.html" title="dbus&#45;cxx/headerlog.h" alt="" coords="4141,155,4304,181"/>
+<area shape="rect" id="node36" href="utility_8h.html" title="dbus&#45;cxx/utility.h" alt="" coords="3592,155,3725,181"/>
+<area shape="rect" id="node4" href="message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="2950,319,3106,345"/>
+<area shape="rect" id="node6" href="error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="1833,692,1959,719"/>
+<area shape="rect" id="node11" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="492,916,633,943"/>
+<area shape="rect" id="node25" href="variant_8h.html" title="variant.h" alt="" coords="2024,543,2104,569"/>
+<area shape="rect" id="node29" href="messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="2927,393,3129,420"/>
+<area shape="rect" id="node9" href="dbus-error_8h.html" title="dbus&#45;cxx/dbus&#45;error.h" alt="" coords="1552,767,1715,793"/>
+<area shape="rect" id="node13" href="signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="2438,767,2597,793"/>
+<area shape="rect" id="node17" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="2161,916,2361,943"/>
+<area shape="rect" id="node22" href="marshaling_8h.html" title="dbus&#45;cxx/marshaling.h" alt="" coords="2035,692,2205,719"/>
+<area shape="rect" id="node16" href="signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="2789,841,2995,868"/>
+<area shape="rect" id="node26" href="variantappenditerator_8h.html" title="dbus&#45;cxx/variantappenditerator.h" alt="" coords="1411,692,1650,719"/>
+<area shape="rect" id="node27" href="variantiterator_8h.html" title="dbus&#45;cxx/variantiterator.h" alt="" coords="2305,617,2495,644"/>
+<area shape="rect" id="node28" href="types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="1675,692,1808,719"/>
+<area shape="rect" id="node30" href="demangle_8h.html" title="dbus&#45;cxx/demangle.h" alt="" coords="3600,543,3763,569"/>
+<area shape="rect" id="node31" href="demarshaling_8h.html" title="dbus&#45;cxx/demarshaling.h" alt="" coords="2492,468,2679,495"/>
+<area shape="rect" id="node35" href="simplelogger__defs_8h.html" title="dbus&#45;cxx/simplelogger\l_defs.h" alt="" coords="4259,229,4429,271"/>
+<area shape="rect" id="node37" href="returnmessage_8h.html" title="dbus&#45;cxx/returnmessage.h" alt="" coords="3888,237,4083,263"/>
+<area shape="rect" id="node45" href="signalbase_8h.html" title="dbus&#45;cxx/signalbase.h" alt="" coords="2043,767,2210,793"/>
+<area shape="rect" id="node46" href="signalmessage_8h.html" title="dbus&#45;cxx/signalmessage.h" alt="" coords="331,237,525,263"/>
+<area shape="rect" id="node47" href="matchrule_8h.html" title="matchrule.h" alt="" coords="3915,841,4015,868"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -86,27 +92,18 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="interfaceproxy_8h__dep__incl.png" border="0" usemap="#interfaceproxy_8hdep" alt=""/></div>
 <map name="interfaceproxy_8hdep" id="interfaceproxy_8hdep">
-<area shape="rect" id="node2" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="1041,80,1147,107"/>
-<area shape="rect" id="node16" href="interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="1387,229,1526,256"/>
-<area shape="rect" id="node22" href="methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="1363,80,1529,107"/>
-<area shape="rect" id="node3" href="connection_8h.html" title="connection.h" alt="" coords="901,155,1005,181"/>
-<area shape="rect" id="node9" href="objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="5,379,127,405"/>
-<area shape="rect" id="node4" href="method_8h.html" title="method.h" alt="" coords="1228,229,1312,256"/>
-<area shape="rect" id="node10" href="method__impl_8h.html" title="method_impl.h" alt="" coords="741,304,860,331"/>
-<area shape="rect" id="node11" href="connection_8cpp.html" title="connection.cpp" alt="" coords="253,229,372,256"/>
-<area shape="rect" id="node12" href="dispatcher_8h.html" title="dispatcher.h" alt="" coords="129,229,229,256"/>
-<area shape="rect" id="node17" href="messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="448,229,583,256"/>
-<area shape="rect" id="node18" href="messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="607,229,762,256"/>
-<area shape="rect" id="node19" href="objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="787,229,951,256"/>
-<area shape="rect" id="node20" href="signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="975,229,1099,256"/>
-<area shape="rect" id="node21" href="utility_8cpp.html" title="utility.cpp" alt="" coords="1123,229,1204,256"/>
-<area shape="rect" id="node5" href="interface_8h.html" title="interface.h" alt="" coords="1207,304,1298,331"/>
-<area shape="rect" id="node6" href="object_8h.html" title="object.h" alt="" coords="1313,379,1387,405"/>
-<area shape="rect" id="node8" href="interface_8cpp.html" title="interface.cpp" alt="" coords="1184,379,1289,405"/>
-<area shape="rect" id="node7" href="object_8cpp.html" title="object.cpp" alt="" coords="1306,453,1394,480"/>
-<area shape="rect" id="node13" href="dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="278,304,393,331"/>
-<area shape="rect" id="node14" href="glibmm_2dispatcher_8h.html" title="dispatcher.h" alt="" coords="129,304,229,331"/>
-<area shape="rect" id="node15" href="glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="151,379,266,405"/>
+<area shape="rect" id="node2" href="connection_8cpp.html" title="connection.cpp" alt="" coords="5,155,125,181"/>
+<area shape="rect" id="node3" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="291,80,400,107"/>
+<area shape="rect" id="node4" href="interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="150,155,293,181"/>
+<area shape="rect" id="node5" href="objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="675,155,799,181"/>
+<area shape="rect" id="node6" href="propertyproxy_8cpp.html" title="propertyproxy.cpp" alt="" coords="317,155,456,181"/>
+<area shape="rect" id="node7" href="methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="1169,80,1335,107"/>
+<area shape="rect" id="node8" href="peerinterfaceproxy_8h.html" title="peerinterfaceproxy.h" alt="" coords="475,80,631,107"/>
+<area shape="rect" id="node10" href="introspectableinterfaceproxy_8h.html" title="introspectableinterfaceproxy.h" alt="" coords="707,80,927,107"/>
+<area shape="rect" id="node12" href="propertiesinterfaceproxy_8h.html" title="propertiesinterfaceproxy.h" alt="" coords="951,80,1145,107"/>
+<area shape="rect" id="node9" href="peerinterfaceproxy_8cpp.html" title="peerinterfaceproxy.cpp" alt="" coords="480,155,651,181"/>
+<area shape="rect" id="node11" href="introspectableinterfaceproxy_8cpp.html" title="introspectableinterfaceproxy.cpp" alt="" coords="824,155,1059,181"/>
+<area shape="rect" id="node13" href="propertiesinterfaceproxy_8cpp.html" title="propertiesinterfaceproxy.cpp" alt="" coords="1083,155,1291,181"/>
 </map>
 </div>
 </div>
@@ -114,7 +111,10 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MethodProxy.html">DBus::MethodProxy&lt; signature &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1InterfaceProxy.html">DBus::InterfaceProxy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An <a class="el" href="classDBus_1_1InterfaceProxy.html" title="An InterfaceProxy represents a remote Interface in another application on the DBus. ">InterfaceProxy</a> represents a remote <a class="el" href="classDBus_1_1Interface.html" title="An Interface represents a local copy of a DBus interface. ">Interface</a> in another application on the <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a>.  <a href="classDBus_1_1InterfaceProxy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -126,7 +126,7 @@ Namespaces</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

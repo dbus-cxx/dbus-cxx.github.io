@@ -1,0 +1,4 @@
+<map id="DBus::priv::Transport" name="DBus::priv::Transport">
+<area shape="rect" id="node2" href="$classDBus_1_1priv_1_1SendmsgTransport.html" title="The Sendmsg handles reading and writing over a Unix FD that supports sendmsg(). " alt="" coords="5,80,221,107"/>
+<area shape="rect" id="node3" href="$classDBus_1_1priv_1_1SimpleTransport.html" title="The SimpleTransport handles reading and writing over a Unix FD. " alt="" coords="246,80,447,107"/>
+</map>

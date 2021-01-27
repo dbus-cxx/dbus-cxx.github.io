@@ -35,6 +35,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -42,17 +43,47 @@ $(function() {
 <div class="title">utility.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dbus/dbus.h&gt;</code><br />
-<code>#include &lt;<a class="el" href="pointer_8h_source.html">dbus-cxx/pointer.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="callmessage_8h_source.html">dbus-cxx/callmessage.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="returnmessage_8h_source.html">dbus-cxx/returnmessage.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="demangle_8h_source.html">dbus-cxx/demangle.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="messageiterator_8h_source.html">dbus-cxx/messageiterator.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="signature_8h_source.html">dbus-cxx/signature.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="simplelogger__defs_8h_source.html">dbus-cxx/simplelogger_defs.h</a>&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;typeinfo&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;sigc++/sigc++.h&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for utility.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="utility_8h__incl.png" border="0" usemap="#utility_8h" alt=""/></div>
 <map name="utility_8h" id="utility_8h">
-<area shape="rect" id="node3" href="pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="130,87,269,114"/>
-<area shape="rect" id="node5" href="simplelogger__defs_8h.html" title="dbus&#45;cxx/simplelogger\l_defs.h" alt="" coords="293,80,458,121"/>
-<area shape="rect" id="node4" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="102,169,297,196"/>
+<area shape="rect" id="node2" href="callmessage_8h.html" title="dbus&#45;cxx/callmessage.h" alt="" coords="424,87,603,114"/>
+<area shape="rect" id="node12" href="signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="1462,617,1621,644"/>
+<area shape="rect" id="node29" href="messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="2791,244,2993,271"/>
+<area shape="rect" id="node30" href="demangle_8h.html" title="dbus&#45;cxx/demangle.h" alt="" coords="3512,468,3675,495"/>
+<area shape="rect" id="node33" href="returnmessage_8h.html" title="dbus&#45;cxx/returnmessage.h" alt="" coords="3632,87,3827,114"/>
+<area shape="rect" id="node34" href="simplelogger__defs_8h.html" title="dbus&#45;cxx/simplelogger\l_defs.h" alt="" coords="3952,80,4123,121"/>
+<area shape="rect" id="node3" href="message_8h.html" title="dbus&#45;cxx/message.h" alt="" coords="1910,169,2066,196"/>
+<area shape="rect" id="node13" href="path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="1006,692,1133,719"/>
+<area shape="rect" id="node5" href="error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="2151,543,2278,569"/>
+<area shape="rect" id="node9" href="messageappenditerator_8h.html" title="dbus&#45;cxx/messageappenditerator.h" alt="" coords="1544,319,1795,345"/>
+<area shape="rect" id="node10" href="enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="695,767,836,793"/>
+<area shape="rect" id="node24" href="variant_8h.html" title="variant.h" alt="" coords="1695,393,1775,420"/>
+<area shape="rect" id="node8" href="dbus-error_8h.html" title="dbus&#45;cxx/dbus&#45;error.h" alt="" coords="2155,617,2317,644"/>
+<area shape="rect" id="node16" href="dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="2519,767,2719,793"/>
+<area shape="rect" id="node21" href="marshaling_8h.html" title="dbus&#45;cxx/marshaling.h" alt="" coords="983,543,1153,569"/>
+<area shape="rect" id="node15" href="signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="2224,692,2429,719"/>
+<area shape="rect" id="node25" href="variantappenditerator_8h.html" title="dbus&#45;cxx/variantappenditerator.h" alt="" coords="1229,543,1467,569"/>
+<area shape="rect" id="node27" href="variantiterator_8h.html" title="dbus&#45;cxx/variantiterator.h" alt="" coords="2283,468,2474,495"/>
+<area shape="rect" id="node28" href="types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="1849,543,1983,569"/>
+<area shape="rect" id="node26" href="filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="1797,617,1979,644"/>
+<area shape="rect" id="node31" href="demarshaling_8h.html" title="dbus&#45;cxx/demarshaling.h" alt="" coords="1920,319,2107,345"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -60,38 +91,57 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="utility_8h__dep__incl.png" border="0" usemap="#utility_8hdep" alt=""/></div>
 <map name="utility_8hdep" id="utility_8hdep">
-<area shape="rect" id="node2" href="dbus__signal_8h.html" title="dbus_signal.h" alt="" coords="153,229,263,256"/>
-<area shape="rect" id="node4" href="method_8h.html" title="method.h" alt="" coords="253,379,337,405"/>
-<area shape="rect" id="node7" href="object_8cpp.html" title="object.cpp" alt="" coords="63,603,151,629"/>
-<area shape="rect" id="node8" href="interface_8cpp.html" title="interface.cpp" alt="" coords="43,528,149,555"/>
-<area shape="rect" id="node11" href="connection_8cpp.html" title="connection.cpp" alt="" coords="1001,379,1119,405"/>
-<area shape="rect" id="node13" href="dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="1539,453,1653,480"/>
-<area shape="rect" id="node19" href="objectpathhandler_8cpp.html" title="objectpathhandler.cpp" alt="" coords="1483,379,1647,405"/>
-<area shape="rect" id="node21" href="utility_8cpp.html" title="utility.cpp" alt="" coords="1671,379,1753,405"/>
-<area shape="rect" id="node22" href="methodproxy_8h.html" title="methodproxy.h" alt="" coords="1333,80,1451,107"/>
-<area shape="rect" id="node26" href="pendingcall_8cpp.html" title="pendingcall.cpp" alt="" coords="1733,80,1854,107"/>
-<area shape="rect" id="node27" href="signalreceiver_8cpp.html" title="signalreceiver.cpp" alt="" coords="1879,80,2015,107"/>
-<area shape="rect" id="node28" href="timeout_8cpp.html" title="timeout.cpp" alt="" coords="2039,80,2137,107"/>
-<area shape="rect" id="node3" href="connection_8h.html" title="connection.h" alt="" coords="699,304,803,331"/>
-<area shape="rect" id="node5" href="interface_8h.html" title="interface.h" alt="" coords="153,453,244,480"/>
-<area shape="rect" id="node6" href="object_8h.html" title="object.h" alt="" coords="173,528,246,555"/>
-<area shape="rect" id="node9" href="objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="415,528,537,555"/>
-<area shape="rect" id="node10" href="method__impl_8h.html" title="method_impl.h" alt="" coords="269,453,387,480"/>
-<area shape="rect" id="node12" href="dispatcher_8h.html" title="dispatcher.h" alt="" coords="1195,379,1295,405"/>
-<area shape="rect" id="node16" href="interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="1320,379,1459,405"/>
-<area shape="rect" id="node17" href="messagefilter_8cpp.html" title="messagefilter.cpp" alt="" coords="514,379,649,405"/>
-<area shape="rect" id="node18" href="messagehandler_8cpp.html" title="messagehandler.cpp" alt="" coords="673,379,828,405"/>
-<area shape="rect" id="node20" href="signal__base_8cpp.html" title="signal_base.cpp" alt="" coords="853,379,977,405"/>
-<area shape="rect" id="node14" href="glibmm_2dispatcher_8h.html" title="dispatcher.h" alt="" coords="1195,453,1295,480"/>
-<area shape="rect" id="node15" href="glibmm_2dispatcher_8cpp.html" title="dispatcher.cpp" alt="" coords="1188,528,1303,555"/>
-<area shape="rect" id="node23" href="interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="1292,155,1415,181"/>
-<area shape="rect" id="node24" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="1104,229,1211,256"/>
-<area shape="rect" id="node25" href="methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="1235,229,1400,256"/>
+<area shape="rect" id="node2" href="signalproxy_8h.html" title="signalproxy.h" alt="" coords="1114,80,1222,107"/>
+<area shape="rect" id="node4" href="connection_8cpp.html" title="connection.cpp" alt="" coords="840,304,960,331"/>
+<area shape="rect" id="node8" href="object_8cpp.html" title="object.cpp" alt="" coords="1786,304,1875,331"/>
+<area shape="rect" id="node12" href="utility_8cpp.html" title="utility.cpp" alt="" coords="1321,304,1407,331"/>
+<area shape="rect" id="node24" href="methodbase_8h.html" title="methodbase.h" alt="" coords="2051,80,2165,107"/>
+<area shape="rect" id="node28" href="methodproxybase_8h.html" title="methodproxybase.h" alt="" coords="1291,80,1443,107"/>
+<area shape="rect" id="node29" href="property_8h.html" title="property.h" alt="" coords="1599,80,1686,107"/>
+<area shape="rect" id="node30" href="sendmsgtransport_8cpp.html" title="sendmsgtransport.cpp" alt="" coords="1859,80,2026,107"/>
+<area shape="rect" id="node31" href="signal_8h.html" title="signal.h" alt="" coords="1710,80,1783,107"/>
+<area shape="rect" id="node32" href="simpletransport_8cpp.html" title="simpletransport.cpp" alt="" coords="2189,80,2341,107"/>
+<area shape="rect" id="node3" href="connection_8h.html" title="connection.h" alt="" coords="1537,229,1642,256"/>
+<area shape="rect" id="node6" href="interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="1147,304,1290,331"/>
+<area shape="rect" id="node13" href="objectproxy_8h.html" title="objectproxy.h" alt="" coords="907,229,1016,256"/>
+<area shape="rect" id="node15" href="interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="1003,155,1130,181"/>
+<area shape="rect" id="node23" href="signalproxy_8cpp.html" title="signalproxy.cpp" alt="" coords="856,155,979,181"/>
+<area shape="rect" id="node5" href="interface_8cpp.html" title="interface.cpp" alt="" coords="2055,304,2161,331"/>
+<area shape="rect" id="node7" href="methodbase_8cpp.html" title="methodbase.cpp" alt="" coords="1900,304,2031,331"/>
+<area shape="rect" id="node9" href="objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="497,304,621,331"/>
+<area shape="rect" id="node10" href="signalbase_8cpp.html" title="signalbase.cpp" alt="" coords="1643,304,1762,331"/>
+<area shape="rect" id="node11" href="standalonedispatcher_8cpp.html" title="standalonedispatcher.cpp" alt="" coords="1431,304,1619,331"/>
+<area shape="rect" id="node14" href="propertyproxy_8cpp.html" title="propertyproxy.cpp" alt="" coords="984,304,1123,331"/>
+<area shape="rect" id="node16" href="methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="1193,229,1359,256"/>
+<area shape="rect" id="node17" href="peerinterfaceproxy_8h.html" title="peerinterfaceproxy.h" alt="" coords="574,229,730,256"/>
+<area shape="rect" id="node19" href="introspectableinterfaceproxy_8h.html" title="introspectableinterfaceproxy.h" alt="" coords="61,229,281,256"/>
+<area shape="rect" id="node21" href="propertiesinterfaceproxy_8h.html" title="propertiesinterfaceproxy.h" alt="" coords="305,229,498,256"/>
+<area shape="rect" id="node18" href="peerinterfaceproxy_8cpp.html" title="peerinterfaceproxy.cpp" alt="" coords="645,304,816,331"/>
+<area shape="rect" id="node20" href="introspectableinterfaceproxy_8cpp.html" title="introspectableinterfaceproxy.cpp" alt="" coords="5,304,240,331"/>
+<area shape="rect" id="node22" href="propertiesinterfaceproxy_8cpp.html" title="propertiesinterfaceproxy.cpp" alt="" coords="264,304,472,331"/>
+<area shape="rect" id="node25" href="interface_8h.html" title="interface.h" alt="" coords="1833,155,1925,181"/>
+<area shape="rect" id="node26" href="object_8h.html" title="object.h" alt="" coords="1793,229,1868,256"/>
+<area shape="rect" id="node27" href="property_8cpp.html" title="property.cpp" alt="" coords="1666,229,1769,256"/>
 </map>
 </div>
 </div>
 <p><a href="utility_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1method__signature.html">DBus::priv::method_signature&lt; argn &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1method__signature_3_4.html">DBus::priv::method_signature&lt;&gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1method__signature_3_01arg1_00_01argn_8_8_8_01_4.html">DBus::priv::method_signature&lt; arg1, argn... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDBus_1_1priv_1_1dbus__function__traits.html">DBus::priv::dbus_function_traits&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDBus_1_1priv_1_1dbus__function__traits_3_01std_1_1function_3_01void_07Args_8_8_8_08_4_01_4.html">DBus::priv::dbus_function_traits&lt; std::function&lt; void(Args...)&gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDBus_1_1priv_1_1dbus__function__traits_3_01std_1_1function_3_01T__ret_07Args_8_8_8_08_4_01_4.html">DBus::priv::dbus_function_traits&lt; std::function&lt; T_ret(Args...)&gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceDBus"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html">DBus</a></td></tr>
@@ -105,27 +155,36 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a52e0100c1343c07557166c73a2a11661"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#a52e0100c1343c07557166c73a2a11661">DBUS_CXX_INTROSPECTABLE_INTERFACE</a>&#160;&#160;&#160;&quot;org.freedesktop.DBus.Introspectable&quot;</td></tr>
 <tr class="separator:a52e0100c1343c07557166c73a2a11661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86bd957dc0483d18b0e232d47c6210d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#ab86bd957dc0483d18b0e232d47c6210d">DBUS_CXX_PEER_INTERFACE</a>&#160;&#160;&#160;&quot;org.freedesktop.DBus.Peer&quot;</td></tr>
+<tr class="separator:ab86bd957dc0483d18b0e232d47c6210d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb27b72af4ac74616c36176052dfa45f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#acb27b72af4ac74616c36176052dfa45f">DBUS_CXX_PROPERTIES_INTERFACE</a>&#160;&#160;&#160;&quot;org.freedesktop.DBus.Properties&quot;</td></tr>
+<tr class="separator:acb27b72af4ac74616c36176052dfa45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8710d55ee7042d644fe05579fd5bf288"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#a8710d55ee7042d644fe05579fd5bf288">DBUS_CXX_PROPERTY_EMITS_CHANGE_SIGNAL_ANNOTATION</a>&#160;&#160;&#160;&quot;org.freedesktop.DBus.Property.EmitsChangedSignal&quot;</td></tr>
+<tr class="separator:a8710d55ee7042d644fe05579fd5bf288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0743635ea6b8e860de9cf512d46616"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#a9c0743635ea6b8e860de9cf512d46616">DBUS_CXX_ITERATOR_SUPPORT</a>(CppType,  DBusType)</td></tr>
 <tr class="memdesc:a9c0743635ea6b8e860de9cf512d46616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides support for unsupported types that can be cast to <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> supported types.  <a href="#a9c0743635ea6b8e860de9cf512d46616">More...</a><br /></td></tr>
 <tr class="separator:a9c0743635ea6b8e860de9cf512d46616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9019cc1700ee2373fd5ac20af51017a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a9019cc1700ee2373fd5ac20af51017a4">DBus::init</a> (bool threadsafe=true)</td></tr>
-<tr class="memdesc:a9019cc1700ee2373fd5ac20af51017a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the dbus-cxx library.  <a href="namespaceDBus.html#a9019cc1700ee2373fd5ac20af51017a4">More...</a><br /></td></tr>
-<tr class="separator:a9019cc1700ee2373fd5ac20af51017a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7904292f6ba269327eee3fded4eb4f9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a7904292f6ba269327eee3fded4eb4f9f">DBus::initialized</a> ()</td></tr>
-<tr class="memdesc:a7904292f6ba269327eee3fded4eb4f9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the initialization state of the dbus-cxx library.  <a href="namespaceDBus.html#a7904292f6ba269327eee3fded4eb4f9f">More...</a><br /></td></tr>
-<tr class="separator:a7904292f6ba269327eee3fded4eb4f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6ba11953767b0db6030df50b5a2126e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ac6ba11953767b0db6030df50b5a2126e">DBus::setLoggingFunction</a> (::<a class="el" href="simplelogger__defs_8h.html#a19519046c887970cc02b6b1f8d5fe554">simplelogger_log_function</a> function)</td></tr>
-<tr class="memdesc:ac6ba11953767b0db6030df50b5a2126e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback function that is used for printing log messages.  <a href="namespaceDBus.html#ac6ba11953767b0db6030df50b5a2126e">More...</a><br /></td></tr>
-<tr class="separator:ac6ba11953767b0db6030df50b5a2126e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e00c67c164b434b6a21ba7b53a2ab1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a3e00c67c164b434b6a21ba7b53a2ab1c">DBus::logStdErr</a> (const char *logger_name, const struct ::<a class="el" href="structSL__LogLocation.html">SL_LogLocation</a> *location, const enum ::<a class="el" href="simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3">SL_LogLevel</a> level, const char *log_string)</td></tr>
-<tr class="memdesc:a3e00c67c164b434b6a21ba7b53a2ab1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log messages to stderr(std::cerr).  <a href="namespaceDBus.html#a3e00c67c164b434b6a21ba7b53a2ab1c">More...</a><br /></td></tr>
-<tr class="separator:a3e00c67c164b434b6a21ba7b53a2ab1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45614e0e9a6219a92fae9d8636ac7060"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a45614e0e9a6219a92fae9d8636ac7060">DBus::setLogLevel</a> (const enum ::<a class="el" href="simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3">SL_LogLevel</a> level)</td></tr>
-<tr class="memdesc:a45614e0e9a6219a92fae9d8636ac7060"><td class="mdescLeft">&#160;</td><td class="mdescRight">When used in conjunction with <a class="el" href="namespaceDBus.html#a39e6e643f1d25a3d67bb18ff28687eaf">DBus::logStdErr</a>, will only print out log messages above the set level.  <a href="namespaceDBus.html#a45614e0e9a6219a92fae9d8636ac7060">More...</a><br /></td></tr>
-<tr class="separator:a45614e0e9a6219a92fae9d8636ac7060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a137aeb8d512e08d9be83b41b0c095492"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a137aeb8d512e08d9be83b41b0c095492">DBus::set_logging_function</a> (::<a class="el" href="simplelogger__defs_8h.html#a587bf21e1f1f85bf2e5dba6b92e157d1">simplelogger_log_function</a> function)</td></tr>
+<tr class="memdesc:a137aeb8d512e08d9be83b41b0c095492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback function that is used for printing log messages.  <a href="namespaceDBus.html#a137aeb8d512e08d9be83b41b0c095492">More...</a><br /></td></tr>
+<tr class="separator:a137aeb8d512e08d9be83b41b0c095492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28adb8462a30d7b7afa2c215cac53797"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a28adb8462a30d7b7afa2c215cac53797">DBus::log_std_err</a> (const char *logger_name, const struct ::<a class="el" href="structSL__LogLocation.html">SL_LogLocation</a> *location, const enum ::<a class="el" href="simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3">SL_LogLevel</a> level, const char *log_string)</td></tr>
+<tr class="memdesc:a28adb8462a30d7b7afa2c215cac53797"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log messages to stderr(std::cerr).  <a href="namespaceDBus.html#a28adb8462a30d7b7afa2c215cac53797">More...</a><br /></td></tr>
+<tr class="separator:a28adb8462a30d7b7afa2c215cac53797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f0aece881dee574dae6a9ebde77f72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aa0f0aece881dee574dae6a9ebde77f72">DBus::set_log_level</a> (const enum ::<a class="el" href="simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3">SL_LogLevel</a> level)</td></tr>
+<tr class="memdesc:aa0f0aece881dee574dae6a9ebde77f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">When used in conjunction with DBus::logStdErr, will only print out log messages above the set level.  <a href="namespaceDBus.html#aa0f0aece881dee574dae6a9ebde77f72">More...</a><br /></td></tr>
+<tr class="separator:aa0f0aece881dee574dae6a9ebde77f72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367e101c9e2bbccd546f25f91bfa2634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a367e101c9e2bbccd546f25f91bfa2634">DBus::hexdump</a> (const std::vector&lt; uint8_t &gt; *vec, std::ostream *stream)</td></tr>
+<tr class="memdesc:a367e101c9e2bbccd546f25f91bfa2634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the vector as a hexdump output to the given output stream.  <a href="namespaceDBus.html#a367e101c9e2bbccd546f25f91bfa2634">More...</a><br /></td></tr>
+<tr class="separator:a367e101c9e2bbccd546f25f91bfa2634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f3f6a01344971131ba0786f7bbe0c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a33f3f6a01344971131ba0786f7bbe0c2">DBus::hexdump</a> (const uint8_t *vec, const uint32_t len, std::ostream *stream)</td></tr>
+<tr class="memdesc:a33f3f6a01344971131ba0786f7bbe0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the C array as a hexdump output to the given output stream.  <a href="namespaceDBus.html#a33f3f6a01344971131ba0786f7bbe0c2">More...</a><br /></td></tr>
+<tr class="separator:a33f3f6a01344971131ba0786f7bbe0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8c7dfae656f89a519fd99c116748e9"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; bool, int, std::vector&lt; int &gt;, std::chrono::milliseconds &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus_1_1priv.html#abc8c7dfae656f89a519fd99c116748e9">DBus::priv::wait_for_fd_activity</a> (std::vector&lt; int &gt; fds, int timeout_ms)</td></tr>
+<tr class="memdesc:abc8c7dfae656f89a519fd99c116748e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for activity on any of the given FDs.  <a href="namespaceDBus_1_1priv.html#abc8c7dfae656f89a519fd99c116748e9">More...</a><br /></td></tr>
+<tr class="separator:abc8c7dfae656f89a519fd99c116748e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a52e0100c1343c07557166c73a2a11661"></a>
@@ -140,7 +199,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Object.html#adfdab48091345e200f529521bcb98667">DBus::Object::handle_message()</a>, and <a class="el" href="classDBus_1_1Object.html#a40a90a8ee8c991257ac19c56ca315893">DBus::Object::introspect()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Object.html#a0a279e0c0b3034670f341f9811b08eb7">DBus::Object::handle_message()</a>, and <a class="el" href="classDBus_1_1Object.html#a40a90a8ee8c991257ac19c56ca315893">DBus::Object::introspect()</a>.</p>
 
 </div>
 </div>
@@ -169,12 +228,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">inline                                                                                              \</div><div class="line">  DBus::MessageIterator&amp; <a class="code" href="message_8h.html#a1a50a676ba6a514e61de2fb8c58830d9">operator&gt;&gt;</a>(<a class="code" href="classDBus_1_1MessageIterator.html">DBus::MessageIterator</a>&amp; __msgiter, CppType&amp; __cpptype)             \</div><div class="line">  {                                                                                                   \</div><div class="line">    DBusType __dbustype;                                                                              \</div><div class="line">    __msgiter &gt;&gt; __dbustype;                                                                          \</div><div class="line">    __cpptype = <span class="keyword">static_cast&lt;</span> CppType <span class="keyword">&gt;</span>( __dbustype );                                                 \</div><div class="line">    return __msgiter;                                                                                 \</div><div class="line">  }                                                                                                   \</div><div class="line">                                                                                                      \</div><div class="line">  inline                                                                                              \</div><div class="line">  DBus::MessageAppendIterator&amp; <a class="code" href="connection_8h.html#a21540cca52d7b9041d22f6f532f47649">operator&lt;&lt;</a>(<a class="code" href="classDBus_1_1MessageAppendIterator.html">DBus::MessageAppendIterator</a>&amp; __msgiter, CppType&amp; __cpptype) \</div><div class="line">  {                                                                                                   \</div><div class="line">    __msgiter &lt;&lt; static_cast&lt; DBusType &gt;( __cpptype );                                                \</div><div class="line">    return __msgiter;                                                                                 \</div><div class="line">  }                                                                                                   \</div><div class="line">                                                                                                      \</div><div class="line">  namespace <a class="code" href="namespaceDBus.html">DBus</a> {                                                                                    \</div><div class="line">    inline std::string <a class="code" href="namespaceDBus.html#a17ac14f20bfb624e33288d02fd51f35b">signature</a>( CppType ) { DBusType d; <span class="keywordflow">return</span> <a class="code" href="namespaceDBus.html#a17ac14f20bfb624e33288d02fd51f35b">signature</a>( d ); }          \</div><div class="line">  }</div><div class="ttc" id="namespaceDBus_html"><div class="ttname"><a href="namespaceDBus.html">DBus</a></div><div class="ttdoc">Global DBus namespace, where everything happens. </div><div class="ttdef"><b>Definition:</b> connection.h:45</div></div>
-<div class="ttc" id="connection_8h_html_a21540cca52d7b9041d22f6f532f47649"><div class="ttname"><a href="connection_8h.html#a21540cca52d7b9041d22f6f532f47649">operator&lt;&lt;</a></div><div class="ttdeci">DBus::Connection::pointer operator&lt;&lt;(DBus::Connection::pointer ptr, DBus::Message::pointer msg)</div><div class="ttdef"><b>Definition:</b> connection.h:716</div></div>
-<div class="ttc" id="message_8h_html_a1a50a676ba6a514e61de2fb8c58830d9"><div class="ttname"><a href="message_8h.html#a1a50a676ba6a514e61de2fb8c58830d9">operator&gt;&gt;</a></div><div class="ttdeci">DBus::Message::iterator operator&gt;&gt;(DBus::Message::const_pointer ptr, T &amp;value)</div><div class="ttdef"><b>Definition:</b> message.h:170</div></div>
-<div class="ttc" id="namespaceDBus_html_a17ac14f20bfb624e33288d02fd51f35b"><div class="ttname"><a href="namespaceDBus.html#a17ac14f20bfb624e33288d02fd51f35b">DBus::signature</a></div><div class="ttdeci">std::string signature(uint8_t)</div><div class="ttdef"><b>Definition:</b> signature.h:94</div></div>
-<div class="ttc" id="classDBus_1_1MessageAppendIterator_html"><div class="ttname"><a href="classDBus_1_1MessageAppendIterator.html">DBus::MessageAppendIterator</a></div><div class="ttdoc">Insertion iterator allow values to be appended to a message. </div><div class="ttdef"><b>Definition:</b> messageappenditerator.h:43</div></div>
-<div class="ttc" id="classDBus_1_1MessageIterator_html"><div class="ttname"><a href="classDBus_1_1MessageIterator.html">DBus::MessageIterator</a></div><div class="ttdoc">Extraction iterator allowing values to be retrieved from a message. </div><div class="ttdef"><b>Definition:</b> messageiterator.h:37</div></div>
+<b>Value:</b><div class="fragment"><div class="line">inline                                                                                              \</div><div class="line">    DBus::MessageIterator&amp; <a class="code" href="namespaceDBus.html#ac4620e28a0b54cf98f2d06290fa7019f">operator&gt;&gt;</a>(<a class="code" href="classDBus_1_1MessageIterator.html">DBus::MessageIterator</a>&amp; __msgiter, CppType&amp; __cpptype)             \</div><div class="line">    {                                                                                                   \</div><div class="line">        DBusType __dbustype;                                                                              \</div><div class="line">        __msgiter &gt;&gt; __dbustype;                                                                          \</div><div class="line">        __cpptype = <span class="keyword">static_cast&lt;</span> CppType <span class="keyword">&gt;</span>( __dbustype );                                                 \</div><div class="line">        return __msgiter;                                                                                 \</div><div class="line">    }                                                                                                   \</div><div class="line">    \</div><div class="line">    inline                                                                                              \</div><div class="line">    DBus::MessageAppendIterator&amp; <a class="code" href="namespaceDBus.html#a4745771db07d4890422c1bc80abbe8eb">operator&lt;&lt;</a>(<a class="code" href="classDBus_1_1MessageAppendIterator.html">DBus::MessageAppendIterator</a>&amp; __msgiter, CppType&amp; __cpptype) \</div><div class="line">    {                                                                                                   \</div><div class="line">        __msgiter &lt;&lt; static_cast&lt; DBusType &gt;( __cpptype );                                                \</div><div class="line">        return __msgiter;                                                                                 \</div><div class="line">    }                                                                                                   \</div><div class="line">    \</div><div class="line">    namespace <a class="code" href="namespaceDBus.html">DBus</a> {                                                                                    \</div><div class="line">    inline std::string <a class="code" href="namespaceDBus.html#ad93f4116ec5f76d196080e8ca8b6c814">signature</a>( CppType ) { DBusType d; <span class="keywordflow">return</span> <a class="code" href="namespaceDBus.html#ad93f4116ec5f76d196080e8ca8b6c814">signature</a>( d ); }          \</div><div class="line">    }</div><div class="ttc" id="namespaceDBus_html"><div class="ttname"><a href="namespaceDBus.html">DBus</a></div><div class="ttdoc">Global DBus namespace, where everything happens. </div><div class="ttdef"><b>Definition:</b> callmessage.cpp:29</div></div>
+<div class="ttc" id="namespaceDBus_html_ac4620e28a0b54cf98f2d06290fa7019f"><div class="ttname"><a href="namespaceDBus.html#ac4620e28a0b54cf98f2d06290fa7019f">DBus::operator&gt;&gt;</a></div><div class="ttdeci">DBus::MessageIterator operator&gt;&gt;(std::shared_ptr&lt; const DBus::Message &gt; ptr, T &amp;value)</div><div class="ttdef"><b>Definition:</b> message.h:194</div></div>
+<div class="ttc" id="namespaceDBus_html_ad93f4116ec5f76d196080e8ca8b6c814"><div class="ttname"><a href="namespaceDBus.html#ad93f4116ec5f76d196080e8ca8b6c814">DBus::signature</a></div><div class="ttdeci">std::string signature(const std::tuple&lt; T... &gt; &amp;)</div></div>
+<div class="ttc" id="namespaceDBus_html_a4745771db07d4890422c1bc80abbe8eb"><div class="ttname"><a href="namespaceDBus.html#a4745771db07d4890422c1bc80abbe8eb">DBus::operator&lt;&lt;</a></div><div class="ttdeci">std::shared_ptr&lt; DBus::Connection &gt; operator&lt;&lt;(std::shared_ptr&lt; DBus::Connection &gt; ptr, std::shared_ptr&lt; DBus::Message &gt; msg)</div><div class="ttdef"><b>Definition:</b> connection.h:442</div></div>
+<div class="ttc" id="classDBus_1_1MessageAppendIterator_html"><div class="ttname"><a href="classDBus_1_1MessageAppendIterator.html">DBus::MessageAppendIterator</a></div><div class="ttdoc">Insertion iterator allow values to be appended to a message. </div><div class="ttdef"><b>Definition:</b> messageappenditerator.h:49</div></div>
+<div class="ttc" id="classDBus_1_1MessageIterator_html"><div class="ttname"><a href="classDBus_1_1MessageIterator.html">DBus::MessageIterator</a></div><div class="ttdoc">Extraction iterator allowing values to be retrieved from a message. </div><div class="ttdef"><b>Definition:</b> messageiterator.h:62</div></div>
 </div><!-- fragment -->
 <p>Provides support for unsupported types that can be cast to <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> supported types. </p>
 <p>This macro provides message iterator and introspection support for types that are not supported by the <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> native types, but can be <code>static_cast&lt;&gt;</code> to a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> native type. Typically, this is an enum.</p>
@@ -188,10 +247,58 @@ Functions</h2></td></tr>
 <p>Example supporting an enum as a 32-bit int: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> MyEnum { ZERO, ONE, TWO, THREE } MyEnum;</div><div class="line"></div><div class="line"><a class="code" href="utility_8h.html#a9c0743635ea6b8e860de9cf512d46616">DBUS_CXX_ITERATOR_SUPPORT</a>( MyEnum, uint32_t )</div></div><!-- fragment --> 
 </div>
 </div>
+<a id="ab86bd957dc0483d18b0e232d47c6210d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86bd957dc0483d18b0e232d47c6210d">&#9670;&nbsp;</a></span>DBUS_CXX_PEER_INTERFACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUS_CXX_PEER_INTERFACE&#160;&#160;&#160;&quot;org.freedesktop.DBus.Peer&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Object.html#a0a279e0c0b3034670f341f9811b08eb7">DBus::Object::handle_message()</a>, and <a class="el" href="classDBus_1_1Object.html#a40a90a8ee8c991257ac19c56ca315893">DBus::Object::introspect()</a>.</p>
+
+</div>
+</div>
+<a id="acb27b72af4ac74616c36176052dfa45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb27b72af4ac74616c36176052dfa45f">&#9670;&nbsp;</a></span>DBUS_CXX_PROPERTIES_INTERFACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUS_CXX_PROPERTIES_INTERFACE&#160;&#160;&#160;&quot;org.freedesktop.DBus.Properties&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Object.html#a0a279e0c0b3034670f341f9811b08eb7">DBus::Object::handle_message()</a>, <a class="el" href="classDBus_1_1Object.html#a40a90a8ee8c991257ac19c56ca315893">DBus::Object::introspect()</a>, <a class="el" href="classDBus_1_1Interface.html#ac4cbfb6b7ab48a297d705c6d8f9b0f6d">DBus::Interface::property_updated()</a>, <a class="el" href="classDBus_1_1InterfaceProxy.html#ac31e98e9526b829bb504bc7a822b8d5e">DBus::InterfaceProxy::set_object()</a>, and <a class="el" href="classDBus_1_1PropertyProxyBase.html#a91ee66e04a4d904351dc73ae05b679f6">DBus::PropertyProxyBase::variant_value()</a>.</p>
+
+</div>
+</div>
+<a id="a8710d55ee7042d644fe05579fd5bf288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8710d55ee7042d644fe05579fd5bf288">&#9670;&nbsp;</a></span>DBUS_CXX_PROPERTY_EMITS_CHANGE_SIGNAL_ANNOTATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DBUS_CXX_PROPERTY_EMITS_CHANGE_SIGNAL_ANNOTATION&#160;&#160;&#160;&quot;org.freedesktop.DBus.Property.EmitsChangedSignal&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Property.html#a2e8ec6e39005d246d4cfebff657fd994">DBus::Property&lt; T_type &gt;::introspect()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

@@ -31,22 +31,26 @@ $(function() {
 </div><!-- top -->
 <div class="contents">
 &#160;<ul>
-<li>init
-: <a class="el" href="classDBus_1_1Connection.html#a3b056119f2d49f964abb3404b07949c9">DBus::Connection</a>
-, <a class="el" href="classDBus_1_1Message.html#a3b056119f2d49f964abb3404b07949c9">DBus::Message</a>
-</li>
 <li>Interface
-: <a class="el" href="classDBus_1_1signal.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, T_arg7 &gt;</a>
-, <a class="el" href="classDBus_1_1signal_3_01T__return_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, nil, nil, nil, nil, nil, nil, nil &gt;</a>
-, <a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, T_arg1, nil, nil, nil, nil, nil, nil &gt;</a>
-, <a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01nil_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, T_arg1, T_arg2, nil, nil, nil, nil, nil &gt;</a>
-, <a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01nil_00_01nil_00_01nil_00_01nil_01_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, nil, nil, nil, nil &gt;</a>
-, <a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01nil_00_01nil_00_01nil_01_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, nil, nil, nil &gt;</a>
-, <a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01nil_00_01nil_01_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, nil, nil &gt;</a>
-, <a class="el" href="classDBus_1_1signal_3_01T__return_00_01T__arg1_00_01T__arg2_00_01T__arg3_00_01T__arg4_00_01T__arg5_00_01T__arg6_00_01nil_01_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::signal&lt; T_return, T_arg1, T_arg2, T_arg3, T_arg4, T_arg5, T_arg6, nil &gt;</a>
+: <a class="el" href="classDBus_1_1PropertyBase.html#ab2d499aedae98d5bb86006432c06888f">DBus::PropertyBase</a>
+, <a class="el" href="classDBus_1_1Signal_3_01void_07T__type_8_8_8_08_4.html#ab2d499aedae98d5bb86006432c06888f">DBus::Signal&lt; void(T_type...)&gt;</a>
 </li>
 <li>InterfaceProxy
 : <a class="el" href="classDBus_1_1MethodProxyBase.html#a6232b8a673f7390d65fed0d43381f7b8">DBus::MethodProxyBase</a>
+, <a class="el" href="classDBus_1_1PropertyProxyBase.html#a6232b8a673f7390d65fed0d43381f7b8">DBus::PropertyProxyBase</a>
+</li>
+<li>MatchRuleBuilder
+: <a class="el" href="classDBus_1_1ErrorMatchRule.html#ab8af65afb0b49955eea3ca2073e830d6">DBus::ErrorMatchRule</a>
+, <a class="el" href="classDBus_1_1MatchRule.html#ab8af65afb0b49955eea3ca2073e830d6">DBus::MatchRule</a>
+, <a class="el" href="classDBus_1_1MethodCallMatchRule.html#ab8af65afb0b49955eea3ca2073e830d6">DBus::MethodCallMatchRule</a>
+, <a class="el" href="classDBus_1_1MethodReturnMatchRule.html#ab8af65afb0b49955eea3ca2073e830d6">DBus::MethodReturnMatchRule</a>
+, <a class="el" href="classDBus_1_1SignalMatchRule.html#ab8af65afb0b49955eea3ca2073e830d6">DBus::SignalMatchRule</a>
+</li>
+<li>MessageAppendIterator
+: <a class="el" href="classDBus_1_1Message.html#a4ec2710c82fdc3f3479c49574340e0f0">DBus::Message</a>
+</li>
+<li>MessageIterator
+: <a class="el" href="classDBus_1_1Message.html#a96830ac40345d12cb9cec5efe497134b">DBus::Message</a>
 </li>
 <li>Object
 : <a class="el" href="classDBus_1_1Interface.html#a0720b5f434e636e22a3ed34f847eec57">DBus::Interface</a>
@@ -54,11 +58,27 @@ $(function() {
 <li>ObjectProxy
 : <a class="el" href="classDBus_1_1InterfaceProxy.html#afd7aefd054740ee2d3a0e5a5733804df">DBus::InterfaceProxy</a>
 </li>
+<li>operator&lt;&lt;
+: <a class="el" href="classDBus_1_1Message.html#a3a7e74e61b8593d0e58910faa3ee543d">DBus::Message</a>
+, <a class="el" href="classDBus_1_1Variant.html#a15264067d642cc5857afcff5194a5e9a">DBus::Variant</a>
+</li>
+<li>priv::VariantAppendIterator
+: <a class="el" href="classDBus_1_1Variant.html#ad221c88fdb25fb5e23db04d7655fe5f7">DBus::Variant</a>
+</li>
+<li>priv::VariantIterator
+: <a class="el" href="classDBus_1_1Variant.html#a44938155d72ee3757d1beaf2f729f436">DBus::Variant</a>
+</li>
+<li>PropertyBase
+: <a class="el" href="classDBus_1_1Interface.html#a5b941bc22175892390e39f2713561f54">DBus::Interface</a>
+</li>
+<li>Variant
+: <a class="el" href="classDBus_1_1MessageIterator.html#aa3577d92d98656c9a368b297edd5f320">DBus::MessageIterator</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

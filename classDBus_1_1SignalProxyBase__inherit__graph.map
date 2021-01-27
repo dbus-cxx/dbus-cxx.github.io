@@ -1,0 +1,4 @@
+<map id="DBus::SignalProxyBase" name="DBus::SignalProxyBase">
+<area shape="rect" id="node3" href="$classDBus_1_1SignalProxy_3_01void_07T__arg_8_8_8_08_4.html" title="Subclass of the sigc::signal templates. " alt="" coords="16,155,168,196"/>
+<area shape="rect" id="node2" href="$classDBus_1_1SignalBase.html" title="Base class of all signals(proxy and adapter). " alt="" coords="24,5,160,32"/>
+</map>

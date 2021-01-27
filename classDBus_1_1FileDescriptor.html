@@ -35,7 +35,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -51,22 +50,19 @@ $(function() {
 
 <p><code>#include &lt;<a class="el" href="filedescriptor_8h_source.html">filedescriptor.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:aea71d73041d00f835cc61d04b919e99f"><td class="memItemLeft" align="right" valign="top">typedef DBusCxxPointer&lt; <a class="el" href="classDBus_1_1FileDescriptor.html">FileDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#aea71d73041d00f835cc61d04b919e99f">pointer</a></td></tr>
-<tr class="separator:aea71d73041d00f835cc61d04b919e99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afb05e25d380bb608681eaa45bfea7273"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#afb05e25d380bb608681eaa45bfea7273">~FileDescriptor</a> ()</td></tr>
 <tr class="separator:afb05e25d380bb608681eaa45bfea7273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd24d1e90ede4ed004482189e9478bf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#afd24d1e90ede4ed004482189e9478bf1">getDescriptor</a> () const</td></tr>
-<tr class="separator:afd24d1e90ede4ed004482189e9478bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05b10356d72589c3bfb2745ca9e9f8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#af05b10356d72589c3bfb2745ca9e9f8b">descriptor</a> () const</td></tr>
+<tr class="separator:af05b10356d72589c3bfb2745ca9e9f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accd8e717dfb334eb6a91adf2789a96ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#accd8e717dfb334eb6a91adf2789a96ee">operator bool</a> () const</td></tr>
+<tr class="separator:accd8e717dfb334eb6a91adf2789a96ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a081465b7a90c754dfb16238a7c2d453f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1FileDescriptor.html#aea71d73041d00f835cc61d04b919e99f">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#a081465b7a90c754dfb16238a7c2d453f">create</a> (int fd)</td></tr>
-<tr class="separator:a081465b7a90c754dfb16238a7c2d453f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071912eed1f6b8cc5c63588dc19c6e46"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classDBus_1_1FileDescriptor.html">FileDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#a071912eed1f6b8cc5c63588dc19c6e46">create</a> (int fd)</td></tr>
+<tr class="separator:a071912eed1f6b8cc5c63588dc19c6e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -79,27 +75,14 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ada5855e368e33e02c90b21cd5d33a716"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#ada5855e368e33e02c90b21cd5d33a716">m_valid</a></td></tr>
+<tr class="separator:ada5855e368e33e02c90b21cd5d33a716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ab7721468996c545465878fe97c6eaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1FileDescriptor.html#a8ab7721468996c545465878fe97c6eaa">m_fd</a></td></tr>
 <tr class="separator:a8ab7721468996c545465878fe97c6eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classDBus_1_1FileDescriptor.html" title="A FileDescriptor holds a UNIX file descriptor that can be passed between processes. ">FileDescriptor</a> holds a UNIX file descriptor that can be passed between processes. </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aea71d73041d00f835cc61d04b919e99f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea71d73041d00f835cc61d04b919e99f">&#9670;&nbsp;</a></span>pointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef DBusCxxPointer&lt;<a class="el" href="classDBus_1_1FileDescriptor.html">FileDescriptor</a>&gt; <a class="el" href="classDBus_1_1FileDescriptor.html#aea71d73041d00f835cc61d04b919e99f">DBus::FileDescriptor::pointer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae3b967ae82f992def3b8cdf053997e12"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3b967ae82f992def3b8cdf053997e12">&#9670;&nbsp;</a></span>FileDescriptor() <span class="overload">[1/3]</span></h2>
 
@@ -123,9 +106,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1FileDescriptor.html#a8ab7721468996c545465878fe97c6eaa">m_fd</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1FileDescriptor.html#a081465b7a90c754dfb16238a7c2d453f">create()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1FileDescriptor.html#a071912eed1f6b8cc5c63588dc19c6e46">create()</a>.</p>
 
 </div>
 </div>
@@ -153,8 +134,6 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1FileDescriptor.html#a8ab7721468996c545465878fe97c6eaa">m_fd</a>.</p>
-
 </div>
 </div>
 <a id="a863b3ddddc32ac748eeabf2c1f8fb241"></a>
@@ -180,8 +159,6 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classDBus_1_1FileDescriptor.html#a8ab7721468996c545465878fe97c6eaa">m_fd</a>.</p>
 
 </div>
 </div>
@@ -211,8 +188,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a081465b7a90c754dfb16238a7c2d453f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a081465b7a90c754dfb16238a7c2d453f">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a071912eed1f6b8cc5c63588dc19c6e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071912eed1f6b8cc5c63588dc19c6e46">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +198,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classDBus_1_1FileDescriptor.html#aea71d73041d00f835cc61d04b919e99f">pointer</a> DBus::FileDescriptor::create </td>
+          <td class="memname">static std::shared_ptr&lt;<a class="el" href="classDBus_1_1FileDescriptor.html">FileDescriptor</a>&gt; DBus::FileDescriptor::create </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>fd</em></td><td>)</td>
@@ -237,12 +214,12 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="classDBus_1_1FileDescriptor.html#ae3b967ae82f992def3b8cdf053997e12">FileDescriptor()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#ab8c8816eb050bbdb50355dda9da1e021">DBus::MessageIterator::get_filedescriptor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#ae97ce48e792b0680efb19c2392828b19">DBus::MessageIterator::get_filedescriptor()</a>.</p>
 
 </div>
 </div>
-<a id="afd24d1e90ede4ed004482189e9478bf1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd24d1e90ede4ed004482189e9478bf1">&#9670;&nbsp;</a></span>getDescriptor()</h2>
+<a id="af05b10356d72589c3bfb2745ca9e9f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05b10356d72589c3bfb2745ca9e9f8b">&#9670;&nbsp;</a></span>descriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +228,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int DBus::FileDescriptor::getDescriptor </td>
+          <td class="memname">int DBus::FileDescriptor::descriptor </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -265,6 +242,33 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="classDBus_1_1FileDescriptor.html#a8ab7721468996c545465878fe97c6eaa">m_fd</a>.</p>
+
+</div>
+</div>
+<a id="accd8e717dfb334eb6a91adf2789a96ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accd8e717dfb334eb6a91adf2789a96ee">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBus::FileDescriptor::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1FileDescriptor.html#ada5855e368e33e02c90b21cd5d33a716">m_valid</a>.</p>
 
 </div>
 </div>
@@ -289,7 +293,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1FileDescriptor.html#ae3b967ae82f992def3b8cdf053997e12">FileDescriptor()</a>, and <a class="el" href="classDBus_1_1FileDescriptor.html#afd24d1e90ede4ed004482189e9478bf1">getDescriptor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1FileDescriptor.html#af05b10356d72589c3bfb2745ca9e9f8b">descriptor()</a>.</p>
+
+</div>
+</div>
+<a id="ada5855e368e33e02c90b21cd5d33a716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5855e368e33e02c90b21cd5d33a716">&#9670;&nbsp;</a></span>m_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DBus::FileDescriptor::m_valid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1FileDescriptor.html#accd8e717dfb334eb6a91adf2789a96ee">operator bool()</a>.</p>
 
 </div>
 </div>
@@ -299,7 +327,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

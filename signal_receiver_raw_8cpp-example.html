@@ -34,43 +34,32 @@ $(function() {
 <div class="title">signal_receiver_raw.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<p>This example is part of a series of examples that demonstrate signal emission/handling in a variety of ways.This group of examples are: </p><ul>
-<li>
-Signal Emitters <ul>
-<li>
-<code>signal_emitter_c.cpp</code> - Signal emission with the dbus C API </li>
-<li>
-<code>signal_emitter_raw.cpp</code> - Signal emission with a manually created message </li>
-<li>
-<code>signal_emitter.cpp</code> - Signal emission with a <a class="el" href="classDBus_1_1signal.html" title="Subclass of the numbered sigc::signal templates. ">DBus::signal</a> </li>
-<li>
-<code>signal_emitter_2.cpp</code> - Signal emission with a <a class="el" href="classDBus_1_1signal.html" title="Subclass of the numbered sigc::signal templates. ">DBus::signal</a> and a local connection as well </li>
-<li>
-<code>signal_emitter_3.cpp</code> - Dispatched signal emission and a local connection </li>
-<li>
-<code>signal_emitter_object.cpp</code> - Signal emission with a <a class="el" href="classDBus_1_1Object.html">DBus::Object</a> derived class </li>
+<p>This example is part of a series of examples that demonstrate signal emission/handling in a variety of ways.</p>
+<p>This group of examples are:</p>
+<ul>
+<li>Signal Emitters<ul>
+<li><code>signal_emitter_c.cpp</code> - Signal emission with the dbus C API</li>
+<li><code>signal_emitter_raw.cpp</code> - Signal emission with a manually created message</li>
+<li><code>signal_emitter.cpp</code> - Signal emission with a DBus::signal</li>
+<li><code>signal_emitter_2.cpp</code> - Signal emission with a DBus::signal and a local connection as well</li>
+<li><code>signal_emitter_3.cpp</code> - Dispatched signal emission and a local connection</li>
+<li><code>signal_emitter_object.cpp</code> - Signal emission with a <a class="el" href="classDBus_1_1Object.html" title="An Object represents a local object that is able to be called over the DBus. ">DBus::Object</a> derived class</li>
 </ul>
 </li>
-<li>
-Signal Handlers <ul>
-<li>
-<code>signal_receiver_c.cpp</code> - Signal handling with the dbus C API </li>
-<li>
-<code>signal_receiver_raw.cpp</code> - Signal handling with a manual loop similar to the C API example </li>
-<li>
-<code>signal_receiver.cpp</code> - Signal handling with a dispatcher and raw <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signal demarshalling </li>
-<li>
-<code>signal_receiver_2.cpp</code> - Signal handling with a dispatcher and automatic demarshalling </li>
-<li>
-<code>signal_receiver_object.cpp</code> - Signal handling with a <a class="el" href="classDBus_1_1ObjectProxy.html" title="Object proxies are local proxies that provide local methods and signals for remote objects with dbus ...">DBus::ObjectProxy</a> derived class </li>
+<li>Signal Handlers<ul>
+<li><code>signal_receiver_c.cpp</code> - Signal handling with the dbus C API</li>
+<li><code>signal_receiver_raw.cpp</code> - Signal handling with a manual loop similar to the C API example</li>
+<li><code>signal_receiver.cpp</code> - Signal handling with a dispatcher and raw <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens. ">DBus</a> signal demarshalling</li>
+<li><code>signal_receiver_2.cpp</code> - Signal handling with a dispatcher and automatic demarshalling</li>
+<li><code>signal_receiver_object.cpp</code> - Signal handling with a <a class="el" href="classDBus_1_1ObjectProxy.html" title="Object proxies are local proxies that provide local methods and signals for remote objects with dbus ...">DBus::ObjectProxy</a> derived class</li>
 </ul>
 </li>
 </ul>
 <p>Here is this example:</p>
-<div class="fragment"><div class="line"><span class="comment">/***************************************************************************</span></div><div class="line"><span class="comment"> *   Copyright (C) 2007,2008,2009 by Rick L. Vinyard, Jr.                  *</span></div><div class="line"><span class="comment"> *   rvinyard@cs.nmsu.edu                                                  *</span></div><div class="line"><span class="comment"> *                                                                         *</span></div><div class="line"><span class="comment"> *   This file is part of the dbus-cxx library.                            *</span></div><div class="line"><span class="comment"> *                                                                         *</span></div><div class="line"><span class="comment"> *   The dbus-cxx library is free software; you can redistribute it and/or *</span></div><div class="line"><span class="comment"> *   modify it under the terms of the GNU General Public License           *</span></div><div class="line"><span class="comment"> *   version 3 as published by the Free Software Foundation.               *</span></div><div class="line"><span class="comment"> *                                                                         *</span></div><div class="line"><span class="comment"> *   The dbus-cxx library is distributed in the hope that it will be       *</span></div><div class="line"><span class="comment"> *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty   *</span></div><div class="line"><span class="comment"> *   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU   *</span></div><div class="line"><span class="comment"> *   General Public License for more details.                              *</span></div><div class="line"><span class="comment"> *                                                                         *</span></div><div class="line"><span class="comment"> *   You should have received a copy of the GNU General Public License     *</span></div><div class="line"><span class="comment"> *   along with this software. If not see &lt;http://www.gnu.org/licenses/&gt;.  *</span></div><div class="line"><span class="comment"> ***************************************************************************/</span></div><div class="line"><span class="preprocessor">#include &lt;dbus-cxx.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line">  <a name="a0"></a><a class="code" href="namespaceDBus.html#a9019cc1700ee2373fd5ac20af51017a4">DBus::init</a>();</div><div class="line">  </div><div class="line">  <a class="code" href="classDBus_1_1Connection.html#a36f658da5f2908b9c2f467cea59fc9fa">DBus::Connection::pointer</a> connection = <a name="a1"></a><a class="code" href="classDBus_1_1Connection.html#ab08fabd19db195594895ea251e7e3247">DBus::Connection::create</a>( <a name="a2"></a><a class="code" href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764a01dfb747d94c7007edd03aea275bc4c4">DBus::BUS_SESSION</a> );</div><div class="line">  <a class="code" href="classDBus_1_1Message.html#aa450032dd53a0e0f9fd26093206be0a7">DBus::Message::pointer</a> msg;</div><div class="line">  std::string val;</div><div class="line"></div><div class="line">  <span class="comment">// add a rule for which messages we want to see</span></div><div class="line">  connection-&gt;add_match( <span class="stringliteral">&quot;type=&#39;signal&#39;,interface=&#39;test.signal.Type&#39;&quot;</span> ); <span class="comment">// see signals from the given interface</span></div><div class="line">  connection-&gt;flush();</div><div class="line"></div><div class="line">  <span class="comment">// loop listening for signals being emmitted</span></div><div class="line">  <span class="keywordflow">while</span> ( <span class="keyword">true</span> ) {</div><div class="line"></div><div class="line">    <span class="comment">// non blocking read of the next available message</span></div><div class="line">    connection-&gt;read_write( 0 );</div><div class="line">    msg = connection-&gt;pop_message();</div><div class="line"></div><div class="line">    <span class="comment">// loop again if we haven&#39;t read a message</span></div><div class="line">    <span class="keywordflow">if</span> ( not msg or not msg-&gt;is_valid() ) {</div><div class="line">      sleep( 1 );</div><div class="line">      <span class="keywordflow">continue</span>;</div><div class="line">    }</div><div class="line"></div><div class="line">    <span class="comment">// check if the message is a signal from the correct interface</span></div><div class="line">    <span class="comment">// and with the correct name</span></div><div class="line">    <span class="keywordflow">if</span> ( msg-&gt;is_signal( <span class="stringliteral">&quot;test.signal.Type&quot;</span>, <span class="stringliteral">&quot;Test&quot;</span> ) ) {</div><div class="line">      <span class="comment">// read the parameters</span></div><div class="line">      msg &gt;&gt; val;</div><div class="line">      std::cout &lt;&lt; <span class="stringliteral">&quot;Got Signal with value &quot;</span> &lt;&lt; val &lt;&lt; std::endl;</div><div class="line">    }</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><!-- contents -->
+<div class="fragment"></div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 17 2020 15:02:38 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 26 2021 21:05:06 for dbus-cxx by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

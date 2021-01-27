@@ -1,6 +1,4 @@
 <map id="signatureiterator.h" name="signatureiterator.h">
-<area shape="rect" id="node5" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="96,80,235,107"/>
-<area shape="rect" id="node6" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="259,80,384,107"/>
-<area shape="rect" id="node8" href="$pointer_8h.html" title="dbus&#45;cxx/pointer.h" alt="" coords="352,155,491,181"/>
-<area shape="rect" id="node9" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="324,229,519,256"/>
+<area shape="rect" id="node2" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="5,80,147,107"/>
+<area shape="rect" id="node4" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="171,80,371,107"/>
 </map>

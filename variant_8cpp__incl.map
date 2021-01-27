@@ -1,0 +1,21 @@
+<map id="variant.cpp" name="variant.cpp">
+<area shape="rect" id="node2" href="$variant_8h.html" title="dbus&#45;cxx/variant.h" alt="" coords="1385,229,1527,256"/>
+<area shape="rect" id="node3" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="572,603,713,629"/>
+<area shape="rect" id="node5" href="$path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="2226,528,2353,555"/>
+<area shape="rect" id="node8" href="$signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="1107,453,1266,480"/>
+<area shape="rect" id="node10" href="$signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="680,528,885,555"/>
+<area shape="rect" id="node24" href="$marshaling_8h.html" title="dbus&#45;cxx/marshaling.h" alt="" coords="701,379,872,405"/>
+<area shape="rect" id="node25" href="$messageiterator_8h.html" title="dbus&#45;cxx/messageiterator.h" alt="" coords="647,80,849,107"/>
+<area shape="rect" id="node29" href="$dbus-cxx-private_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;private.h" alt="" coords="2838,80,3045,107"/>
+<area shape="rect" id="node11" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="288,603,488,629"/>
+<area shape="rect" id="node16" href="$variantappenditerator_8h.html" title="dbus&#45;cxx/variantappenditerator.h" alt="" coords="2067,379,2306,405"/>
+<area shape="rect" id="node18" href="$variantiterator_8h.html" title="dbus&#45;cxx/variantiterator.h" alt="" coords="1361,304,1551,331"/>
+<area shape="rect" id="node19" href="$types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="1909,379,2043,405"/>
+<area shape="rect" id="node21" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="1519,379,1646,405"/>
+<area shape="rect" id="node17" href="$filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="2045,453,2227,480"/>
+<area shape="rect" id="node23" href="$dbus-error_8h.html" title="dbus&#45;cxx/dbus&#45;error.h" alt="" coords="1493,453,1656,480"/>
+<area shape="rect" id="node26" href="$demangle_8h.html" title="dbus&#45;cxx/demangle.h" alt="" coords="245,528,408,555"/>
+<area shape="rect" id="node27" href="$demarshaling_8h.html" title="dbus&#45;cxx/demarshaling.h" alt="" coords="819,155,1005,181"/>
+<area shape="rect" id="node30" href="$simplelogger__defs_8h.html" title="simplelogger_defs.h" alt="" coords="2907,229,3061,256"/>
+<area shape="rect" id="node31" href="$simplelogger_8h.html" title="simplelogger.h" alt="" coords="2961,155,3079,181"/>
+</map>

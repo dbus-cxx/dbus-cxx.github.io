@@ -1,0 +1,28 @@
+<map id="signalbase.h" name="signalbase.h">
+<area shape="rect" id="node2" href="$signalproxy_8h.html" title="signalproxy.h" alt="" coords="1263,80,1371,107"/>
+<area shape="rect" id="node5" href="$interface_8cpp.html" title="interface.cpp" alt="" coords="1905,304,2012,331"/>
+<area shape="rect" id="node10" href="$signalbase_8cpp.html" title="signalbase.cpp" alt="" coords="2037,304,2155,331"/>
+<area shape="rect" id="node23" href="$signalproxy_8cpp.html" title="signalproxy.cpp" alt="" coords="1447,155,1569,181"/>
+<area shape="rect" id="node24" href="$signal_8h.html" title="signal.h" alt="" coords="1635,80,1709,107"/>
+<area shape="rect" id="node3" href="$connection_8h.html" title="connection.h" alt="" coords="1437,229,1542,256"/>
+<area shape="rect" id="node4" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="1171,304,1291,331"/>
+<area shape="rect" id="node6" href="$interfaceproxy_8cpp.html" title="interfaceproxy.cpp" alt="" coords="1003,304,1146,331"/>
+<area shape="rect" id="node13" href="$objectproxy_8h.html" title="objectproxy.h" alt="" coords="1069,229,1179,256"/>
+<area shape="rect" id="node15" href="$interfaceproxy_8h.html" title="interfaceproxy.h" alt="" coords="713,155,839,181"/>
+<area shape="rect" id="node7" href="$methodbase_8cpp.html" title="methodbase.cpp" alt="" coords="1424,304,1555,331"/>
+<area shape="rect" id="node8" href="$object_8cpp.html" title="object.cpp" alt="" coords="1791,304,1881,331"/>
+<area shape="rect" id="node9" href="$objectproxy_8cpp.html" title="objectproxy.cpp" alt="" coords="433,304,557,331"/>
+<area shape="rect" id="node11" href="$standalonedispatcher_8cpp.html" title="standalonedispatcher.cpp" alt="" coords="1579,304,1767,331"/>
+<area shape="rect" id="node12" href="$utility_8cpp.html" title="utility.cpp" alt="" coords="1315,304,1400,331"/>
+<area shape="rect" id="node14" href="$propertyproxy_8cpp.html" title="propertyproxy.cpp" alt="" coords="840,304,979,331"/>
+<area shape="rect" id="node16" href="$methodproxybase_8cpp.html" title="methodproxybase.cpp" alt="" coords="583,229,750,256"/>
+<area shape="rect" id="node17" href="$peerinterfaceproxy_8h.html" title="peerinterfaceproxy.h" alt="" coords="301,229,457,256"/>
+<area shape="rect" id="node19" href="$introspectableinterfaceproxy_8h.html" title="introspectableinterfaceproxy.h" alt="" coords="774,229,994,256"/>
+<area shape="rect" id="node21" href="$propertiesinterfaceproxy_8h.html" title="propertiesinterfaceproxy.h" alt="" coords="83,229,277,256"/>
+<area shape="rect" id="node18" href="$peerinterfaceproxy_8cpp.html" title="peerinterfaceproxy.cpp" alt="" coords="237,304,408,331"/>
+<area shape="rect" id="node20" href="$introspectableinterfaceproxy_8cpp.html" title="introspectableinterfaceproxy.cpp" alt="" coords="581,304,816,331"/>
+<area shape="rect" id="node22" href="$propertiesinterfaceproxy_8cpp.html" title="propertiesinterfaceproxy.cpp" alt="" coords="5,304,213,331"/>
+<area shape="rect" id="node25" href="$object_8h.html" title="object.h" alt="" coords="1639,229,1713,256"/>
+<area shape="rect" id="node26" href="$interface_8h.html" title="interface.h" alt="" coords="1710,155,1802,181"/>
+<area shape="rect" id="node27" href="$property_8cpp.html" title="property.cpp" alt="" coords="1789,229,1891,256"/>
+</map>

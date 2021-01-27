@@ -1,0 +1,14 @@
+<map id="variant.h" name="variant.h">
+<area shape="rect" id="node2" href="$enums_8h.html" title="dbus&#45;cxx/enums.h" alt="" coords="340,379,481,405"/>
+<area shape="rect" id="node4" href="$path_8h.html" title="dbus&#45;cxx/path.h" alt="" coords="550,304,677,331"/>
+<area shape="rect" id="node7" href="$signature_8h.html" title="dbus&#45;cxx/signature.h" alt="" coords="934,229,1093,256"/>
+<area shape="rect" id="node10" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="696,379,896,405"/>
+<area shape="rect" id="node15" href="$variantappenditerator_8h.html" title="dbus&#45;cxx/variantappenditerator.h" alt="" coords="893,155,1131,181"/>
+<area shape="rect" id="node17" href="$variantiterator_8h.html" title="dbus&#45;cxx/variantiterator.h" alt="" coords="1629,80,1819,107"/>
+<area shape="rect" id="node18" href="$types_8h.html" title="dbus&#45;cxx/types.h" alt="" coords="679,155,812,181"/>
+<area shape="rect" id="node20" href="$error_8h.html" title="dbus&#45;cxx/error.h" alt="" coords="1794,155,1921,181"/>
+<area shape="rect" id="node23" href="$marshaling_8h.html" title="dbus&#45;cxx/marshaling.h" alt="" coords="264,155,435,181"/>
+<area shape="rect" id="node9" href="$signatureiterator_8h.html" title="dbus&#45;cxx/signatureiterator.h" alt="" coords="1037,304,1243,331"/>
+<area shape="rect" id="node16" href="$filedescriptor_8h.html" title="dbus&#45;cxx/filedescriptor.h" alt="" coords="1199,229,1380,256"/>
+<area shape="rect" id="node22" href="$dbus-error_8h.html" title="dbus&#45;cxx/dbus&#45;error.h" alt="" coords="1768,229,1931,256"/>
+</map>
