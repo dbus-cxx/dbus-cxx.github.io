@@ -1,6 +1,7 @@
 <map id="DBus::Error" name="DBus::Error">
-<area shape="rect" id="node2" href="$classDBus_1_1ErrorBadVariantCast.html" title="DBus::ErrorBadVariantCast" alt="" coords="155,5,350,32"/>
-<area shape="rect" id="node3" href="$classDBus_1_1ErrorIncorrectDispatchThread.html" title="DBus::ErrorIncorrectDispatch\lThread" alt="" coords="148,57,357,98"/>
-<area shape="rect" id="node4" href="$classDBus_1_1ErrorRemoteException.html" title="DBus::ErrorRemoteException" alt="" coords="148,123,357,149"/>
-<area shape="rect" id="node5" href="$classDBus_1_1ErrorUnknown.html" title="DBus::ErrorUnknown" alt="" coords="175,173,331,200"/>
+<area shape="rect" id="node1" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="5,93,100,120"/>
+<area shape="rect" id="node2" href="$classDBus_1_1ErrorBadVariantCast.html" title=" " alt="" coords="156,5,351,32"/>
+<area shape="rect" id="node3" href="$classDBus_1_1ErrorIncorrectDispatchThread.html" title=" " alt="" coords="149,57,358,98"/>
+<area shape="rect" id="node4" href="$classDBus_1_1ErrorRemoteException.html" title=" " alt="" coords="148,123,359,149"/>
+<area shape="rect" id="node5" href="$classDBus_1_1ErrorUnknown.html" title=" " alt="" coords="175,173,331,200"/>
 </map>

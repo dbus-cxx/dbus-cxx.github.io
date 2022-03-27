@@ -1,5 +1,10 @@
 <map id="standalonedispatcher.h" name="standalonedispatcher.h">
-<area shape="rect" id="node2" href="$dispatcher_8h.html" title="dispatcher.h" alt="" coords="253,80,355,107"/>
-<area shape="rect" id="node3" href="$dbus-cxx-config_8h.html" title="dbus&#45;cxx/dbus&#45;cxx&#45;config.h" alt="" coords="5,155,205,181"/>
-<area shape="rect" id="node6" href="$enums_8h.html" title="enums.h" alt="" coords="414,155,493,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="217,5,391,32"/>
+<area shape="rect" id="node2" href="$dispatcher_8h.html" title=" " alt="" coords="253,80,355,107"/>
+<area shape="rect" id="node3" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="5,155,205,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="229,155,288,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="312,155,389,181"/>
+<area shape="rect" id="node7" href="$enums_8h.html" title=" " alt="" coords="414,155,493,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="16,229,195,271"/>
+<area shape="rect" id="node8" title=" " alt="" coords="415,237,491,263"/>
 </map>

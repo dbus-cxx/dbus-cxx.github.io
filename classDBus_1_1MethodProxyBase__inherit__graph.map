@@ -1,4 +1,5 @@
 <map id="DBus::MethodProxyBase" name="DBus::MethodProxyBase">
-<area shape="rect" id="node2" href="$classDBus_1_1MethodProxy_3_01T__return_07T__arg_8_8_8_08_4.html" title="MethodProxy specialization for non&#45;void return type. " alt="" coords="5,80,165,121"/>
-<area shape="rect" id="node3" href="$classDBus_1_1MethodProxy_3_01void_07T__arg_8_8_8_08_4.html" title="MethodProxy specialization for void return type. " alt="" coords="189,80,349,121"/>
+<area shape="rect" id="node1" title="Base class for all proxy(remote) methods." alt="" coords="87,5,269,32"/>
+<area shape="rect" id="node2" href="$classDBus_1_1MethodProxy_3_01T__return_07T__arg_8_8_8_08_4.html" title="MethodProxy specialization for non&#45;void return type." alt="" coords="5,80,167,121"/>
+<area shape="rect" id="node3" href="$classDBus_1_1MethodProxy_3_01void_07T__arg_8_8_8_08_4.html" title="MethodProxy specialization for void return type." alt="" coords="191,80,352,121"/>
 </map>

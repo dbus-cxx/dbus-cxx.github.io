@@ -1,5 +1,6 @@
 <map id="object.h" name="object.h">
-<area shape="rect" id="node2" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="5,80,125,107"/>
-<area shape="rect" id="node3" href="$interface_8cpp.html" title="interface.cpp" alt="" coords="149,80,256,107"/>
-<area shape="rect" id="node4" href="$object_8cpp.html" title="object.cpp" alt="" coords="281,80,370,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="165,5,240,32"/>
+<area shape="rect" id="node2" href="$connection_8cpp.html" title=" " alt="" coords="5,80,125,107"/>
+<area shape="rect" id="node3" href="$interface_8cpp.html" title=" " alt="" coords="149,80,256,107"/>
+<area shape="rect" id="node4" href="$object_8cpp.html" title=" " alt="" coords="281,80,370,107"/>
 </map>

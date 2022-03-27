@@ -1,3 +1,4 @@
 <map id="DBus::ErrorRemoteException" name="DBus::ErrorRemoteException">
-<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur. " alt="" coords="63,5,157,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,216,107"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="63,5,158,32"/>
 </map>

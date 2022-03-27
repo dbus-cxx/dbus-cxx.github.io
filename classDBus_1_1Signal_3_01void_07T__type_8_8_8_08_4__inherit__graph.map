@@ -1,3 +1,4 @@
 <map id="DBus::Signal&lt; void(T_type...)&gt;" name="DBus::Signal&lt; void(T_type...)&gt;">
-<area shape="rect" id="node2" href="$classDBus_1_1SignalBase.html" title="Base class of all signals(proxy and adapter). " alt="" coords="11,5,147,32"/>
+<area shape="rect" id="node1" title="Subclass of sigc::signal." alt="" coords="5,80,152,121"/>
+<area shape="rect" id="node2" href="$classDBus_1_1SignalBase.html" title="Base class of all signals(proxy and adapter)." alt="" coords="11,5,147,32"/>
 </map>

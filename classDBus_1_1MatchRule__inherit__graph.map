@@ -1,6 +1,7 @@
 <map id="DBus::MatchRule" name="DBus::MatchRule">
-<area shape="rect" id="node2" href="$classDBus_1_1ErrorMatchRule.html" title="DBus::ErrorMatchRule" alt="" coords="213,5,376,32"/>
-<area shape="rect" id="node3" href="$classDBus_1_1MethodCallMatchRule.html" title="DBus::MethodCallMatchRule" alt="" coords="193,56,397,83"/>
-<area shape="rect" id="node4" href="$classDBus_1_1MethodReturnMatchRule.html" title="DBus::MethodReturnMatchRule" alt="" coords="184,107,405,133"/>
-<area shape="rect" id="node5" href="$classDBus_1_1SignalMatchRule.html" title="A special MatchRule for signals. " alt="" coords="209,157,380,184"/>
+<area shape="rect" id="node1" title="Immutable class that represents a match rule for DBus." alt="" coords="5,81,139,108"/>
+<area shape="rect" id="node2" href="$classDBus_1_1ErrorMatchRule.html" title=" " alt="" coords="217,5,381,32"/>
+<area shape="rect" id="node3" href="$classDBus_1_1MethodCallMatchRule.html" title=" " alt="" coords="196,56,403,83"/>
+<area shape="rect" id="node4" href="$classDBus_1_1MethodReturnMatchRule.html" title=" " alt="" coords="187,107,412,133"/>
+<area shape="rect" id="node5" href="$classDBus_1_1SignalMatchRule.html" title="A special MatchRule for signals." alt="" coords="213,157,386,184"/>
 </map>

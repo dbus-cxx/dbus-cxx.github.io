@@ -1,4 +1,5 @@
 <map id="Objects" name="Objects">
-<area shape="rect" id="node1" href="$group__local.html" title="Local Objects" alt="" coords="284,25,393,52"/>
-<area shape="rect" id="node3" href="$group__proxy.html" title="Proxy" alt="" coords="309,100,368,127"/>
+<area shape="rect" id="node1" href="$group__local.html" title=" " alt="" coords="285,26,395,51"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,63,76,89"/>
+<area shape="rect" id="node3" href="$group__proxy.html" title=" " alt="" coords="311,101,369,126"/>
 </map>

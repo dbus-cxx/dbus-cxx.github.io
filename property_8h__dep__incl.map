@@ -1,9 +1,10 @@
 <map id="property.h" name="property.h">
-<area shape="rect" id="node2" href="$object_8h.html" title="object.h" alt="" coords="163,155,237,181"/>
-<area shape="rect" id="node6" href="$interface_8h.html" title="interface.h" alt="" coords="269,80,361,107"/>
-<area shape="rect" id="node7" href="$property_8cpp.html" title="property.cpp" alt="" coords="363,155,466,181"/>
-<area shape="rect" id="node8" href="$propertyproxy_8cpp.html" title="propertyproxy.cpp" alt="" coords="436,80,575,107"/>
-<area shape="rect" id="node3" href="$connection_8cpp.html" title="connection.cpp" alt="" coords="5,229,125,256"/>
-<area shape="rect" id="node4" href="$interface_8cpp.html" title="interface.cpp" alt="" coords="149,229,256,256"/>
-<area shape="rect" id="node5" href="$object_8cpp.html" title="object.cpp" alt="" coords="281,229,370,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="313,5,399,32"/>
+<area shape="rect" id="node2" href="$interface_8h.html" title=" " alt="" coords="269,80,361,107"/>
+<area shape="rect" id="node5" href="$object_8h.html" title=" " alt="" coords="163,155,237,181"/>
+<area shape="rect" id="node7" href="$property_8cpp.html" title=" " alt="" coords="363,155,466,181"/>
+<area shape="rect" id="node8" href="$propertyproxy_8cpp.html" title=" " alt="" coords="436,80,575,107"/>
+<area shape="rect" id="node3" href="$interface_8cpp.html" title=" " alt="" coords="149,229,256,256"/>
+<area shape="rect" id="node4" href="$object_8cpp.html" title=" " alt="" coords="281,229,370,256"/>
+<area shape="rect" id="node6" href="$connection_8cpp.html" title=" " alt="" coords="5,229,125,256"/>
 </map>

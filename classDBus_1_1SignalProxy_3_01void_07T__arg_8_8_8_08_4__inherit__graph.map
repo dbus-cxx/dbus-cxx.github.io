@@ -1,4 +1,5 @@
 <map id="DBus::SignalProxy&lt; void(T_arg...)&gt;" name="DBus::SignalProxy&lt; void(T_arg...)&gt;">
-<area shape="rect" id="node2" href="$classDBus_1_1SignalProxyBase.html" title="Base class for a signal proxy that allows you to listen for signals. " alt="" coords="5,80,179,107"/>
-<area shape="rect" id="node3" href="$classDBus_1_1SignalBase.html" title="Base class of all signals(proxy and adapter). " alt="" coords="24,5,160,32"/>
+<area shape="rect" id="node1" title="Subclass of the sigc::signal templates." alt="" coords="16,155,168,196"/>
+<area shape="rect" id="node2" href="$classDBus_1_1SignalProxyBase.html" title="Base class for a signal proxy that allows you to listen for signals." alt="" coords="5,80,179,107"/>
+<area shape="rect" id="node3" href="$classDBus_1_1SignalBase.html" title="Base class of all signals(proxy and adapter)." alt="" coords="24,5,160,32"/>
 </map>

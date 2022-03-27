@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDBus_1_1PropertyBase.html" title="Base type of Property to allow for storage in e.g. " alt="" coords="5,5,156,32"/>
-<area shape="rect" id="node2" href="$classDBus_1_1Property.html" title="Represents a local DBus property. " alt="" coords="204,5,397,32"/>
+<area shape="rect" id="node1" href="$classDBus_1_1PropertyBase.html" title="Base type of Property to allow for storage in e.g." alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Property.html" title="Represents a local DBus property." alt="" coords="204,5,397,32"/>
 </map>
