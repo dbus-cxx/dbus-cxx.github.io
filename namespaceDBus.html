@@ -117,6 +117,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageAppendIterator.html">MessageAppendIterator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insertion iterator allow values to be appended to a message.  <a href="classDBus_1_1MessageAppendIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MultipleReturn.html">MultipleReturn</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extraction iterator allowing values to be retrieved from a message.  <a href="classDBus_1_1MessageIterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,6 +510,9 @@ Functions</h2></td></tr>
 <tr class="separator:a9537a9cd85cba94eaa095b353fa223db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4ada61aa089a6ce1f14c2c007440064"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#ad4ada61aa089a6ce1f14c2c007440064">signature</a> (const std::shared_ptr&lt; <a class="el" href="classDBus_1_1FileDescriptor.html">FileDescriptor</a> &gt;)</td></tr>
 <tr class="separator:ad4ada61aa089a6ce1f14c2c007440064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9b65057ea184440c50254ee1419a3f"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:abb9b65057ea184440c50254ee1419a3f"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abb9b65057ea184440c50254ee1419a3f">signature</a> (const <a class="el" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a>&lt; T... &gt; &amp;)</td></tr>
+<tr class="separator:abb9b65057ea184440c50254ee1419a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb711bca73bf52ac927791b3719f25b0"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:abb711bca73bf52ac927791b3719f25b0"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abb711bca73bf52ac927791b3719f25b0">signature</a> (const std::vector&lt; T &gt; &amp;)</td></tr>
 <tr class="separator:abb711bca73bf52ac927791b3719f25b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,6 +522,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3bd2b3638df81cab2751c67b25fab780"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Data &gt; </td></tr>
 <tr class="memitem:a3bd2b3638df81cab2751c67b25fab780"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a3bd2b3638df81cab2751c67b25fab780">signature_dict_data</a> (const std::map&lt; Key, Data &gt; &amp;)</td></tr>
 <tr class="separator:a3bd2b3638df81cab2751c67b25fab780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d45bfdc1b8531ac9a31f096d2106255"><td class="memTemplParams" colspan="2">template&lt;typename... T_arg&gt; </td></tr>
+<tr class="memitem:a2d45bfdc1b8531ac9a31f096d2106255"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a2d45bfdc1b8531ac9a31f096d2106255">signature_multiple_return_data</a> (const <a class="el" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a>&lt; T_arg... &gt; &amp;)</td></tr>
+<tr class="separator:a2d45bfdc1b8531ac9a31f096d2106255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ee7a75099f45e236adefb33025c4e8"><td class="memTemplParams" colspan="2">template&lt;typename... T_arg&gt; </td></tr>
 <tr class="memitem:a70ee7a75099f45e236adefb33025c4e8"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a70ee7a75099f45e236adefb33025c4e8">signature</a> (const std::tuple&lt; T_arg... &gt; &amp;)</td></tr>
 <tr class="separator:a70ee7a75099f45e236adefb33025c4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3476,7 +3484,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="afb0748ec7775683022c89ede54f04230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb0748ec7775683022c89ede54f04230">&#9670;&nbsp;</a></span>signature() <span class="overload">[1/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0748ec7775683022c89ede54f04230">&#9670;&nbsp;</a></span>signature() <span class="overload">[1/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3503,8 +3511,38 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="abb9b65057ea184440c50254ee1419a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9b65057ea184440c50254ee1419a3f">&#9670;&nbsp;</a></span>signature() <span class="overload">[2/19]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DBus::signature </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a>&lt; T... &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="signature_8h.html#a16a546e3db5287e44056f3ec9ca03710">DBUSCXX_TYPE_INVALID_AS_STRING</a>.</p>
+
+</div>
+</div>
 <a id="a9537a9cd85cba94eaa095b353fa223db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9537a9cd85cba94eaa095b353fa223db">&#9670;&nbsp;</a></span>signature() <span class="overload">[2/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9537a9cd85cba94eaa095b353fa223db">&#9670;&nbsp;</a></span>signature() <span class="overload">[3/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3532,7 +3570,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a4bcf0d75e61d6af325ac71505bd3a7a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bcf0d75e61d6af325ac71505bd3a7a5">&#9670;&nbsp;</a></span>signature() <span class="overload">[3/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bcf0d75e61d6af325ac71505bd3a7a5">&#9670;&nbsp;</a></span>signature() <span class="overload">[4/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3562,7 +3600,7 @@ template&lt;typename Key , typename Data &gt; </div>
 </div>
 </div>
 <a id="ad4ada61aa089a6ce1f14c2c007440064"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4ada61aa089a6ce1f14c2c007440064">&#9670;&nbsp;</a></span>signature() <span class="overload">[4/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ada61aa089a6ce1f14c2c007440064">&#9670;&nbsp;</a></span>signature() <span class="overload">[5/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3590,7 +3628,7 @@ template&lt;typename Key , typename Data &gt; </div>
 </div>
 </div>
 <a id="ad93f4116ec5f76d196080e8ca8b6c814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad93f4116ec5f76d196080e8ca8b6c814">&#9670;&nbsp;</a></span>signature() <span class="overload">[5/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad93f4116ec5f76d196080e8ca8b6c814">&#9670;&nbsp;</a></span>signature() <span class="overload">[6/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3615,12 +3653,12 @@ template&lt;typename... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1priv_1_1dbus__signature_3_01arg1_00_01argn_8_8_8_01_4.html#a7c0493ef2566b714a81968fb6cc38c22">DBus::priv::dbus_signature&lt; arg1, argn... &gt;::dbus_sig()</a>, <a class="el" href="classDBus_1_1priv_1_1method__signature_3_01arg1_00_01argn_8_8_8_01_4.html#a8c307eac8e72244b679ecc8121b98ec2">DBus::priv::method_signature&lt; arg1, argn... &gt;::introspect()</a>, <a class="el" href="structDBus_1_1priv_1_1dbus__function__traits_3_01std_1_1function_3_01T__ret_07Args_8_8_8_08_4_01_4.html#a5efa37abe98cb416a301d72af5412f93">DBus::priv::dbus_function_traits&lt; std::function&lt; T_ret(Args...)&gt; &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Marshaling.html#afe72cf95f96cecfec5801f809fb20c87">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#af326a67630bb1aab30c69554578dd5cb">DBus::MessageAppendIterator::open_container()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1194f2f420f72e3243bbbdb051e0ebac">DBus::priv::VariantAppendIterator::open_container()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a70381bcf7de59751d31c881afdc00f64">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#acd66fa0ac54c210b1d5b26db85333441">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="namespaceDBus.html#abb711bca73bf52ac927791b3719f25b0">signature()</a>, and <a class="el" href="namespaceDBus.html#a3bd2b3638df81cab2751c67b25fab780">signature_dict_data()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1priv_1_1dbus__signature_3_01arg1_00_01argn_8_8_8_01_4.html#a7c0493ef2566b714a81968fb6cc38c22">DBus::priv::dbus_signature&lt; arg1, argn... &gt;::dbus_sig()</a>, <a class="el" href="classDBus_1_1priv_1_1multireturn__signature_3_01arg1_00_01argn_8_8_8_01_4.html#aaf6c1cfe9dc3df2ed963013a9178c16b">DBus::priv::multireturn_signature&lt; arg1, argn... &gt;::introspect()</a>, <a class="el" href="classDBus_1_1priv_1_1method__signature_3_01arg1_00_01argn_8_8_8_01_4.html#a8c307eac8e72244b679ecc8121b98ec2">DBus::priv::method_signature&lt; arg1, argn... &gt;::introspect()</a>, <a class="el" href="structDBus_1_1priv_1_1dbus__function__traits_3_01std_1_1function_3_01T__ret_07Args_8_8_8_08_4_01_4.html#a5efa37abe98cb416a301d72af5412f93">DBus::priv::dbus_function_traits&lt; std::function&lt; T_ret(Args...)&gt; &gt;::introspect()</a>, <a class="el" href="classDBus_1_1Marshaling.html#afe72cf95f96cecfec5801f809fb20c87">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#af326a67630bb1aab30c69554578dd5cb">DBus::MessageAppendIterator::open_container()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1194f2f420f72e3243bbbdb051e0ebac">DBus::priv::VariantAppendIterator::open_container()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a70381bcf7de59751d31c881afdc00f64">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#acd66fa0ac54c210b1d5b26db85333441">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="namespaceDBus.html#abb711bca73bf52ac927791b3719f25b0">signature()</a>, and <a class="el" href="namespaceDBus.html#a3bd2b3638df81cab2751c67b25fab780">signature_dict_data()</a>.</p>
 
 </div>
 </div>
 <a id="a70ee7a75099f45e236adefb33025c4e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70ee7a75099f45e236adefb33025c4e8">&#9670;&nbsp;</a></span>signature() <span class="overload">[6/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ee7a75099f45e236adefb33025c4e8">&#9670;&nbsp;</a></span>signature() <span class="overload">[7/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3650,7 +3688,7 @@ template&lt;typename... T_arg&gt; </div>
 </div>
 </div>
 <a id="abb711bca73bf52ac927791b3719f25b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb711bca73bf52ac927791b3719f25b0">&#9670;&nbsp;</a></span>signature() <span class="overload">[7/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abb711bca73bf52ac927791b3719f25b0">&#9670;&nbsp;</a></span>signature() <span class="overload">[8/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3680,7 +3718,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ab3bdf3ec906006250d1fea790fb66757"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3bdf3ec906006250d1fea790fb66757">&#9670;&nbsp;</a></span>signature() <span class="overload">[8/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3bdf3ec906006250d1fea790fb66757">&#9670;&nbsp;</a></span>signature() <span class="overload">[9/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3708,7 +3746,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a4200d411505bcb16601c347789e09dc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4200d411505bcb16601c347789e09dc5">&#9670;&nbsp;</a></span>signature() <span class="overload">[9/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4200d411505bcb16601c347789e09dc5">&#9670;&nbsp;</a></span>signature() <span class="overload">[10/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3736,7 +3774,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a6e732a0e008a8cfcb21ee630bc6eff54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e732a0e008a8cfcb21ee630bc6eff54">&#9670;&nbsp;</a></span>signature() <span class="overload">[10/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e732a0e008a8cfcb21ee630bc6eff54">&#9670;&nbsp;</a></span>signature() <span class="overload">[11/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3764,7 +3802,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a5f4da556e09a3799e9490e58f4d6682a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f4da556e09a3799e9490e58f4d6682a">&#9670;&nbsp;</a></span>signature() <span class="overload">[11/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4da556e09a3799e9490e58f4d6682a">&#9670;&nbsp;</a></span>signature() <span class="overload">[12/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3792,7 +3830,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="aefe960cf2bc02ce8b01636b71c2f6f71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe960cf2bc02ce8b01636b71c2f6f71">&#9670;&nbsp;</a></span>signature() <span class="overload">[12/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe960cf2bc02ce8b01636b71c2f6f71">&#9670;&nbsp;</a></span>signature() <span class="overload">[13/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3820,7 +3858,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a3ce948c67c1e38c0ddf72c9dbaef94e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ce948c67c1e38c0ddf72c9dbaef94e3">&#9670;&nbsp;</a></span>signature() <span class="overload">[13/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce948c67c1e38c0ddf72c9dbaef94e3">&#9670;&nbsp;</a></span>signature() <span class="overload">[14/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3848,7 +3886,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ac4b956fe6abc42315a58679e904e426e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4b956fe6abc42315a58679e904e426e">&#9670;&nbsp;</a></span>signature() <span class="overload">[14/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b956fe6abc42315a58679e904e426e">&#9670;&nbsp;</a></span>signature() <span class="overload">[15/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3876,7 +3914,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a124d7dd7a7da2d85e81d0c345352316f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a124d7dd7a7da2d85e81d0c345352316f">&#9670;&nbsp;</a></span>signature() <span class="overload">[15/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a124d7dd7a7da2d85e81d0c345352316f">&#9670;&nbsp;</a></span>signature() <span class="overload">[16/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3904,7 +3942,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a9761516b60927a5b3ea624e5c4a06c98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9761516b60927a5b3ea624e5c4a06c98">&#9670;&nbsp;</a></span>signature() <span class="overload">[16/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9761516b60927a5b3ea624e5c4a06c98">&#9670;&nbsp;</a></span>signature() <span class="overload">[17/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3932,7 +3970,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="aec2aa000924a258adc31b1e56cea6604"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec2aa000924a258adc31b1e56cea6604">&#9670;&nbsp;</a></span>signature() <span class="overload">[17/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aec2aa000924a258adc31b1e56cea6604">&#9670;&nbsp;</a></span>signature() <span class="overload">[18/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3960,7 +3998,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a17ac14f20bfb624e33288d02fd51f35b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17ac14f20bfb624e33288d02fd51f35b">&#9670;&nbsp;</a></span>signature() <span class="overload">[18/18]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ac14f20bfb624e33288d02fd51f35b">&#9670;&nbsp;</a></span>signature() <span class="overload">[19/19]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4016,6 +4054,36 @@ template&lt;typename Key , typename Data &gt; </div>
 <p class="reference">References <a class="el" href="signature_8h.html#aacf6d9f3b727d869077201f52ae35f4e">DBUSCXX_DICT_ENTRY_BEGIN_CHAR_AS_STRING</a>, <a class="el" href="signature_8h.html#a900704d8aba2bd2e859ab6496b7fe273">DBUSCXX_DICT_ENTRY_END_CHAR_AS_STRING</a>, and <a class="el" href="namespaceDBus.html#ad93f4116ec5f76d196080e8ca8b6c814">signature()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageAppendIterator.html#a21cad9fe70af95df55b3726ee891405c">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a81db1a952f5f0dfb0a520f4ebf079d48">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a id="a2d45bfdc1b8531ac9a31f096d2106255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d45bfdc1b8531ac9a31f096d2106255">&#9670;&nbsp;</a></span>signature_multiple_return_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... T_arg&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string DBus::signature_multiple_return_data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a>&lt; T_arg... &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageAppendIterator.html#a2a5df4b3d0238275a565255ffe957923">DBus::MessageAppendIterator::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -4683,7 +4751,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 26 2022 21:41:03 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

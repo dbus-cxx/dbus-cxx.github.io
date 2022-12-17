@@ -36,7 +36,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_quick_start_client_0"></a></p>
-<h1><a class="anchor" id="quick_start_server_0"></a>
+<h1><a class="anchor" id="begin"></a>
 A simple client</h1>
 <dl class="section user"><dt></dt><dd>This section provides an example of a simple client for our simple server.</dd></dl>
 <dl class="section user"><dt>Summary</dt><dd>This is an overview of the code we will need in our example client:<ol type="1">
@@ -53,39 +53,25 @@ A simple client</h1>
 <h1><a class="anchor" id="quick_start_client_0_code"></a>
 Simple client 0 code</h1>
 <dl class="section user"><dt></dt><dd>Here is the code in full, followed by a section-by-section discussion.</dd></dl>
-<div class="fragment"><div class="line"><span class="comment">/***************************************************************************</span></div>
-<div class="line"><span class="comment"> *   Copyright (C) 2007,2010 by Rick L. Vinyard, Jr.                       *</span></div>
+<div class="fragment"><div class="line"><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later OR BSD-3-Clause</span></div>
+<div class="line"><span class="comment">/***************************************************************************</span></div>
+<div class="line"><span class="comment"> *   Copyright (C) 2008,2010 by Rick L. Vinyard, Jr.                       *</span></div>
 <div class="line"><span class="comment"> *   rvinyard@cs.nmsu.edu                                                  *</span></div>
 <div class="line"><span class="comment"> *                                                                         *</span></div>
 <div class="line"><span class="comment"> *   This file is part of the dbus-cxx library.                            *</span></div>
-<div class="line"><span class="comment"> *                                                                         *</span></div>
-<div class="line"><span class="comment"> *   The dbus-cxx library is free software; you can redistribute it and/or *</span></div>
-<div class="line"><span class="comment"> *   modify it under the terms of the GNU General Public License           *</span></div>
-<div class="line"><span class="comment"> *   version 3 as published by the Free Software Foundation.               *</span></div>
-<div class="line"><span class="comment"> *                                                                         *</span></div>
-<div class="line"><span class="comment"> *   The dbus-cxx library is distributed in the hope that it will be       *</span></div>
-<div class="line"><span class="comment"> *   useful, but WITHOUT ANY WARRANTY; without even the implied warranty   *</span></div>
-<div class="line"><span class="comment"> *   of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU   *</span></div>
-<div class="line"><span class="comment"> *   General Public License for more details.                              *</span></div>
-<div class="line"><span class="comment"> *                                                                         *</span></div>
-<div class="line"><span class="comment"> *   You should have received a copy of the GNU General Public License     *</span></div>
-<div class="line"><span class="comment"> *   along with this software. If not see &lt;http://www.gnu.org/licenses/&gt;.  *</span></div>
 <div class="line"><span class="comment"> ***************************************************************************/</span></div>
 <div class="line"><span class="preprocessor">#include &lt;dbus-cxx.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">  std::shared_ptr&lt;DBus::Dispatcher&gt; dispatcher;</div>
-<div class="line">  dispatcher = <a class="code" href="classDBus_1_1StandaloneDispatcher.html#afcbb3d280095b1254835c580a9c5e7db">DBus::StandaloneDispatcher::create</a>();</div>
+<div class="line">  std::shared_ptr&lt;DBus::Dispatcher&gt; dispatcher = <a class="code" href="classDBus_1_1StandaloneDispatcher.html#afcbb3d280095b1254835c580a9c5e7db">DBus::StandaloneDispatcher::create</a>();</div>
 <div class="line"> </div>
-<div class="line">  std::shared_ptr&lt;DBus::Connection&gt; connection;</div>
-<div class="line">  connection = dispatcher-&gt;create_connection( <a class="code" href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764a8e32a82fa7897baa1c7f2bbf920b0ff1">DBus::BusType::SESSION</a> );</div>
+<div class="line">  std::shared_ptr&lt;DBus::Connection&gt; connection = dispatcher-&gt;create_connection( <a class="code" href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764a8e32a82fa7897baa1c7f2bbf920b0ff1">DBus::BusType::SESSION</a> );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//create an object proxy, which stands in for a real object.</span></div>
 <div class="line">  <span class="comment">//a proxy exists over the dbus</span></div>
-<div class="line">  std::shared_ptr&lt;DBus::ObjectProxy&gt; object;</div>
-<div class="line">  <span class="keywordtype">object</span> = connection-&gt;create_object_proxy(<span class="stringliteral">&quot;dbuscxx.quickstart_0.server&quot;</span>, <span class="stringliteral">&quot;/dbuscxx/quickstart_0&quot;</span>);</div>
+<div class="line">  std::shared_ptr&lt;DBus::ObjectProxy&gt; <span class="keywordtype">object</span> = connection-&gt;create_object_proxy(<span class="stringliteral">&quot;dbuscxx.quickstart_0.server&quot;</span>, <span class="stringliteral">&quot;/dbuscxx/quickstart_0&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//a method proxy acts like a real method, but will go over the dbus</span></div>
 <div class="line">  <span class="comment">//to do its work.</span></div>
@@ -93,7 +79,8 @@ Simple client 0 code</h1>
 <div class="line">    = *(<span class="keywordtype">object</span>-&gt;create_method&lt;double(<span class="keywordtype">double</span>,<span class="keywordtype">double</span>)&gt;(<span class="stringliteral">&quot;dbuscxx.Quickstart&quot;</span>,<span class="stringliteral">&quot;add&quot;</span>));</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">double</span> answer;</div>
-<div class="line">  <span class="comment">//answer = add_proxy( 1.1, 2.2 );</span></div>
+<div class="line">  <span class="comment">// Call the method over the bus.  This blocks by default.</span></div>
+<div class="line">  answer = add_proxy( 1.1, 2.2 );</div>
 <div class="line"> </div>
 <div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;1.1 + 2.2 = &quot;</span> &lt;&lt; answer &lt;&lt; std::endl;</div>
 <div class="line"> </div>
@@ -110,21 +97,15 @@ Simple client 0 code discussion</h1>
 <dl class="section user"><dt></dt><dd>And now for the beginning of our <code>main()</code> function. <div class="fragment"><div class="line">int main()</div>
 <div class="line">{</div>
 </div><!-- fragment --></dd></dl>
-<dl class="section user"><dt>Initialize the dbus-cxx library</dt><dd>Before we do anything in dbus-cxx we must call the library's <code>init()</code> method which will take care of various initializations including the threading system. <div class="fragment"><div class="line">DBus::init(); </div>
+<dl class="section user"><dt>Create a dispatcher to manage threads, timeouts and I/O watches</dt><dd>Now, we will create a dispatcher to handle incoming and outgoing messages. Handling incoming and outgoing messages can be messy and the Dispatcher class handles much of this for us. Because this is a standalone example, we will use a StandloneDispatcher to do all of this work for us. <div class="fragment"><div class="line">std::shared_ptr&lt;DBus::Dispatcher&gt; dispatcher = DBus::StandaloneDispatcher::create();</div>
 </div><!-- fragment --></dd></dl>
-<dl class="section user"><dt>Create a dispatcher to manage threads, timeouts and I/O watches</dt><dd>Now, we will create a dispatcher to handle incoming and outgoing messages. Handling incoming and outgoing messages can be messy and the Dispatcher class handles much of this for us. <div class="fragment"><div class="line">DBus::Dispatcher::pointer dispatcher = DBus::Dispatcher::create(); </div>
-</div><!-- fragment --></dd></dl>
-<dl class="section user"><dt>Create a connection to the D-Bus session bus</dt><dd>Now that we have a dispatcher we need to create a connection to the session bus. <div class="fragment"><div class="line">DBus::Connection::pointer conn = dispatcher-&gt;create_connection(DBus::BUS_SESSION); </div>
-</div><!-- fragment --></dd></dl>
-<dl class="section user"><dt></dt><dd></dd></dl>
-<dl class="section user"><dt>Request a name for our application on the bus</dt><dd>Next, we need to request a name that will identify our application on the session bus. <div class="fragment"><div class="line">ret = conn-&gt;request_name( &quot;dbuscxx.quickstart_0.server&quot;, DBUS_NAME_FLAG_REPLACE_EXISTING );</div>
-<div class="line">if (DBUS_REQUEST_NAME_REPLY_PRIMARY_OWNER != ret) return 1;</div>
-</div><!-- fragment --></dd></dl>
-<dl class="section user"><dt>Create a proxy object for the server's <code>quickstart_0</code> object</dt><dd>You'll notice that up to this point the code for the client and the server has been nearly identical. This is the point at which they will diverge. We will now create a proxy object for the object on the server. <div class="fragment"><div class="line">DBus::ObjectProxy::pointer object;</div>
-<div class="line">object = connection-&gt;create_object_proxy(&quot;dbuscxx.quickstart_0.server&quot;, &quot;/dbuscxx/quickstart_0&quot;);</div>
+<dl class="section user"><dt>Create a connection to the D-Bus session bus</dt><dd>Now that we have a dispatcher we need to create a connection to the session bus. <div class="fragment"><div class="line">std::shared_ptr&lt;DBus::Connection&gt; connection = dispatcher-&gt;create_connection( DBus::BusType::SESSION );</div>
+</div><!-- fragment --> </dd></dl>
+<dl class="section user"><dt>Note that unlike the server example, we do not request a name on the bus. This is because</dt><dd>we do not need to have a well-known name on the bus in order to call methods on other objects.</dd></dl>
+<dl class="section user"><dt>Create a proxy object for the server's <code>quickstart_0</code> object</dt><dd>You'll notice that up to this point the code for the client and the server has been very similar. This is the point at which they will diverge. We will now create a proxy object for the object on the server. <div class="fragment"><div class="line">std::shared_ptr&lt;DBus::ObjectProxy&gt; object = connection-&gt;create_object_proxy(&quot;dbuscxx.quickstart_0.server&quot;, &quot;/dbuscxx/quickstart_0&quot;);</div>
 </div><!-- fragment --> Note that we must use the name the server requested as well as the object path the server used when it created it's object when we create the proxy object.</dd></dl>
-<dl class="section user"><dt>Create a proxy <code>add</code> method for our proxy object</dt><dd>Now we create a proxy <code>add</code> method for the server object's <code>add</code> method. This will allow us to use function notation to call the method. When creating the proxy method we must use the same interface (<code>"dbuscxx.Quickstart"</code> ) and method name ( <code>"add"</code> ) as the server used. <div class="fragment"><div class="line">DBus::MethodProxy&lt;double,double,double&gt;&amp; add_proxy</div>
-<div class="line">  = *(object-&gt;create_method&lt;double,double,double&gt;(&quot;dbuscxx.Quickstart&quot;,&quot;add&quot;));</div>
+<dl class="section user"><dt>Create a proxy <code>add</code> method for our proxy object</dt><dd>Now we create a proxy <code>add</code> method for the server object's <code>add</code> method. This will allow us to use function notation to call the method. When creating the proxy method we must use the same interface (<code>"dbuscxx.Quickstart"</code> ) and method name ( <code>"add"</code> ) as the server used. <div class="fragment"><div class="line">DBus::MethodProxy&lt;double(double,double)&gt;&amp; add_proxy</div>
+<div class="line">    = *(object-&gt;create_method&lt;double(double,double)&gt;(&quot;dbuscxx.Quickstart&quot;,&quot;add&quot;));</div>
 </div><!-- fragment --></dd></dl>
 <dl class="section user"><dt>Call our proxy method</dt><dd>Now we can use our proxy method to call the method on the server using function notation. We'll keep things simple and just add <code>1.1</code> <code>+</code> <code>2.2</code> . <div class="fragment"><div class="line">double answer;</div>
 <div class="line">answer = add_proxy( 1.1, 2.2 );</div>
@@ -139,7 +120,7 @@ Simple client 0 code discussion</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 26 2022 21:41:03 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

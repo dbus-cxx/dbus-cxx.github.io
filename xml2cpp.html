@@ -36,10 +36,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_xml2cpp"></a></p>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
 Summary</h1>
 <p>dbus-cxx-xml2cpp generates proxy and adapter interfaces from modified <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> XML introspection documents. By default, will print out a single(header-only) class to <code>stdout</code>. When sending to a file with <code>-f</code>, will create a .cpp and .h file.</p>
-<h1><a class="anchor" id="autotoc_md39"></a>
+<h1><a class="anchor" id="autotoc_md40"></a>
 Commands</h1>
 <ul>
 <li><code>-x/--xml</code> : The xml file to process</li>
@@ -50,7 +50,7 @@ Commands</h1>
 <li><code>--adapter</code> : Generate an adapter interface. Used for when you want to implement an interface.</li>
 <li><code>--verbose</code> : Generate verbose processing info</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md40"></a>
+<h1><a class="anchor" id="autotoc_md41"></a>
 Extended DBus XML attributes</h1>
 <p>dbus-cxx-xml2cpp in some cases needs information above and beyond that provided in a dbus introspection document. This information can be supplied by adding additional attributes to key nodes.</p>
 <p>The extended attributes per XML element are:</p><ul>
@@ -67,30 +67,31 @@ Extended DBus XML attributes</h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md42"></a>
 Proxy Example</h1>
 <p>The following is an example of a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> introspection document from <a href="https://github.com/lathiat/avahi/blob/d1e71b320d96d0f213ecb0885c8313039a09f693/avahi-daemon/org.freedesktop.Avahi.ServiceBrowser.xml">Avahi</a> (with the appropriate dbus-cxx annotations):</p>
 <div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">standalone</span>=<span class="stringliteral">&#39;no&#39;</span>?&gt;<span class="comment">&lt;!--*-nxml-*--&gt;</span></div>
 <div class="line">&lt;?<span class="keyword">xml-stylesheet</span> <span class="keyword">type</span>=<span class="stringliteral">&quot;text/xsl&quot;</span> <span class="keyword">href</span>=<span class="stringliteral">&quot;introspect.xsl&quot;</span>?&gt;</div>
 <div class="line">&lt;!<span class="keyword">DOCTYPE</span> <span class="keyword">node</span> <span class="keyword">SYSTEM</span> <span class="stringliteral">&quot;introspect.dtd&quot;</span>&gt;</div>
 <div class="line"> </div>
+<div class="line"><span class="comment">@˚a&#x241A;</span></div>
+<div class="line"><span class="comment">–
+à&#x241A;&#x2401;V</span></div>
 <div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment">¿-‰IV</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">@`pxØ</span></div>
 <div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
 <div class="line"><span class="comment"></span> </div>
 <div class="line"><span class="comment"></span> </div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"> -ÚIV</span></div>
-<div class="line"><span class="comment"></span> </div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">`cü&#x241A;&#x2401;V</span></div>
+<div class="line"><span class="comment">@˚a&#x241A;&#x2401;V</span></div>
 <div class="line"><span class="comment">--&gt;</span></div>
 <div class="line"> </div>
 <div class="line">&lt;<span class="keywordtype">node</span> <span class="keyword">cppname</span>=<span class="stringliteral">&quot;ServiceBrowser&quot;</span> <span class="keyword">gen-namespace</span>=<span class="stringliteral">&quot;Avahi&quot;</span>&gt;</div>
@@ -198,7 +199,7 @@ Proxy Example</h1>
 <div class="ttc" id="aclassDBus_1_1MethodProxy_html"><div class="ttname"><a href="classDBus_1_1MethodProxy.html">DBus::MethodProxy</a></div><div class="ttdef"><b>Definition:</b> interfaceproxy.h:30</div></div>
 <div class="ttc" id="aclassDBus_1_1SignalProxy_html"><div class="ttname"><a href="classDBus_1_1SignalProxy.html">DBus::SignalProxy</a></div><div class="ttdef"><b>Definition:</b> signalproxy.h:26</div></div>
 </div><!-- fragment --><p>Each interface that is found in the Introspection XML document will hav a new class created for it, and added to the main proxy class for use. The generated methods will act just as normal methods on an object that exists in the local application, but they will get called ver the bus. Signals are prefixed with <code>signal_</code> to make it more obvious what they are. Properties are similar to methods, in that they do not have a prefix before them.</p>
-<h1><a class="anchor" id="autotoc_md42"></a>
+<h1><a class="anchor" id="autotoc_md43"></a>
 Adapter Example</h1>
 <p>If we instead want to implement a class from an already-existing introspection document, we create an adapter using the following command: </p><pre class="fragment">dbus-cxx-xml2cpp  --adapter --xml=/path/to/org.freedesktop.Avahi.ServerBrowser.xml --file
 </pre><p> Several classes will be generated. As before, we get one class per interface that is in the instrospection file, a master Adapter class, plus a pure virtual class that we must implement in order to receive method calls.</p>
@@ -276,7 +277,7 @@ Adapter Example</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 26 2022 21:41:03 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

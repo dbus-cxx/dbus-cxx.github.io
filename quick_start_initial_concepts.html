@@ -50,14 +50,14 @@ Concept #5: sigc++ signal and slot library</h1>
 <h1><a class="anchor" id="quick_start_concept_678"></a>
 Concepts #6, #7: Smart Pointers and create()</h1>
 <p>DBus-cxx makes extensive use of smart pointers to help manage the memory of a class. In order for this scheme to work properly, most classes cannot be initialized on their own(constructors are private). To create an instance of a class, use the <code>create()</code> method on that class:</p>
-<p>``` std::shared_ptr&lt;DBus::Dispatcher&gt; disp = <a class="el" href="classDBus_1_1StandaloneDispatcher.html#afcbb3d280095b1254835c580a9c5e7db">DBus::StandaloneDispatcher::create()</a>;</p>
-<p><b>Continue On:</b> <a class="el" href="quick_start_example_0.html">Quick start example 0: A simple server and client</a></p>
+<div class="fragment"><div class="line">std::shared_ptr&lt;DBus::Dispatcher&gt; disp = DBus::StandaloneDispatcher::create();</div>
+</div><!-- fragment --><p><b>Continue On:</b> <a class="el" href="quick_start_example_0.html">Quick start example 0: A simple server and client</a></p>
 <p><b>Go Back:</b> <a class="el" href="quick_start_pkgconfig.html">Using pkgconfig</a> </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 26 2022 21:41:03 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

@@ -75,6 +75,9 @@ $(function() {
 <li>operator const std::string &amp;()
 : <a class="el" href="classDBus_1_1Signature.html#ae265cd20ca4390d8b61c0533bb456b24">DBus::Signature</a>
 </li>
+<li>operator DBus::MultipleReturn&lt; T... &gt;()
+: <a class="el" href="classDBus_1_1MessageIterator.html#a243f5c09f4e6b7c31fa830cf7a41366d">DBus::MessageIterator</a>
+</li>
 <li>operator DBus::Path()
 : <a class="el" href="classDBus_1_1Variant.html#a56f6bc3c4f5178c9dfe59c767c0aae94">DBus::Variant</a>
 </li>
@@ -153,19 +156,20 @@ $(function() {
 , <a class="el" href="classDBus_1_1MethodProxy_3_01void_07T__arg_8_8_8_08_4.html#a47f3dc82c3e702d96cfd4190f28dcbb8">DBus::MethodProxy&lt; void(T_arg...)&gt;</a>
 </li>
 <li>operator++()
-: <a class="el" href="classDBus_1_1MessageIterator.html#a90a2e1caa4e1b3bea8c2e29a950ab589">DBus::MessageIterator</a>
-, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a27b5d312c1c53fdbfe6cf79ebda8cc6f">DBus::priv::VariantIterator</a>
+: <a class="el" href="classDBus_1_1MessageIterator.html#ac1c58f4279fc809afd8364953be91db9">DBus::MessageIterator</a>
+, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a01dc940a0352b0c4b1527f8a06b5e5ea">DBus::priv::VariantIterator</a>
 , <a class="el" href="classDBus_1_1SignatureIterator.html#aaed1e3613311f3564dfb4dd8f85bcf46">DBus::SignatureIterator</a>
 </li>
 <li>operator&lt;&lt;()
 : <a class="el" href="classDBus_1_1Connection.html#a54555c87164bbf323961e4ba207d809b">DBus::Connection</a>
-, <a class="el" href="classDBus_1_1Message.html#a3a7e74e61b8593d0e58910faa3ee543d">DBus::Message</a>
-, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a875184c8cd689210d1fcd9a1918807f1">DBus::MessageAppendIterator</a>
-, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#ab826e0c4eb353b3e65d9fca20341b46a">DBus::priv::VariantAppendIterator</a>
+, <a class="el" href="classDBus_1_1Message.html#a7ad8bc28d359de1ad144a92d94af3315">DBus::Message</a>
+, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a31a14c34933fb2688b8ab679a89eaf27">DBus::MessageAppendIterator</a>
+, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1dc77e8f2d186c1b3b690d3ae4666453">DBus::priv::VariantAppendIterator</a>
 , <a class="el" href="classDBus_1_1Variant.html#a15264067d642cc5857afcff5194a5e9a">DBus::Variant</a>
 </li>
 <li>operator=()
-: <a class="el" href="classDBus_1_1Signature.html#a785a631918467e7af92232a502a16f8d">DBus::Signature</a>
+: <a class="el" href="classDBus_1_1MultipleReturn.html#acfddd84479cd1b10ba27e894dee841ec">DBus::MultipleReturn&lt; Ts &gt;</a>
+, <a class="el" href="classDBus_1_1Signature.html#a785a631918467e7af92232a502a16f8d">DBus::Signature</a>
 , <a class="el" href="classDBus_1_1SignatureIterator.html#aa1b57381c17c1fd7fa81b7ece29a3ef7">DBus::SignatureIterator</a>
 , <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">DBus::Variant</a>
 </li>
@@ -173,6 +177,7 @@ $(function() {
 : <a class="el" href="classDBus_1_1ErrorMessage.html#abfe13bd0ce9ce2b3073832e7d523f381">DBus::ErrorMessage</a>
 , <a class="el" href="classDBus_1_1Message.html#a14d59f2b20b27f808ea747e08d439c55">DBus::Message</a>
 , <a class="el" href="classDBus_1_1MessageIterator.html#aa660056d546b0230721672cc7633a7b4">DBus::MessageIterator</a>
+, <a class="el" href="classDBus_1_1MultipleReturn.html#a59e71c51b873a9c54f252ecbc7addb98">DBus::MultipleReturn&lt; Ts &gt;</a>
 , <a class="el" href="classDBus_1_1Signature.html#a889cc558624a09abaeb38d40f4e4ec1b">DBus::Signature</a>
 , <a class="el" href="classDBus_1_1SignatureIterator.html#a24e0b809ace5313285800bf1f1c77368">DBus::SignatureIterator</a>
 , <a class="el" href="classDBus_1_1Variant.html#ae922332eff575db6a90a07381f18713b">DBus::Variant</a>
@@ -186,7 +191,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 26 2022 21:41:04 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

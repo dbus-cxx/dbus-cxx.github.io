@@ -36,14 +36,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_v2_migration"></a></p>
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md31"></a>
 Migration</h1>
 <p>Migrating code to the 2.0 version of dbus-cxx should be pretty straightforward. The library must now be built with the libsigc++ version 3.0. This also means that you need a compiler that supports C++17.</p>
 <p>This now means that argument lists of an arbitrary length can be used, instead of the previous hard limit of 7.</p>
 <p>Most typedefs have also been removed, and you use <code>std::shared_ptr</code> directly to handle smart pointers.</p>
 <p>The syntax for declaring methods has now also changed slightly: instead of having the first template parameter be the return value, the types now correspond to method signatures. This is for compatability with libsigc++ version 3.0.</p>
 <p>You must also explicitly define what thread methods need to be called from to ensure proper multithreading.</p>
-<h2><a class="anchor" id="autotoc_md31"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 Migration Example</h2>
 <p>Given the following code with version 1: </p><div class="fragment"><div class="line">DBus::Object::pointer <span class="keywordtype">object</span> = conn-&gt;create_object(<span class="stringliteral">&quot;/dbuscxx/example/Calculator&quot;</span>);</div>
 <div class="line"> </div>
@@ -53,24 +53,24 @@ Migration Example</h2>
 <div class="line"><span class="keywordtype">object</span>-&gt;create_method&lt;double(<span class="keywordtype">double</span>,<span class="keywordtype">double</span>)&gt;(<span class="stringliteral">&quot;Calculator.Basic&quot;</span>, <span class="stringliteral">&quot;add&quot;</span>, sigc::ptr_fun(add) );</div>
 <div class="ttc" id="anamespaceDBus_html_afe27044063df28784038ce01c2e7f525a5e4ad822bb12635d22f90ab2259ff7fa"><div class="ttname"><a href="namespaceDBus.html#afe27044063df28784038ce01c2e7f525a5e4ad822bb12635d22f90ab2259ff7fa">DBus::ThreadForCalling::DispatcherThread</a></div><div class="ttdeci">@ DispatcherThread</div><div class="ttdoc">Always call methods for this object from the dispatcher thread.</div></div>
 </div><!-- fragment --><p>You can use the <a href="auto-upgrade.sh">auto-upgrade.sh</a> script to help automate this</p>
-<h2><a class="anchor" id="autotoc_md32"></a>
+<h2><a class="anchor" id="autotoc_md33"></a>
 Type Changes</h2>
 <p>For consistency with data types that can be sent over the <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a>, types such as <code>float</code> and <code>char</code> have been removed. <code>float</code> was removed as only IEEE-754 doubles may be sent over the bus; likewise, <code>char</code> is not a type that can be sent over, it is a <code>uint8_t</code>, or single byte.</p>
 <p>The previous <code><a class="el" href="classDBus_1_1Variant.html" title="A Variant is a type-safe union for DBus operations.">DBus::Variant</a>&lt;&gt;</code> templated class has been removed and replaced with a version that is not templated.</p>
 <p><a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> structs map to <code>std::tuple</code>. Previously, there was no type for <code>struct</code>.</p>
-<h2><a class="anchor" id="autotoc_md33"></a>
+<h2><a class="anchor" id="autotoc_md34"></a>
 Backend Changes</h2>
 <p>DBus-cxx is no longer a binding to <code>libdbus</code>, it is now a complete implementation. This was done partially to make it possible to store arrays(<code>std::vector</code>) and dictionaries (<code>std::map</code>) inside of <code><a class="el" href="classDBus_1_1Variant.html" title="A Variant is a type-safe union for DBus operations.">DBus::Variant</a></code>.</p>
 <p>This also should allow for the fixing of known multithreading issues in <code>libdbus</code>.</p>
-<h2><a class="anchor" id="autotoc_md34"></a>
+<h2><a class="anchor" id="autotoc_md35"></a>
 API Changes</h2>
 <p>A number of libsigc++ signals have been removed, as it was never defined what thread they would be emitted from, and they were not useful. For example, it was possible to change the name of interfaces and methods at run-time; this ability has been removed and the associated signals for the change were removed as well.</p>
 <p>A number of methods were removed from the <code><a class="el" href="classDBus_1_1Connection.html" title="Connection point to the DBus.">DBus::Connection</a></code> class, as they just mapped directly to <code>libdbus</code> functionality that has not been re-implemented. If needed, methods can be brought back for needed use-cases.</p>
 <p>When exporting objects, you must now be explicit about which thread to call the methods on this object from. This also necessitates a change to how the <code><a class="el" href="classDBus_1_1Dispatcher.html" title="A Dispatcher handles all of the reading/writing that a Connection needs in order to work correctly.">DBus::Dispatcher</a></code> class works.</p>
-<h2><a class="anchor" id="autotoc_md35"></a>
+<h2><a class="anchor" id="autotoc_md36"></a>
 API and ABI Compatibility</h2>
 <p>As of version 2, it is intended that the API will be stable(or at least backwards- compatible), and that the library itself will be ABI compatible.</p>
-<h1><a class="anchor" id="autotoc_md36"></a>
+<h1><a class="anchor" id="autotoc_md37"></a>
 Major changes for dbus-cxx version 2.0</h1>
 <ul>
 <li>libdbus is no longer used; there is a new ground-up implementation for talking to the bus</li>
@@ -92,7 +92,7 @@ Major changes for dbus-cxx version 2.0</h1>
 <li>Exceptions thrown are no longer <code>std::shared_ptr</code>s</li>
 <li>Many typedefs have been removed(see <a href="https://yarchive.net/comp/linux/typedefs.html">this thread</a> for justifications)</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
 Features Removed</h1>
 <p>The following features have been removed. Generally, these features were removed because they are not believed to be widely used. If there is demand, they may be reimplmented in a new version</p>
 <ul>
@@ -105,7 +105,7 @@ Features Removed</h1>
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 26 2022 21:41:03 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

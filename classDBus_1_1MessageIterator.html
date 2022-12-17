@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a432b6bdc608213e659fda9583a933998"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:a432b6bdc608213e659fda9583a933998"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#a432b6bdc608213e659fda9583a933998">operator std::tuple&lt; T... &gt;</a> ()</td></tr>
 <tr class="separator:a432b6bdc608213e659fda9583a933998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243f5c09f4e6b7c31fa830cf7a41366d"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a243f5c09f4e6b7c31fa830cf7a41366d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#a243f5c09f4e6b7c31fa830cf7a41366d">operator DBus::MultipleReturn&lt; T... &gt;</a> ()</td></tr>
+<tr class="separator:a243f5c09f4e6b7c31fa830cf7a41366d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9ef82ba514384142ff0c069a906c789"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#ac9ef82ba514384142ff0c069a906c789">get_bool</a> ()</td></tr>
 <tr class="separator:ac9ef82ba514384142ff0c069a906c789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff4cfdcdfd94b93097fb0deb48a27cf0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#aff4cfdcdfd94b93097fb0deb48a27cf0">get_uint8</a> ()</td></tr>
@@ -173,6 +176,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac687742b2b2ae0ffe74c4d566997c9c3"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Data &gt; </td></tr>
 <tr class="memitem:ac687742b2b2ae0ffe74c4d566997c9c3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#ac687742b2b2ae0ffe74c4d566997c9c3">get_dict</a> (std::map&lt; Key, Data &gt; &amp;dict)</td></tr>
 <tr class="separator:ac687742b2b2ae0ffe74c4d566997c9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a9d519606ae27eb899b11f30c78dab"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
+<tr class="memitem:a24a9d519606ae27eb899b11f30c78dab"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#a24a9d519606ae27eb899b11f30c78dab">get_multiplereturn</a> (<a class="el" href="classDBus_1_1MultipleReturn.html">MultipleReturn</a>&lt; T... &gt; &amp;v)</td></tr>
+<tr class="separator:a24a9d519606ae27eb899b11f30c78dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c26c2ed56bbe65676aaf2dc545dd5c"><td class="memTemplParams" colspan="2">template&lt;typename Key , typename Data &gt; </td></tr>
 <tr class="memitem:ae7c26c2ed56bbe65676aaf2dc545dd5c"><td class="memTemplItemLeft" align="right" valign="top">std::map&lt; Key, Data &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#ae7c26c2ed56bbe65676aaf2dc545dd5c">get_dict</a> ()</td></tr>
 <tr class="separator:ae7c26c2ed56bbe65676aaf2dc545dd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,9 +193,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5b7f2d9957ee08a4e05b292b78a45854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a531910069fd0c5587538bdda0572ca13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#a531910069fd0c5587538bdda0572ca13">operator&gt;&gt;</a> (<a class="el" href="classDBus_1_1Variant.html">Variant</a> &amp;v)</td></tr>
 <tr class="separator:a531910069fd0c5587538bdda0572ca13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e7453a3eb63cb561f734c999de14961"><td class="memTemplParams" colspan="2">template&lt;typename ... T&gt; </td></tr>
+<tr class="memitem:a8e7453a3eb63cb561f734c999de14961"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#a8e7453a3eb63cb561f734c999de14961">operator&gt;&gt;</a> (<a class="el" href="classDBus_1_1MultipleReturn.html">MultipleReturn</a>&lt; T... &gt; &amp;v)</td></tr>
+<tr class="separator:a8e7453a3eb63cb561f734c999de14961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae69834c9f5609842b7370726be2da0d5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae69834c9f5609842b7370726be2da0d5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#ae69834c9f5609842b7370726be2da0d5">operator&gt;&gt;</a> (T &amp;v)</td></tr>
 <tr class="separator:ae69834c9f5609842b7370726be2da0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7874e983cea9f9c6d6bd129788d8426a"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7874e983cea9f9c6d6bd129788d8426a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1MessageIterator.html#a7874e983cea9f9c6d6bd129788d8426a">get</a> ()</td></tr>
+<tr class="separator:a7874e983cea9f9c6d6bd129788d8426a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -425,6 +437,35 @@ Friends</h2></td></tr>
 
 </div>
 </div>
+<a id="a7874e983cea9f9c6d6bd129788d8426a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7874e983cea9f9c6d6bd129788d8426a">&#9670;&nbsp;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T DBus::MessageIterator::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#abc02a37bd3614a6a8c8bd4c80a4e23f8">next()</a>.</p>
+
+</div>
+</div>
 <a id="a4edaef37978e44c5a7e955e12eae9d9e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4edaef37978e44c5a7e955e12eae9d9e">&#9670;&nbsp;</a></span>get_array()</h2>
 
@@ -635,6 +676,38 @@ template&lt;typename Key , typename Data &gt; </div>
 <p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#a8a243cffc8ffc85c29e90fe0914a790a">arg_type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#a3f3647cf4aeee3d55e239ba21c276080">m_priv</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">DBus::Variant::createFromMessage()</a>, <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">DBus::Variant::recurseArray()</a>, <a class="el" href="classDBus_1_1Variant.html#a388b76524c7271d6efbc85e6aead3a48">DBus::Variant::recurseDictEntry()</a>, and <a class="el" href="classDBus_1_1Variant.html#a0525aef3a54c3c32910f04b5e87f4e31">DBus::Variant::recurseStruct()</a>.</p>
+
+</div>
+</div>
+<a id="a24a9d519606ae27eb899b11f30c78dab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a9d519606ae27eb899b11f30c78dab">&#9670;&nbsp;</a></span>get_multiplereturn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DBus::MessageIterator::get_multiplereturn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1MultipleReturn.html">MultipleReturn</a>&lt; T... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1MultipleReturn.html#a2e78e4e245aaeb04bdde2daf03334b89">DBus::MultipleReturn&lt; Ts &gt;::m_data</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#a243f5c09f4e6b7c31fa830cf7a41366d">operator DBus::MultipleReturn&lt; T... &gt;()</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#a8e7453a3eb63cb561f734c999de14961">operator&gt;&gt;()</a>.</p>
 
 </div>
 </div>
@@ -968,7 +1041,7 @@ template&lt;typename... T&gt; </div>
 
 <p>True if this is a valid iterator. </p>
 
-<p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#a8a243cffc8ffc85c29e90fe0914a790a">arg_type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#a3f3647cf4aeee3d55e239ba21c276080">m_priv</a>.</p>
+<p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#a8a243cffc8ffc85c29e90fe0914a790a">arg_type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, <a class="el" href="messageiterator_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#a3f3647cf4aeee3d55e239ba21c276080">m_priv</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#a4edaef37978e44c5a7e955e12eae9d9e">get_array()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac687742b2b2ae0ffe74c4d566997c9c3">get_dict()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#abdf0b0076c425bb1d345dcd9e388afa7">has_next()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#abc02a37bd3614a6a8c8bd4c80a4e23f8">next()</a>, and <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">DBus::Variant::recurseArray()</a>.</p>
 
@@ -1018,7 +1091,7 @@ template&lt;typename... T&gt; </div>
 
 <p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#a8a243cffc8ffc85c29e90fe0914a790a">arg_type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a9ef0d762942c8330f3c5c9d2ff3d33d3">invalidate()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">is_valid()</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#a3f3647cf4aeee3d55e239ba21c276080">m_priv</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#ac687742b2b2ae0ffe74c4d566997c9c3">get_dict()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a90a2e1caa4e1b3bea8c2e29a950ab589">operator++()</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#a2a4e1846df534ab9c4ffcca431e30987">operator&gt;&gt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#a7874e983cea9f9c6d6bd129788d8426a">get()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac687742b2b2ae0ffe74c4d566997c9c3">get_dict()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a90a2e1caa4e1b3bea8c2e29a950ab589">operator++()</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#a2a4e1846df534ab9c4ffcca431e30987">operator&gt;&gt;()</a>.</p>
 
 </div>
 </div>
@@ -1038,6 +1111,35 @@ template&lt;typename... T&gt; </div>
 </div><div class="memdoc">
 
 <p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ac48d5da12d702e73d6966069f2687376">DBus::BOOLEAN</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ae409eb2ba6eb6801f52763ae370c350e">DBus::BYTE</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334afd3e4ece78a7d422280d5ed379482229">DBus::DOUBLE</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a5f90af42814c0a419d715d43ae54fd7a">DBus::INT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6495adba09844fac8eeb0aba86e6f1bf">DBus::INT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62">DBus::UINT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f">DBus::UINT64</a>.</p>
+
+</div>
+</div>
+<a id="a243f5c09f4e6b7c31fa830cf7a41366d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243f5c09f4e6b7c31fa830cf7a41366d">&#9670;&nbsp;</a></span>operator DBus::MultipleReturn&lt; T... &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DBus::MessageIterator::operator <a class="el" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a>&lt; T... &gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#a24a9d519606ae27eb899b11f30c78dab">get_multiplereturn()</a>.</p>
 
 </div>
 </div>
@@ -1394,8 +1496,38 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a8e7453a3eb63cb561f734c999de14961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7453a3eb63cb561f734c999de14961">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ... T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a>&amp; DBus::MessageIterator::operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1MultipleReturn.html">MultipleReturn</a>&lt; T... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#a24a9d519606ae27eb899b11f30c78dab">get_multiplereturn()</a>, and <a class="el" href="classDBus_1_1MessageIterator.html#abc02a37bd3614a6a8c8bd4c80a4e23f8">next()</a>.</p>
+
+</div>
+</div>
 <a id="a2a4e1846df534ab9c4ffcca431e30987"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a4e1846df534ab9c4ffcca431e30987">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a4e1846df534ab9c4ffcca431e30987">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1425,7 +1557,7 @@ template&lt;typename Key , typename Data &gt; </div>
 </div>
 </div>
 <a id="a6cb945da90421077204cb75c7b99feb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cb945da90421077204cb75c7b99feb0">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb945da90421077204cb75c7b99feb0">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1455,7 +1587,7 @@ template&lt;typename... T&gt; </div>
 </div>
 </div>
 <a id="a5b7f2d9957ee08a4e05b292b78a45854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b7f2d9957ee08a4e05b292b78a45854">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7f2d9957ee08a4e05b292b78a45854">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1485,7 +1617,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="ae69834c9f5609842b7370726be2da0d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69834c9f5609842b7370726be2da0d5">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69834c9f5609842b7370726be2da0d5">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1515,7 +1647,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a531910069fd0c5587538bdda0572ca13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a531910069fd0c5587538bdda0572ca13">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a531910069fd0c5587538bdda0572ca13">&#9670;&nbsp;</a></span>operator&gt;&gt;() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1673,7 +1805,7 @@ template&lt;typename T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 26 2022 21:41:03 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

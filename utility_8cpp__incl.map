@@ -1,52 +1,52 @@
 <map id="utility.cpp" name="utility.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="4013,5,4099,32"/>
-<area shape="rect" id="node2" href="$utility_8h.html" title=" " alt="" coords="1041,229,1111,256"/>
-<area shape="rect" id="node4" href="$message_8h.html" title=" " alt="" coords="2047,393,2203,420"/>
-<area shape="rect" id="node6" href="$error_8h.html" title=" " alt="" coords="3118,692,3245,719"/>
-<area shape="rect" id="node29" href="$simplelogger__defs_8h.html" title=" " alt="" coords="4299,304,4469,345"/>
-<area shape="rect" id="node33" title=" " alt="" coords="376,311,443,338"/>
-<area shape="rect" id="node34" title=" " alt="" coords="3877,80,3944,107"/>
-<area shape="rect" id="node35" title=" " alt="" coords="3968,80,4048,107"/>
-<area shape="rect" id="node36" title=" " alt="" coords="4072,80,4136,107"/>
-<area shape="rect" id="node37" title=" " alt="" coords="4161,80,4210,107"/>
-<area shape="rect" id="node38" title=" " alt="" coords="4235,80,4299,107"/>
-<area shape="rect" id="node39" href="$connection_8h.html" title=" " alt="" coords="1509,80,1614,107"/>
-<area shape="rect" id="node47" href="$dbus-cxx-private_8h.html" title=" " alt="" coords="4373,155,4517,181"/>
-<area shape="rect" id="node49" title=" " alt="" coords="4424,80,4485,107"/>
-<area shape="rect" id="node50" title=" " alt="" coords="4509,80,4568,107"/>
-<area shape="rect" id="node3" href="$callmessage_8h.html" title=" " alt="" coords="1713,311,1892,338"/>
-<area shape="rect" id="node8" title=" " alt="" coords="1233,916,1292,943"/>
-<area shape="rect" id="node12" href="$signature_8h.html" title=" " alt="" coords="2078,767,2237,793"/>
-<area shape="rect" id="node14" title=" " alt="" coords="3327,916,3390,943"/>
-<area shape="rect" id="node17" title=" " alt="" coords="503,916,580,943"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1643,767,1698,793"/>
-<area shape="rect" id="node23" href="$messageiterator_8h.html" title=" " alt="" coords="1715,468,1917,495"/>
-<area shape="rect" id="node24" href="$demangle_8h.html" title=" " alt="" coords="891,543,1053,569"/>
-<area shape="rect" id="node25" title=" " alt="" coords="833,617,909,644"/>
-<area shape="rect" id="node28" href="$returnmessage_8h.html" title=" " alt="" coords="819,311,1013,338"/>
-<area shape="rect" id="node30" title=" " alt="" coords="1399,311,1486,338"/>
-<area shape="rect" id="node31" title=" " alt="" coords="517,311,592,338"/>
-<area shape="rect" id="node32" title=" " alt="" coords="1241,311,1375,338"/>
-<area shape="rect" id="node13" href="$path_8h.html" title=" " alt="" coords="2414,841,2541,868"/>
-<area shape="rect" id="node5" title=" " alt="" coords="1519,841,1590,868"/>
-<area shape="rect" id="node10" href="$messageappenditerator_8h.html" title=" " alt="" coords="2500,543,2751,569"/>
-<area shape="rect" id="node11" href="$enums_8h.html" title=" " alt="" coords="3415,916,3556,943"/>
-<area shape="rect" id="node21" href="$variant_8h.html" title=" " alt="" coords="2508,617,2588,644"/>
-<area shape="rect" id="node7" title=" " alt="" coords="3022,767,3109,793"/>
-<area shape="rect" id="node9" href="$dbus-error_8h.html" title=" " alt="" coords="3133,767,3296,793"/>
-<area shape="rect" id="node16" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="2225,916,2425,943"/>
-<area shape="rect" id="node19" title=" " alt="" coords="3308,841,3359,868"/>
-<area shape="rect" id="node15" href="$signatureiterator_8h.html" title=" " alt="" coords="1981,841,2187,868"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1758,841,1805,868"/>
-<area shape="rect" id="node22" href="$types_8h.html" title=" " alt="" coords="2251,692,2384,719"/>
-<area shape="rect" id="node26" href="$demarshaling_8h.html" title=" " alt="" coords="2111,543,2297,569"/>
-<area shape="rect" id="node27" title=" " alt="" coords="1686,543,1778,569"/>
-<area shape="rect" id="node40" href="$signal_8h.html" title=" " alt="" coords="975,155,1111,181"/>
-<area shape="rect" id="node41" href="$signalproxy_8h.html" title=" " alt="" coords="1413,155,1584,181"/>
-<area shape="rect" id="node42" href="$threaddispatcher_8h.html" title=" " alt="" coords="43,393,250,420"/>
-<area shape="rect" id="node43" href="$errormessage_8h.html" title=" " alt="" coords="1663,229,1849,256"/>
-<area shape="rect" id="node44" title=" " alt="" coords="1135,155,1198,181"/>
-<area shape="rect" id="node45" title=" " alt="" coords="1223,155,1284,181"/>
-<area shape="rect" id="node46" title=" " alt="" coords="1714,155,1777,181"/>
-<area shape="rect" id="node48" href="$simplelogger_8h.html" title=" " alt="" coords="4374,229,4493,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="4141,5,4226,32"/>
+<area shape="rect" id="node2" href="$utility_8h.html" title=" " alt="" coords="2731,229,2801,256"/>
+<area shape="rect" id="node4" href="$message_8h.html" title=" " alt="" coords="1223,393,1379,420"/>
+<area shape="rect" id="node6" href="$error_8h.html" title=" " alt="" coords="1940,692,2067,719"/>
+<area shape="rect" id="node28" href="$simplelogger__defs_8h.html" title=" " alt="" coords="4301,304,4471,345"/>
+<area shape="rect" id="node32" title=" " alt="" coords="3929,311,3995,338"/>
+<area shape="rect" id="node34" title=" " alt="" coords="4005,80,4071,107"/>
+<area shape="rect" id="node35" title=" " alt="" coords="4095,80,4175,107"/>
+<area shape="rect" id="node36" title=" " alt="" coords="4199,80,4263,107"/>
+<area shape="rect" id="node37" title=" " alt="" coords="4288,80,4337,107"/>
+<area shape="rect" id="node38" title=" " alt="" coords="4362,80,4426,107"/>
+<area shape="rect" id="node39" href="$connection_8h.html" title=" " alt="" coords="964,80,1069,107"/>
+<area shape="rect" id="node47" href="$dbus-cxx-private_8h.html" title=" " alt="" coords="4333,155,4477,181"/>
+<area shape="rect" id="node49" title=" " alt="" coords="4551,80,4613,107"/>
+<area shape="rect" id="node50" title=" " alt="" coords="4637,80,4695,107"/>
+<area shape="rect" id="node3" href="$callmessage_8h.html" title=" " alt="" coords="559,311,738,338"/>
+<area shape="rect" id="node8" title=" " alt="" coords="2481,916,2539,943"/>
+<area shape="rect" id="node12" href="$signature_8h.html" title=" " alt="" coords="2751,767,2909,793"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1327,916,1389,943"/>
+<area shape="rect" id="node17" title=" " alt="" coords="597,916,674,943"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1663,767,1717,793"/>
+<area shape="rect" id="node22" href="$messageiterator_8h.html" title=" " alt="" coords="2535,468,2738,495"/>
+<area shape="rect" id="node23" href="$demangle_8h.html" title=" " alt="" coords="3681,543,3843,569"/>
+<area shape="rect" id="node24" title=" " alt="" coords="3868,617,3944,644"/>
+<area shape="rect" id="node27" href="$returnmessage_8h.html" title=" " alt="" coords="1494,311,1689,338"/>
+<area shape="rect" id="node29" title=" " alt="" coords="1332,311,1419,338"/>
+<area shape="rect" id="node30" title=" " alt="" coords="3779,311,3854,338"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1071,311,1205,338"/>
+<area shape="rect" id="node33" href="$multiplereturn_8h.html" title=" " alt="" coords="2863,393,3053,420"/>
+<area shape="rect" id="node13" href="$path_8h.html" title=" " alt="" coords="1733,841,1860,868"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1884,841,1955,868"/>
+<area shape="rect" id="node10" href="$messageappenditerator_8h.html" title=" " alt="" coords="1867,543,2118,569"/>
+<area shape="rect" id="node11" href="$enums_8h.html" title=" " alt="" coords="3405,916,3546,943"/>
+<area shape="rect" id="node20" href="$variant_8h.html" title=" " alt="" coords="2345,617,2425,644"/>
+<area shape="rect" id="node7" title=" " alt="" coords="1980,767,2067,793"/>
+<area shape="rect" id="node9" href="$dbus-error_8h.html" title=" " alt="" coords="1793,767,1955,793"/>
+<area shape="rect" id="node16" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="3701,916,3901,943"/>
+<area shape="rect" id="node18" title=" " alt="" coords="3233,841,3283,868"/>
+<area shape="rect" id="node15" href="$signatureiterator_8h.html" title=" " alt="" coords="2851,841,3057,868"/>
+<area shape="rect" id="node21" href="$types_8h.html" title=" " alt="" coords="2497,692,2630,719"/>
+<area shape="rect" id="node25" href="$demarshaling_8h.html" title=" " alt="" coords="2543,543,2730,569"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2427,543,2519,569"/>
+<area shape="rect" id="node40" href="$signal_8h.html" title=" " alt="" coords="2698,155,2834,181"/>
+<area shape="rect" id="node41" href="$signalproxy_8h.html" title=" " alt="" coords="1199,155,1370,181"/>
+<area shape="rect" id="node42" href="$threaddispatcher_8h.html" title=" " alt="" coords="5,468,212,495"/>
+<area shape="rect" id="node43" href="$errormessage_8h.html" title=" " alt="" coords="555,229,742,256"/>
+<area shape="rect" id="node44" title=" " alt="" coords="777,155,840,181"/>
+<area shape="rect" id="node45" title=" " alt="" coords="865,155,926,181"/>
+<area shape="rect" id="node46" title=" " alt="" coords="951,155,1013,181"/>
+<area shape="rect" id="node48" href="$simplelogger_8h.html" title=" " alt="" coords="4277,229,4396,256"/>
 </map>
