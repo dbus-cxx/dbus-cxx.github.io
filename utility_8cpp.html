@@ -123,6 +123,8 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac4b67178058f7a42d6901ad8048309a8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8cpp.html#ac4b67178058f7a42d6901ad8048309a8">configure_endianess</a> ()</td></tr>
+<tr class="separator:ac4b67178058f7a42d6901ad8048309a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf49eee1ba0f5cbf8f78e3a242d5cefb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abf49eee1ba0f5cbf8f78e3a242d5cefb">DBus::set_logging_function</a> (<a class="el" href="simplelogger__defs_8h.html#a587bf21e1f1f85bf2e5dba6b92e157d1">simplelogger_log_function</a> function)</td></tr>
 <tr class="separator:abf49eee1ba0f5cbf8f78e3a242d5cefb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283e67d8e67970fb299e07ebfc575c9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a283e67d8e67970fb299e07ebfc575c9b">DBus::log_std_err</a> (const char *logger_name, const struct <a class="el" href="structSL__LogLocation.html">SL_LogLocation</a> *location, const enum <a class="el" href="simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3">SL_LogLevel</a> level, const char *log_string)</td></tr>
@@ -135,6 +137,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a33f3f6a01344971131ba0786f7bbe0c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a33f3f6a01344971131ba0786f7bbe0c2">DBus::hexdump</a> (const uint8_t *vec, const uint32_t len, std::ostream *stream)</td></tr>
 <tr class="memdesc:a33f3f6a01344971131ba0786f7bbe0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the C array as a hexdump output to the given output stream.  <a href="namespaceDBus.html#a33f3f6a01344971131ba0786f7bbe0c2">More...</a><br /></td></tr>
 <tr class="separator:a33f3f6a01344971131ba0786f7bbe0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3376a082cfb7d4967324f5b6f8b4f8ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a3376a082cfb7d4967324f5b6f8b4f8ba">DBus::set_default_endianess</a> (<a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76c">DBus::Endianess</a> endianess)</td></tr>
+<tr class="memdesc:a3376a082cfb7d4967324f5b6f8b4f8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default endianess that the library uses in order to send messages.  <a href="namespaceDBus.html#a3376a082cfb7d4967324f5b6f8b4f8ba">More...</a><br /></td></tr>
+<tr class="separator:a3376a082cfb7d4967324f5b6f8b4f8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2ee376b23e08049b2d7db6c3d2e889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76c">DBus::Endianess</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#abd2ee376b23e08049b2d7db6c3d2e889">DBus::default_endianess</a> ()</td></tr>
+<tr class="separator:abd2ee376b23e08049b2d7db6c3d2e889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -142,7 +149,37 @@ Variables</h2></td></tr>
 <tr class="separator:af9e76e034a6edcb9818343ef69959f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa93e6e51e53068d50f09869417d341e"><td class="memItemLeft" align="right" valign="top">static enum <a class="el" href="simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3">SL_LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#aaa93e6e51e53068d50f09869417d341e">DBus::log_level</a> = <a class="el" href="simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3a273f4d594d8163c9c6a7b63aa00f8f0c">SL_INFO</a></td></tr>
 <tr class="separator:aaa93e6e51e53068d50f09869417d341e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da80988a9948d2b5b2d328907f88fff"><td class="memItemLeft" align="right" valign="top">static Endianess&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceDBus.html#a0da80988a9948d2b5b2d328907f88fff">DBus::lib_default_endianess</a> = Endianess::Big</td></tr>
+<tr class="separator:a0da80988a9948d2b5b2d328907f88fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac4b67178058f7a42d6901ad8048309a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b67178058f7a42d6901ad8048309a8">&#9670;&nbsp;</a></span>configure_endianess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void configure_endianess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76cad491538da818a2ba11a3195ba035cfd3">DBus::Big</a>, <a class="el" href="namespaceDBus.html#adde2b02f2dca587c03a6d134aaa5b76ca0f9197b3e286a7522984831949087332">DBus::Little</a>, and <a class="el" href="namespaceDBus.html#a3376a082cfb7d4967324f5b6f8b4f8ba">DBus::set_default_endianess()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="af9e76e034a6edcb9818343ef69959f39"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9e76e034a6edcb9818343ef69959f39">&#9670;&nbsp;</a></span>dbuscxx_log_function</h2>
@@ -163,7 +200,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

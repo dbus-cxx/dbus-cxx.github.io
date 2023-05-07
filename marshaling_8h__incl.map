@@ -1,17 +1,18 @@
 <map id="marshaling.h" name="marshaling.h">
-<area shape="rect" id="node1" title=" " alt="" coords="327,5,434,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="362,5,469,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="25,155,96,181"/>
-<area shape="rect" id="node3" title=" " alt="" coords="152,229,214,256"/>
-<area shape="rect" id="node4" href="$path_8h.html" title=" " alt="" coords="120,155,246,181"/>
-<area shape="rect" id="node6" href="$signature_8h.html" title=" " alt="" coords="368,80,526,107"/>
-<area shape="rect" id="node8" href="$enums_8h.html" title=" " alt="" coords="654,229,795,256"/>
-<area shape="rect" id="node10" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="896,229,1096,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="290,229,348,256"/>
-<area shape="rect" id="node7" href="$signatureiterator_8h.html" title=" " alt="" coords="546,155,751,181"/>
-<area shape="rect" id="node9" title=" " alt="" coords="556,311,632,338"/>
-<area shape="rect" id="node12" title=" " alt="" coords="511,229,588,256"/>
-<area shape="rect" id="node13" title=" " alt="" coords="424,155,470,181"/>
-<area shape="rect" id="node14" title=" " alt="" coords="775,155,826,181"/>
-<area shape="rect" id="node15" title=" " alt="" coords="850,155,908,181"/>
-<area shape="rect" id="node11" title=" " alt="" coords="907,304,1086,345"/>
+<area shape="rect" id="node3" title=" " alt="" coords="152,229,215,256"/>
+<area shape="rect" id="node4" href="$path_8h.html" title=" " alt="" coords="120,155,247,181"/>
+<area shape="rect" id="node6" href="$signature_8h.html" title=" " alt="" coords="413,80,572,107"/>
+<area shape="rect" id="node8" href="$enums_8h.html" title=" " alt="" coords="727,229,869,256"/>
+<area shape="rect" id="node11" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="897,229,1097,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="530,229,589,256"/>
+<area shape="rect" id="node7" href="$signatureiterator_8h.html" title=" " alt="" coords="631,155,837,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="557,311,633,338"/>
+<area shape="rect" id="node13" title=" " alt="" coords="618,229,695,256"/>
+<area shape="rect" id="node14" title=" " alt="" coords="912,155,959,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="322,155,373,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="397,155,455,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="765,311,831,338"/>
+<area shape="rect" id="node12" title=" " alt="" coords="907,304,1086,345"/>
 </map>

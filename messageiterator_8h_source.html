@@ -226,22 +226,22 @@ $(function() {
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Key, <span class="keyword">typename</span> Data&gt;</div>
 <div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="classDBus_1_1MessageIterator.html#ac687742b2b2ae0ffe74c4d566997c9c3">  236</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDBus_1_1MessageIterator.html#ac687742b2b2ae0ffe74c4d566997c9c3">get_dict</a>( std::map&lt;Key, Data&gt;&amp; dict ) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        Key val_key;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        Data val_data;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="classDBus_1_1MessageIterator.html">MessageIterator</a> subiter = this-&gt;<a class="code" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">recurse</a>();</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="classDBus_1_1MessageIterator.html">MessageIterator</a> subiter = this-&gt;<a class="code" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">recurse</a>();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">while</span>( subiter.<a class="code" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">is_valid</a>() ) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <a class="code" href="classDBus_1_1MessageIterator.html">MessageIterator</a> subSubiter = subiter.<a class="code" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">recurse</a>();</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">while</span>( subiter.<a class="code" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">is_valid</a>() ) {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <a class="code" href="classDBus_1_1MessageIterator.html">MessageIterator</a> subSubiter = subiter.<a class="code" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">recurse</a>();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="comment">// When we recurse the second time, our demarshaling gets aligned.</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="comment">// This may cause the subiter to then become invalid because of</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="comment">// the new byte offset, so we need a second is_valid() check here.</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keywordflow">if</span>( !subiter.<a class="code" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">is_valid</a>() ){</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">while</span>( subSubiter.<a class="code" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">is_valid</a>() ) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="comment">// When we recurse the second time, our demarshaling gets aligned.</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="comment">// This may cause the subiter to then become invalid because of</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="comment">// the new byte offset, so we need a second is_valid() check here.</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keywordflow">if</span>( !subiter.<a class="code" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">is_valid</a>() ){</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="keywordflow">while</span>( subSubiter.<a class="code" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">is_valid</a>() ) {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                Key val_key;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                Data val_data;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                subSubiter &gt;&gt; val_key;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                subSubiter &gt;&gt; val_data;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                dict[ val_key ] = val_data;</div>
@@ -402,7 +402,7 @@ $(function() {
 <div class="ttc" id="aerror_8h_html"><div class="ttname"><a href="error_8h.html">error.h</a></div></div>
 <div class="ttc" id="aheaderlog_8h_html"><div class="ttname"><a href="headerlog_8h.html">headerlog.h</a></div></div>
 <div class="ttc" id="anamespaceDBus_html"><div class="ttname"><a href="namespaceDBus.html">DBus</a></div><div class="ttdoc">Global DBus namespace, where everything happens.</div><div class="ttdef"><b>Definition:</b> callmessage.cpp:18</div></div>
-<div class="ttc" id="anamespaceDBus_html_ad1f4b2409e998e4656727b9c2bf94334"><div class="ttname"><a href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334">DBus::DataType</a></div><div class="ttdeci">DataType</div><div class="ttdef"><b>Definition:</b> enums.h:51</div></div>
+<div class="ttc" id="anamespaceDBus_html_ad1f4b2409e998e4656727b9c2bf94334"><div class="ttname"><a href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334">DBus::DataType</a></div><div class="ttdeci">DataType</div><div class="ttdef"><b>Definition:</b> enums.h:52</div></div>
 <div class="ttc" id="asignature_8h_html"><div class="ttname"><a href="signature_8h.html">signature.h</a></div></div>
 <div class="ttc" id="asignatureiterator_8h_html"><div class="ttname"><a href="signatureiterator_8h.html">signatureiterator.h</a></div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
@@ -410,7 +410,7 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 17 2022 09:57:20 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated on Sun May 7 2023 15:36:55 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>
