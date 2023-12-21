@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -30,13 +34,29 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('building-from-source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Building dbus-cxx from source </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_building_from_source"></a></p>
-<h1><a class="anchor" id="autotoc_md0"></a>
+<div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_20_building_from_source"></a></p>
+<h1><a class="anchor" id="autotoc_md36"></a>
 1. What are the requirements to build from source?</h1>
 <p>DBus-cxx requires support of at least C++17. As of version 2.0, it is also a full implementation of the <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> protocol, and does not depend on libdbus.</p>
 <p>The requirements are intended to be very low. In order to build, you will need the following tools to be installed:</p>
@@ -51,14 +71,16 @@ $(function() {
 <li>expat(not needed if tests and tools are disabled; tests are enabled by default)</li>
 </ul>
 <p>(See section 4 for information on optional dependencies)</p>
-<p>On Debian-based systems, you should be able to install with the following commands(as root/sudo): </p><pre class="fragment">apt-get install libdbus-1-dev cmake libexpat1-dev
-</pre><p> Note that as of the writing of this guide(October 2020), libsigc++-3.0 has not yet been added to the Debian repositoreis, and you will need to build this dependency manually.</p>
-<p>When checking out from GIT, the easiest way to build is as such: </p><pre class="fragment">mkdir build
-cd build
-cmake ..
-make
-sudo make install
-</pre> <h1><a class="anchor" id="autotoc_md1"></a>
+<p>On Debian-based systems, you should be able to install with the following commands(as root/sudo):</p>
+<div class="fragment"><div class="line">apt-get install libdbus-1-dev cmake libexpat1-dev</div>
+</div><!-- fragment --><p>Note that as of the writing of this guide(October 2020), libsigc++-3.0 has not yet been added to the Debian repositoreis, and you will need to build this dependency manually.</p>
+<p>When checking out from GIT, the easiest way to build is as such:</p>
+<div class="fragment"><div class="line">mkdir build</div>
+<div class="line">cd build</div>
+<div class="line">cmake ..</div>
+<div class="line">make</div>
+<div class="line">sudo make install</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md37"></a>
 2. What are the requirements to build the tools?</h1>
 <p>In order to build the tools, you will need the following libraries, in addition to the above:</p>
 <ul>
@@ -70,10 +92,10 @@ sudo make install
 </pre><p> In order to configure the tools, set -DENABLE_TOOLS=ON when calling CMake</p>
 <p>libcppgenerate can be found here: <a href="https://github.com/rm5248/libcppgenerate">https://github.com/rm5248/libcppgenerate</a></p>
 <p>libcppgenerate is bundled with dbus-cxx; to disable using the bundled version, pass -DTOOLS_BUNDLED_CPPGENERATE=off when configuring.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md38"></a>
 3. Smart Pointer information</h1>
 <p>DBus-cxx requires at least C++17 to work properly. Because the library makes extensive use of smart pointers, it will use the standard C++ shared_ptr for the implementation.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md39"></a>
 4. Documentation Generation</h1>
 <p>To generate the documentation, you will need:</p>
 <ul>
@@ -82,16 +104,24 @@ sudo make install
 <li>xsltproc</li>
 </ul>
 <p>On Debian-based systems, you should be able to install with the following commands(as root/sudo): </p><pre class="fragment">apt-get install doxygen graphviz xsltproc
-</pre> <h1><a class="anchor" id="autotoc_md4"></a>
+</pre> <h1><a class="anchor" id="autotoc_md40"></a>
 6. Tools</h1>
 <p>There are two tools provided with dbus-cxx:</p>
 <p><a class="el" href="xml2cpp.html">dbus-cxx-xml2cpp</a> - this generates code based off of a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> introspection file. An adapter is created when you want to implement a service, while a proxy is created when you want to talk with a remote object</p>
-<p>dbus-cxx-introspect - print out the introspection XML for a specified service </p>
+<p>dbus-cxx-introspect - print out the introspection XML for a specified service</p>
+<h1><a class="anchor" id="autotoc_md41"></a>
+7. Building a .deb package</h1>
+<p>If you are on a Debian/Ubuntu based system, you can build the .deb packages for DBus-cxx:</p>
+<div class="fragment"><div class="line">dpkg-buildpackage -us -uc -b</div>
+</div><!-- fragment --><p>Newer versions of Debian(12+) and Ubuntu(23.04+) contain libsigc++-3.0, so this dependency can be installed through apt. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

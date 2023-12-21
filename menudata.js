@@ -138,5 +138,4 @@ var menudata={children:[
 {text:"c",url:"globals_defs.html#index_c"},
 {text:"d",url:"globals_defs.html#index_d"},
 {text:"r",url:"globals_defs.html#index_r"},
-{text:"s",url:"globals_defs.html#index_s"}]}]}]},
-{text:"Examples",url:"examples.html"}]}
+{text:"s",url:"globals_defs.html#index_s"}]}]}]}]}

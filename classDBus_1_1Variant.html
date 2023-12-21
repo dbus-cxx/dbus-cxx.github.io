@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="classDBus_1_1Variant.html">Variant</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBus_1_1Variant.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -179,15 +195,29 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a505c34b40b66151c950391855a9bbd62"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1Variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">createFromMessage</a> (<a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> iter)</td></tr>
+<tr class="memdesc:a505c34b40b66151c950391855a9bbd62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsolete, do not call.  <a href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">More...</a><br /></td></tr>
 <tr class="separator:a505c34b40b66151c950391855a9bbd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed81492a3bd4802667b3794689966c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classDBus_1_1Variant.html">Variant</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal</a> (<a class="el" href="classDBus_1_1Signature.html">Signature</a> sig, std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt; demarshal, const std::vector&lt; int &gt; &amp;filedescriptors, uint32_t depth)</td></tr>
+<tr class="separator:a4ed81492a3bd4802667b3794689966c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:aad4b99e300a35fc23c7c1ac1b41c2254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#aad4b99e300a35fc23c7c1ac1b41c2254">recurseArray</a> (<a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a> iter, std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt; demarshal, <a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *marshal, const std::vector&lt; int &gt; &amp;filedescriptors, uint32_t depth)</td></tr>
+<tr class="separator:aad4b99e300a35fc23c7c1ac1b41c2254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8325c7c625fbf7901ee4a2c2ae5db221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#a8325c7c625fbf7901ee4a2c2ae5db221">recurseDictEntry</a> (<a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a> iter, std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt; demarshal, <a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *marshal, uint32_t ending_offset, const std::vector&lt; int &gt; &amp;filedescriptors, uint32_t depth)</td></tr>
+<tr class="separator:a8325c7c625fbf7901ee4a2c2ae5db221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcf752ed716e2a72797b7839acff7e5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#abcf752ed716e2a72797b7839acff7e5b">recurseStruct</a> (<a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a> sigit, std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt; demarshal, <a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *marshal, const std::vector&lt; int &gt; &amp;filedescriptors, uint32_t depth)</td></tr>
+<tr class="separator:abcf752ed716e2a72797b7839acff7e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6ce3fed85b50a7d426023f6f1d05bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal</a> (<a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334">DataType</a> dt, <a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a> sigit, std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt; demarshal, <a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *marshal, const std::vector&lt; int &gt; &amp;filedescriptors, uint32_t depth)</td></tr>
+<tr class="separator:acf6ce3fed85b50a7d426023f6f1d05bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b4d04d945125a31f8361b6846893c2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">recurseArray</a> (<a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> iter, <a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *marshal)</td></tr>
+<tr class="memdesc:a7b4d04d945125a31f8361b6846893c2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsolete, do not call.  <a href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">More...</a><br /></td></tr>
 <tr class="separator:a7b4d04d945125a31f8361b6846893c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a388b76524c7271d6efbc85e6aead3a48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#a388b76524c7271d6efbc85e6aead3a48">recurseDictEntry</a> (<a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> iter, <a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *marshal)</td></tr>
+<tr class="memdesc:a388b76524c7271d6efbc85e6aead3a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsolete, do not call.  <a href="classDBus_1_1Variant.html#a388b76524c7271d6efbc85e6aead3a48">More...</a><br /></td></tr>
 <tr class="separator:a388b76524c7271d6efbc85e6aead3a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0525aef3a54c3c32910f04b5e87f4e31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1Variant.html#a0525aef3a54c3c32910f04b5e87f4e31">recurseStruct</a> (<a class="el" href="classDBus_1_1MessageIterator.html">MessageIterator</a> iter, <a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *marshal)</td></tr>
+<tr class="memdesc:a0525aef3a54c3c32910f04b5e87f4e31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsolete, do not call.  <a href="classDBus_1_1Variant.html#a0525aef3a54c3c32910f04b5e87f4e31">More...</a><br /></td></tr>
 <tr class="separator:a0525aef3a54c3c32910f04b5e87f4e31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -654,6 +684,58 @@ template&lt;typename ... T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ed81492a3bd4802667b3794689966c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed81492a3bd4802667b3794689966c2">&#9670;&nbsp;</a></span>createFromDemarshal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDBus_1_1Variant.html">Variant</a> Variant::createFromDemarshal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1Signature.html">Signature</a>&#160;</td>
+          <td class="paramname"><em>sig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt;&#160;</td>
+          <td class="paramname"><em>demarshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filedescriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1TypeInfo.html#a142218c0734adff2d3fc704bf5618101">DBus::TypeInfo::alignment()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="classDBus_1_1Signature.html#aa53aa8f32d1f92f9ec919723fa042a3a">DBus::Signature::begin()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ac48d5da12d702e73d6966069f2687376">DBus::BOOLEAN</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ae409eb2ba6eb6801f52763ae370c350e">DBus::BYTE</a>, <a class="el" href="namespaceDBus.html#abd2ee376b23e08049b2d7db6c3d2e889">DBus::default_endianess()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334afd3e4ece78a7d422280d5ed379482229">DBus::DOUBLE</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a5f90af42814c0a419d715d43ae54fd7a">DBus::INT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6495adba09844fac8eeb0aba86e6f1bf">DBus::INT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, <a class="el" href="variant_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a>, <a class="el" href="classDBus_1_1Variant.html#a4e4d92d1b9bc02ee158a79f0bf86b7b2">m_currentType</a>, <a class="el" href="classDBus_1_1Variant.html#a5d62d7182c6900e180d2905a2d25984d">m_dataAlignment</a>, <a class="el" href="classDBus_1_1Variant.html#a7fadfeb3fa85a0ac318e6c797309752a">m_marshaled</a>, <a class="el" href="classDBus_1_1Variant.html#af0acc555e37630f55cfc38fd22a95865">m_signature</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">DBus::Validator::maximum_message_depth()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a1f70349550a004c1bc0247f9e99e2d70">DBus::OBJECT_PATH</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad068f0f9845333d7d72b49a0135310af">DBus::SignatureIterator::recurse()</a>, <a class="el" href="classDBus_1_1Variant.html#aad4b99e300a35fc23c7c1ac1b41c2254">recurseArray()</a>, <a class="el" href="classDBus_1_1Variant.html#abcf752ed716e2a72797b7839acff7e5b">recurseStruct()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334aef21bf22481e7930df1e2bda54025095">DBus::SIGNATURE</a>, <a class="el" href="simplelogger_8h.html#a78ac9efc035181ac423069b5b0983a78">SIMPLELOGGER_TRACE</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ab8223be2455e0ea5a0e63e8f018d6fc3">DBus::STRUCT</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62">DBus::UINT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f">DBus::UINT64</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#ae8289b28120ffd6358f4961c8f738501">DBus::MessageIterator::get_variant()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#abb14d7aa44c512fb436a04fa2b182a5c">DBus::priv::VariantIterator::get_variant()</a>, and <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>.</p>
+
+</div>
+</div>
 <a id="a505c34b40b66151c950391855a9bbd62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a505c34b40b66151c950391855a9bbd62">&#9670;&nbsp;</a></span>createFromMessage()</h2>
 
@@ -678,9 +760,7 @@ template&lt;typename ... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1MessageIterator.html#ad3965f41c564a3812806e778b60d63b9">DBus::MessageIterator::align()</a>, <a class="el" href="classDBus_1_1TypeInfo.html#a142218c0734adff2d3fc704bf5618101">DBus::TypeInfo::alignment()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ac48d5da12d702e73d6966069f2687376">DBus::BOOLEAN</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ae409eb2ba6eb6801f52763ae370c350e">DBus::BYTE</a>, <a class="el" href="namespaceDBus.html#abd2ee376b23e08049b2d7db6c3d2e889">DBus::default_endianess()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334afd3e4ece78a7d422280d5ed379482229">DBus::DOUBLE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac9ef82ba514384142ff0c069a906c789">DBus::MessageIterator::get_bool()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aa9a5260df8e65be8279f81c75866febf">DBus::MessageIterator::get_double()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aec820a341e38bebb81da87329fd90036">DBus::MessageIterator::get_int16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a202193baf654346260ecdc9101b48561">DBus::MessageIterator::get_int32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a089444bf3c3018d2c768ce550b0a7d44">DBus::MessageIterator::get_int64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#adfec101adf1279c4eb7cf8417381a7e2">DBus::MessageIterator::get_signature()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac90987936217f7f01f1a5e1864d84941">DBus::MessageIterator::get_string()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a623b7734889428b3114d3125b930d5fc">DBus::MessageIterator::get_uint16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a6beb4578a890b9992c55bf7f9e7065ad">DBus::MessageIterator::get_uint32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a831deea188fc4147eba8bfe5c1d41855">DBus::MessageIterator::get_uint64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aff4cfdcdfd94b93097fb0deb48a27cf0">DBus::MessageIterator::get_uint8()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a5f90af42814c0a419d715d43ae54fd7a">DBus::INT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6495adba09844fac8eeb0aba86e6f1bf">DBus::INT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334accc0377a8afbf50e7094f5c23a8af223">DBus::INVALID</a>, <a class="el" href="classDBus_1_1Variant.html#a4e4d92d1b9bc02ee158a79f0bf86b7b2">m_currentType</a>, <a class="el" href="classDBus_1_1Variant.html#a5d62d7182c6900e180d2905a2d25984d">m_dataAlignment</a>, <a class="el" href="classDBus_1_1Variant.html#a7fadfeb3fa85a0ac318e6c797309752a">m_marshaled</a>, <a class="el" href="classDBus_1_1Variant.html#af0acc555e37630f55cfc38fd22a95865">m_signature</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a1f70349550a004c1bc0247f9e99e2d70">DBus::OBJECT_PATH</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">DBus::MessageIterator::recurse()</a>, <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">recurseArray()</a>, <a class="el" href="classDBus_1_1Variant.html#a0525aef3a54c3c32910f04b5e87f4e31">recurseStruct()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334aef21bf22481e7930df1e2bda54025095">DBus::SIGNATURE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a4fefd924e66ae9e8107bd32b6c1a6aa6">DBus::MessageIterator::signature()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a5ab44364049909ba55b47c2aed275595">DBus::MessageIterator::signature_iterator()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ab8223be2455e0ea5a0e63e8f018d6fc3">DBus::STRUCT</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62">DBus::UINT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f">DBus::UINT64</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a9438328e965e6429f2c9119e1fae78ae">DBus::UNIX_FD</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acda7182af4cc0451672a1cd50d36f3a2">DBus::VARIANT</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageIterator.html#ae8289b28120ffd6358f4961c8f738501">DBus::MessageIterator::get_variant()</a>.</p>
+<p>Obsolete, do not call. </p>
 
 </div>
 </div>
@@ -701,7 +781,7 @@ template&lt;typename ... T&gt; </div>
 
 <p class="reference">References <a class="el" href="classDBus_1_1Variant.html#a5d62d7182c6900e180d2905a2d25984d">m_dataAlignment</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1MessageAppendIterator.html#aaef6aa274394f50a7df9e82e176f700a">DBus::MessageAppendIterator::operator&lt;&lt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Marshaling.html#afe72cf95f96cecfec5801f809fb20c87">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#aaef6aa274394f50a7df9e82e176f700a">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7951de66585c56f1985bf51330294d01">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -722,7 +802,7 @@ template&lt;typename ... T&gt; </div>
 
 <p class="reference">References <a class="el" href="classDBus_1_1Variant.html#a7fadfeb3fa85a0ac318e6c797309752a">m_marshaled</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Marshaling.html#afe72cf95f96cecfec5801f809fb20c87">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#aaef6aa274394f50a7df9e82e176f700a">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7951de66585c56f1985bf51330294d01">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Marshaling.html#afe72cf95f96cecfec5801f809fb20c87">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#aaef6aa274394f50a7df9e82e176f700a">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7951de66585c56f1985bf51330294d01">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>, and <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1134,7 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <a id="a7b4d04d945125a31f8361b6846893c2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b4d04d945125a31f8361b6846893c2f">&#9670;&nbsp;</a></span>recurseArray()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4d04d945125a31f8361b6846893c2f">&#9670;&nbsp;</a></span>recurseArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1087,14 +1167,70 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="classDBus_1_1TypeInfo.html#a142218c0734adff2d3fc704bf5618101">DBus::TypeInfo::alignment()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ac48d5da12d702e73d6966069f2687376">DBus::BOOLEAN</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ae409eb2ba6eb6801f52763ae370c350e">DBus::BYTE</a>, <a class="el" href="namespaceDBus.html#abd2ee376b23e08049b2d7db6c3d2e889">DBus::default_endianess()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334afd3e4ece78a7d422280d5ed379482229">DBus::DOUBLE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac9ef82ba514384142ff0c069a906c789">DBus::MessageIterator::get_bool()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aa9a5260df8e65be8279f81c75866febf">DBus::MessageIterator::get_double()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aec820a341e38bebb81da87329fd90036">DBus::MessageIterator::get_int16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a202193baf654346260ecdc9101b48561">DBus::MessageIterator::get_int32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a089444bf3c3018d2c768ce550b0a7d44">DBus::MessageIterator::get_int64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#adfec101adf1279c4eb7cf8417381a7e2">DBus::MessageIterator::get_signature()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac90987936217f7f01f1a5e1864d84941">DBus::MessageIterator::get_string()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a623b7734889428b3114d3125b930d5fc">DBus::MessageIterator::get_uint16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a6beb4578a890b9992c55bf7f9e7065ad">DBus::MessageIterator::get_uint32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a831deea188fc4147eba8bfe5c1d41855">DBus::MessageIterator::get_uint64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aff4cfdcdfd94b93097fb0deb48a27cf0">DBus::MessageIterator::get_uint8()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a5f90af42814c0a419d715d43ae54fd7a">DBus::INT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6495adba09844fac8eeb0aba86e6f1bf">DBus::INT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a9b6e085b1802b66f7290da937e0921c3">DBus::MessageIterator::is_valid()</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a1f70349550a004c1bc0247f9e99e2d70">DBus::OBJECT_PATH</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">DBus::MessageIterator::recurse()</a>, <a class="el" href="classDBus_1_1Variant.html#a388b76524c7271d6efbc85e6aead3a48">recurseDictEntry()</a>, <a class="el" href="classDBus_1_1Variant.html#a0525aef3a54c3c32910f04b5e87f4e31">recurseStruct()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334aef21bf22481e7930df1e2bda54025095">DBus::SIGNATURE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a5ab44364049909ba55b47c2aed275595">DBus::MessageIterator::signature_iterator()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ab8223be2455e0ea5a0e63e8f018d6fc3">DBus::STRUCT</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62">DBus::UINT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f">DBus::UINT64</a>.</p>
+<p>Obsolete, do not call. </p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">createFromMessage()</a>, <a class="el" href="classDBus_1_1Variant.html#a388b76524c7271d6efbc85e6aead3a48">recurseDictEntry()</a>, and <a class="el" href="classDBus_1_1Variant.html#a0525aef3a54c3c32910f04b5e87f4e31">recurseStruct()</a>.</p>
+</div>
+</div>
+<a id="aad4b99e300a35fc23c7c1ac1b41c2254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad4b99e300a35fc23c7c1ac1b41c2254">&#9670;&nbsp;</a></span>recurseArray() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Variant::recurseArray </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a>&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt;&#160;</td>
+          <td class="paramname"><em>demarshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *&#160;</td>
+          <td class="paramname"><em>marshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filedescriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="classDBus_1_1TypeInfo.html#a142218c0734adff2d3fc704bf5618101">DBus::TypeInfo::alignment()</a>, <a class="el" href="namespaceDBus.html#abd2ee376b23e08049b2d7db6c3d2e889">DBus::default_endianess()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="variant_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">DBus::Validator::maximum_message_depth()</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad068f0f9845333d7d72b49a0135310af">DBus::SignatureIterator::recurse()</a>, <a class="el" href="classDBus_1_1Variant.html#a8325c7c625fbf7901ee4a2c2ae5db221">recurseDictEntry()</a>, <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>, <a class="el" href="simplelogger_8h.html#a78ac9efc035181ac423069b5b0983a78">SIMPLELOGGER_TRACE</a>, and <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal()</a>, and <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>.</p>
 
 </div>
 </div>
 <a id="a388b76524c7271d6efbc85e6aead3a48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a388b76524c7271d6efbc85e6aead3a48">&#9670;&nbsp;</a></span>recurseDictEntry()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a388b76524c7271d6efbc85e6aead3a48">&#9670;&nbsp;</a></span>recurseDictEntry() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1127,14 +1263,76 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ad3965f41c564a3812806e778b60d63b9">DBus::MessageIterator::align()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ac48d5da12d702e73d6966069f2687376">DBus::BOOLEAN</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ae409eb2ba6eb6801f52763ae370c350e">DBus::BYTE</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334afd3e4ece78a7d422280d5ed379482229">DBus::DOUBLE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac9ef82ba514384142ff0c069a906c789">DBus::MessageIterator::get_bool()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aa9a5260df8e65be8279f81c75866febf">DBus::MessageIterator::get_double()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aec820a341e38bebb81da87329fd90036">DBus::MessageIterator::get_int16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a202193baf654346260ecdc9101b48561">DBus::MessageIterator::get_int32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a089444bf3c3018d2c768ce550b0a7d44">DBus::MessageIterator::get_int64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#adfec101adf1279c4eb7cf8417381a7e2">DBus::MessageIterator::get_signature()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac90987936217f7f01f1a5e1864d84941">DBus::MessageIterator::get_string()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a623b7734889428b3114d3125b930d5fc">DBus::MessageIterator::get_uint16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a6beb4578a890b9992c55bf7f9e7065ad">DBus::MessageIterator::get_uint32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a831deea188fc4147eba8bfe5c1d41855">DBus::MessageIterator::get_uint64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aff4cfdcdfd94b93097fb0deb48a27cf0">DBus::MessageIterator::get_uint8()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a5f90af42814c0a419d715d43ae54fd7a">DBus::INT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6495adba09844fac8eeb0aba86e6f1bf">DBus::INT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#adbfb86bf44bb512818d68b92e5adde3c">DBus::SignatureIterator::is_valid()</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a1f70349550a004c1bc0247f9e99e2d70">DBus::OBJECT_PATH</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">DBus::MessageIterator::recurse()</a>, <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">recurseArray()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334aef21bf22481e7930df1e2bda54025095">DBus::SIGNATURE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a5ab44364049909ba55b47c2aed275595">DBus::MessageIterator::signature_iterator()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62">DBus::UINT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f">DBus::UINT64</a>.</p>
+<p>Obsolete, do not call. </p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">recurseArray()</a>, and <a class="el" href="classDBus_1_1Variant.html#a0525aef3a54c3c32910f04b5e87f4e31">recurseStruct()</a>.</p>
+</div>
+</div>
+<a id="a8325c7c625fbf7901ee4a2c2ae5db221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8325c7c625fbf7901ee4a2c2ae5db221">&#9670;&nbsp;</a></span>recurseDictEntry() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Variant::recurseDictEntry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a>&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt;&#160;</td>
+          <td class="paramname"><em>demarshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *&#160;</td>
+          <td class="paramname"><em>marshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>ending_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filedescriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="variant_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b">LOGGER_NAME</a>, <a class="el" href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">DBus::Validator::maximum_message_depth()</a>, <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>, <a class="el" href="simplelogger_8h.html#a78ac9efc035181ac423069b5b0983a78">SIMPLELOGGER_TRACE</a>, and <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#aad4b99e300a35fc23c7c1ac1b41c2254">recurseArray()</a>.</p>
 
 </div>
 </div>
 <a id="a0525aef3a54c3c32910f04b5e87f4e31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0525aef3a54c3c32910f04b5e87f4e31">&#9670;&nbsp;</a></span>recurseStruct()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0525aef3a54c3c32910f04b5e87f4e31">&#9670;&nbsp;</a></span>recurseStruct() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1167,9 +1365,129 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ad3965f41c564a3812806e778b60d63b9">DBus::MessageIterator::align()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ac48d5da12d702e73d6966069f2687376">DBus::BOOLEAN</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ae409eb2ba6eb6801f52763ae370c350e">DBus::BYTE</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334afd3e4ece78a7d422280d5ed379482229">DBus::DOUBLE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac9ef82ba514384142ff0c069a906c789">DBus::MessageIterator::get_bool()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aa9a5260df8e65be8279f81c75866febf">DBus::MessageIterator::get_double()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aec820a341e38bebb81da87329fd90036">DBus::MessageIterator::get_int16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a202193baf654346260ecdc9101b48561">DBus::MessageIterator::get_int32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a089444bf3c3018d2c768ce550b0a7d44">DBus::MessageIterator::get_int64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#adfec101adf1279c4eb7cf8417381a7e2">DBus::MessageIterator::get_signature()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#ac90987936217f7f01f1a5e1864d84941">DBus::MessageIterator::get_string()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a623b7734889428b3114d3125b930d5fc">DBus::MessageIterator::get_uint16()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a6beb4578a890b9992c55bf7f9e7065ad">DBus::MessageIterator::get_uint32()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a831deea188fc4147eba8bfe5c1d41855">DBus::MessageIterator::get_uint64()</a>, <a class="el" href="classDBus_1_1MessageIterator.html#aff4cfdcdfd94b93097fb0deb48a27cf0">DBus::MessageIterator::get_uint8()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a5f90af42814c0a419d715d43ae54fd7a">DBus::INT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6495adba09844fac8eeb0aba86e6f1bf">DBus::INT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#adbfb86bf44bb512818d68b92e5adde3c">DBus::SignatureIterator::is_valid()</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a1f70349550a004c1bc0247f9e99e2d70">DBus::OBJECT_PATH</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1">DBus::MessageIterator::recurse()</a>, <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">recurseArray()</a>, <a class="el" href="classDBus_1_1Variant.html#a388b76524c7271d6efbc85e6aead3a48">recurseDictEntry()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334aef21bf22481e7930df1e2bda54025095">DBus::SIGNATURE</a>, <a class="el" href="classDBus_1_1MessageIterator.html#a5ab44364049909ba55b47c2aed275595">DBus::MessageIterator::signature_iterator()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62">DBus::UINT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f">DBus::UINT64</a>.</p>
+<p>Obsolete, do not call. </p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">createFromMessage()</a>, and <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">recurseArray()</a>.</p>
+</div>
+</div>
+<a id="abcf752ed716e2a72797b7839acff7e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcf752ed716e2a72797b7839acff7e5b">&#9670;&nbsp;</a></span>recurseStruct() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Variant::recurseStruct </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a>&#160;</td>
+          <td class="paramname"><em>sigit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt;&#160;</td>
+          <td class="paramname"><em>demarshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *&#160;</td>
+          <td class="paramname"><em>marshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filedescriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#adbfb86bf44bb512818d68b92e5adde3c">DBus::SignatureIterator::is_valid()</a>, <a class="el" href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">DBus::Validator::maximum_message_depth()</a>, <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>, and <a class="el" href="classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236">DBus::SignatureIterator::type()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal()</a>, and <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>.</p>
+
+</div>
+</div>
+<a id="acf6ce3fed85b50a7d426023f6f1d05bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6ce3fed85b50a7d426023f6f1d05bc">&#9670;&nbsp;</a></span>remarshal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Variant::remarshal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334">DataType</a>&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1SignatureIterator.html">SignatureIterator</a>&#160;</td>
+          <td class="paramname"><em>sigit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classDBus_1_1Demarshaling.html">Demarshaling</a> &gt;&#160;</td>
+          <td class="paramname"><em>demarshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classDBus_1_1Marshaling.html">Marshaling</a> *&#160;</td>
+          <td class="paramname"><em>marshal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>filedescriptors</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>depth</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Marshaling.html#a05a6c0f43aad5ca2256867835652053b">DBus::Marshaling::align()</a>, <a class="el" href="classDBus_1_1TypeInfo.html#a142218c0734adff2d3fc704bf5618101">DBus::TypeInfo::alignment()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="classDBus_1_1Signature.html#aa53aa8f32d1f92f9ec919723fa042a3a">DBus::Signature::begin()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ac48d5da12d702e73d6966069f2687376">DBus::BOOLEAN</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ae409eb2ba6eb6801f52763ae370c350e">DBus::BYTE</a>, <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334afd3e4ece78a7d422280d5ed379482229">DBus::DOUBLE</a>, <a class="el" href="classDBus_1_1Signature.html#a18ce3d15e4fa6428d655404c46cc1072">DBus::Signature::end()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a5f90af42814c0a419d715d43ae54fd7a">DBus::INT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6495adba09844fac8eeb0aba86e6f1bf">DBus::INT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a4e866b275c85fbb439f6484251cfb31c">DBus::INT64</a>, <a class="el" href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal()</a>, <a class="el" href="classDBus_1_1Variant.html#ab0ab43991f24b92c38776dda826ea611">marshaled()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a1f70349550a004c1bc0247f9e99e2d70">DBus::OBJECT_PATH</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad068f0f9845333d7d72b49a0135310af">DBus::SignatureIterator::recurse()</a>, <a class="el" href="classDBus_1_1Variant.html#aad4b99e300a35fc23c7c1ac1b41c2254">recurseArray()</a>, <a class="el" href="classDBus_1_1Variant.html#abcf752ed716e2a72797b7839acff7e5b">recurseStruct()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334aef21bf22481e7930df1e2bda54025095">DBus::SIGNATURE</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a63b588d5559f64f89a416e656880b949">DBus::STRING</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ab8223be2455e0ea5a0e63e8f018d6fc3">DBus::STRUCT</a>, <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">type()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62">DBus::UINT16</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc">DBus::UINT32</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f">DBus::UINT64</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acda7182af4cc0451672a1cd50d36f3a2">DBus::VARIANT</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#aad4b99e300a35fc23c7c1ac1b41c2254">recurseArray()</a>, <a class="el" href="classDBus_1_1Variant.html#a8325c7c625fbf7901ee4a2c2ae5db221">recurseDictEntry()</a>, and <a class="el" href="classDBus_1_1Variant.html#abcf752ed716e2a72797b7839acff7e5b">recurseStruct()</a>.</p>
 
 </div>
 </div>
@@ -1314,6 +1632,8 @@ template&lt;typename Key , typename Value &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, and <a class="el" href="classDBus_1_1Variant.html#a4e4d92d1b9bc02ee158a79f0bf86b7b2">m_currentType</a>.</p>
+
 </div>
 </div>
 <a id="adb1cd26f626559fc10b3a7a90d0716e7"></a>
@@ -1403,6 +1723,8 @@ template&lt;typename ... T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classDBus_1_1Variant.html#a4e4d92d1b9bc02ee158a79f0bf86b7b2">m_currentType</a>, and <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334ab8223be2455e0ea5a0e63e8f018d6fc3">DBus::STRUCT</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a207c065739a00c488283118c914fa4dc">operator std::tuple&lt; T... &gt;()</a>.</p>
 
@@ -1511,6 +1833,8 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, and <a class="el" href="classDBus_1_1Variant.html#a4e4d92d1b9bc02ee158a79f0bf86b7b2">m_currentType</a>.</p>
+
 </div>
 </div>
 <a id="ae7721bb0059d5b743f4f37b739b33cd1"></a>
@@ -1530,7 +1854,7 @@ template&lt;typename T &gt; </div>
 
 <p class="reference">References <a class="el" href="classDBus_1_1Variant.html#a4e4d92d1b9bc02ee158a79f0bf86b7b2">m_currentType</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#adc9debfbe7c5e49ba39a489c3b7ab41f">DBus::Message::append_signature()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a632e92f628023171e08252ac1d0e5ef3">DBus::CallMessage::interface_name()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a1fedb4e84525627b7b51960849aaadff">DBus::SignalMessage::interface_name()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ad3822943d9044c070e022bddaa110814">DBus::SignalMessage::member()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a15fbf42afea42b4068b403f5457ea721">DBus::ErrorMessage::name()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#aaef6aa274394f50a7df9e82e176f700a">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1Variant.html#ae922332eff575db6a90a07381f18713b">operator==()</a>, <a class="el" href="classDBus_1_1CallMessage.html#aa4c55b73dd43f71cca10da29394160df">DBus::CallMessage::path()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ab47af541a147e832b81c817a57983527">DBus::SignalMessage::path()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#abcfd2698445f3d51731d2fdcb3d57cd7">DBus::ErrorMessage::reply_serial()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#abeb4674aa7b7b8ffa814183c486da555">DBus::ReturnMessage::reply_serial()</a>, <a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">DBus::Message::serialize_to_vector()</a>, and <a class="el" href="classDBus_1_1Message.html#a0d335829d5e1ce11334fe6717f9efd3c">DBus::Message::signature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Message.html#adc9debfbe7c5e49ba39a489c3b7ab41f">DBus::Message::append_signature()</a>, <a class="el" href="classDBus_1_1CallMessage.html#a632e92f628023171e08252ac1d0e5ef3">DBus::CallMessage::interface_name()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#a1fedb4e84525627b7b51960849aaadff">DBus::SignalMessage::interface_name()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ad3822943d9044c070e022bddaa110814">DBus::SignalMessage::member()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#a15fbf42afea42b4068b403f5457ea721">DBus::ErrorMessage::name()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#aaef6aa274394f50a7df9e82e176f700a">DBus::MessageAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7951de66585c56f1985bf51330294d01">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1Variant.html#ae922332eff575db6a90a07381f18713b">operator==()</a>, <a class="el" href="classDBus_1_1CallMessage.html#aa4c55b73dd43f71cca10da29394160df">DBus::CallMessage::path()</a>, <a class="el" href="classDBus_1_1SignalMessage.html#ab47af541a147e832b81c817a57983527">DBus::SignalMessage::path()</a>, <a class="el" href="classDBus_1_1Variant.html#acf6ce3fed85b50a7d426023f6f1d05bc">remarshal()</a>, <a class="el" href="classDBus_1_1ErrorMessage.html#abcfd2698445f3d51731d2fdcb3d57cd7">DBus::ErrorMessage::reply_serial()</a>, <a class="el" href="classDBus_1_1ReturnMessage.html#abeb4674aa7b7b8ffa814183c486da555">DBus::ReturnMessage::reply_serial()</a>, <a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">DBus::Message::serialize_to_vector()</a>, and <a class="el" href="classDBus_1_1Message.html#a0d335829d5e1ce11334fe6717f9efd3c">DBus::Message::signature()</a>.</p>
 
 </div>
 </div>
@@ -1636,7 +1960,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">createFromMessage()</a>, <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>, <a class="el" href="classDBus_1_1Variant.html#a1ebaab1bcf70b616693c887e80339baa">to_bool()</a>, <a class="el" href="classDBus_1_1Variant.html#a771b4c4b069beb5649425ad1a85f9211">to_double()</a>, <a class="el" href="classDBus_1_1Variant.html#a0c77603ecad4b47b5b2f7548c883eebc">to_int16()</a>, <a class="el" href="classDBus_1_1Variant.html#a52b6b8a1aed7107ac20cffdf36d51216">to_int32()</a>, <a class="el" href="classDBus_1_1Variant.html#a98f724f2b10c33840c16f33ff7b0e87a">to_int64()</a>, <a class="el" href="classDBus_1_1Variant.html#adb1cd26f626559fc10b3a7a90d0716e7">to_path()</a>, <a class="el" href="classDBus_1_1Variant.html#a247411b757aaab808a2f3fe4869bd2da">to_signature()</a>, <a class="el" href="classDBus_1_1Variant.html#a9f6a10350820ac143e476b4e09f7b4d4">to_string()</a>, <a class="el" href="classDBus_1_1Variant.html#a9d235351b333c860cdad26675d0c2a46">to_uint16()</a>, <a class="el" href="classDBus_1_1Variant.html#a9f788920cb6441f04b81b40bf1091316">to_uint32()</a>, <a class="el" href="classDBus_1_1Variant.html#aec441134458c1bf8a877188bc6d1f213">to_uint64()</a>, <a class="el" href="classDBus_1_1Variant.html#a1587b9cbed7ca3bd52b445e5c7f20eaf">to_uint8()</a>, and <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">type()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7951de66585c56f1985bf51330294d01">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>, <a class="el" href="classDBus_1_1Variant.html#a1ebaab1bcf70b616693c887e80339baa">to_bool()</a>, <a class="el" href="classDBus_1_1Variant.html#a771b4c4b069beb5649425ad1a85f9211">to_double()</a>, <a class="el" href="classDBus_1_1Variant.html#a0c77603ecad4b47b5b2f7548c883eebc">to_int16()</a>, <a class="el" href="classDBus_1_1Variant.html#a52b6b8a1aed7107ac20cffdf36d51216">to_int32()</a>, <a class="el" href="classDBus_1_1Variant.html#a98f724f2b10c33840c16f33ff7b0e87a">to_int64()</a>, <a class="el" href="classDBus_1_1Variant.html#ade43bfada4b6942fd7dfc3dc8ae78478">to_map()</a>, <a class="el" href="classDBus_1_1Variant.html#adb1cd26f626559fc10b3a7a90d0716e7">to_path()</a>, <a class="el" href="classDBus_1_1Variant.html#a247411b757aaab808a2f3fe4869bd2da">to_signature()</a>, <a class="el" href="classDBus_1_1Variant.html#a9f6a10350820ac143e476b4e09f7b4d4">to_string()</a>, <a class="el" href="classDBus_1_1Variant.html#a1ca697242b4280f3deb910e897b3b6da">to_tuple()</a>, <a class="el" href="classDBus_1_1Variant.html#a9d235351b333c860cdad26675d0c2a46">to_uint16()</a>, <a class="el" href="classDBus_1_1Variant.html#a9f788920cb6441f04b81b40bf1091316">to_uint32()</a>, <a class="el" href="classDBus_1_1Variant.html#aec441134458c1bf8a877188bc6d1f213">to_uint64()</a>, <a class="el" href="classDBus_1_1Variant.html#a1587b9cbed7ca3bd52b445e5c7f20eaf">to_uint8()</a>, <a class="el" href="classDBus_1_1Variant.html#a0118ca29d660412f547cf9eb8b9fc43f">to_vector()</a>, and <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">type()</a>.</p>
 
 </div>
 </div>
@@ -1660,7 +1984,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">createFromMessage()</a>, <a class="el" href="classDBus_1_1Variant.html#a0aac3ef5c7e1a10ec5c7f5a2dc04ffd5">data_alignment()</a>, and <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal()</a>, <a class="el" href="classDBus_1_1Variant.html#a0aac3ef5c7e1a10ec5c7f5a2dc04ffd5">data_alignment()</a>, and <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>.</p>
 
 </div>
 </div>
@@ -1684,7 +2008,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">createFromMessage()</a>, <a class="el" href="classDBus_1_1Variant.html#ab0ab43991f24b92c38776dda826ea611">marshaled()</a>, <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>, <a class="el" href="classDBus_1_1Variant.html#ae922332eff575db6a90a07381f18713b">operator==()</a>, <a class="el" href="classDBus_1_1Variant.html#adf8ce3c219636576733c6b95b3668e06">Variant()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1247bad6dc5f6b4092bba7768e4531af">DBus::priv::VariantAppendIterator::VariantAppendIterator()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aadccb20150d4bea74b5a2ba4d33e789c">DBus::priv::VariantIterator::VariantIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal()</a>, <a class="el" href="classDBus_1_1Variant.html#ab0ab43991f24b92c38776dda826ea611">marshaled()</a>, <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>, <a class="el" href="classDBus_1_1Variant.html#ae922332eff575db6a90a07381f18713b">operator==()</a>, <a class="el" href="classDBus_1_1Variant.html#adf8ce3c219636576733c6b95b3668e06">Variant()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1247bad6dc5f6b4092bba7768e4531af">DBus::priv::VariantAppendIterator::VariantAppendIterator()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aadccb20150d4bea74b5a2ba4d33e789c">DBus::priv::VariantIterator::VariantIterator()</a>.</p>
 
 </div>
 </div>
@@ -1708,7 +2032,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">createFromMessage()</a>, <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>, and <a class="el" href="classDBus_1_1Variant.html#abe0c11229b630409ab649213126d5334">signature()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">createFromDemarshal()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7951de66585c56f1985bf51330294d01">DBus::priv::VariantAppendIterator::operator&lt;&lt;()</a>, <a class="el" href="classDBus_1_1Variant.html#ad9afd1d792eafd58a4fa866cb09915c7">operator=()</a>, and <a class="el" href="classDBus_1_1Variant.html#abe0c11229b630409ab649213126d5334">signature()</a>.</p>
 
 </div>
 </div>
@@ -1717,9 +2041,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="variant_8cpp.html">variant.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="classDBus_1_1Variant.html">Variant</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:24 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

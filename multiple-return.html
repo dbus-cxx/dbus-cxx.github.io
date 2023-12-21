@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -30,21 +34,62 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('multiple-return.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Multiple Return Values </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_multiple_return"></a></p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_35_multiple_return"></a></p>
+<h1><a class="anchor" id="autotoc_md51"></a>
 Multiple Return Values</h1>
-<p>dbus-cxx has support for multiple return values from functions. In order to utilize this, you must use the <a class="el" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a> class. This class is essentially a wrapper around std::tuple, but provides the types needed by the library to properly handle the logic with multiple return values.</p>
-<p>Note that if you name arguments(using the <code><a class="el" href="classDBus_1_1MethodBase.html#ae18fcab8a8e802db79e52786461ddee2">DBus::MethodBase.set_arg_name()</a></code> method), the earlier argument names are the return values. For example, if your multiple return has two arguments, <code>set_arg_name(0, "name")</code> and <code>set_arg_name(1, "name")</code> are the way to set the arguments. The remaining arg names are for parameters to the function. </p>
+<p>dbus-cxx has support for multiple return values from functions. In order to utilize this, you must use the <a class="el" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a> class. This class is essentially a wrapper around <code>std::tuple</code>, but provides the types needed by the library to properly handle the logic with multiple return values.</p>
+<p>Because this is basically a wrapper around <code>std::tuple</code>, in order to get the values is a two step process:</p>
+<ol type="1">
+<li>Get the tuple</li>
+<li>Use <code>std::get</code> in order to get the values</li>
+</ol>
+<p>Example:</p>
+<div class="fragment"><div class="line"><a class="code" href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn&lt;int32_t, int32_t, std::string, std::vector&lt;int&gt;</a>&gt; val;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Call the method that returns multiple values</span></div>
+<div class="line"><span class="comment">// This must have been previously created, and would look something like:</span></div>
+<div class="line"><span class="comment">// std::shared_ptr&lt;DBus::MethodProxy&lt;DBus::MultipleReturn&lt;int32_t, int32_t, std::string, std::vector&lt;int&gt;&gt;()&gt;&gt; method_proxy;</span></div>
+<div class="line"><span class="comment">// Notice how the return value is defined as a DBus::MultipleReturn, and there are no arguments to the method proxy</span></div>
+<div class="line">val = (*method_proxy)();</div>
+<div class="line"> </div>
+<div class="line">std::tuple&lt;int32_t, int32_t, std::string, std::vector&lt;int&gt;&gt; d = val.<a class="code" href="classDBus_1_1MultipleReturn.html#a2e78e4e245aaeb04bdde2daf03334b89">m_data</a>;</div>
+<div class="line"> </div>
+<div class="line">std::get&lt;0&gt;(d);  <span class="comment">// Get the first int32_t in our tuple d</span></div>
+<div class="line">std::get&lt;1&gt;(d);  <span class="comment">// Get the second int32_t in our tuple d</span></div>
+<div class="line">std::get&lt;2&gt;(d);  <span class="comment">// Get the std::string in our tuple d</span></div>
+<div class="line"><span class="comment">// ... etc ...</span></div>
+<div class="ttc" id="aclassDBus_1_1MultipleReturn_html"><div class="ttname"><a href="classDBus_1_1MultipleReturn.html">DBus::MultipleReturn</a></div><div class="ttdef"><b>Definition:</b> multiplereturn.h:29</div></div>
+<div class="ttc" id="aclassDBus_1_1MultipleReturn_html_a2e78e4e245aaeb04bdde2daf03334b89"><div class="ttname"><a href="classDBus_1_1MultipleReturn.html#a2e78e4e245aaeb04bdde2daf03334b89">DBus::MultipleReturn::m_data</a></div><div class="ttdeci">std::tuple&lt; Ts... &gt; m_data</div><div class="ttdef"><b>Definition:</b> multiplereturn.h:31</div></div>
+</div><!-- fragment --><p>Note that if you name arguments(using the <code><a class="el" href="classDBus_1_1MethodBase.html#ae18fcab8a8e802db79e52786461ddee2">DBus::MethodBase.set_arg_name()</a></code> method), the earlier argument names are the return values. For example, if your multiple return has two arguments, <code>set_arg_name(0, "name")</code> and <code>set_arg_name(1, "name")</code> are the way to set the arguments. The remaining arg names are for parameters to the function. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

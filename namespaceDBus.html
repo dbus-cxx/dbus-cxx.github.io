@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -30,6 +34,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('namespaceDBus.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
@@ -78,6 +98,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1ErrorUnknown.html">ErrorUnknown</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1ErrorBadVariantCast.html">ErrorBadVariantCast</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1ErrorUnableToParse.html">ErrorUnableToParse</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">We were unable to parse(something is unimplemented?)  <a href="classDBus_1_1ErrorUnableToParse.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1ErrorInvalidMessage.html">ErrorInvalidMessage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An invalid message was tried to be parsed.  <a href="classDBus_1_1ErrorInvalidMessage.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1ErrorMessageNestedTooDeep.html">ErrorMessageNestedTooDeep</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1ErrorMessage.html">ErrorMessage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> <a class="el" href="classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur.">Error</a> message.  <a href="classDBus_1_1ErrorMessage.html#details">More...</a><br /></td></tr>
@@ -2651,7 +2679,7 @@ Variables</h2></td></tr>
 
 <p class="reference">References <a class="el" href="namespaceDBus.html#a0da80988a9948d2b5b2d328907f88fff">lib_default_endianess</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a505c34b40b66151c950391855a9bbd62">DBus::Variant::createFromMessage()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a8e28799bf4e3ed783240e92eded8c9b8">DBus::MessageAppendIterator::MessageAppendIterator()</a>, <a class="el" href="classDBus_1_1Variant.html#a7b4d04d945125a31f8361b6846893c2f">DBus::Variant::recurseArray()</a>, <a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">DBus::Message::serialize_to_vector()</a>, <a class="el" href="classDBus_1_1Variant.html#adf8ce3c219636576733c6b95b3668e06">DBus::Variant::Variant()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1247bad6dc5f6b4092bba7768e4531af">DBus::priv::VariantAppendIterator::VariantAppendIterator()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aadccb20150d4bea74b5a2ba4d33e789c">DBus::priv::VariantIterator::VariantIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">DBus::Variant::createFromDemarshal()</a>, <a class="el" href="classDBus_1_1MessageAppendIterator.html#a8e28799bf4e3ed783240e92eded8c9b8">DBus::MessageAppendIterator::MessageAppendIterator()</a>, <a class="el" href="classDBus_1_1Variant.html#aad4b99e300a35fc23c7c1ac1b41c2254">DBus::Variant::recurseArray()</a>, <a class="el" href="classDBus_1_1Message.html#a5ef5abab506e0b812039dc19f4cb0c95">DBus::Message::serialize_to_vector()</a>, <a class="el" href="classDBus_1_1Variant.html#adf8ce3c219636576733c6b95b3668e06">DBus::Variant::Variant()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a1247bad6dc5f6b4092bba7768e4531af">DBus::priv::VariantAppendIterator::VariantAppendIterator()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aadccb20150d4bea74b5a2ba4d33e789c">DBus::priv::VariantIterator::VariantIterator()</a>.</p>
 
 </div>
 </div>
@@ -4833,9 +4861,13 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

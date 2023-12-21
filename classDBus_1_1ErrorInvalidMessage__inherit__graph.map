@@ -1,0 +1,4 @@
+<map id="DBus::ErrorInvalidMessage" name="DBus::ErrorInvalidMessage">
+<area shape="rect" id="node1" title="An invalid message was tried to be parsed." alt="" coords="5,80,203,107"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="57,5,151,32"/>
+</map>

@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -30,66 +34,61 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">dbus-cxx Library </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md0"></a>
 About</h1>
 <p>dbus-cxx is a C++ implementation of the <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> protocol. It does not use the reference C implementation of libdbus at all in order to provide a tight C++-like interface, and to fix known multithreading problems with libdbus. libsigc++ is used to help provide an OO interface to the bus. Also included is dbus-cxx-xml2cpp to generate proxy and adapter interfaces from <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> XML introspection-like documents.</p>
-<p><br  />
-</p><hr  />
-<p>If you want to jump into the code quickly check out the quick start guide: <a class="el" href="quick_start.html">Quick Start Guide to dbus-cxx</a></p>
-<p><br  />
-</p><hr  />
-<dl class="section user"><dt>dbus-cxx Github Project Page</dt><dd>The dbus-cxx Github project page can be found here:</dd></dl>
-<dl class="section user"><dt></dt><dd><a href="https://dbus-cxx.github.io">https://dbus-cxx.github.io</a></dd></dl>
-<p><br  />
-</p><hr  />
-<h2>Download dbus-cxx packages or get the source code</h2>
-<p><b>Pre-built</b> packages</p>
-<p>Pre-built Debian packages may be found here: <a href="http://apt.rm5248.com/">http://apt.rm5248.com/</a>. These may or may not work properly with Ubuntu.</p>
-<p>Debian/Ubuntu package description</p><ul>
-<li><b>dbus-cxx2</b> - Libraries needed to run applications</li>
-<li><b>dbus-cxx-dev</b> - Headers and libraries for developing applications with dbus-cxx</li>
-<li><b>dbus-cxx-doc</b> - Developer's documentation including devhelp docs</li>
-<li><b>dbus-cxx-tools</b> - Development tools, et. al. such as <a class="el" href="xml2cpp.html">dbus-cxx-xml2cpp</a></li>
-<li><b>dbus-cxx-glib2</b> - Libraries need to run applications that integrate dbus-cxx into glib</li>
-<li><b>dbus-cxx-glib-dev</b> - Headers and libraries for developing applications that will integrate dbus-cxx into glib</li>
-<li><b>dbus-cxx-qt2</b> - Libraries need to run applications that integrate dbus-cxx into Qt</li>
-<li><b>dbus-cxx-qt-dev</b> - Headers and libraries for developing applications that will integrate dbus-cxx into Qt</li>
-</ul>
-<p> <img src="sourcecode-small.png" alt=""/>  </p><dl class="section user"><dt>Source Code</dt><dd> <img src="download-small.png" alt=""/>  <b>Releases</b> - (.bz2, .gz, .zip) can be found on <a href="http://sourceforge.net/projects/dbus-cxx/files">Sourceforge</a> and <a href="https://github.com/dbus-cxx/dbus-cxx/releases">Github</a></dd></dl>
+<hr  />
+<p> The dbus-cxx Github project page can be found here:</p>
+<p><a href="https://dbus-cxx.github.io">https://dbus-cxx.github.io</a></p>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md3"></a>
+Download dbus-cxx source code</h2>
+<p><b>NOTE:</b> Pre-built binary packages used to be provided through a private apt server, but this is no longer the case. If you are willing to help provide packages such as this, please get in touch by using the 'discussions' tab on Github!</p>
+<p>Releases - (.bz2, .gz, .zip) can be found on <a href="http://sourceforge.net/projects/dbus-cxx/files">Sourceforge</a> and <a href="https://github.com/dbus-cxx/dbus-cxx/releases">Github</a></p>
 <p><a class="el" href="building-from-source.html">Source building directions</a></p>
-<dl class="section user"><dt></dt><dd><b>Git</b> <b>Repository</b> <ul>
-<li>You can browse the git repository at this url:<ul>
-<li><a href="https://github.com/dbus-cxx/dbus-cxx">https://github.com/dbus-cxx/dbus-cxx</a></li>
-</ul>
-</li>
-<li>You can also check out a copy of the repository with this command:<ul>
-<li><pre class="fragment">git clone https://github.com/dbus-cxx/dbus-cxx.git </pre></li>
-</ul>
-</li>
-</ul>
-</dd></dl>
-<p><br  />
-</p><hr  />
-<dl class="section user"><dt>Dependencies... and where to get them</dt><dd><b>dbus:</b> <a href="http://dbus.freedesktop.org">http://dbus.freedesktop.org</a> - Should be installed by default (runtime dependency) <br  />
- <b>libsigc++</b> <a href="https://github.com/libsigcplusplus/libsigcplusplus">https://github.com/libsigcplusplus/libsigcplusplus</a> (compile dependency) See the README file for more information on compile-time dependencies <br  />
- <b>libcppgenerate</b> <a href="https://github.com/rm5248/libcppgenerate">https://github.com/rm5248/libcppgenerate</a> (compile dependency)</dd></dl>
-<p><br  />
-</p><hr  />
-<p> <img src="documents-small.png" alt=""/>  </p><dl class="section user"><dt>Documentation, Tutorials, Guides, Quick Start, et. al.</dt><dd></dd></dl>
-<dl class="section user"><dt>Quick Start Guide</dt><dd>If you want to jump into the code quickly check out the <a class="el" href="quick_start.html">Quick Start Guide to dbus-cxx</a> guide.</dd></dl>
-<dl class="section user"><dt>dbus-cxx-xml2cpp Reference</dt><dd>Documentation on using <a class="el" href="xml2cpp.html">dbus-cxx-xml2cpp</a> to convert <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> XML introspection documents into C++ proxies and adapters.</dd></dl>
-<dl class="section user"><dt>API Reference</dt><dd>The API documentation (including the pages you are reading now) have been generated with Doxygen.</dd></dl>
-<dl class="section user"><dt></dt><dd>The most current documentation for dbus-cxx is available online here:<ul>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Git Repository</h3>
+<p>You can browse the git repository at this url:</p>
+<p><a href="https://github.com/dbus-cxx/dbus-cxx">https://github.com/dbus-cxx/dbus-cxx</a></p>
+<p>You can also check out a copy of the repository with this command: </p><div class="fragment"><div class="line">git clone https://github.com/dbus-cxx/dbus-cxx.git</div>
+</div><!-- fragment --><hr  />
+<p> Dependencies... and where to get them</p>
+<p>dbus: <a href="http://dbus.freedesktop.org">http://dbus.freedesktop.org</a> - Should be installed by default (runtime dependency) <br  />
+ libsigc++ <a href="https://github.com/libsigcplusplus/libsigcplusplus">https://github.com/libsigcplusplus/libsigcplusplus</a> (compile dependency) <br  />
+ See the README file for more information on compile-time dependencies <br  />
+ libcppgenerate <a href="https://github.com/rm5248/libcppgenerate">https://github.com/rm5248/libcppgenerate</a> (compile dependency, bundled)</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md7"></a>
+Documentation, Tutorials, Guides, Quick Start, et. al.</h2>
+<p>If you want to jump into the code quickly check out the <a class="el" href="quick-start.html">quick start</a> guide.</p>
+<p>dbus-cxx-xml2cpp Reference Documentation on using <a class="el" href="xml2cpp.html">dbus-cxx-xml2cpp</a> to convert <a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a> XML introspection documents into C++ proxies and adapters.</p>
+<p>The API documentation (including the pages you are reading now) have been generated with Doxygen.</p>
+<p>The most current documentation for dbus-cxx is available online here:</p><ul>
 <li>dbus-cxx - <a href="https://dbus-cxx.github.io">https://dbus-cxx.github.io</a></li>
 </ul>
-</dd></dl>
-<dl class="section user"><dt>Key sections within the API reference</dt><dd><ul>
+<p>Key sections within the API reference</p><ul>
 <li>Namespaces<ul>
 <li><a class="el" href="namespaceDBus.html" title="Global DBus namespace, where everything happens.">DBus</a></li>
 </ul>
@@ -98,12 +97,14 @@ About</h1>
 <li><a href="annotated.html">Class List</a></li>
 <li><a href="examples.html">Examples</a></li>
 </ul>
-</dd></dl>
-<p><br  />
-</p><hr  />
-<p> <img src="mail-bulk-solid.png" alt="" width="50" height="50"/>  </p><dl class="section user"><dt>Mailing Lists</dt><dd><b>Note that the old Sourceforge mailing lists are monitored, but new users should use the Google group.</b> <br  />
-<ul>
-<li>Google group(preferred)<ul>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Getting help</h3>
+<p>If you run into problems, you have several options for getting in touch.</p>
+<p>Github is the best forum to initiate discussion of some issues that you may have.</p>
+<ol type="1">
+<li>Github - <a href="https://github.com/dbus-cxx/dbus-cxx/discussions">Discussions</a> and <a href="https://github.com/dbus-cxx/dbus-cxx/issues">Issues</a>. General help should go to the Discussions, while bugs should go to issues.</li>
+<li>Mailing lists. These are very old, but they should still work<ul>
+<li>Google group(preferred mailing list)<ul>
 <li><a href="https://groups.google.com/forum/#!forum/dbus-cxx">Dbus-cxx Google Group</a></li>
 </ul>
 </li>
@@ -118,27 +119,19 @@ About</h1>
 </ul>
 </li>
 </ul>
-</dd></dl>
-<p><br  />
-</p><hr  />
-<dl class="section user"><dt>Bugs</dt><dd></dd></dl>
-<dl class="section user"><dt></dt><dd>Found a bug? Open a bug on our <a href="https://github.com/dbus-cxx/dbus-cxx/issues">Github bug tracker.</a> If you need help using the library, the mailing list is the better location to ask for help.</dd></dl>
-<p><br  />
-</p><hr  />
-<dl class="section user"><dt>Patches</dt><dd>Patches are always welcome!!!</dd></dl>
-<dl class="section user"><dt></dt><dd>You can either submit a patch through the mailing list, or create a pull request on Github.</dd></dl>
-<p><br  />
-</p><hr  />
-<dl class="section user"><dt>Feature Requests</dt><dd></dd></dl>
-<dl class="section user"><dt></dt><dd>Either open a bug in the issue tracker, or provide your request to the mailing list. If it is a complicated feature request, the mailing list may be better to discuss what needs to be done.</dd></dl>
-<p><br  />
-</p><hr  />
-<dl class="section user"><dt>License</dt><dd>dbus-cxx is released under the <a href="https://www.gnu.org/licenses/lgpl-3.0.txt"><img src="lgplv3.png" alt="LGPLv3"/></a>  </dd></dl>
+</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md9"></a>
+License</h1>
+<p>dbus-cxx is released under the LGPL-3.0 and/or BSD-3-Clause </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:24 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

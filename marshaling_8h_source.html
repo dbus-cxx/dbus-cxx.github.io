@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('marshaling_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">marshaling.h</div>  </div>
@@ -114,14 +130,14 @@ $(function() {
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_a2086b471262e9cd00f5afe8fc6b54b15"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a2086b471262e9cd00f5afe8fc6b54b15">DBus::Marshaling::marshalIntLittle</a></div><div class="ttdeci">void marshalIntLittle(uint32_t toMarshal)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:187</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_a3ce9aeb8fb1923c3528291f5ea369b07"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a3ce9aeb8fb1923c3528291f5ea369b07">DBus::Marshaling::m_priv</a></div><div class="ttdeci">std::shared_ptr&lt; priv_data &gt; m_priv</div><div class="ttdef"><b>Definition:</b> marshaling.h:84</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_a57f9c55a9c66104ce8e1bf107b8da2a1"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a57f9c55a9c66104ce8e1bf107b8da2a1">DBus::Marshaling::set_data</a></div><div class="ttdeci">void set_data(std::vector&lt; uint8_t &gt; *data)</div><div class="ttdoc">Set the data vector to marshal/demarshal.</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:207</div></div>
-<div class="ttc" id="aclassDBus_1_1Marshaling_html_a69b33d357ca7a4a22a7bac9a68d58dd1"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a69b33d357ca7a4a22a7bac9a68d58dd1">DBus::Marshaling::marshal_at_offset</a></div><div class="ttdeci">void marshal_at_offset(uint32_t offset, uint32_t value)</div><div class="ttdoc">Marshal a uint32_t value at the given offset.</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:231</div></div>
+<div class="ttc" id="aclassDBus_1_1Marshaling_html_a69b33d357ca7a4a22a7bac9a68d58dd1"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a69b33d357ca7a4a22a7bac9a68d58dd1">DBus::Marshaling::marshal_at_offset</a></div><div class="ttdeci">void marshal_at_offset(uint32_t offset, uint32_t value)</div><div class="ttdoc">Marshal a uint32_t value at the given offset.</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:232</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_a70638f16bb190a45e01ebc3253e55a26"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a70638f16bb190a45e01ebc3253e55a26">DBus::Marshaling::marshalLongBig</a></div><div class="ttdeci">void marshalLongBig(uint64_t toMarshal)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:169</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_a943f034e025a8902b5aaa9ff4920c52d"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a943f034e025a8902b5aaa9ff4920c52d">DBus::Marshaling::marshalIntBig</a></div><div class="ttdeci">void marshalIntBig(uint32_t toMarshal)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:161</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_a96b5957d9c0a30a49c5983a1e74efaa5"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a96b5957d9c0a30a49c5983a1e74efaa5">DBus::Marshaling::set_endianess</a></div><div class="ttdeci">void set_endianess(Endianess endian)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:211</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_a9874a847fbb4ab0a9e36033c274cf66a"><div class="ttname"><a href="classDBus_1_1Marshaling.html#a9874a847fbb4ab0a9e36033c274cf66a">DBus::Marshaling::~Marshaling</a></div><div class="ttdeci">~Marshaling()</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:41</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_aa144d5bc096f44507ea2b16caa1299ac"><div class="ttname"><a href="classDBus_1_1Marshaling.html#aa144d5bc096f44507ea2b16caa1299ac">DBus::Marshaling::marshalShortBig</a></div><div class="ttdeci">void marshalShortBig(uint16_t toMarshal)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:155</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_aa87a02fd699be217fa7d67353788da8f"><div class="ttname"><a href="classDBus_1_1Marshaling.html#aa87a02fd699be217fa7d67353788da8f">DBus::Marshaling::marshalLongLittle</a></div><div class="ttdeci">void marshalLongLittle(uint64_t toMarshal)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:195</div></div>
-<div class="ttc" id="aclassDBus_1_1Marshaling_html_aca0326d3600cae56aeee1f3c47677ffc"><div class="ttname"><a href="classDBus_1_1Marshaling.html#aca0326d3600cae56aeee1f3c47677ffc">DBus::Marshaling::currentOffset</a></div><div class="ttdeci">uint32_t currentOffset() const</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:245</div></div>
+<div class="ttc" id="aclassDBus_1_1Marshaling_html_aca0326d3600cae56aeee1f3c47677ffc"><div class="ttname"><a href="classDBus_1_1Marshaling.html#aca0326d3600cae56aeee1f3c47677ffc">DBus::Marshaling::currentOffset</a></div><div class="ttdeci">uint32_t currentOffset() const</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:246</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_ad70d0a530be4f310d876b5fb4250fdb4"><div class="ttname"><a href="classDBus_1_1Marshaling.html#ad70d0a530be4f310d876b5fb4250fdb4">DBus::Marshaling::marshalShortLittle</a></div><div class="ttdeci">void marshalShortLittle(uint16_t toMarshal)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:181</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_af89773cd62060646b2889da0126a3d72"><div class="ttname"><a href="classDBus_1_1Marshaling.html#af89773cd62060646b2889da0126a3d72">DBus::Marshaling::marshal</a></div><div class="ttdeci">void marshal(bool v)</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:44</div></div>
 <div class="ttc" id="aclassDBus_1_1Marshaling_html_afd7803f15419d7472a7c1a5ff0827321"><div class="ttname"><a href="classDBus_1_1Marshaling.html#afd7803f15419d7472a7c1a5ff0827321">DBus::Marshaling::Marshaling</a></div><div class="ttdeci">Marshaling()</div><div class="ttdef"><b>Definition:</b> marshaling.cpp:31</div></div>
@@ -135,9 +151,13 @@ $(function() {
 <div class="ttc" id="apath_8h_html"><div class="ttname"><a href="path_8h.html">path.h</a></div></div>
 <div class="ttc" id="asignature_8h_html"><div class="ttname"><a href="signature_8h.html">signature.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:55 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li><li class="navelem"><a class="el" href="marshaling_8h.html">marshaling.h</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

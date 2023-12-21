@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('validator_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">validator.h</div>  </div>
@@ -72,13 +88,15 @@ $(function() {
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classDBus_1_1Validator.html#a94cc818267671e6d84c0d6bbbdb72525">   96</a></span>&#160;    <span class="keyword">static</span> constexpr uint32_t <a class="code" href="classDBus_1_1Validator.html#a94cc818267671e6d84c0d6bbbdb72525">maximum_array_size</a>() { <span class="keywordflow">return</span> 0x01 &lt;&lt; 26; }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classDBus_1_1Validator.html#a8eeaace9b17d26b6d81cbc9340419ec3">   98</a></span>&#160;    <span class="keyword">static</span> constexpr uint32_t <a class="code" href="classDBus_1_1Validator.html#a8eeaace9b17d26b6d81cbc9340419ec3">maximum_message_size</a>() { <span class="keywordflow">return</span> ( 0x01 &lt;&lt; 27 ); };</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classDBus_1_1Validator.html#a8eeaace9b17d26b6d81cbc9340419ec3">   98</a></span>&#160;    <span class="keyword">static</span> constexpr uint32_t <a class="code" href="classDBus_1_1Validator.html#a8eeaace9b17d26b6d81cbc9340419ec3">maximum_message_size</a>() { <span class="keywordflow">return</span> ( 0x01 &lt;&lt; 27 ); }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">  100</a></span>&#160;    <span class="keyword">static</span> constexpr uint32_t <a class="code" href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">maximum_message_depth</a>() { <span class="keywordflow">return</span> 64; }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">/* namespace DBus */</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DBUSCXX_VALIDATOR_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">/* namespace DBus */</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DBUSCXX_VALIDATOR_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aclassDBus_1_1Validator_html"><div class="ttname"><a href="classDBus_1_1Validator.html">DBus::Validator</a></div><div class="ttdoc">Contains various static routines for validating and/or sanitizing data.</div><div class="ttdef"><b>Definition:</b> validator.h:20</div></div>
 <div class="ttc" id="aclassDBus_1_1Validator_html_a229166a42f173e228ce2779814f860bc"><div class="ttname"><a href="classDBus_1_1Validator.html#a229166a42f173e228ce2779814f860bc">DBus::Validator::message_is_small_enough</a></div><div class="ttdeci">static bool message_is_small_enough(const std::vector&lt; uint8_t &gt; *data)</div><div class="ttdoc">Checks to make sure that the size of the message(after serialization) is lower than 2^27.</div><div class="ttdef"><b>Definition:</b> validator.cpp:126</div></div>
 <div class="ttc" id="aclassDBus_1_1Validator_html_a4f2d79ae98e0a2d40df2557f6128bafa"><div class="ttname"><a href="classDBus_1_1Validator.html#a4f2d79ae98e0a2d40df2557f6128bafa">DBus::Validator::validate_interface_name</a></div><div class="ttdeci">static bool validate_interface_name(std::string name)</div><div class="ttdoc">Validate an interface name.</div><div class="ttdef"><b>Definition:</b> validator.cpp:71</div></div>
@@ -87,12 +105,17 @@ $(function() {
 <div class="ttc" id="aclassDBus_1_1Validator_html_a76c31e37bf7b6688b254686fb3c95785"><div class="ttname"><a href="classDBus_1_1Validator.html#a76c31e37bf7b6688b254686fb3c95785">DBus::Validator::validate_bus_name</a></div><div class="ttdeci">static bool validate_bus_name(std::string name)</div><div class="ttdoc">Validate a bus name.</div><div class="ttdef"><b>Definition:</b> validator.cpp:33</div></div>
 <div class="ttc" id="aclassDBus_1_1Validator_html_a8eeaace9b17d26b6d81cbc9340419ec3"><div class="ttname"><a href="classDBus_1_1Validator.html#a8eeaace9b17d26b6d81cbc9340419ec3">DBus::Validator::maximum_message_size</a></div><div class="ttdeci">static constexpr uint32_t maximum_message_size()</div><div class="ttdef"><b>Definition:</b> validator.h:98</div></div>
 <div class="ttc" id="aclassDBus_1_1Validator_html_a94cc818267671e6d84c0d6bbbdb72525"><div class="ttname"><a href="classDBus_1_1Validator.html#a94cc818267671e6d84c0d6bbbdb72525">DBus::Validator::maximum_array_size</a></div><div class="ttdeci">static constexpr uint32_t maximum_array_size()</div><div class="ttdoc">Return the maximum array size.</div><div class="ttdef"><b>Definition:</b> validator.h:96</div></div>
+<div class="ttc" id="aclassDBus_1_1Validator_html_aba9e9f3e5ab15a4f1535ef8f0ae4f560"><div class="ttname"><a href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">DBus::Validator::maximum_message_depth</a></div><div class="ttdeci">static constexpr uint32_t maximum_message_depth()</div><div class="ttdef"><b>Definition:</b> validator.h:100</div></div>
 <div class="ttc" id="aclassDBus_1_1Validator_html_af2a71d612631336c047eb917f3e74b7b"><div class="ttname"><a href="classDBus_1_1Validator.html#af2a71d612631336c047eb917f3e74b7b">DBus::Validator::Validator</a></div><div class="ttdeci">Validator()</div></div>
 <div class="ttc" id="anamespaceDBus_html"><div class="ttname"><a href="namespaceDBus.html">DBus</a></div><div class="ttdoc">Global DBus namespace, where everything happens.</div><div class="ttdef"><b>Definition:</b> callmessage.cpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li><li class="navelem"><a class="el" href="validator_8h.html">validator.h</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

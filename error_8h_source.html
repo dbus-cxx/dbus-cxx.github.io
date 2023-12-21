@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('error_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">error.h</div>  </div>
@@ -214,25 +230,49 @@ $(function() {
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        : <a class="code" href="classDBus_1_1Error.html">Error</a>( nullptr, <a class="code" href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">message</a> ) {}</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;};</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;}</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; </div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno"><a class="line" href="classDBus_1_1ErrorUnableToParse.html">  435</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDBus_1_1ErrorUnableToParse.html">ErrorUnableToParse</a> : <span class="keyword">public</span> <a class="code" href="classDBus_1_1Error.html">Error</a> {</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00437"></a><span class="lineno"><a class="line" href="classDBus_1_1ErrorUnableToParse.html#ae960030edda5b56dd5b25719f1d7df7f">  437</a></span>&#160;    <a class="code" href="classDBus_1_1ErrorUnableToParse.html#ae960030edda5b56dd5b25719f1d7df7f">ErrorUnableToParse</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">message</a> = <span class="keyword">nullptr</span> )</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        : <a class="code" href="classDBus_1_1Error.html">Error</a>( nullptr, <a class="code" href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">message</a> ) {}</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;};</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="classDBus_1_1ErrorInvalidMessage.html">  444</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDBus_1_1ErrorInvalidMessage.html">ErrorInvalidMessage</a> : <span class="keyword">public</span> <a class="code" href="classDBus_1_1Error.html">Error</a> {</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00446"></a><span class="lineno"><a class="line" href="classDBus_1_1ErrorInvalidMessage.html#a2c4419338795ccc2cce5dd70df5f1cd2">  446</a></span>&#160;    <a class="code" href="classDBus_1_1ErrorInvalidMessage.html#a2c4419338795ccc2cce5dd70df5f1cd2">ErrorInvalidMessage</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">message</a> = <span class="keyword">nullptr</span> )</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        : <a class="code" href="classDBus_1_1Error.html">Error</a>( nullptr, <a class="code" href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">message</a> ) {}</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;};</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
+<div class="line"><a name="l00450"></a><span class="lineno"><a class="line" href="classDBus_1_1ErrorMessageNestedTooDeep.html">  450</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDBus_1_1ErrorMessageNestedTooDeep.html">ErrorMessageNestedTooDeep</a> : <span class="keyword">public</span> <a class="code" href="classDBus_1_1Error.html">Error</a> {</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00452"></a><span class="lineno"><a class="line" href="classDBus_1_1ErrorMessageNestedTooDeep.html#a84e1054193fd02aa41dc090689279923">  452</a></span>&#160;    <a class="code" href="classDBus_1_1ErrorMessageNestedTooDeep.html#a84e1054193fd02aa41dc090689279923">ErrorMessageNestedTooDeep</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">message</a> = <span class="keyword">nullptr</span> )</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        : <a class="code" href="classDBus_1_1Error.html">Error</a>( nullptr, <a class="code" href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">message</a> ) {}</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;};</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;}</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160; </div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassDBus_1_1ErrorBadVariantCast_html"><div class="ttname"><a href="classDBus_1_1ErrorBadVariantCast.html">DBus::ErrorBadVariantCast</a></div><div class="ttdef"><b>Definition:</b> error.h:426</div></div>
 <div class="ttc" id="aclassDBus_1_1ErrorBadVariantCast_html_aae14ffea0c2f44e067b68211b47be0d8"><div class="ttname"><a href="classDBus_1_1ErrorBadVariantCast.html#aae14ffea0c2f44e067b68211b47be0d8">DBus::ErrorBadVariantCast::ErrorBadVariantCast</a></div><div class="ttdeci">ErrorBadVariantCast(const char *message=nullptr)</div><div class="ttdef"><b>Definition:</b> error.h:428</div></div>
 <div class="ttc" id="aclassDBus_1_1ErrorIncorrectDispatchThread_html"><div class="ttname"><a href="classDBus_1_1ErrorIncorrectDispatchThread.html">DBus::ErrorIncorrectDispatchThread</a></div><div class="ttdef"><b>Definition:</b> error.h:408</div></div>
 <div class="ttc" id="aclassDBus_1_1ErrorIncorrectDispatchThread_html_ae51fcb4aefed4d81dfb18b2df5e47d20"><div class="ttname"><a href="classDBus_1_1ErrorIncorrectDispatchThread.html#ae51fcb4aefed4d81dfb18b2df5e47d20">DBus::ErrorIncorrectDispatchThread::ErrorIncorrectDispatchThread</a></div><div class="ttdeci">ErrorIncorrectDispatchThread(const char *message=nullptr)</div><div class="ttdef"><b>Definition:</b> error.h:410</div></div>
+<div class="ttc" id="aclassDBus_1_1ErrorInvalidMessage_html"><div class="ttname"><a href="classDBus_1_1ErrorInvalidMessage.html">DBus::ErrorInvalidMessage</a></div><div class="ttdoc">An invalid message was tried to be parsed.</div><div class="ttdef"><b>Definition:</b> error.h:444</div></div>
+<div class="ttc" id="aclassDBus_1_1ErrorInvalidMessage_html_a2c4419338795ccc2cce5dd70df5f1cd2"><div class="ttname"><a href="classDBus_1_1ErrorInvalidMessage.html#a2c4419338795ccc2cce5dd70df5f1cd2">DBus::ErrorInvalidMessage::ErrorInvalidMessage</a></div><div class="ttdeci">ErrorInvalidMessage(const char *message=nullptr)</div><div class="ttdef"><b>Definition:</b> error.h:446</div></div>
+<div class="ttc" id="aclassDBus_1_1ErrorMessageNestedTooDeep_html"><div class="ttname"><a href="classDBus_1_1ErrorMessageNestedTooDeep.html">DBus::ErrorMessageNestedTooDeep</a></div><div class="ttdef"><b>Definition:</b> error.h:450</div></div>
+<div class="ttc" id="aclassDBus_1_1ErrorMessageNestedTooDeep_html_a84e1054193fd02aa41dc090689279923"><div class="ttname"><a href="classDBus_1_1ErrorMessageNestedTooDeep.html#a84e1054193fd02aa41dc090689279923">DBus::ErrorMessageNestedTooDeep::ErrorMessageNestedTooDeep</a></div><div class="ttdeci">ErrorMessageNestedTooDeep(const char *message=nullptr)</div><div class="ttdef"><b>Definition:</b> error.h:452</div></div>
 <div class="ttc" id="aclassDBus_1_1ErrorRemoteException_html"><div class="ttname"><a href="classDBus_1_1ErrorRemoteException.html">DBus::ErrorRemoteException</a></div><div class="ttdef"><b>Definition:</b> error.h:414</div></div>
 <div class="ttc" id="aclassDBus_1_1ErrorRemoteException_html_abd7208a53eda47eaa644f9d30ce584d6"><div class="ttname"><a href="classDBus_1_1ErrorRemoteException.html#abd7208a53eda47eaa644f9d30ce584d6">DBus::ErrorRemoteException::ErrorRemoteException</a></div><div class="ttdeci">ErrorRemoteException(const char *message=nullptr)</div><div class="ttdef"><b>Definition:</b> error.h:416</div></div>
+<div class="ttc" id="aclassDBus_1_1ErrorUnableToParse_html"><div class="ttname"><a href="classDBus_1_1ErrorUnableToParse.html">DBus::ErrorUnableToParse</a></div><div class="ttdoc">We were unable to parse(something is unimplemented?)</div><div class="ttdef"><b>Definition:</b> error.h:435</div></div>
+<div class="ttc" id="aclassDBus_1_1ErrorUnableToParse_html_ae960030edda5b56dd5b25719f1d7df7f"><div class="ttname"><a href="classDBus_1_1ErrorUnableToParse.html#ae960030edda5b56dd5b25719f1d7df7f">DBus::ErrorUnableToParse::ErrorUnableToParse</a></div><div class="ttdeci">ErrorUnableToParse(const char *message=nullptr)</div><div class="ttdef"><b>Definition:</b> error.h:437</div></div>
 <div class="ttc" id="aclassDBus_1_1ErrorUnknown_html"><div class="ttname"><a href="classDBus_1_1ErrorUnknown.html">DBus::ErrorUnknown</a></div><div class="ttdef"><b>Definition:</b> error.h:420</div></div>
 <div class="ttc" id="aclassDBus_1_1ErrorUnknown_html_a78aaa36bc1049923719075a1794a61d9"><div class="ttname"><a href="classDBus_1_1ErrorUnknown.html#a78aaa36bc1049923719075a1794a61d9">DBus::ErrorUnknown::ErrorUnknown</a></div><div class="ttdeci">ErrorUnknown(const char *message=nullptr)</div><div class="ttdef"><b>Definition:</b> error.h:422</div></div>
 <div class="ttc" id="aclassDBus_1_1Error_html"><div class="ttname"><a href="classDBus_1_1Error.html">DBus::Error</a></div><div class="ttdoc">Base class of a hierarchy of error objects thrown when exceptional conditions occur.</div><div class="ttdef"><b>Definition:</b> error.h:35</div></div>
-<div class="ttc" id="aclassDBus_1_1Error_html_a1a141ebfe9308f96d8e2031ed274f238"><div class="ttname"><a href="classDBus_1_1Error.html#a1a141ebfe9308f96d8e2031ed274f238">DBus::Error::name</a></div><div class="ttdeci">std::string name() const</div><div class="ttdef"><b>Definition:</b> error.cpp:37</div></div>
+<div class="ttc" id="aclassDBus_1_1Error_html_a1a141ebfe9308f96d8e2031ed274f238"><div class="ttname"><a href="classDBus_1_1Error.html#a1a141ebfe9308f96d8e2031ed274f238">DBus::Error::name</a></div><div class="ttdeci">std::string name() const</div><div class="ttdef"><b>Definition:</b> error.cpp:39</div></div>
 <div class="ttc" id="aclassDBus_1_1Error_html_a49da35fa10d6209876bc8016df457a1b"><div class="ttname"><a href="classDBus_1_1Error.html#a49da35fa10d6209876bc8016df457a1b">DBus::Error::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> error.h:54</div></div>
 <div class="ttc" id="aclassDBus_1_1Error_html_a5b38026c4b10e60ab4bb3d679a47d00a"><div class="ttname"><a href="classDBus_1_1Error.html#a5b38026c4b10e60ab4bb3d679a47d00a">DBus::Error::Error</a></div><div class="ttdeci">Error()</div><div class="ttdef"><b>Definition:</b> error.cpp:13</div></div>
-<div class="ttc" id="aclassDBus_1_1Error_html_a727f0a0f1957c201d52f89928f02c2ce"><div class="ttname"><a href="classDBus_1_1Error.html#a727f0a0f1957c201d52f89928f02c2ce">DBus::Error::what</a></div><div class="ttdeci">const char * what() const noexcept</div><div class="ttdef"><b>Definition:</b> error.cpp:45</div></div>
-<div class="ttc" id="aclassDBus_1_1Error_html_a76bbb3241273c133e82afc6ffe981013"><div class="ttname"><a href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">DBus::Error::message</a></div><div class="ttdeci">std::string message() const</div><div class="ttdef"><b>Definition:</b> error.cpp:41</div></div>
+<div class="ttc" id="aclassDBus_1_1Error_html_a727f0a0f1957c201d52f89928f02c2ce"><div class="ttname"><a href="classDBus_1_1Error.html#a727f0a0f1957c201d52f89928f02c2ce">DBus::Error::what</a></div><div class="ttdeci">const char * what() const noexcept</div><div class="ttdef"><b>Definition:</b> error.cpp:47</div></div>
+<div class="ttc" id="aclassDBus_1_1Error_html_a76bbb3241273c133e82afc6ffe981013"><div class="ttname"><a href="classDBus_1_1Error.html#a76bbb3241273c133e82afc6ffe981013">DBus::Error::message</a></div><div class="ttdeci">std::string message() const</div><div class="ttdef"><b>Definition:</b> error.cpp:43</div></div>
 <div class="ttc" id="aclassDBus_1_1Error_html_ac380fb21496b1684041626247b5bfb38"><div class="ttname"><a href="classDBus_1_1Error.html#ac380fb21496b1684041626247b5bfb38">DBus::Error::m_message</a></div><div class="ttdeci">std::string m_message</div><div class="ttdef"><b>Definition:</b> error.h:55</div></div>
-<div class="ttc" id="aclassDBus_1_1Error_html_af17e14b41e26ac9d43927223e68c67cf"><div class="ttname"><a href="classDBus_1_1Error.html#af17e14b41e26ac9d43927223e68c67cf">DBus::Error::~Error</a></div><div class="ttdeci">~Error() noexcept</div><div class="ttdef"><b>Definition:</b> error.cpp:34</div></div>
+<div class="ttc" id="aclassDBus_1_1Error_html_af17e14b41e26ac9d43927223e68c67cf"><div class="ttname"><a href="classDBus_1_1Error.html#af17e14b41e26ac9d43927223e68c67cf">DBus::Error::~Error</a></div><div class="ttdeci">~Error() noexcept</div><div class="ttdef"><b>Definition:</b> error.cpp:36</div></div>
 <div class="ttc" id="aclassErrorAccessDenied_html"><div class="ttname"><a href="classErrorAccessDenied.html">ErrorAccessDenied</a></div></div>
 <div class="ttc" id="aclassErrorAddressInUse_html"><div class="ttname"><a href="classErrorAddressInUse.html">ErrorAddressInUse</a></div></div>
 <div class="ttc" id="aclassErrorAuthFailed_html"><div class="ttname"><a href="classErrorAuthFailed.html">ErrorAuthFailed</a></div></div>
@@ -321,9 +361,13 @@ $(function() {
 <div class="ttc" id="anamespaceDBus_html"><div class="ttname"><a href="namespaceDBus.html">DBus</a></div><div class="ttdoc">Global DBus namespace, where everything happens.</div><div class="ttdef"><b>Definition:</b> callmessage.cpp:18</div></div>
 <div class="ttc" id="anamespaceDBus_html_a4e4d5e08de0f97dcd4c004fa4c187fd4"><div class="ttname"><a href="namespaceDBus.html#a4e4d5e08de0f97dcd4c004fa4c187fd4">DBus::DBUSCXX_ERROR</a></div><div class="ttdeci">DBUSCXX_ERROR(ErrorFailed, DBUSCXX_ERROR_FAILED)</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:55 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li><li class="navelem"><a class="el" href="error_8h.html">error.h</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

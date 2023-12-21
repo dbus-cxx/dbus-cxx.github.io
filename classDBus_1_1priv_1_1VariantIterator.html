@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="namespaceDBus_1_1priv.html">priv</a></li><li class="navelem"><a class="el" href="classDBus_1_1priv_1_1VariantIterator.html">VariantIterator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBus_1_1priv_1_1VariantIterator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -78,8 +94,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a413e1256a90c5e7cd71fbfc84f4822ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefc7e0c3cccf84c3be0d83cf099ca156"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aefc7e0c3cccf84c3be0d83cf099ca156">operator std::string</a> ()</td></tr>
 <tr class="separator:aefc7e0c3cccf84c3be0d83cf099ca156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a6fcf9b30ae78a7dee4c966f07b1c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a54a6fcf9b30ae78a7dee4c966f07b1c8">operator Variant</a> ()</td></tr>
-<tr class="separator:a54a6fcf9b30ae78a7dee4c966f07b1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1f99bb05c2414e272097b71d57a194"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a7f1f99bb05c2414e272097b71d57a194">operator DBus::Variant</a> ()</td></tr>
+<tr class="separator:a7f1f99bb05c2414e272097b71d57a194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d670f21ca7f6010c0a1b014e326dd56"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9d670f21ca7f6010c0a1b014e326dd56"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a9d670f21ca7f6010c0a1b014e326dd56">operator std::vector&lt; T &gt;</a> ()</td></tr>
 <tr class="separator:a9d670f21ca7f6010c0a1b014e326dd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -557,6 +573,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="classDBus_1_1Variant.html#a4ed81492a3bd4802667b3794689966c2">DBus::Variant::createFromDemarshal()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aa53a99b8eed57c7bd74530a4c0f45d27">m_priv</a>.</p>
+
 </div>
 </div>
 <a id="a59fdab068f6cc47af5876e278a277d7a"></a>
@@ -758,6 +776,25 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7f1f99bb05c2414e272097b71d57a194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1f99bb05c2414e272097b71d57a194">&#9670;&nbsp;</a></span>operator DBus::Variant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VariantIterator::operator <a class="el" href="classDBus_1_1Variant.html">DBus::Variant</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acda7182af4cc0451672a1cd50d36f3a2">DBus::VARIANT</a>.</p>
+
+</div>
+</div>
 <a id="a413e1256a90c5e7cd71fbfc84f4822ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a413e1256a90c5e7cd71fbfc84f4822ba">&#9670;&nbsp;</a></span>operator double()</h2>
 
@@ -907,6 +944,8 @@ template&lt;typename ... T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p class="reference">References <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a13021f29152d58294aeccf806dfbf95b">recurse()</a>.</p>
+
 </div>
 </div>
 <a id="a9d670f21ca7f6010c0a1b014e326dd56"></a>
@@ -1014,25 +1053,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a54a6fcf9b30ae78a7dee4c966f07b1c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54a6fcf9b30ae78a7dee4c966f07b1c8">&#9670;&nbsp;</a></span>operator Variant()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VariantIterator::operator <a class="el" href="classDBus_1_1Variant.html">Variant</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acda7182af4cc0451672a1cd50d36f3a2">DBus::VARIANT</a>.</p>
-
-</div>
-</div>
 <a id="a27b5d312c1c53fdbfe6cf79ebda8cc6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27b5d312c1c53fdbfe6cf79ebda8cc6f">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
 
@@ -1137,7 +1157,7 @@ template&lt;typename T &gt; </div>
 
 <p class="reference">References <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a263b5d087214f25754a5ed80d8b749df">is_container()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aa53a99b8eed57c7bd74530a4c0f45d27">m_priv</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#acf72d62998f5bd561ac2bb83a325b8a4">VariantIterator()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a2213d9ef1b42f58835938ba5c444ce23">operator std::map&lt; Key, Data &gt;()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a9d670f21ca7f6010c0a1b014e326dd56">operator std::vector&lt; T &gt;()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a2213d9ef1b42f58835938ba5c444ce23">operator std::map&lt; Key, Data &gt;()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a1a548bf262abd9ea6d0d841eaf2e82db">operator std::tuple&lt; T... &gt;()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a9d670f21ca7f6010c0a1b014e326dd56">operator std::vector&lt; T &gt;()</a>.</p>
 
 </div>
 </div>
@@ -1162,7 +1182,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ab2e211b8d74f71f300feabee092cea34">arg_type()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ad0cde8ac199dca3f41e161fe28126f7d">element_type()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a3bdbc90e85f708cf467afb95b1989473">get_bool()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a83db762a06aa50e1bb37d03929e938ad">get_double()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#af1f2968df19c02513112c6100ec97e5b">get_int16()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ad48393f52f83c181730a00c89197b2b8">get_int32()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a678c104174b8b2e42ac7c44917750f4a">get_int64()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aadc0645388ac36c1a6e2849b784ad19f">get_signature()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a9f87ebaaad820c678b751dba236dc11b">get_string()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a0afe9201d4a403653f2482eb164f2452">get_uint16()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aa621b52934cdc8636d55995dd17d7035">get_uint32()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a58862f19b4cfb63b3b086acd12b1a3e7">get_uint64()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#abd94e70e3e4714987af60fba8984725c">get_uint8()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a59fdab068f6cc47af5876e278a277d7a">has_next()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ac41aa0215474e1a8f02d7ac4ad334dc1">invalidate()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a373fa17751bdb2332286f28b97a0c33c">is_valid()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aa7e55c2ae68d922cad6704a6d3168414">next()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a13021f29152d58294aeccf806dfbf95b">recurse()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#acf72d62998f5bd561ac2bb83a325b8a4">VariantIterator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ab2e211b8d74f71f300feabee092cea34">arg_type()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ad0cde8ac199dca3f41e161fe28126f7d">element_type()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a3bdbc90e85f708cf467afb95b1989473">get_bool()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a83db762a06aa50e1bb37d03929e938ad">get_double()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#af1f2968df19c02513112c6100ec97e5b">get_int16()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ad48393f52f83c181730a00c89197b2b8">get_int32()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a678c104174b8b2e42ac7c44917750f4a">get_int64()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aadc0645388ac36c1a6e2849b784ad19f">get_signature()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a9f87ebaaad820c678b751dba236dc11b">get_string()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a0afe9201d4a403653f2482eb164f2452">get_uint16()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aa621b52934cdc8636d55995dd17d7035">get_uint32()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a58862f19b4cfb63b3b086acd12b1a3e7">get_uint64()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#abd94e70e3e4714987af60fba8984725c">get_uint8()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#abb14d7aa44c512fb436a04fa2b182a5c">get_variant()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a59fdab068f6cc47af5876e278a277d7a">has_next()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#ac41aa0215474e1a8f02d7ac4ad334dc1">invalidate()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a373fa17751bdb2332286f28b97a0c33c">is_valid()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#aa7e55c2ae68d922cad6704a6d3168414">next()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#a13021f29152d58294aeccf806dfbf95b">recurse()</a>, and <a class="el" href="classDBus_1_1priv_1_1VariantIterator.html#acf72d62998f5bd561ac2bb83a325b8a4">VariantIterator()</a>.</p>
 
 </div>
 </div>
@@ -1171,9 +1191,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="variantiterator_8cpp.html">variantiterator.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="namespaceDBus_1_1priv.html">priv</a></li><li class="navelem"><a class="el" href="classDBus_1_1priv_1_1VariantIterator.html">VariantIterator</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:24 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,0 +1,27 @@
+var classDBus_1_1SignatureIterator =
+[
+    [ "SignatureIterator", "classDBus_1_1SignatureIterator.html#a54a487ed508b229876718fffdb9c2367", null ],
+    [ "SignatureIterator", "classDBus_1_1SignatureIterator.html#ae372feb3fa7cc84e8da19b5be80aea8f", null ],
+    [ "SignatureIterator", "classDBus_1_1SignatureIterator.html#a1dd1fda2b705c26e67ab043e86f9b58a", null ],
+    [ "~SignatureIterator", "classDBus_1_1SignatureIterator.html#ab19b056b18a140d7505ce7ff64314364", null ],
+    [ "DBUS_CXX_PROPAGATE_CONST", "classDBus_1_1SignatureIterator.html#aaf3a1252980d110cb4c406d02e71eff7", null ],
+    [ "element_type", "classDBus_1_1SignatureIterator.html#ae9862cddaeabc395254c985b4e1bdc72", null ],
+    [ "has_next", "classDBus_1_1SignatureIterator.html#adf2f6b103d9752c48b03927e3071f652", null ],
+    [ "invalidate", "classDBus_1_1SignatureIterator.html#ab0b40fe4c8ceed1caeeda733ddc983e8", null ],
+    [ "is_array", "classDBus_1_1SignatureIterator.html#a7993e72cb19ecb024f689ac6f469e76c", null ],
+    [ "is_basic", "classDBus_1_1SignatureIterator.html#af7c35a8ff07c1adc7d8211cbcd403727", null ],
+    [ "is_container", "classDBus_1_1SignatureIterator.html#a052cc457a5d8df7460c582bd3420bf16", null ],
+    [ "is_dict", "classDBus_1_1SignatureIterator.html#a384cedaa0c19b635ebddc13fe70efde9", null ],
+    [ "is_fixed", "classDBus_1_1SignatureIterator.html#ab452d2e6d95a54cbe1fc3cace6fe1e76", null ],
+    [ "is_valid", "classDBus_1_1SignatureIterator.html#adbfb86bf44bb512818d68b92e5adde3c", null ],
+    [ "iterate_over_subsig", "classDBus_1_1SignatureIterator.html#aef4a3e26b566fcac0c875f0cc404dec5", null ],
+    [ "next", "classDBus_1_1SignatureIterator.html#a49f22d1bb7b8b20156e71cda340bdb7b", null ],
+    [ "operator bool", "classDBus_1_1SignatureIterator.html#aeab7d95d3710135ecd049d754ffb78dd", null ],
+    [ "operator++", "classDBus_1_1SignatureIterator.html#aaed1e3613311f3564dfb4dd8f85bcf46", null ],
+    [ "operator++", "classDBus_1_1SignatureIterator.html#ac942e7b150a8e2e2b31a41188c24121e", null ],
+    [ "operator=", "classDBus_1_1SignatureIterator.html#aa1b57381c17c1fd7fa81b7ece29a3ef7", null ],
+    [ "operator==", "classDBus_1_1SignatureIterator.html#a24e0b809ace5313285800bf1f1c77368", null ],
+    [ "recurse", "classDBus_1_1SignatureIterator.html#ad068f0f9845333d7d72b49a0135310af", null ],
+    [ "signature", "classDBus_1_1SignatureIterator.html#a4ee02b00044e0982c787bea25aef03e4", null ],
+    [ "type", "classDBus_1_1SignatureIterator.html#ad821525b6e63acc8d739705bc33dd236", null ]
+];

@@ -1,0 +1,4 @@
+<map id="DBus::ErrorUnableToParse" name="DBus::ErrorUnableToParse">
+<area shape="rect" id="node1" title="We were unable to parse(something is unimplemented?)" alt="" coords="5,80,196,107"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="53,5,148,32"/>
+</map>

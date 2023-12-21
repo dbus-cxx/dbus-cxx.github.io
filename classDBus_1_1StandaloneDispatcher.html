@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="classDBus_1_1StandaloneDispatcher.html">StandaloneDispatcher</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBus_1_1StandaloneDispatcher.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -57,7 +73,7 @@ Inheritance diagram for DBus::StandaloneDispatcher:</div>
 <area shape="rect" title="The StandaloneDispatcher creates a new thread that handles all of the reading and writing to the bus." alt="" coords="5,80,212,107"/>
 <area shape="rect" href="classDBus_1_1Dispatcher.html" title="A Dispatcher handles all of the reading/writing that a Connection needs in order to work correctly." alt="" coords="41,5,176,32"/>
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -209,8 +225,6 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="callee_8cpp-example.html#a0">callee.cpp</a>, <a class="el" href="callee_2_8cpp-example.html#a0">callee_2.cpp</a>, <a class="el" href="callee_object_8cpp-example.html#a0">callee_object.cpp</a>, <a class="el" href="callee_object_inherited_8cpp-example.html#a2">callee_object_inherited.cpp</a>, <a class="el" href="caller_dispatched_8cpp-example.html#a0">caller_dispatched.cpp</a>, <a class="el" href="caller_object_8cpp-example.html#a3">caller_object.cpp</a>, <a class="el" href="signal_emitter_3_8cpp-example.html#a0">signal_emitter_3.cpp</a>, <a class="el" href="signal_emitter_object_8cpp-example.html#a3">signal_emitter_object.cpp</a>, <a class="el" href="signal_receiver_8cpp-example.html#a0">signal_receiver.cpp</a>, <a class="el" href="signal_receiver_2_8cpp-example.html#a0">signal_receiver_2.cpp</a>, and <a class="el" href="signal_receiver_object_8cpp-example.html#a4">signal_receiver_object.cpp</a>.</dd>
-</dl>
 
 <p class="reference">References <a class="el" href="classDBus_1_1StandaloneDispatcher.html#a973dacb6dc0e7ce9245ece2f2cb47883">is_running()</a>, and <a class="el" href="classDBus_1_1StandaloneDispatcher.html#a02898aa91dc8e13f01cb6728cfca1943">StandaloneDispatcher()</a>.</p>
 
@@ -457,9 +471,13 @@ Private Member Functions</h2></td></tr>
 <li><a class="el" href="standalonedispatcher_8cpp.html">standalonedispatcher.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="classDBus_1_1StandaloneDispatcher.html">StandaloneDispatcher</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:24 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

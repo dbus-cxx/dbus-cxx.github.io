@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="namespaceDBus_1_1priv.html">priv</a></li><li class="navelem"><a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html">VariantAppendIterator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBus_1_1priv_1_1VariantAppendIterator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -629,7 +645,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a553db3815bc668ed56cee839e25d3e14">close_container()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7c80adf2e59bae75550ea8c1358f5493">m_priv</a>, and <a class="el" href="classDBus_1_1Variant.html#ab0ab43991f24b92c38776dda826ea611">DBus::Variant::marshaled()</a>.</p>
+<p class="reference">References <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334acb4fb1757fb37c43cded35d3eb857c43">DBus::ARRAY</a>, <a class="el" href="classDBus_1_1Signature.html#aa53aa8f32d1f92f9ec919723fa042a3a">DBus::Signature::begin()</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a553db3815bc668ed56cee839e25d3e14">close_container()</a>, <a class="el" href="classDBus_1_1Variant.html#a0aac3ef5c7e1a10ec5c7f5a2dc04ffd5">DBus::Variant::data_alignment()</a>, <a class="el" href="namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6c0f27595f63a9665b81cc0a8433ae7f">DBus::DICT_ENTRY</a>, <a class="el" href="classDBus_1_1Signature.html#a18ce3d15e4fa6428d655404c46cc1072">DBus::Signature::end()</a>, <a class="el" href="classDBus_1_1Variant.html#a4e4d92d1b9bc02ee158a79f0bf86b7b2">DBus::Variant::m_currentType</a>, <a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html#a7c80adf2e59bae75550ea8c1358f5493">m_priv</a>, <a class="el" href="classDBus_1_1Variant.html#af0acc555e37630f55cfc38fd22a95865">DBus::Variant::m_signature</a>, <a class="el" href="classDBus_1_1Variant.html#ab0ab43991f24b92c38776dda826ea611">DBus::Variant::marshaled()</a>, <a class="el" href="classDBus_1_1SignatureIterator.html#ad068f0f9845333d7d72b49a0135310af">DBus::SignatureIterator::recurse()</a>, and <a class="el" href="classDBus_1_1Variant.html#ae7721bb0059d5b743f4f37b739b33cd1">DBus::Variant::type()</a>.</p>
 
 </div>
 </div>
@@ -692,9 +708,13 @@ template&lt;typename T &gt; </div>
 <li><a class="el" href="variantappenditerator_8cpp.html">variantappenditerator.cpp</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="namespaceDBus_1_1priv.html">priv</a></li><li class="navelem"><a class="el" href="classDBus_1_1priv_1_1VariantAppendIterator.html">VariantAppendIterator</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:24 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

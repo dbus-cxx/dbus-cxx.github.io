@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespaceDBus.html">DBus</a></li><li class="navelem"><a class="el" href="classDBus_1_1Validator.html">Validator</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classDBus_1_1Validator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">DBus::Validator Member List</div>  </div>
@@ -43,17 +59,21 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a94cc818267671e6d84c0d6bbbdb72525">maximum_array_size</a>()</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a8eeaace9b17d26b6d81cbc9340419ec3">maximum_message_size</a>()</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a229166a42f173e228ce2779814f860bc">message_is_small_enough</a>(const std::vector&lt; uint8_t &gt; *data)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a76c31e37bf7b6688b254686fb3c95785">validate_bus_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a6fd22f7ab52f738d964daa5c2701ae21">validate_error_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a4f2d79ae98e0a2d40df2557f6128bafa">validate_interface_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a4f9b55e11f506ba4473546911cb5ae63">validate_member_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#af2a71d612631336c047eb917f3e74b7b">Validator</a>()</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#aba9e9f3e5ab15a4f1535ef8f0ae4f560">maximum_message_depth</a>()</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a8eeaace9b17d26b6d81cbc9340419ec3">maximum_message_size</a>()</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a229166a42f173e228ce2779814f860bc">message_is_small_enough</a>(const std::vector&lt; uint8_t &gt; *data)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a76c31e37bf7b6688b254686fb3c95785">validate_bus_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a6fd22f7ab52f738d964daa5c2701ae21">validate_error_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a4f2d79ae98e0a2d40df2557f6128bafa">validate_interface_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classDBus_1_1Validator.html#a4f9b55e11f506ba4473546911cb5ae63">validate_member_name</a>(std::string name)</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classDBus_1_1Validator.html#af2a71d612631336c047eb917f3e74b7b">Validator</a>()</td><td class="entry"><a class="el" href="classDBus_1_1Validator.html">DBus::Validator</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:24 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

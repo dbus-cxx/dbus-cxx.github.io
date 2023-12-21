@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('signature_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">signature.h</div>  </div>
@@ -273,16 +289,16 @@ $(function() {
 <div class="ttc" id="aclassDBus_1_1SignatureIterator_html"><div class="ttname"><a href="classDBus_1_1SignatureIterator.html">DBus::SignatureIterator</a></div><div class="ttdoc">A SignatureIterator allows you to iterate over a given DBus signature, and to extract useful informat...</div><div class="ttdef"><b>Definition:</b> signatureiterator.h:33</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html"><div class="ttname"><a href="classDBus_1_1Signature.html">DBus::Signature</a></div><div class="ttdoc">Represents a DBus signature.</div><div class="ttdef"><b>Definition:</b> signature.h:74</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a0493de1fde244b00528e95203888af9a"><div class="ttname"><a href="classDBus_1_1Signature.html#a0493de1fde244b00528e95203888af9a">DBus::Signature::iterator</a></div><div class="ttdeci">SignatureIterator iterator</div><div class="ttdef"><b>Definition:</b> signature.h:77</div></div>
-<div class="ttc" id="aclassDBus_1_1Signature_html_a0d66697c31e31a1f581daec8aa70866f"><div class="ttname"><a href="classDBus_1_1Signature.html#a0d66697c31e31a1f581daec8aa70866f">DBus::Signature::print_tree</a></div><div class="ttdeci">void print_tree(std::ostream *stream) const</div><div class="ttdoc">Print the signature tree to the given ostream.</div><div class="ttdef"><b>Definition:</b> signature.cpp:250</div></div>
+<div class="ttc" id="aclassDBus_1_1Signature_html_a0d66697c31e31a1f581daec8aa70866f"><div class="ttname"><a href="classDBus_1_1Signature.html#a0d66697c31e31a1f581daec8aa70866f">DBus::Signature::print_tree</a></div><div class="ttdeci">void print_tree(std::ostream *stream) const</div><div class="ttdoc">Print the signature tree to the given ostream.</div><div class="ttdef"><b>Definition:</b> signature.cpp:249</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a151cda8ff2ff150ff3590fafc6c7b8f6"><div class="ttname"><a href="classDBus_1_1Signature.html#a151cda8ff2ff150ff3590fafc6c7b8f6">DBus::Signature::str</a></div><div class="ttdeci">const std::string &amp; str() const</div><div class="ttdef"><b>Definition:</b> signature.cpp:66</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a18ce3d15e4fa6428d655404c46cc1072"><div class="ttname"><a href="classDBus_1_1Signature.html#a18ce3d15e4fa6428d655404c46cc1072">DBus::Signature::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdef"><b>Definition:</b> signature.cpp:92</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a458ef5d83bfdd6991a47b8017370b944"><div class="ttname"><a href="classDBus_1_1Signature.html#a458ef5d83bfdd6991a47b8017370b944">DBus::Signature::m_priv</a></div><div class="ttdeci">std::shared_ptr&lt; priv_data &gt; m_priv</div><div class="ttdef"><b>Definition:</b> signature.h:141</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a48fd47d7ce4413ff238a81081a711f19"><div class="ttname"><a href="classDBus_1_1Signature.html#a48fd47d7ce4413ff238a81081a711f19">DBus::Signature::is_singleton</a></div><div class="ttdeci">bool is_singleton() const</div><div class="ttdoc">True if the signature is a valid DBus signature and contains exactly one complete type.</div><div class="ttdef"><b>Definition:</b> signature.cpp:104</div></div>
-<div class="ttc" id="aclassDBus_1_1Signature_html_a4b29b9583ae02bc11f1a0ca88a7b202e"><div class="ttname"><a href="classDBus_1_1Signature.html#a4b29b9583ae02bc11f1a0ca88a7b202e">DBus::Signature::print_node</a></div><div class="ttdeci">void print_node(std::ostream *stream, priv::SignatureNode *node, int spaces) const</div><div class="ttdef"><b>Definition:</b> signature.cpp:265</div></div>
+<div class="ttc" id="aclassDBus_1_1Signature_html_a4b29b9583ae02bc11f1a0ca88a7b202e"><div class="ttname"><a href="classDBus_1_1Signature.html#a4b29b9583ae02bc11f1a0ca88a7b202e">DBus::Signature::print_node</a></div><div class="ttdeci">void print_node(std::ostream *stream, priv::SignatureNode *node, int spaces) const</div><div class="ttdef"><b>Definition:</b> signature.cpp:264</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a54d12a93b25ab283fb198c4c9799349d"><div class="ttname"><a href="classDBus_1_1Signature.html#a54d12a93b25ab283fb198c4c9799349d">DBus::Signature::~Signature</a></div><div class="ttdeci">~Signature()</div><div class="ttdef"><b>Definition:</b> signature.cpp:59</div></div>
-<div class="ttc" id="aclassDBus_1_1Signature_html_a5fed224dd6d4e14735e0d4547c596136"><div class="ttname"><a href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">DBus::Signature::initialize</a></div><div class="ttdeci">void initialize()</div><div class="ttdef"><b>Definition:</b> signature.cpp:278</div></div>
+<div class="ttc" id="aclassDBus_1_1Signature_html_a5fed224dd6d4e14735e0d4547c596136"><div class="ttname"><a href="classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136">DBus::Signature::initialize</a></div><div class="ttdeci">void initialize()</div><div class="ttdef"><b>Definition:</b> signature.cpp:277</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a642a456d48d60e8205344b0f57fa7f35"><div class="ttname"><a href="classDBus_1_1Signature.html#a642a456d48d60e8205344b0f57fa7f35">DBus::Signature::const_iterator</a></div><div class="ttdeci">const SignatureIterator const_iterator</div><div class="ttdef"><b>Definition:</b> signature.h:79</div></div>
-<div class="ttc" id="aclassDBus_1_1Signature_html_a6975d67d704cf32bcbc23a7c1487141c"><div class="ttname"><a href="classDBus_1_1Signature.html#a6975d67d704cf32bcbc23a7c1487141c">DBus::Signature::create_signature_tree</a></div><div class="ttdeci">std::shared_ptr&lt; priv::SignatureNode &gt; create_signature_tree(std::string::const_iterator *it, std::stack&lt; ContainerType &gt; *container_stack, bool *ok)</div><div class="ttdef"><b>Definition:</b> signature.cpp:112</div></div>
+<div class="ttc" id="aclassDBus_1_1Signature_html_a6975d67d704cf32bcbc23a7c1487141c"><div class="ttname"><a href="classDBus_1_1Signature.html#a6975d67d704cf32bcbc23a7c1487141c">DBus::Signature::create_signature_tree</a></div><div class="ttdeci">std::shared_ptr&lt; priv::SignatureNode &gt; create_signature_tree(std::string::const_iterator *it, std::stack&lt; ContainerType &gt; *container_stack, bool *ok)</div><div class="ttdef"><b>Definition:</b> signature.cpp:111</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a77aa5d4cb793043cb509ec3defe7e3ab"><div class="ttname"><a href="classDBus_1_1Signature.html#a77aa5d4cb793043cb509ec3defe7e3ab">DBus::Signature::is_valid</a></div><div class="ttdeci">bool is_valid() const</div><div class="ttdoc">True if the signature is a valid DBus signature.</div><div class="ttdef"><b>Definition:</b> signature.cpp:100</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a785a631918467e7af92232a502a16f8d"><div class="ttname"><a href="classDBus_1_1Signature.html#a785a631918467e7af92232a502a16f8d">DBus::Signature::operator=</a></div><div class="ttdeci">Signature &amp; operator=(const std::string &amp;s)</div><div class="ttdef"><b>Definition:</b> signature.cpp:70</div></div>
 <div class="ttc" id="aclassDBus_1_1Signature_html_a889cc558624a09abaeb38d40f4e4ec1b"><div class="ttname"><a href="classDBus_1_1Signature.html#a889cc558624a09abaeb38d40f4e4ec1b">DBus::Signature::operator==</a></div><div class="ttdeci">bool operator==(const std::string &amp;s) const</div><div class="ttdef"><b>Definition:</b> signature.h:108</div></div>
@@ -331,9 +347,13 @@ $(function() {
 <div class="ttc" id="asignature_8h_html_ae2454c49bfcec6253960e0191c4fe715"><div class="ttname"><a href="signature_8h.html#ae2454c49bfcec6253960e0191c4fe715">DBUSCXX_TYPE_UINT32_AS_STRING</a></div><div class="ttdeci">#define DBUSCXX_TYPE_UINT32_AS_STRING</div><div class="ttdef"><b>Definition:</b> signature.h:30</div></div>
 <div class="ttc" id="asignatureiterator_8h_html"><div class="ttname"><a href="signatureiterator_8h.html">signatureiterator.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:55 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li><li class="navelem"><a class="el" href="signature_8h.html">signature.h</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

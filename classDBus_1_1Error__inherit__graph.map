@@ -1,7 +1,10 @@
 <map id="DBus::Error" name="DBus::Error">
-<area shape="rect" id="node1" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="5,93,100,120"/>
+<area shape="rect" id="node1" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="5,181,100,208"/>
 <area shape="rect" id="node2" href="$classDBus_1_1ErrorBadVariantCast.html" title=" " alt="" coords="156,5,351,32"/>
 <area shape="rect" id="node3" href="$classDBus_1_1ErrorIncorrectDispatchThread.html" title=" " alt="" coords="149,57,358,98"/>
-<area shape="rect" id="node4" href="$classDBus_1_1ErrorRemoteException.html" title=" " alt="" coords="148,123,359,149"/>
-<area shape="rect" id="node5" href="$classDBus_1_1ErrorUnknown.html" title=" " alt="" coords="175,173,331,200"/>
+<area shape="rect" id="node4" href="$classDBus_1_1ErrorInvalidMessage.html" title="An invalid message was tried to be parsed." alt="" coords="155,123,352,149"/>
+<area shape="rect" id="node5" href="$classDBus_1_1ErrorMessageNestedTooDeep.html" title=" " alt="" coords="154,174,353,215"/>
+<area shape="rect" id="node6" href="$classDBus_1_1ErrorRemoteException.html" title=" " alt="" coords="148,240,359,267"/>
+<area shape="rect" id="node7" href="$classDBus_1_1ErrorUnableToParse.html" title="We were unable to parse(something is unimplemented?)" alt="" coords="158,291,349,317"/>
+<area shape="rect" id="node8" href="$classDBus_1_1ErrorUnknown.html" title=" " alt="" coords="175,341,331,368"/>
 </map>

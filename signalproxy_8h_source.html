@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -29,11 +33,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('signalproxy_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="header">
   <div class="headertitle">
 <div class="title">signalproxy.h</div>  </div>
@@ -140,7 +156,7 @@ $(function() {
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassDBus_1_1MessageIterator_html"><div class="ttname"><a href="classDBus_1_1MessageIterator.html">DBus::MessageIterator</a></div><div class="ttdoc">Extraction iterator allowing values to be retrieved from a message.</div><div class="ttdef"><b>Definition:</b> messageiterator.h:56</div></div>
 <div class="ttc" id="aclassDBus_1_1SignalBase_html"><div class="ttname"><a href="classDBus_1_1SignalBase.html">DBus::SignalBase</a></div><div class="ttdoc">Base class of all signals(proxy and adapter).</div><div class="ttdef"><b>Definition:</b> signalbase.h:35</div></div>
-<div class="ttc" id="aclassDBus_1_1SignalMatchRule_html"><div class="ttname"><a href="classDBus_1_1SignalMatchRule.html">DBus::SignalMatchRule</a></div><div class="ttdoc">A special MatchRule for signals.</div><div class="ttdef"><b>Definition:</b> matchrule.h:44</div></div>
+<div class="ttc" id="aclassDBus_1_1SignalMatchRule_html"><div class="ttname"><a href="classDBus_1_1SignalMatchRule.html">DBus::SignalMatchRule</a></div><div class="ttdoc">A special MatchRule for signals.</div><div class="ttdef"><b>Definition:</b> matchrule.h:45</div></div>
 <div class="ttc" id="aclassDBus_1_1SignalProxyBase_html"><div class="ttname"><a href="classDBus_1_1SignalProxyBase.html">DBus::SignalProxyBase</a></div><div class="ttdoc">Base class for a signal proxy that allows you to listen for signals.</div><div class="ttdef"><b>Definition:</b> signalproxy.h:37</div></div>
 <div class="ttc" id="aclassDBus_1_1SignalProxyBase_html_a0841915b1de3e0e80009056cd9bec098"><div class="ttname"><a href="classDBus_1_1SignalProxyBase.html#a0841915b1de3e0e80009056cd9bec098">DBus::SignalProxyBase::matches</a></div><div class="ttdeci">bool matches(std::shared_ptr&lt; const SignalMessage &gt; msg)</div><div class="ttdef"><b>Definition:</b> signalproxy.cpp:41</div></div>
 <div class="ttc" id="aclassDBus_1_1SignalProxyBase_html_a1825d510f6772ae584779e6c08421e96"><div class="ttname"><a href="classDBus_1_1SignalProxyBase.html#a1825d510f6772ae584779e6c08421e96">DBus::SignalProxyBase::SignalProxyBase</a></div><div class="ttdeci">SignalProxyBase(const SignalMatchRule &amp;matchRule)</div><div class="ttdef"><b>Definition:</b> signalproxy.cpp:22</div></div>
@@ -170,9 +186,13 @@ $(function() {
 <div class="ttc" id="astructDBus_1_1priv_1_1dbus__function__traits_html"><div class="ttname"><a href="structDBus_1_1priv_1_1dbus__function__traits.html">DBus::priv::dbus_function_traits</a></div><div class="ttdef"><b>Definition:</b> utility.h:234</div></div>
 <div class="ttc" id="autility_8h_html"><div class="ttname"><a href="utility_8h.html">utility.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:55 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_213d010666468e873f5936ee87a32559.html">dbus-cxx</a></li><li class="navelem"><a class="el" href="signalproxy_8h.html">signalproxy.h</a></li>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

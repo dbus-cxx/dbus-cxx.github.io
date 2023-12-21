@@ -10,6 +10,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -30,17 +34,33 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dispatching.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Dispatching in dbus-cxx </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_dispatching"></a></p>
+<div class="textblock"><p><a class="anchor" id="md__home_robert_dbus_cxx_doc_31_dispatching"></a></p>
 <p>Within the context of dbus-cxx, the concept of 'dispatching' refers to the reading and writing of messages to the bus.</p>
 <p>Each application that uses dbus-cxx needs to have an implementation of a <code>Dispatcher</code> in order to work correctly. In general, there only needs to be one dispatcher per application.</p>
 <p>If the <code>Dispatcher</code> is running in a separate thread, you must also define a <code>ThreadDispatcher</code> which will handle calling methods and emitting signals from the correct thread, should you choose to recieve method calls and receive signals from a thread that is not the main dispatcher thread.</p>
 <p>Depending on your implementation, the <code>Dispatcher</code> may not be in a separate thread. If you have a case where the <code>Dispatcher</code> is in the main thread of a single-threaded application, then the enum values <code><a class="el" href="namespaceDBus.html#afe27044063df28784038ce01c2e7f525a5e4ad822bb12635d22f90ab2259ff7fa" title="Always call methods for this object from the dispatcher thread.">DBus::ThreadForCalling::DispatcherThread</a></code> and <code><a class="el" href="namespaceDBus.html#afe27044063df28784038ce01c2e7f525a47541f6d62a8c44c94ebc3522d022418" title="Always call methods for this object from the current thread.">DBus::ThreadForCalling::CurrentThread</a></code> are effectively the same.</p>
-<h1><a class="anchor" id="autotoc_md5"></a>
+<h1><a class="anchor" id="autotoc_md48"></a>
 Standalone Dispatcher</h1>
 <p>The basic <code>Dispatcher</code> that is always available is the <code>StandaloneDispatcher</code> class. This class will create a new thread that handles all of the reading and writing to the bus.</p>
 <p>This implementation of the <code>Dispatcher</code> class is intended to work with any library that is used and should be fully thread-safe.</p>
@@ -60,7 +80,7 @@ Standalone Dispatcher</h1>
 <div class="ttc" id="anamespaceDBus_html_a65a7f3cf99252b69858cd12817d2b764a8e32a82fa7897baa1c7f2bbf920b0ff1"><div class="ttname"><a href="namespaceDBus.html#a65a7f3cf99252b69858cd12817d2b764a8e32a82fa7897baa1c7f2bbf920b0ff1">DBus::BusType::SESSION</a></div><div class="ttdeci">@ SESSION</div><div class="ttdoc">The login session bus.</div></div>
 <div class="ttc" id="anamespaceDBus_html_afe27044063df28784038ce01c2e7f525a5e4ad822bb12635d22f90ab2259ff7fa"><div class="ttname"><a href="namespaceDBus.html#afe27044063df28784038ce01c2e7f525a5e4ad822bb12635d22f90ab2259ff7fa">DBus::ThreadForCalling::DispatcherThread</a></div><div class="ttdeci">@ DispatcherThread</div><div class="ttdoc">Always call methods for this object from the dispatcher thread.</div></div>
 <div class="ttc" id="anamespacesigc_html"><div class="ttname"><a href="namespacesigc.html">sigc</a></div><div class="ttdef"><b>Definition:</b> connection.cpp:59</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md6"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md49"></a>
 Dispatching with Qt</h1>
 <p>If you are using Qt, an implementation of a <code>Dispatcher</code> that runs in the main thread has already been created for you. As well, there is also an implementation of a <code>ThreadDispatcher</code> to ensure that you may use a separate <code>QThread</code> in order to multi-thread your application.</p>
 <p>Example with dispatching in main thread:</p>
@@ -97,7 +117,7 @@ Dispatching with Qt</h1>
 <div class="line"><span class="comment">/* The method created here will be called from the main thread thanks to the QtThreadDispatcher we created */</span></div>
 <div class="line">obj-&gt;create_method&lt;...&gt;( <span class="stringliteral">&quot;dbuscxx.interface&quot;</span>, <span class="stringliteral">&quot;example_method&quot;</span>, <a class="code" href="namespacesigc.html">sigc</a>::[mem|ptr]_fun(...) );</div>
 <div class="ttc" id="anamespaceDBus_html_afe27044063df28784038ce01c2e7f525a47541f6d62a8c44c94ebc3522d022418"><div class="ttname"><a href="namespaceDBus.html#afe27044063df28784038ce01c2e7f525a47541f6d62a8c44c94ebc3522d022418">DBus::ThreadForCalling::CurrentThread</a></div><div class="ttdeci">@ CurrentThread</div><div class="ttdoc">Always call methods for this object from the current thread.</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md7"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md50"></a>
 Dispatching with GLib</h1>
 <p>When using GLib, the <code>GLibDispatcher</code> class may be used in a similar manner as the <code>QtDispatcher</code> class. Note that due to how GLib works at the moment, this has only been testing using GLib, not GLibMM(libsigc++ versioning problem).</p>
 <p>There is currently no implementation of a <code>ThreadDispatcher</code> for GLib.</p>
@@ -108,9 +128,12 @@ Dispatching with GLib</h1>
 <div class="line"><span class="comment">/* Other parts are the same */</span></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Sun May 7 2023 15:36:56 for dbus-cxx by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Wed Dec 20 2023 20:42:23 for dbus-cxx by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -1,8 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,93,120,120"/>
-<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="168,93,263,120"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,181,120,208"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="168,181,263,208"/>
 <area shape="rect" id="node3" href="$classDBus_1_1ErrorBadVariantCast.html" title=" " alt="" coords="319,5,513,32"/>
 <area shape="rect" id="node4" href="$classDBus_1_1ErrorIncorrectDispatchThread.html" title=" " alt="" coords="311,57,521,98"/>
-<area shape="rect" id="node5" href="$classDBus_1_1ErrorRemoteException.html" title=" " alt="" coords="311,123,521,149"/>
-<area shape="rect" id="node6" href="$classDBus_1_1ErrorUnknown.html" title=" " alt="" coords="338,173,494,200"/>
+<area shape="rect" id="node5" href="$classDBus_1_1ErrorInvalidMessage.html" title="An invalid message was tried to be parsed." alt="" coords="317,123,515,149"/>
+<area shape="rect" id="node6" href="$classDBus_1_1ErrorMessageNestedTooDeep.html" title=" " alt="" coords="317,174,515,215"/>
+<area shape="rect" id="node7" href="$classDBus_1_1ErrorRemoteException.html" title=" " alt="" coords="311,240,521,267"/>
+<area shape="rect" id="node8" href="$classDBus_1_1ErrorUnableToParse.html" title="We were unable to parse(something is unimplemented?)" alt="" coords="321,291,511,317"/>
+<area shape="rect" id="node9" href="$classDBus_1_1ErrorUnknown.html" title=" " alt="" coords="338,341,494,368"/>
 </map>
