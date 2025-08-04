@@ -1,9 +1,9 @@
 var signature_8h =
 [
-    [ "SignatureNode", "classDBus_1_1priv_1_1SignatureNode.html", "classDBus_1_1priv_1_1SignatureNode" ],
-    [ "Signature", "classDBus_1_1Signature.html", "classDBus_1_1Signature" ],
-    [ "dbus_signature<>", "classDBus_1_1priv_1_1dbus__signature_3_4.html", "classDBus_1_1priv_1_1dbus__signature_3_4" ],
-    [ "dbus_signature< arg1, argn... >", "classDBus_1_1priv_1_1dbus__signature_3_01arg1_00_01argn_8_8_8_01_4.html", "classDBus_1_1priv_1_1dbus__signature_3_01arg1_00_01argn_8_8_8_01_4" ],
+    [ "DBus::priv::SignatureNode", "classDBus_1_1priv_1_1SignatureNode.html", "classDBus_1_1priv_1_1SignatureNode" ],
+    [ "DBus::Signature", "classDBus_1_1Signature.html", "classDBus_1_1Signature" ],
+    [ "DBus::priv::dbus_signature<>", "classDBus_1_1priv_1_1dbus__signature_3_4.html", "classDBus_1_1priv_1_1dbus__signature_3_4" ],
+    [ "DBus::priv::dbus_signature< arg1, argn... >", "classDBus_1_1priv_1_1dbus__signature_3_01arg1_00_01argn_8_8_8_01_4.html", "classDBus_1_1priv_1_1dbus__signature_3_01arg1_00_01argn_8_8_8_01_4" ],
     [ "DBUSCXX_DICT_ENTRY_BEGIN_CHAR_AS_STRING", "signature_8h.html#aacf6d9f3b727d869077201f52ae35f4e", null ],
     [ "DBUSCXX_DICT_ENTRY_END_CHAR_AS_STRING", "signature_8h.html#a900704d8aba2bd2e859ab6496b7fe273", null ],
     [ "DBUSCXX_STRUCT_BEGIN_CHAR_AS_STRING", "signature_8h.html#a106b0443ed3e24c7efb96934eab233af", null ],
@@ -24,7 +24,7 @@ var signature_8h =
     [ "DBUSCXX_TYPE_UINT64_AS_STRING", "signature_8h.html#a9045d2481bc44f58cd5d80cb425b3e14", null ],
     [ "DBUSCXX_TYPE_UNIX_FD_AS_STRING", "signature_8h.html#aca5cbd799d99c0d98543f650648af28b", null ],
     [ "DBUSCXX_TYPE_VARIANT_AS_STRING", "signature_8h.html#a821938f994e7cd71a522d64655c7bdd4", null ],
-    [ "operator<<", "signature_8h.html#af13a908a8b167b26bac8c17408706691", null ],
+    [ "operator<<", "signature_8h.html#a6e5e14301f9b954a4797a1bf06dd391e", null ],
     [ "signature", "signature_8h.html#afb0748ec7775683022c89ede54f04230", null ],
     [ "signature", "signature_8h.html#abb9b65057ea184440c50254ee1419a3f", null ],
     [ "signature", "signature_8h.html#a9537a9cd85cba94eaa095b353fa223db", null ],

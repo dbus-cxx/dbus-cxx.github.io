@@ -1,6 +1,6 @@
 var group__message =
 [
-    [ "CallMessage", "classDBus_1_1CallMessage.html", [
+    [ "DBus::CallMessage", "classDBus_1_1CallMessage.html", [
       [ "CallMessage", "classDBus_1_1CallMessage.html#a5828f818fa3eeafe134325e3569dd177", null ],
       [ "CallMessage", "classDBus_1_1CallMessage.html#afc22fcb0314ceef5d28230a963aff413", null ],
       [ "CallMessage", "classDBus_1_1CallMessage.html#a8626f00c53537689cefed966b63ceead", null ],
@@ -15,13 +15,14 @@ var group__message =
       [ "interface_name", "classDBus_1_1CallMessage.html#a632e92f628023171e08252ac1d0e5ef3", null ],
       [ "member", "classDBus_1_1CallMessage.html#a272cc9bb168935397e186c6a3e9cdfa0", null ],
       [ "path", "classDBus_1_1CallMessage.html#aa4c55b73dd43f71cca10da29394160df", null ],
+      [ "set_interactive_authentication", "classDBus_1_1CallMessage.html#afd7623f856aeccbc2f35460caa54c9f4", null ],
       [ "set_interface", "classDBus_1_1CallMessage.html#a3a81dafc180f1b68d44a44c1effc513d", null ],
       [ "set_member", "classDBus_1_1CallMessage.html#a6fc1ea98ef87d45473bb6b4f1d466ef1", null ],
       [ "set_no_reply", "classDBus_1_1CallMessage.html#acf18151b27f38c94a467058f2c786fe7", null ],
       [ "set_path", "classDBus_1_1CallMessage.html#a77dde3bfdf1f55de2cdff511cc50b1c0", null ],
       [ "type", "classDBus_1_1CallMessage.html#acc332916fc44d9982a973c04cf230e8d", null ]
     ] ],
-    [ "ErrorMessage", "classDBus_1_1ErrorMessage.html", [
+    [ "DBus::ErrorMessage", "classDBus_1_1ErrorMessage.html", [
       [ "ErrorMessage", "classDBus_1_1ErrorMessage.html#a9e5714f66cfcc431cef6346594e1db94", null ],
       [ "ErrorMessage", "classDBus_1_1ErrorMessage.html#aabbd080546fa4b6d5ab284ede5b5f3e6", null ],
       [ "create", "classDBus_1_1ErrorMessage.html#a41f22fbaec689d9af642a1e827a6b87d", null ],
@@ -36,7 +37,7 @@ var group__message =
       [ "throw_error", "classDBus_1_1ErrorMessage.html#af318c5385c8e671d64248d9ca05a0b5c", null ],
       [ "type", "classDBus_1_1ErrorMessage.html#a6ed9899310cc58ed9e57bed18e820a99", null ]
     ] ],
-    [ "Message", "classDBus_1_1Message.html", [
+    [ "DBus::Message", "classDBus_1_1Message.html", [
       [ "Message", "classDBus_1_1Message.html#acaacad1fe790234fee2ff0535033d628", null ],
       [ "~Message", "classDBus_1_1Message.html#a146dcac7b24ef4ce1fc2bbed710550df", null ],
       [ "add_filedescriptor", "classDBus_1_1Message.html#aa5e911bcb1cd9c8b7734871b0ebf6833", null ],
@@ -74,9 +75,9 @@ var group__message =
       [ "type", "classDBus_1_1Message.html#a1c8956ff73a8959bae39891da2895a92", null ],
       [ "MessageAppendIterator", "classDBus_1_1Message.html#a4ec2710c82fdc3f3479c49574340e0f0", null ],
       [ "MessageIterator", "classDBus_1_1Message.html#a96830ac40345d12cb9cec5efe497134b", null ],
-      [ "operator<<", "classDBus_1_1Message.html#a3a7e74e61b8593d0e58910faa3ee543d", null ]
+      [ "operator<<", "classDBus_1_1Message.html#a13559b81b106440a64340ffb7afa9ba4", null ]
     ] ],
-    [ "MessageAppendIterator", "classDBus_1_1MessageAppendIterator.html", [
+    [ "DBus::MessageAppendIterator", "classDBus_1_1MessageAppendIterator.html", [
       [ "MessageAppendIterator", "classDBus_1_1MessageAppendIterator.html#a157e01987075f8dad6b5c1f22c615440", null ],
       [ "MessageAppendIterator", "classDBus_1_1MessageAppendIterator.html#a8e28799bf4e3ed783240e92eded8c9b8", null ],
       [ "MessageAppendIterator", "classDBus_1_1MessageAppendIterator.html#aabf62f1bae828f71ac1f09aa0257a68e", null ],
@@ -84,7 +85,7 @@ var group__message =
       [ "close_container", "classDBus_1_1MessageAppendIterator.html#acc5eb7249274c7a1648802b31d162a1e", null ],
       [ "invalidate", "classDBus_1_1MessageAppendIterator.html#a404927abf8a06cd7c3eb89e6cbdbbea7", null ],
       [ "is_valid", "classDBus_1_1MessageAppendIterator.html#ac26adf3e625e2632b063c67e623897d6", null ],
-      [ "message", "classDBus_1_1MessageAppendIterator.html#a91e027cbb8149d9c52a83f9dc791819d", null ],
+      [ "message", "classDBus_1_1MessageAppendIterator.html#a43994417f49c5269b8a99c405b4f056d", null ],
       [ "open_container", "classDBus_1_1MessageAppendIterator.html#af326a67630bb1aab30c69554578dd5cb", null ],
       [ "operator bool", "classDBus_1_1MessageAppendIterator.html#a83e3305aefb912076875f373b9e32e88", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a70381bcf7de59751d31c881afdc00f64", null ],
@@ -93,14 +94,14 @@ var group__message =
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a271be2df290c85f987ff496bde8f9b93", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#adeb89d0809a80ab584909162289fed5b", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#aacd228a1468ebc4b8f4a0c004258ce4b", null ],
-      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a2a5df4b3d0238275a565255ffe957923", null ],
+      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a09b2dbc375de41e905d91e09dd29a49e", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a6eb681c4e7681cc779554b94a5dd7df7", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a264e3c2354ebd097c9b368876ca0e661", null ],
-      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a21cad9fe70af95df55b3726ee891405c", null ],
+      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a7482247985015049e82d464447091336", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a217b9bb25d622809aa9f08e273eae6b7", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a31a14c34933fb2688b8ab679a89eaf27", null ],
-      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a88e0be488fb85c71cba075357c05d9d6", null ],
-      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#ab547cd04b4c547ea273be70c937f4aae", null ],
+      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a11eff61d6dc90f932ab0a22b234eeb83", null ],
+      [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a8cd9ce41580bff19eb18766a556e24bc", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a4f561b856462c1ee256d72c12cfdb288", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a1b4a3ebb0729ad1c5c8b2ac236b2f802", null ],
       [ "operator<<", "classDBus_1_1MessageAppendIterator.html#a6613bdb05cb8e3fdb551a119b6560aaf", null ],
@@ -109,7 +110,7 @@ var group__message =
       [ "sub_iterator", "classDBus_1_1MessageAppendIterator.html#ae3efd7c224e9e16718d933667c2d96fb", null ],
       [ "m_priv", "classDBus_1_1MessageAppendIterator.html#a55a766cb6dba2b8c4f5f10ca3e0a364f", null ]
     ] ],
-    [ "MessageIterator", "classDBus_1_1MessageIterator.html", [
+    [ "DBus::MessageIterator", "classDBus_1_1MessageIterator.html", [
       [ "MessageIterator", "classDBus_1_1MessageIterator.html#ae7d67e498e38405dc1e2f991734ff2a2", null ],
       [ "MessageIterator", "classDBus_1_1MessageIterator.html#a017b625274bd747e4bcafbba7c699bb9", null ],
       [ "MessageIterator", "classDBus_1_1MessageIterator.html#ad361e16311d4a11bd1e6193557d55eba", null ],
@@ -120,7 +121,7 @@ var group__message =
       [ "get", "classDBus_1_1MessageIterator.html#a7874e983cea9f9c6d6bd129788d8426a", null ],
       [ "get_array", "classDBus_1_1MessageIterator.html#a4edaef37978e44c5a7e955e12eae9d9e", null ],
       [ "get_bool", "classDBus_1_1MessageIterator.html#ac9ef82ba514384142ff0c069a906c789", null ],
-      [ "get_dict", "classDBus_1_1MessageIterator.html#ae7c26c2ed56bbe65676aaf2dc545dd5c", null ],
+      [ "get_dict", "classDBus_1_1MessageIterator.html#a1ec245c82c25bfac91b7e1079ad35c26", null ],
       [ "get_dict", "classDBus_1_1MessageIterator.html#ac687742b2b2ae0ffe74c4d566997c9c3", null ],
       [ "get_double", "classDBus_1_1MessageIterator.html#aa9a5260df8e65be8279f81c75866febf", null ],
       [ "get_filedescriptor", "classDBus_1_1MessageIterator.html#ae97ce48e792b0680efb19c2392828b19", null ],
@@ -164,19 +165,19 @@ var group__message =
       [ "operator++", "classDBus_1_1MessageIterator.html#a90a2e1caa4e1b3bea8c2e29a950ab589", null ],
       [ "operator++", "classDBus_1_1MessageIterator.html#ac1c58f4279fc809afd8364953be91db9", null ],
       [ "operator==", "classDBus_1_1MessageIterator.html#aa660056d546b0230721672cc7633a7b4", null ],
-      [ "operator>>", "classDBus_1_1MessageIterator.html#a8e7453a3eb63cb561f734c999de14961", null ],
-      [ "operator>>", "classDBus_1_1MessageIterator.html#a2a4e1846df534ab9c4ffcca431e30987", null ],
-      [ "operator>>", "classDBus_1_1MessageIterator.html#a6cb945da90421077204cb75c7b99feb0", null ],
-      [ "operator>>", "classDBus_1_1MessageIterator.html#a5b7f2d9957ee08a4e05b292b78a45854", null ],
-      [ "operator>>", "classDBus_1_1MessageIterator.html#ae69834c9f5609842b7370726be2da0d5", null ],
-      [ "operator>>", "classDBus_1_1MessageIterator.html#a531910069fd0c5587538bdda0572ca13", null ],
+      [ "operator>>", "classDBus_1_1MessageIterator.html#a82ebdb66c863f6479ca7b130795e9ca2", null ],
+      [ "operator>>", "classDBus_1_1MessageIterator.html#a23e9a6908ff97eb33a7952c3db5ef474", null ],
+      [ "operator>>", "classDBus_1_1MessageIterator.html#ab80e2cce01f71850e4e6bf17c273ff65", null ],
+      [ "operator>>", "classDBus_1_1MessageIterator.html#ad740e1ccec8427e80181292e9a1254f6", null ],
+      [ "operator>>", "classDBus_1_1MessageIterator.html#a97c9dd81d9f7a67bd2908cb3526857e8", null ],
+      [ "operator>>", "classDBus_1_1MessageIterator.html#ac7faec6f2d0fbebc77e66fc518bb3e17", null ],
       [ "recurse", "classDBus_1_1MessageIterator.html#a684148c1ab9feed887c4e86323b47bf1", null ],
       [ "signature", "classDBus_1_1MessageIterator.html#a4fefd924e66ae9e8107bd32b6c1a6aa6", null ],
       [ "signature_iterator", "classDBus_1_1MessageIterator.html#a5ab44364049909ba55b47c2aed275595", null ],
       [ "Variant", "classDBus_1_1MessageIterator.html#aa3577d92d98656c9a368b297edd5f320", null ],
       [ "m_priv", "classDBus_1_1MessageIterator.html#a3f3647cf4aeee3d55e239ba21c276080", null ]
     ] ],
-    [ "ReturnMessage", "classDBus_1_1ReturnMessage.html", [
+    [ "DBus::ReturnMessage", "classDBus_1_1ReturnMessage.html", [
       [ "ReturnMessage", "classDBus_1_1ReturnMessage.html#a24f03afe482995c3008dc43980c654ec", null ],
       [ "create", "classDBus_1_1ReturnMessage.html#a8ab2feeebf7bdaaabe278f98b299e649", null ],
       [ "create", "classDBus_1_1ReturnMessage.html#a340a31c2ea3d3829b813e1b7541ec674", null ],
@@ -184,7 +185,7 @@ var group__message =
       [ "set_reply_serial", "classDBus_1_1ReturnMessage.html#a4f8c1eceffd4408b92473cc4d3d3477f", null ],
       [ "type", "classDBus_1_1ReturnMessage.html#a872cc53b5bfb77a78ad2ffa5ada620b1", null ]
     ] ],
-    [ "SignalMessage", "classDBus_1_1SignalMessage.html", [
+    [ "DBus::SignalMessage", "classDBus_1_1SignalMessage.html", [
       [ "SignalMessage", "classDBus_1_1SignalMessage.html#adf2b205c07da470be792aecd7fbf21f2", null ],
       [ "SignalMessage", "classDBus_1_1SignalMessage.html#ad9b5eb2e2a35f4b9c3ad9667107d3c3f", null ],
       [ "SignalMessage", "classDBus_1_1SignalMessage.html#ab75ae272d618b4ae6a50abee76149818", null ],

@@ -1,10 +1,9 @@
 <map id="signalbase.h" name="signalbase.h">
 <area shape="rect" id="node1" title=" " alt="" coords="264,5,368,32"/>
 <area shape="rect" id="node2" href="$path_8h.html" title=" " alt="" coords="65,80,191,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,162,64,189"/>
-<area shape="rect" id="node5" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="216,80,416,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="440,80,515,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="539,80,616,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,162,159,189"/>
-<area shape="rect" id="node6" title=" " alt="" coords="227,155,405,196"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,64,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="216,80,416,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="440,80,515,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="539,80,616,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="97,155,159,181"/>
 </map>

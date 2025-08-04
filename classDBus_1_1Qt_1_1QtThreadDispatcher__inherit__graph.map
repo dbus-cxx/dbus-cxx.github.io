@@ -1,0 +1,4 @@
+<map id="DBus::Qt::QtThreadDispatcher" name="DBus::Qt::QtThreadDispatcher">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,223,107"/>
+<area shape="rect" id="node2" href="$classDBus_1_1ThreadDispatcher.html" title="A ThreadDispatcher is responsible for executing method calls and signals on objects in the given thre..." alt="" coords="25,5,203,32"/>
+</map>

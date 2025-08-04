@@ -1,20 +1,19 @@
 <map id="types.h" name="types.h">
-<area shape="rect" id="node1" title=" " alt="" coords="396,5,467,32"/>
-<area shape="rect" id="node2" href="$enums_8h.html" title=" " alt="" coords="810,229,951,256"/>
-<area shape="rect" id="node5" href="$path_8h.html" title=" " alt="" coords="171,155,297,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="331,229,390,256"/>
-<area shape="rect" id="node7" title=" " alt="" coords="101,229,164,256"/>
-<area shape="rect" id="node8" href="$signature_8h.html" title=" " alt="" coords="448,80,607,107"/>
-<area shape="rect" id="node9" title=" " alt="" coords="24,155,95,181"/>
-<area shape="rect" id="node17" href="$filedescriptor_8h.html" title=" " alt="" coords="1115,80,1297,107"/>
-<area shape="rect" id="node18" title=" " alt="" coords="1321,80,1376,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="847,311,914,338"/>
-<area shape="rect" id="node4" title=" " alt="" coords="952,311,1028,338"/>
-<area shape="rect" id="node10" href="$signatureiterator_8h.html" title=" " alt="" coords="631,155,837,181"/>
-<area shape="rect" id="node11" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="539,229,739,256"/>
-<area shape="rect" id="node13" title=" " alt="" coords="1034,229,1111,256"/>
-<area shape="rect" id="node14" title=" " alt="" coords="912,155,959,181"/>
-<area shape="rect" id="node15" title=" " alt="" coords="423,155,474,181"/>
-<area shape="rect" id="node16" title=" " alt="" coords="499,155,556,181"/>
-<area shape="rect" id="node12" title=" " alt="" coords="550,304,729,345"/>
+<area shape="rect" id="node1" title=" " alt="" coords="239,5,309,32"/>
+<area shape="rect" id="node2" href="$enums_8h.html" title=" " alt="" coords="437,229,578,256"/>
+<area shape="rect" id="node5" href="$path_8h.html" title=" " alt="" coords="23,155,149,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="255,229,314,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="55,229,117,256"/>
+<area shape="rect" id="node8" href="$signature_8h.html" title=" " alt="" coords="476,80,635,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="276,155,347,181"/>
+<area shape="rect" id="node16" href="$filedescriptor_8h.html" title=" " alt="" coords="659,80,841,107"/>
+<area shape="rect" id="node17" title=" " alt="" coords="865,80,920,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="474,304,541,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="848,304,924,331"/>
+<area shape="rect" id="node10" href="$signatureiterator_8h.html" title=" " alt="" coords="523,155,729,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="623,229,823,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1007,229,1085,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="804,155,851,181"/>
+<area shape="rect" id="node14" title=" " alt="" coords="875,155,926,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="951,155,1008,181"/>
 </map>

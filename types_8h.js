@@ -1,6 +1,7 @@
 var types_8h =
 [
-    [ "TypeInfo", "classDBus_1_1TypeInfo.html", "classDBus_1_1TypeInfo" ],
+    [ "DBus::TypeInfo", "classDBus_1_1TypeInfo.html", "classDBus_1_1TypeInfo" ],
+    [ "ObjectManagerObjects", "types_8h.html#a897dad520fb26892011c8cf216b7716b", null ],
     [ "char_to_container_type", "types_8h.html#ae7f87c543afd7ff67a87c7a108749552", null ],
     [ "char_to_dbus_type", "types_8h.html#abdca886328b802b9ad5ad91aa7445d11", null ],
     [ "char_to_ending_container", "types_8h.html#ab3aa3d51829695a607c4e66ceb2eca34", null ],

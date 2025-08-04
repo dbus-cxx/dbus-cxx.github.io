@@ -1,6 +1,6 @@
 var connection_8h =
 [
-    [ "Connection", "classDBus_1_1Connection.html", "classDBus_1_1Connection" ],
+    [ "DBus::Connection", "classDBus_1_1Connection.html", "classDBus_1_1Connection" ],
     [ "DBUSCXX_INTERFACE_INTROSPECTABLE", "connection_8h.html#af647ea51b4da7fe14b04d530a36d8d68", null ],
     [ "DBUSCXX_INTROSPECT_1_0_XML_DOCTYPE_DECL_NODE", "connection_8h.html#a5d3723692bb286a70f934310afc47e7a", null ],
     [ "DBUSCXX_INTROSPECT_1_0_XML_NAMESPACE", "connection_8h.html#abfed033d8f4df8682c74d934db1c7ad5", null ],

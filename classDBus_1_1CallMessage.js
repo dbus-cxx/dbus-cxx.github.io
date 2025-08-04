@@ -14,6 +14,7 @@ var classDBus_1_1CallMessage =
     [ "interface_name", "classDBus_1_1CallMessage.html#a632e92f628023171e08252ac1d0e5ef3", null ],
     [ "member", "classDBus_1_1CallMessage.html#a272cc9bb168935397e186c6a3e9cdfa0", null ],
     [ "path", "classDBus_1_1CallMessage.html#aa4c55b73dd43f71cca10da29394160df", null ],
+    [ "set_interactive_authentication", "classDBus_1_1CallMessage.html#afd7623f856aeccbc2f35460caa54c9f4", null ],
     [ "set_interface", "classDBus_1_1CallMessage.html#a3a81dafc180f1b68d44a44c1effc513d", null ],
     [ "set_member", "classDBus_1_1CallMessage.html#a6fc1ea98ef87d45473bb6b4f1d466ef1", null ],
     [ "set_no_reply", "classDBus_1_1CallMessage.html#acf18151b27f38c94a467058f2c786fe7", null ],

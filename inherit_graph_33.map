@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDBus_1_1priv_1_1SASL.html" title="Implements the authentication routines for connection to the bus." alt="" coords="5,5,135,32"/>
+<area shape="rect" id="node1" href="$classDBus_1_1Object.html" title="An Object represents a local object that is able to be called over the DBus." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$classCalleeClass.html" title=" " alt="" coords="160,5,259,32"/>
 </map>

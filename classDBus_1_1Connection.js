@@ -12,8 +12,8 @@ var classDBus_1_1Connection =
     [ "change_object_proxy_calling_thread", "classDBus_1_1Connection.html#a8d57b918fdaec3d101d796e5e4f0064c", null ],
     [ "create", "classDBus_1_1Connection.html#a1619e561870c57e605ff1b2f5959d009", null ],
     [ "create", "classDBus_1_1Connection.html#a4d7d6c61296f035c4cb7227796e1fefa", null ],
-    [ "create_free_signal", "classDBus_1_1Connection.html#a55d345f44aec804e02d258f131b11a34", null ],
-    [ "create_free_signal_proxy", "classDBus_1_1Connection.html#abf9b9f5d75524d9859d01a34bc939c24", null ],
+    [ "create_free_signal", "classDBus_1_1Connection.html#aa3e1f7bd3ab160ef397e6406faddfcab", null ],
+    [ "create_free_signal_proxy", "classDBus_1_1Connection.html#a5852370903965541cd82c8a4332adc20", null ],
     [ "create_object", "classDBus_1_1Connection.html#a2894b667c099a711d3ed0807ebf07881", null ],
     [ "create_object_proxy", "classDBus_1_1Connection.html#a5b88d28d4f4a906e5d71fa53f57e8d57", null ],
     [ "create_object_proxy", "classDBus_1_1Connection.html#a4dc8826777fba8c72f2fec8756bef67a", null ],
@@ -48,6 +48,8 @@ var classDBus_1_1Connection =
     [ "send", "classDBus_1_1Connection.html#a02198acbb85397ade5386be61d9ab29f", null ],
     [ "send_error_on_handler_result", "classDBus_1_1Connection.html#a3048e64e14bbb698d1741d18cb924cf4", null ],
     [ "send_with_reply_blocking", "classDBus_1_1Connection.html#a449c084aecbc7ddaf73f838f1dbaea94", null ],
+    [ "send_with_reply_blocking_impl", "classDBus_1_1Connection.html#a9b99e7ff31bda468414820fce0d25b30", null ],
+    [ "send_with_reply_blocking_notimeout", "classDBus_1_1Connection.html#a9eea346270082060d99415e5ddefdf0d", null ],
     [ "server_id", "classDBus_1_1Connection.html#abe8fe26aeb4bf4788349de4d75c39d8b", null ],
     [ "set_dispatching_thread", "classDBus_1_1Connection.html#a4118969822bbfa743837a86e0e914b77", null ],
     [ "signal_needs_dispatch", "classDBus_1_1Connection.html#a42252097b0b53662b4127f520d923340", null ],
@@ -57,5 +59,7 @@ var classDBus_1_1Connection =
     [ "unique_name", "classDBus_1_1Connection.html#a5e12c9a257053a74ff80bc60e5bb475e", null ],
     [ "unix_fd", "classDBus_1_1Connection.html#a0060fe4cfae1e59aee054b4b2cb897d7", null ],
     [ "unregister_object", "classDBus_1_1Connection.html#a05e46504b5202902d481585a853ed8fa", null ],
+    [ "unregister_object_proxy", "classDBus_1_1Connection.html#af37206e256de18d860c1a78c58b09798", null ],
+    [ "unregister_object_proxy", "classDBus_1_1Connection.html#a22f49ce51052760fdcec82e0a01297a9", null ],
     [ "write_single_message", "classDBus_1_1Connection.html#af3163169f307ad0987185907d58ce9fc", null ]
 ];

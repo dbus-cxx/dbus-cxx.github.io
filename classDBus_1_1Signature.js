@@ -2,6 +2,7 @@ var classDBus_1_1Signature =
 [
     [ "const_iterator", "classDBus_1_1Signature.html#a642a456d48d60e8205344b0f57fa7f35", null ],
     [ "iterator", "classDBus_1_1Signature.html#a0493de1fde244b00528e95203888af9a", null ],
+    [ "SignatureNodePointer", "classDBus_1_1Signature.html#a9d082d2beecd6baedd20ad272787725d", null ],
     [ "size_type", "classDBus_1_1Signature.html#a985cf3a0dbcc647b27c3aadeb34cf4c9", null ],
     [ "Signature", "classDBus_1_1Signature.html#a8c2509d28783c682335b28ae5d67e718", null ],
     [ "Signature", "classDBus_1_1Signature.html#af3d1e86fc977a17c4940b245848b9342", null ],
@@ -11,7 +12,7 @@ var classDBus_1_1Signature =
     [ "~Signature", "classDBus_1_1Signature.html#a54d12a93b25ab283fb198c4c9799349d", null ],
     [ "begin", "classDBus_1_1Signature.html#aa53aa8f32d1f92f9ec919723fa042a3a", null ],
     [ "begin", "classDBus_1_1Signature.html#addc81e849b5e7ab3b91b1574401cc9e9", null ],
-    [ "create_signature_tree", "classDBus_1_1Signature.html#a6975d67d704cf32bcbc23a7c1487141c", null ],
+    [ "create_signature_tree", "classDBus_1_1Signature.html#a76b7d291eda490807c9a74b643532e8f", null ],
     [ "end", "classDBus_1_1Signature.html#a18ce3d15e4fa6428d655404c46cc1072", null ],
     [ "end", "classDBus_1_1Signature.html#ad078ceeaa8886e9cfcdb60cbef42f5fe", null ],
     [ "initialize", "classDBus_1_1Signature.html#a5fed224dd6d4e14735e0d4547c596136", null ],

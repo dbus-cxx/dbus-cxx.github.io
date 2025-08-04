@@ -9,6 +9,8 @@ var classDBus_1_1Path =
     [ "~Path", "classDBus_1_1Path.html#a6aac4eebff596ec11017e80ff0a85474", null ],
     [ "append_element", "classDBus_1_1Path.html#aae6df15e7768ed63b84334ce6ba5259b", null ],
     [ "decomposed", "classDBus_1_1Path.html#a1cb30c4b80051acbaec5c38962ab286e", null ],
+    [ "is_root", "classDBus_1_1Path.html#aacc3fb6d13c293bb8d2788439eff6a8f", null ],
     [ "is_valid", "classDBus_1_1Path.html#a9cf8eb761c22f73eac0be547703a032a", null ],
-    [ "operator bool", "classDBus_1_1Path.html#a641917db6a968fc7c50b5b4630c63257", null ]
+    [ "operator bool", "classDBus_1_1Path.html#a641917db6a968fc7c50b5b4630c63257", null ],
+    [ "relative_path", "classDBus_1_1Path.html#a2cbdbbe4548011ae767370731ba193cd", null ]
 ];

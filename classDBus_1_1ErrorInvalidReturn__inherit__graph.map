@@ -1,0 +1,4 @@
+<map id="DBus::ErrorInvalidReturn" name="DBus::ErrorInvalidReturn">
+<area shape="rect" id="node1" title="This error may be thrown if there is an invalid return value from a DBus function that should never h..." alt="" coords="5,80,188,107"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="49,5,144,32"/>
+</map>

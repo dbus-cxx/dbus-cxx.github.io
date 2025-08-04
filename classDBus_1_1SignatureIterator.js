@@ -14,7 +14,7 @@ var classDBus_1_1SignatureIterator =
     [ "is_dict", "classDBus_1_1SignatureIterator.html#a384cedaa0c19b635ebddc13fe70efde9", null ],
     [ "is_fixed", "classDBus_1_1SignatureIterator.html#ab452d2e6d95a54cbe1fc3cace6fe1e76", null ],
     [ "is_valid", "classDBus_1_1SignatureIterator.html#adbfb86bf44bb512818d68b92e5adde3c", null ],
-    [ "iterate_over_subsig", "classDBus_1_1SignatureIterator.html#aef4a3e26b566fcac0c875f0cc404dec5", null ],
+    [ "iterate_over", "classDBus_1_1SignatureIterator.html#a37fa34e7feff266656407aad24274d5d", null ],
     [ "next", "classDBus_1_1SignatureIterator.html#a49f22d1bb7b8b20156e71cda340bdb7b", null ],
     [ "operator bool", "classDBus_1_1SignatureIterator.html#aeab7d95d3710135ecd049d754ffb78dd", null ],
     [ "operator++", "classDBus_1_1SignatureIterator.html#aaed1e3613311f3564dfb4dd8f85bcf46", null ],

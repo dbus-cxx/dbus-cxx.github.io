@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classErrorInvalidTypecast.html" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Signal_3_01void_07T__type_8_8_8_08_4.html" title="Subclass of sigc::signal." alt="" coords="235,49,381,91"/>
+<area shape="rect" id="node3" href="$classDBus_1_1SignalProxy_3_01void_07T__arg_8_8_8_08_4.html" title="Subclass of the sigc::signal templates." alt="" coords="443,49,595,91"/>
+<area shape="rect" id="node4" href="$classDBus_1_1SignalBase.html" title="Base class of all signals(proxy and adapter)." alt="" coords="21,86,157,113"/>
+<area shape="rect" id="node5" href="$classDBus_1_1SignalProxyBase.html" title="Base class for a signal proxy that allows you to listen for signals." alt="" coords="221,115,395,142"/>
 </map>

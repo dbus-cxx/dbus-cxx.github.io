@@ -1,3 +1,62 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classErrorMatchRuleNotFound.html" title=" " alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,1508,120,1535"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Error.html" title="Base class of a hierarchy of error objects thrown when exceptional conditions occur." alt="" coords="168,1508,263,1535"/>
+<area shape="rect" id="node3" href="$classDBus_1_1ErrorAccessDenied.html" title=" " alt="" coords="343,5,530,32"/>
+<area shape="rect" id="node4" href="$classDBus_1_1ErrorAddressInUse.html" title=" " alt="" coords="345,56,529,83"/>
+<area shape="rect" id="node5" href="$classDBus_1_1ErrorAuthFailed.html" title=" " alt="" coords="355,107,518,133"/>
+<area shape="rect" id="node6" href="$classDBus_1_1ErrorBadAddress.html" title=" " alt="" coords="351,157,523,184"/>
+<area shape="rect" id="node7" href="$classDBus_1_1ErrorBadVariantCast.html" title=" " alt="" coords="339,208,534,235"/>
+<area shape="rect" id="node8" href="$classDBus_1_1ErrorDeadlock.html" title=" " alt="" coords="359,259,515,285"/>
+<area shape="rect" id="node9" href="$classDBus_1_1ErrorDisconnected.html" title=" " alt="" coords="345,309,528,336"/>
+<area shape="rect" id="node10" href="$classDBus_1_1ErrorDispatcherInitFailed.html" title=" " alt="" coords="343,361,530,402"/>
+<area shape="rect" id="node11" href="$classDBus_1_1ErrorFailed.html" title=" " alt="" coords="370,427,503,453"/>
+<area shape="rect" id="node12" href="$classDBus_1_1ErrorFileExists.html" title=" " alt="" coords="358,477,515,504"/>
+<area shape="rect" id="node13" href="$classDBus_1_1ErrorFileNotFound.html" title=" " alt="" coords="347,528,527,555"/>
+<area shape="rect" id="node14" href="$classDBus_1_1ErrorIOError.html" title=" " alt="" coords="367,579,507,605"/>
+<area shape="rect" id="node15" href="$classDBus_1_1ErrorIncorrectDispatchThread.html" title=" " alt="" coords="332,630,541,671"/>
+<area shape="rect" id="node16" href="$classDBus_1_1ErrorInteractiveAuthorizationRequired.html" title="This error is caused attempting to call a D&#45;Bus method which expects ALLOW_INTERACTIVE_AUTHORIZATION ..." alt="" coords="311,695,563,737"/>
+<area shape="rect" id="node17" href="$classDBus_1_1ErrorInvalidAdaptee.html" title=" " alt="" coords="340,761,533,788"/>
+<area shape="rect" id="node18" href="$classDBus_1_1ErrorInvalidArgs.html" title=" " alt="" coords="353,812,521,839"/>
+<area shape="rect" id="node19" href="$classDBus_1_1ErrorInvalidCObject.html" title=" " alt="" coords="341,863,532,889"/>
+<area shape="rect" id="node20" href="$classDBus_1_1ErrorInvalidConnection.html" title=" " alt="" coords="331,913,543,940"/>
+<area shape="rect" id="node21" href="$classDBus_1_1ErrorInvalidFileContent.html" title=" " alt="" coords="330,964,543,991"/>
+<area shape="rect" id="node22" href="$classDBus_1_1ErrorInvalidMessage.html" title="An invalid message was tried to be parsed." alt="" coords="338,1015,535,1041"/>
+<area shape="rect" id="node23" href="$classDBus_1_1ErrorInvalidMessageType.html" title=" " alt="" coords="323,1065,550,1092"/>
+<area shape="rect" id="node24" href="$classDBus_1_1ErrorInvalidReturn.html" title="This error may be thrown if there is an invalid return value from a DBus function that should never h..." alt="" coords="345,1116,528,1143"/>
+<area shape="rect" id="node25" href="$classDBus_1_1ErrorInvalidSharedPtr.html" title=" " alt="" coords="335,1167,538,1193"/>
+<area shape="rect" id="node26" href="$classDBus_1_1ErrorInvalidSignature.html" title=" " alt="" coords="336,1217,537,1244"/>
+<area shape="rect" id="node27" href="$classDBus_1_1ErrorInvalidTypecast.html" title=" " alt="" coords="339,1268,535,1295"/>
+<area shape="rect" id="node28" href="$classDBus_1_1ErrorLimitsExceeded.html" title=" " alt="" coords="337,1319,536,1345"/>
+<area shape="rect" id="node29" href="$classDBus_1_1ErrorMatchRuleInvalid.html" title=" " alt="" coords="333,1369,541,1396"/>
+<area shape="rect" id="node30" href="$classDBus_1_1ErrorMatchRuleNotFound.html" title=" " alt="" coords="323,1420,550,1447"/>
+<area shape="rect" id="node31" href="$classDBus_1_1ErrorMessageNestedTooDeep.html" title=" " alt="" coords="337,1471,536,1513"/>
+<area shape="rect" id="node32" href="$classDBus_1_1ErrorNameHasNoOwner.html" title=" " alt="" coords="327,1537,546,1564"/>
+<area shape="rect" id="node33" href="$classDBus_1_1ErrorNoConnection.html" title=" " alt="" coords="343,1588,530,1615"/>
+<area shape="rect" id="node34" href="$classDBus_1_1ErrorNoMemory.html" title=" " alt="" coords="353,1639,520,1665"/>
+<area shape="rect" id="node35" href="$classDBus_1_1ErrorNoNetwork.html" title=" " alt="" coords="353,1689,521,1716"/>
+<area shape="rect" id="node36" href="$classDBus_1_1ErrorNoReply.html" title=" " alt="" coords="361,1740,512,1767"/>
+<area shape="rect" id="node37" href="$classDBus_1_1ErrorNoServer.html" title=" " alt="" coords="359,1791,514,1817"/>
+<area shape="rect" id="node38" href="$classDBus_1_1ErrorNotInitialized.html" title=" " alt="" coords="345,1841,528,1868"/>
+<area shape="rect" id="node39" href="$classDBus_1_1ErrorNotOwner.html" title=" " alt="" coords="357,1892,517,1919"/>
+<area shape="rect" id="node40" href="$classDBus_1_1ErrorNotSupported.html" title=" " alt="" coords="345,1943,529,1969"/>
+<area shape="rect" id="node41" href="$classDBus_1_1ErrorPollFailed.html" title=" " alt="" coords="358,1993,515,2020"/>
+<area shape="rect" id="node42" href="$classDBus_1_1ErrorPropertyReadOnly.html" title=" " alt="" coords="330,2044,543,2071"/>
+<area shape="rect" id="node43" href="$classDBus_1_1ErrorRemoteException.html" title=" " alt="" coords="331,2095,542,2121"/>
+<area shape="rect" id="node44" href="$classDBus_1_1ErrorSELinuxSecurityContextUnknown.html" title=" " alt="" coords="337,2146,536,2187"/>
+<area shape="rect" id="node45" href="$classDBus_1_1ErrorServiceUnknown.html" title=" " alt="" coords="335,2212,539,2239"/>
+<area shape="rect" id="node46" href="$classDBus_1_1ErrorSpawnChildExited.html" title=" " alt="" coords="331,2263,543,2289"/>
+<area shape="rect" id="node47" href="$classDBus_1_1ErrorSpawnChildSignaled.html" title=" " alt="" coords="323,2313,550,2340"/>
+<area shape="rect" id="node48" href="$classDBus_1_1ErrorSpawnExecFailed.html" title=" " alt="" coords="333,2364,540,2391"/>
+<area shape="rect" id="node49" href="$classDBus_1_1ErrorSpawnFailed.html" title=" " alt="" coords="349,2415,525,2441"/>
+<area shape="rect" id="node50" href="$classDBus_1_1ErrorSpawnForkFailed.html" title=" " alt="" coords="335,2465,539,2492"/>
+<area shape="rect" id="node51" href="$classDBus_1_1ErrorTimedOut.html" title=" " alt="" coords="357,2516,516,2543"/>
+<area shape="rect" id="node52" href="$classDBus_1_1ErrorTimeout.html" title=" " alt="" coords="362,2567,511,2593"/>
+<area shape="rect" id="node53" href="$classDBus_1_1ErrorUnableToParse.html" title="We were unable to parse(something is unimplemented?)" alt="" coords="341,2617,532,2644"/>
+<area shape="rect" id="node54" href="$classDBus_1_1ErrorUnexpectedResponse.html" title="This error may be thrown if we receive an unexpected response." alt="" coords="319,2668,555,2695"/>
+<area shape="rect" id="node55" href="$classDBus_1_1ErrorUnixProcessIdUnknown.html" title=" " alt="" coords="343,2719,530,2761"/>
+<area shape="rect" id="node56" href="$classDBus_1_1ErrorUnknown.html" title=" " alt="" coords="359,2785,515,2812"/>
+<area shape="rect" id="node57" href="$classDBus_1_1ErrorUnknownInterface.html" title=" " alt="" coords="329,2836,544,2863"/>
+<area shape="rect" id="node58" href="$classDBus_1_1ErrorUnknownMethod.html" title=" " alt="" coords="334,2887,539,2913"/>
+<area shape="rect" id="node59" href="$classDBus_1_1ErrorUnknownObject.html" title=" " alt="" coords="337,2937,536,2964"/>
+<area shape="rect" id="node60" href="$classDBus_1_1ErrorUnknownProperty.html" title=" " alt="" coords="331,2988,542,3015"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="DBus::Dispatcher" name="DBus::Dispatcher">
-<area shape="rect" id="node1" title="A Dispatcher handles all of the reading/writing that a Connection needs in order to work correctly." alt="" coords="41,5,176,32"/>
-<area shape="rect" id="node2" href="$classDBus_1_1StandaloneDispatcher.html" title="The StandaloneDispatcher creates a new thread that handles all of the reading and writing to the bus." alt="" coords="5,80,212,107"/>
+<area shape="rect" id="node1" title="A Dispatcher handles all of the reading/writing that a Connection needs in order to work correctly." alt="" coords="5,81,140,108"/>
+<area shape="rect" id="node2" href="$classDBus_1_1GLib_1_1GLibDispatcher.html" title="Does all dispatching in the main GLib context." alt="" coords="191,5,391,32"/>
+<area shape="rect" id="node3" href="$classDBus_1_1Qt_1_1QtDispatcher.html" title=" " alt="" coords="205,56,377,83"/>
+<area shape="rect" id="node4" href="$classDBus_1_1StandaloneDispatcher.html" title="The StandaloneDispatcher creates a new thread that handles all of the reading and writing to the bus." alt="" coords="188,107,395,133"/>
+<area shape="rect" id="node5" href="$classDBus_1_1Uv_1_1UvDispatcher.html" title=" " alt="" coords="203,157,380,184"/>
 </map>

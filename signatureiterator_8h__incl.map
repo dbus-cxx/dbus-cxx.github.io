@@ -1,10 +1,9 @@
 <map id="signatureiterator.h" name="signatureiterator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="313,5,455,32"/>
-<area shape="rect" id="node2" href="$enums_8h.html" title=" " alt="" coords="43,80,184,107"/>
-<area shape="rect" id="node5" href="$dbus-cxx-config_8h.html" title=" " alt="" coords="208,80,408,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="432,80,491,107"/>
-<area shape="rect" id="node8" title=" " alt="" coords="515,80,592,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,162,72,189"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,162,173,189"/>
-<area shape="rect" id="node6" title=" " alt="" coords="219,155,397,196"/>
+<area shape="rect" id="node1" title=" " alt="" coords="286,5,429,32"/>
+<area shape="rect" id="node2" href="$enums_8h.html" title=" " alt="" coords="16,80,157,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="181,80,381,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="405,80,464,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="488,80,565,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,72,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="97,155,173,181"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classDBus_1_1MessageAppendIterator.html" title="Insertion iterator allow values to be appended to a message." alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node1" href="$classDBus_1_1MethodBase.html" title="Base class for all methods(proxy and local)." alt="" coords="5,5,151,32"/>
+<area shape="rect" id="node2" href="$classDBus_1_1Method.html" title=" " alt="" coords="199,5,385,32"/>
 </map>

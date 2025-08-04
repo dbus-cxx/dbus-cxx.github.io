@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['uint16_0',['UINT16',['../namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a48d8f1a723d44ff4a87db1bb6c551c62',1,'DBus']]],
+  ['uint32_1',['UINT32',['../namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a17266551181f69a1b4a3ad5c9e270afc',1,'DBus']]],
+  ['uint64_2',['UINT64',['../namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a6de7acf711860176ba606e9aa2b85d5f',1,'DBus']]],
+  ['unescape_5ftransport_5fvalue_3',['unescape_transport_value',['../transport_8cpp.html#a1bfd0317904ef6295ee288d92799b4e6',1,'transport.cpp']]],
+  ['unique_5fname_4',['unique_name',['../classDBus_1_1Connection.html#a5e12c9a257053a74ff80bc60e5bb475e',1,'DBus::Connection']]],
+  ['unix_5ffd_5',['UNIX_FD',['../namespaceDBus.html#ad1f4b2409e998e4656727b9c2bf94334a9438328e965e6429f2c9119e1fae78ae',1,'DBus']]],
+  ['unix_5ffd_6',['unix_fd',['../classDBus_1_1Connection.html#a0060fe4cfae1e59aee054b4b2cb897d7',1,'DBus::Connection']]],
+  ['unix_5ffds_7',['Unix_FDs',['../namespaceDBus.html#a14f941cce9f9b4796e4666d5ea7e8636ae43a4035fcc43af3439a6e2eb719a183',1,'DBus']]],
+  ['unregister_8',['unregister',['../classDBus_1_1Object.html#a91ec64de5d749247e31d3721747a02f5',1,'DBus::Object']]],
+  ['unregister_5fobject_9',['unregister_object',['../classDBus_1_1Connection.html#a05e46504b5202902d481585a853ed8fa',1,'DBus::Connection']]],
+  ['unregister_5fobject_5fproxy_10',['unregister_object_proxy',['../classDBus_1_1Connection.html#af37206e256de18d860c1a78c58b09798',1,'DBus::Connection::unregister_object_proxy(ObjectProxy *obj)'],['../classDBus_1_1Connection.html#a22f49ce51052760fdcec82e0a01297a9',1,'DBus::Connection::unregister_object_proxy(std::shared_ptr&lt; ObjectProxy &gt; obj)']]],
+  ['update_5fmatch_5frule_11',['update_match_rule',['../classDBus_1_1SignalProxyBase.html#a81ca22d66ae7cce78849e0c702e3b1ea',1,'DBus::SignalProxyBase']]],
+  ['update_5ftype_12',['update_type',['../classDBus_1_1PropertyBase.html#a81e71a9650697b3026b0e3a2180d00e3',1,'DBus::PropertyBase::update_type()'],['../classDBus_1_1PropertyProxyBase.html#a2e302520d4976a496199477591b14070',1,'DBus::PropertyProxyBase::update_type()']]],
+  ['updateactivationenvironment_13',['UpdateActivationEnvironment',['../classDBus_1_1DBusDaemonProxy.html#aa631009f8e8615ec9163ce1001c5c985',1,'DBus::DBusDaemonProxy']]],
+  ['updated_5fvalue_14',['updated_value',['../classDBus_1_1PropertyProxyBase.html#af3d89a8b77fc09ca7e643fd1f6d773fc',1,'DBus::PropertyProxyBase']]],
+  ['updates_15',['Updates',['../namespaceDBus.html#aea507c01fe436f3445e41ebc3ee2c0e9a9ac41b6a577daadd588f0fcde0071e8b',1,'DBus']]],
+  ['utility_2ecpp_16',['utility.cpp',['../utility_8cpp.html',1,'']]],
+  ['utility_2eh_17',['utility.h',['../utility_8h.html',1,'']]],
+  ['uv_2dcaller_2ecpp_18',['uv-caller.cpp',['../uv-caller_8cpp.html',1,'']]],
+  ['uvdispatcher_19',['UvDispatcher',['../classDBus_1_1Uv_1_1UvDispatcher.html',1,'DBus::Uv::UvDispatcher'],['../classDBus_1_1Uv_1_1UvDispatcher.html#a7f8fbd44197cf0f109dd79ca5a065296',1,'DBus::Uv::UvDispatcher::UvDispatcher()']]],
+  ['uvdispatcher_2ecpp_20',['uvdispatcher.cpp',['../uvdispatcher_8cpp.html',1,'']]],
+  ['uvdispatcher_2eh_21',['uvdispatcher.h',['../uvdispatcher_8h.html',1,'']]]
+];

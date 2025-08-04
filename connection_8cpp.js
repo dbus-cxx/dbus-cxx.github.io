@@ -9,5 +9,7 @@ var connection_8cpp =
     [ "DBUSCXX_REQUEST_NAME_REPLY_PRIMARY_OWNER", "connection_8cpp.html#afecff69ddc52c05e9481b9feacaf54dc", null ],
     [ "DBUSCXX_START_REPLY_ALREADY_RUNNING", "connection_8cpp.html#aed7244eeae4a68946f439f4039f9493f", null ],
     [ "DBUSCXX_START_REPLY_SUCCESS", "connection_8cpp.html#a4bacf70046ee763d0322192cddd1609b", null ],
+    [ "check_for_invalid_thread_ids", "connection_8cpp.html#ab7876aff8015855d524199092cd87780", null ],
+    [ "set_lightweight_thread_ids_to_dispatcher", "connection_8cpp.html#a506b89f95416dcf8d6d32b63657f950d", null ],
     [ "LOGGER_NAME", "connection_8cpp.html#aa804a796c19a504cc8f60912b8e84a5b", null ]
 ];

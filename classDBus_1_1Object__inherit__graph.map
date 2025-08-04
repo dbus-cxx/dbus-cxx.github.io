@@ -1,0 +1,4 @@
+<map id="DBus::Object" name="DBus::Object">
+<area shape="rect" id="node1" title="An Object represents a local object that is able to be called over the DBus." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$classCalleeClass.html" title=" " alt="" coords="9,80,108,107"/>
+</map>

@@ -23,6 +23,7 @@ var classDBus_1_1priv_1_1VariantIterator =
     [ "is_container", "classDBus_1_1priv_1_1VariantIterator.html#a263b5d087214f25754a5ed80d8b749df", null ],
     [ "is_dict", "classDBus_1_1priv_1_1VariantIterator.html#a4808228852f24c7b8e930451ba9c5b3e", null ],
     [ "is_fixed", "classDBus_1_1priv_1_1VariantIterator.html#aba4001033f814efea987cc1a8dca4ed3", null ],
+    [ "is_struct", "classDBus_1_1priv_1_1VariantIterator.html#a18363c396f97dce803abebe4f589551c", null ],
     [ "is_valid", "classDBus_1_1priv_1_1VariantIterator.html#a373fa17751bdb2332286f28b97a0c33c", null ],
     [ "next", "classDBus_1_1priv_1_1VariantIterator.html#aa7e55c2ae68d922cad6704a6d3168414", null ],
     [ "operator bool", "classDBus_1_1priv_1_1VariantIterator.html#a84cbc8c92cd92813ae52242a41fb6e76", null ],
@@ -41,7 +42,7 @@ var classDBus_1_1priv_1_1VariantIterator =
     [ "operator uint8_t", "classDBus_1_1priv_1_1VariantIterator.html#a2b62b6894b43c3057956029b4952c63c", null ],
     [ "operator++", "classDBus_1_1priv_1_1VariantIterator.html#a27b5d312c1c53fdbfe6cf79ebda8cc6f", null ],
     [ "operator++", "classDBus_1_1priv_1_1VariantIterator.html#a01dc940a0352b0c4b1527f8a06b5e5ea", null ],
-    [ "operator>>", "classDBus_1_1priv_1_1VariantIterator.html#affb9ab2b8ed69ca4b332825d6cbecba2", null ],
+    [ "operator>>", "classDBus_1_1priv_1_1VariantIterator.html#a1e887755807f0078b0c0890b0ca94edc", null ],
     [ "operator>>", "classDBus_1_1priv_1_1VariantIterator.html#a8c9212e6c93a58b3c856504900c1af39", null ],
     [ "recurse", "classDBus_1_1priv_1_1VariantIterator.html#a13021f29152d58294aeccf806dfbf95b", null ],
     [ "m_priv", "classDBus_1_1priv_1_1VariantIterator.html#aa53a99b8eed57c7bd74530a4c0f45d27", null ]

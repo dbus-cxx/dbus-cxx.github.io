@@ -2,7 +2,7 @@ var simplelogger__defs_8h =
 [
     [ "SL_LogLocation", "structSL__LogLocation.html", "structSL__LogLocation" ],
     [ "SL_LOGLEVEL_TO_STRING", "simplelogger__defs_8h.html#a4542d40574ce0003487996b420755d28", null ],
-    [ "simplelogger_log_function", "simplelogger__defs_8h.html#a587bf21e1f1f85bf2e5dba6b92e157d1", null ],
+    [ "simplelogger_log_function", "simplelogger__defs_8h.html#a19519046c887970cc02b6b1f8d5fe554", null ],
     [ "SL_LogLevel", "simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3", [
       [ "SL_TRACE", "simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3a646f67687051198ffdf6653a7100ea66", null ],
       [ "SL_DEBUG", "simplelogger__defs_8h.html#a672f0b828371e6b03c95f062217e29f3ab2d5de316d9f5f466e5e24fe9cdf643a", null ],
